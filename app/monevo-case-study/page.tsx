@@ -682,7 +682,7 @@ export default function MonevoCaseStudy() {
                 <div className="bg-purple-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "I loved seeing my progress—it felt like I was actually getting somewhere."</li>
+                    <li>• "I loved seeing my progress. it felt like I was actually getting somewhere."</li>
                     <li>• "This made the app feel more fun and less stressful."</li>
                     <li>• "I like that I can both track and take action without digging through menus."</li>
                   </ul>
@@ -763,13 +763,13 @@ export default function MonevoCaseStudy() {
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Task completion (within series): Increased from 8.1% → 15% (+85.2%)</li>
-                    <li>• Users who preferred series-based flow over isolated tasks: 71.4%</li>
+                    <li>• Users who preferred series based flow over isolated tasks: 71.4%</li>
                   </ul>
                 </div>
                 <div className="bg-purple-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "It was satisfying to finish a full series—it felt like a win."</li>
+                    <li>• "It was satisfying to finish a full series it felt like a win."</li>
                     <li>• "I actually care about the points now because I can use them."</li>
                     <li>• "Choosing my own reward made it feel more personal and fun."</li>
                   </ul>
@@ -795,7 +795,7 @@ export default function MonevoCaseStudy() {
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
-                    The original homepage lacked structure and clarity—users struggled to understand where to start and
+                    The original homepage lacked structure and clarity users struggled to understand where to start and
                     which features were most important. To improve this, we designed and tested two homepage variants:
                     one with sequential task cards, and another with open access task blocks. The goal was to find the
                     layout that best supports task engagement and ease of navigation.
