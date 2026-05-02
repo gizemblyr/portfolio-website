@@ -15,10 +15,10 @@ export default function FoodpandaCaseStudy() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
-                AI-Driven Redesign of Foodpanda's Vendor Menu Module
+                AI Driven Redesign of Foodpanda's Vendor Menu Module
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
-                Mobile-first redesign leveraging AI to improve UX, streamline workflows, and reduce manual effort.
+                Mobile first redesign leveraging AI to improve UX, streamline workflows, and reduce manual effort.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm text-gray-500">
                 <div className="flex items-center gap-2">
@@ -58,7 +58,7 @@ export default function FoodpandaCaseStudy() {
                 Although vendors were expected to manage their menus independently, many relied heavily on support due
                 to the system's complexity, lack of clarity, and poor mobile performance. Analytics showed that{" "}
                 <strong> over 60% </strong> of interactions focused on just two routine tasks—product availability
-                changes <strong> (30.9%)</strong> and variant price updates <strong>(29.8%) </strong>—while all other
+                changes <strong> (30.9%)</strong> and variant price updates <strong>(29.8%) </strong> while all other
                 functions saw minimal usage. This suggested that advanced features were either hard to find, difficult
                 to understand, or inefficient to use without assistance.
               </p>
@@ -70,14 +70,14 @@ export default function FoodpandaCaseStudy() {
                   <span className="text-gray-700 text-base">
                     <strong>Feature Underutilization: </strong> <strong>Over 60%</strong> of actions were limited to
                     product availability <strong> (30.9%)</strong> and price changes <strong>(29.8%)</strong>, while all
-                    other features remained <strong>below 5% </strong>usage—indicating usability and discoverability
+                    other features remained <strong>below 5% </strong>usage indicating usability and discoverability
                     issues.
                   </span>
                 </li>
                 <li className="flex items-start gap-3 p-3 bg-orange-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
-                    <strong>Support Dependency: </strong> Despite being a self-service tool, many vendors relied on
+                    <strong>Support Dependency: </strong> Despite being a self service tool, many vendors relied on
                     support to complete tasks due to unclear flows and complex interfaces.
                   </span>
                 </li>
@@ -85,7 +85,7 @@ export default function FoodpandaCaseStudy() {
                   <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong>Poor Mobile Experience:</strong> Vendors found the UI hard to use on mobile, making
-                    on-the-go management frustrating.
+                    on the go management frustrating.
                   </span>
                 </li>
                 <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
@@ -113,7 +113,7 @@ export default function FoodpandaCaseStudy() {
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong>Image Upload Barrier:</strong>Vendors rarely uploaded photos due to high rejection rates and
-                    the difficulty of taking images that met MQC standards—leading to low adoption and overreliance on
+                    the difficulty of taking images that met MQC standards leading to low adoption and overreliance on
                     support.
                   </span>
                 </li>
@@ -181,27 +181,27 @@ export default function FoodpandaCaseStudy() {
                   <li className="flex items-start gap-3 p-3 bg-green-50/70 rounded-lg">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-gray-700 text-base">
-                      <strong>Task Completion Rate:</strong> Targeted +25% increase in self-served completion for core
+                      <strong>Task Completion Rate:</strong> Targeted +25% increase in self served completion for core
                       actions.
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-3 bg-green-50/70 rounded-lg">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-gray-700 text-base">
-                      <strong>Support Ticket Volume:</strong> To be monitored post-launch for reduction in menu-related
+                      <strong>Support Ticket Volume:</strong> To be monitored post launch for reduction in menu related
                       requests.
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-3 bg-green-50/70 rounded-lg">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-gray-700 text-base">
-                      <strong>Time on Task:</strong> Will be measured after go-live to assess workflow efficiency.
+                      <strong>Time on Task:</strong> Will be measured after go live to assess workflow efficiency.
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-3 bg-green-50/70 rounded-lg">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-gray-700 text-base">
-                      <strong>Approval Error Rate:</strong> Tracked post-launch to reduce rejections on images and
+                      <strong>Approval Error Rate:</strong> Tracked post launch to reduce rejections on images and
                       pricing.
                     </span>
                   </li>
@@ -230,7 +230,7 @@ export default function FoodpandaCaseStudy() {
               </div>
               <h3 className="font-semibold text-lg mb-2">Research & Insights</h3>
               <p className="text-gray-600 text-base">
-                Conducted benchmarking, user interviews, and journey mapping to uncover key friction points—such as poor
+                Conducted benchmarking, user interviews, and journey mapping to uncover key friction points such as poor
                 navigation, mobile usability issues, and underutilized features due to complexity.
               </p>
             </div>
@@ -240,8 +240,8 @@ export default function FoodpandaCaseStudy() {
               </div>
               <h3 className="font-semibold text-lg mb-2">Design Strategy</h3>
               <p className="text-gray-600 text-base">
-                Developed lo-fi wireframes and a mobile-first UI focused on simplifying high-frequency tasks (e.g.
-                availability/price updates), improving discoverability, and introducing AI-driven tools for photo and
+                Developed lo fi wireframes and a mobile-first UI focused on simplifying high frequency tasks (e.g.
+                availability/price updates), improving discoverability, and introducing AI driven tools for photo and
                 content suggestions.
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function FoodpandaCaseStudy() {
               </div>
               <h4 className="font-semibold mb-2">UberEats</h4>
               <p className="text-gray-600 text-base">
-                Supports multi-menu creation and bulk linking of customizations, but lacks clear editing modes and
+                Supports multi menu creation and bulk linking of customizations, but lacks clear editing modes and
                 offers only menu-level availability.
               </p>
             </div>
@@ -318,7 +318,7 @@ export default function FoodpandaCaseStudy() {
               </div>
               <h4 className="font-semibold mb-2">Deliveroo</h4>
               <p className="text-gray-600 text-base">
-                Supports multiple menu creation and category-level option groups, yet lacks smart tools like AI
+                Supports multiple menu creation and category level option groups, yet lacks smart tools like AI
                 suggestions and advanced reuse logic.
               </p>
             </div>
@@ -340,7 +340,7 @@ export default function FoodpandaCaseStudy() {
                     Availability control is limited on most platforms
                   </h4>
                   <p className="text-gray-600 text-base">
-                    Only Grab offers product-level availability;others rely on less flexible menu/category-level setups.
+                    Only Grab offers product-level availability;others rely on less flexible menu/category level setups.
                   </p>
                 </div>
                 <div>
@@ -414,7 +414,7 @@ export default function FoodpandaCaseStudy() {
                   <h4 className="text-lg font-semibold text-gray-900">Restaurant Owner Profile</h4>
                 </div>
                 <p className="text-gray-600 text-base">
-                  Single-outlet restaurant owner using Talabat via Vendor Portal. Primarily uses mobile with moderate
+                  Single outlet restaurant owner using Talabat via Vendor Portal. Primarily uses mobile with moderate
                   tech proficiency.
                 </p>
               </div>
@@ -489,7 +489,7 @@ export default function FoodpandaCaseStudy() {
           <div className="mb-12 md:mb-16">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">User Journey</h3>
             <p className="text-gray-600 text-center mb-8 text-base">
-              Conducted user interviews sessions with 8 vendors—all owners or managers of single-location restaurants—to
+              Conducted user interviews sessions with 8 vendors all owners or managers of single location restaurants—to
               deeply understand their workflows, challenges, and expectations. Creating a user journey helped in gaining
               insights into vendor behavior, identifying pain points, informing design decisions, highlighting
               improvement opportunities, and validating design solutions throughout the project's lifecycle.
@@ -588,7 +588,7 @@ export default function FoodpandaCaseStudy() {
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div className="text-gray-700 text-base">
-                          <strong>Demographics:</strong> Aged 26–52, including small restaurant owners, franchise
+                          <strong>Demographics:</strong> Aged 26-52, including small restaurant owners, franchise
                           managers, cafe operators
                         </div>
                       </div>
@@ -599,8 +599,8 @@ export default function FoodpandaCaseStudy() {
                           <strong>Scenarios Tested:</strong>
                           <ul className="text-gray-600 space-y-2 text-base mt-2">
                             <li>• Menu creation & editing</li>
-                            <li>• Bulk actions (multi-item selection, batch editing)</li>
-                            <li>• AI-generated item descriptions & images</li>
+                            <li>• Bulk actions (multi item selection, batch editing)</li>
+                            <li>• AI generated item descriptions & images</li>
                             <li>• Preview & publish flows</li>
                             <li>• Mobile vs. Web experience</li>
                             <li>• Categorization & visibility settings</li>
@@ -619,7 +619,7 @@ export default function FoodpandaCaseStudy() {
                       </div>
                       <div className="p-3 bg-blue-50 rounded-lg">
                         <span className="text-gray-700 text-base font-medium">
-                          Positive Feedback on New Categorization Flow and AI-generated item descriptions & images
+                          Positive Feedback on New Categorization Flow and AI generated item descriptions & images
                         </span>
                       </div>
                     </div>
@@ -630,10 +630,10 @@ export default function FoodpandaCaseStudy() {
                   <h4 className="font-semibold text-gray-900 mb-4">User Feedback</h4>
                   <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg">
                     <ul className="text-gray-600 space-y-2 text-base">
-                      <li>• "The AI suggestions saved me hours — especially the auto-description feature."</li>
+                      <li>• "The AI suggestions saved me hours especially the auto description feature."</li>
                       <li>• "Bulk editing was frustrating before. Now, I can update all prices in one go."</li>
                       <li>• "Mobile version feels much smoother than before. I can do everything on the go."</li>
-                      <li>• "Seeing real-time preview before publishing made me feel more confident."</li>
+                      <li>• "Seeing real time preview before publishing made me feel more confident."</li>
                       <li>• "It was confusing before to find visibility settings. Now it's clearly labeled."</li>
                     </ul>
                   </div>
@@ -671,7 +671,7 @@ export default function FoodpandaCaseStudy() {
                   </p>
                   <p className="text-gray-700 text-base mb-4">We introduced Two Editing Modes:</p>
                   <ul className="text-gray-700 space-y-2 text-base mb-4">
-                    <li>• Quick Edit for high-frequency actions like toggling availability</li>
+                    <li>• Quick Edit for high frequency actions like toggling availability</li>
                     <li>• Detailed Edit for tasks like changing prices, descriptions, or images</li>
                   </ul>
                 </div>
@@ -715,7 +715,7 @@ export default function FoodpandaCaseStudy() {
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-700 text-base">
                     Vendors often created separate products for different sizes instead of using modifiers due to
-                    unclear group setup. The redesign introduced a cleaner, mobile-friendly way to create size-based
+                    unclear group setup. The redesign introduced a cleaner, mobile friendly way to create size based
                     options with clearer labels, pricing, and selection rules.
                   </p>
                 </div>
@@ -732,7 +732,7 @@ export default function FoodpandaCaseStudy() {
                   <ul className="text-gray-700 space-y-2 text-base">
                     <li>• "Creating size options directly here is much faster."</li>
                     <li>• "I didn't realize I could reuse existing products at first."</li>
-                    <li>• "The layout is clearer now—especially the required and max selection part."</li>
+                    <li>• "The layout is clearer now especially the required and max selection part."</li>
                   </ul>
                 </div>
               </div>
@@ -784,7 +784,7 @@ export default function FoodpandaCaseStudy() {
             {/* AI Content Suggestions */}
             <div className="mb-12 md:mb-16">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">
-                AI Content Suggestions - From Insight to Design
+                AI Content Suggestions From Insight to Design
               </h3>
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl shadow-lg max-w-6xl">
@@ -823,11 +823,11 @@ export default function FoodpandaCaseStudy() {
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-700 text-base">
-                    During early usability testing, vendors were asked whether they would consider using AI-generated
+                    During early usability testing, vendors were asked whether they would consider using AI generated
                     images and descriptions.
                   </p>
                   <p className="text-gray-700 text-base mt-2">
-                    5 out of 8 vendors expressed interest—mainly to save time and avoid photo rejections—but also voiced
+                    5 out of 8 vendors expressed interest mainly to save time and avoid photo rejections but also voiced
                     concerns about authenticity.
                   </p>
                   <p className="text-gray-700 text-base mt-2">
@@ -840,13 +840,13 @@ export default function FoodpandaCaseStudy() {
                     <li>• 100% of vendors completed the AI suggestion task with ease</li>
                     <li>• All participants found and used the feature intuitively</li>
                     <li>• No confusion was observed during use</li>
-                    <li>• Vendors easily recognized and managed AI-tagged content</li>
+                    <li>• Vendors easily recognized and managed AI tagged content</li>
                   </ul>
                 </div>
                 <div className="bg-purple-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-700 space-y-2 text-base">
-                    <li>• "This saves me so much time—I don't have to take my own photos."</li>
+                    <li>• "This saves me so much time. I don't have to take my own photos."</li>
                     <li>• "As long as it looks like my dish, I'm okay using it."</li>
                     <li>• "The suggestion label is helpful. I know which items still need edits."</li>
                   </ul>
@@ -866,10 +866,10 @@ export default function FoodpandaCaseStudy() {
 
           <div className="mb-8 md:mb-12">
             <p className="text-sm md:text-base text-gray-600 text-center mx-auto leading-relaxed">
-              Successfully redesigned the Foodpanda Vendor Portal with a focus on mobile-first design, AI integration,
+              Successfully redesigned the Foodpanda Vendor Portal with a focus on mobile first design, AI integration,
               and streamlined workflows. The new system significantly improved vendor satisfaction while reducing
               operational costs through intelligent automation. The project demonstrated the power of combining
-              user-centered design with cutting-edge AI technology to solve real business problems.
+              user centered design with cutting edge AI technology to solve real business problems.
             </p>
           </div>
 
@@ -990,7 +990,7 @@ export default function FoodpandaCaseStudy() {
                     <div>
                       <span className="font-medium">Conducting usability tests with chain restaurant vendors</span>
                       <p className="text-gray-600 text-base mt-1">
-                        → To evaluate how the new structure supports more complex operational needs and team-based
+                        → To evaluate how the new structure supports more complex operational needs and team based
                         workflows
                       </p>
                     </div>
@@ -1027,7 +1027,7 @@ export default function FoodpandaCaseStudy() {
                       <p className="text-gray-600 text-base mt-1">
                         → Although onboarding is owned by a separate team, our changes impact early user experience.
                         We've shared findings with their designers and will continue to collaborate to integrate
-                        insights—especially around advanced features like Variations—into their flows.
+                        insights especially around advanced features like Variations—into their flows.
                       </p>
                     </div>
                   </li>
