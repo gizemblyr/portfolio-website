@@ -396,8 +396,8 @@ export default function Resume() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="font-semibold text-gray-900 mb-2">English Upper Intermediate B2+</h3>
-              <p className="text-gray-600 text-base">TIE Exam</p>
+              <h3 className="font-semibold text-gray-900 mb-2"> C1 (IELTS Academic Overall 7.0), 2026 )</h3>
+              <p className="text-gray-600 text-base"> IELTS,British Council</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl">
