@@ -67,7 +67,7 @@ export default function MonevoCaseStudy() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50 relative z-10">
               <p className="text-gray-700 mb-6 text-base leading-relaxed">
                 Monevo faced poor onboarding completion, low user engagement, and weak motivation mechanisms. Users
-                struggled with understanding financial concepts, navigating the app, and staying committed to tasks —
+                struggled with understanding financial concepts, navigating the app, and staying committed to tasks
                 leading to high abandonment and retention issues.
               </p>
 
@@ -265,7 +265,7 @@ export default function MonevoCaseStudy() {
                   <li>• Focus on want vs. need categorization</li>
                   <li>• Educational content integrated into daily interactions</li>
                   <li>
-                    • Potential for cashback and brand-based rewards, offering real-world value to users — unlike most
+                    • Potential for cashback and brand based rewards, offering real world value to users unlike most
                     competitor apps.
                   </li>
                 </ul>
@@ -303,13 +303,13 @@ export default function MonevoCaseStudy() {
                   <span className="font-medium text-base">Age range:</span> 23-32 years old
                 </p>
                 <p className="text-gray-600 text-base">
-                  Career-driven individuals seeking, paying off debt or loans, smart financial management, tend to
+                  Career driven individuals seeking, paying off debt or loans, smart financial management, tend to
                   purchase more than they actually need, motivated by rewards and goal tracking.
                 </p>
               </div>
             </div>
             <p className="text-gray-600 mt-6 text-base">
-              These personas, based on client-led research, ensured the onboarding, gamified task system, and financial
+              These personas, based on client led research, ensured the onboarding, gamified task system, and financial
               content were tailored to meet diverse user needs.
             </p>
           </div>
@@ -382,7 +382,7 @@ export default function MonevoCaseStudy() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Visual Clarity</h4>
                       <p className="text-gray-600 text-base">
-                        Used a clean visual hierarchy and chat-based guidance to improve comprehension and ease of use.
+                        Used a clean visual hierarchy and chat based guidance to improve comprehension and ease of use.
                       </p>
                     </div>
                   </div>
@@ -394,7 +394,7 @@ export default function MonevoCaseStudy() {
                       <h4 className="font-semibold text-gray-900 mb-2">Guided Structure</h4>
                       <p className="text-gray-600 text-base">
                         After testing sequential and open task flows, we moved forward with a structured approach to
-                        support goal-setting and reduce decision fatigue.
+                        support goal setting and reduce decision fatigue.
                       </p>
                     </div>
                   </div>
@@ -413,7 +413,7 @@ export default function MonevoCaseStudy() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
                   <span className="text-gray-700 text-base md:text-base">
-                    Step-by-step onboarding clarified concepts like Wants vs. Needs, reducing drop-off.
+                    Step by step onboarding clarified concepts like Wants vs. Needs, reducing drop-off.
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
@@ -540,10 +540,10 @@ export default function MonevoCaseStudy() {
                 <h4 className="font-semibold text-gray-900 mb-4">User Feedback</h4>
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg">
                   <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "I didn't understand what Wants vs. Needs meant at first — the explanation helped a lot."</li>
+                    <li>• "I didn't understand what Wants vs. Needs meant at first the explanation helped a lot."</li>
                     <li>• "The chat reminders felt like a coach guiding me through."</li>
-                    <li>• "Seeing my most-spent category made me rethink my priorities."</li>
-                    <li>• "I liked being able to choose my own reward — it felt more personal."</li>
+                    <li>• "Seeing my most spent category made me rethink my priorities."</li>
+                    <li>• "I liked being able to choose my own reward it felt more personal."</li>
                     <li>
                       • "Without the visual cues, I wouldn't have known where to go next. This version made it obvious."
                     </li>
@@ -574,8 +574,8 @@ export default function MonevoCaseStudy() {
                 <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                 <p className="text-gray-600 space-y-2 text-base">
                   The old welcome screen lacked clarity and failed to explain the app's value, leading to early
-                  drop-offs. We redesigned it to showcase key features like gamification and financial education using
-                  visuals and app previews — helping users quickly understand what to expect.
+                  drop offs. We redesigned it to showcase key features like gamification and financial education using
+                  visuals and app previews helping users quickly understand what to expect.
                 </p>
               </div>
               <div className="bg-green-50 p-6 rounded-xl">
@@ -592,7 +592,7 @@ export default function MonevoCaseStudy() {
               <div className="bg-purple-50 p-6 rounded-xl">
                 <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                 <ul className="text-gray-600 space-y-2 text-base">
-                  <li>• "I understood what the app was about before signing up — that made a difference."</li>
+                  <li>• "I understood what the app was about before signing up that made a difference."</li>
                   <li>• "The visuals helped me see that it wasn't just another finance app."</li>
                   <li>• "I felt like I was being introduced, not just dropped into something."</li>
                 </ul>
@@ -620,7 +620,7 @@ export default function MonevoCaseStudy() {
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     In the old version of the app, users were asked to enter personal and financial information right
-                    after opening the app—leading to a 52.6% drop-off at the welcome screen. The onboarding felt tedious
+                    after opening the app leading to a 52.6% drop off at the welcome screen. The onboarding felt tedious
                     and overwhelming, causing many to abandon before engaging with the product. To solve this, we
                     restructured onboarding as a gamified task series called "Getting to Know You." Instead of
                     traditional forms, users completed small, interactive tasks (e.g., "Tell us about your financial
@@ -641,7 +641,7 @@ export default function MonevoCaseStudy() {
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• "It felt like a journey, not a boring form."</li>
                     <li>• "I wanted to keep going to see what came next and get the points."</li>
-                    <li>• "Much better than being asked for everything upfront—I actually completed it."</li>
+                    <li>• "Much better than being asked for everything upfront I actually completed it."</li>
                   </ul>
                 </div>
               </div>
@@ -667,7 +667,7 @@ export default function MonevoCaseStudy() {
                   <p className="text-gray-600 space-y-2 text-base">
                     My Monay World was created to help users visually track progress and stay motivated through a
                     gamified journey. At the same time, it also served users who prefer a more practical,
-                    finance-focused approach — enabling quick actions like viewing insights, accessing expert advice, or
+                    finance-focused approach enabling quick actions like viewing insights, accessing expert advice, or
                     buying valuable metals, without relying heavily on gamification.
                   </p>
                 </div>
@@ -706,7 +706,7 @@ export default function MonevoCaseStudy() {
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
-                    Users found manual expense entry time-consuming and prone to skipping. To streamline the process and
+                    Users found manual expense entry time consuming and prone to skipping. To streamline the process and
                     increase accuracy, we introduced a receipt-based input option, allowing users to upload or scan
                     receipts directly. This also supported better tracking for users managing shared or recurring
                     expenses.
@@ -751,7 +751,7 @@ export default function MonevoCaseStudy() {
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
-                    In the previous version, users earned points but had no way to use them—making the system feel empty
+                    In the previous version, users earned points but had no way to use them making the system feel empty
                     and demotivating. To fix this, we introduced a store where users can redeem their points. We also
                     created goal-based task series (e.g., Expense Tracking for users paying off debt), each consisting
                     of 5 or 6 short tasks and mini quizzes to avoid fatigue. At the end of each series, users receive a
@@ -797,7 +797,7 @@ export default function MonevoCaseStudy() {
                   <p className="text-gray-600 space-y-2 text-base">
                     The original homepage lacked structure and clarity—users struggled to understand where to start and
                     which features were most important. To improve this, we designed and tested two homepage variants:
-                    one with sequential task cards, and another with open-access task blocks. The goal was to find the
+                    one with sequential task cards, and another with open access task blocks. The goal was to find the
                     layout that best supports task engagement and ease of navigation.
                   </p>
                 </div>
@@ -805,10 +805,10 @@ export default function MonevoCaseStudy() {
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Users who preferred sequential tasks: 3 out of 7</li>
-                    <li>• Users who preferred open-access structure: 2 out of 7</li>
+                    <li>• Users who preferred open access structure: 2 out of 7</li>
                     <li>• 1 user liked both equally</li>
                     <li>
-                      • Final Decision: Moved forward with the sequential layout to guide users step-by-step and reduce
+                      • Final Decision: Moved forward with the sequential layout to guide users step by step and reduce
                       decision fatigue
                     </li>
                   </ul>
@@ -816,9 +816,9 @@ export default function MonevoCaseStudy() {
                 <div className="bg-purple-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "The step-by-step layout made me feel more focused."</li>
+                    <li>• "The step by step layout made me feel more focused."</li>
                     <li>• "I liked having everything visible, but I wasn't sure where to begin."</li>
-                    <li>• "The card-based version felt more like a journey, which helped me stay on track."</li>
+                    <li>• "The card based version felt more like a journey, which helped me stay on track."</li>
                   </ul>
                 </div>
               </div>
@@ -855,13 +855,13 @@ export default function MonevoCaseStudy() {
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <h4 className="text-gray-600 font-semibold text-base mb-1">Most-Spent Category in Reports</h4>
                   <p className="text-gray-600 space-y-2 text-base mb-3">
-                    Users wanted a clearer view of where they overspent, especially in monthly summaries. The original reports lacked visual focus, so we redesigned them to highlight the most-spent category using clear labels and visual cues.
+                    Users wanted a clearer view of where they overspent, especially in monthly summaries. The original reports lacked visual focus, so we redesigned them to highlight the most spent category using clear labels and visual cues.
                     “I want to know instantly where my money went the most.”
                   </p>
                   <h4 className="text-gray-600 font-semibold text-base mb-1">Smart Reminders via Chat Assistants</h4>
 
                   <p className="text-gray-600 space-y-2 text-base">
-                    Users often forgot to classify expenses or complete tasks without prompts. While push notifications were mostly ignored, in-app chat reminders felt more personal and effective. We added smart reminders triggered by behaviors like unclassified spending or inactivity, delivered through the chat assistant in a friendly tone.
+                    Users often forgot to classify expenses or complete tasks without prompts. While push notifications were mostly ignored, in app chat reminders felt more personal and effective. We added smart reminders triggered by behaviors like unclassified spending or inactivity, delivered through the chat assistant in a friendly tone.
                     “Push notifications feel robotic, but in-chat felt like someone was guiding me.”
                   </p>
                 </div>
@@ -875,7 +875,7 @@ export default function MonevoCaseStudy() {
                   <h4 className="text-gray-600 font-semibold text-base mb-1">Smart Reminders via Chat Assistants</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     We assume this feature will lead to higher task completion, more accurate expense categorization,
-                    and reduced user drop-off — especially in financial journey-based task flows.
+                    and reduced user drop off especially in financial journey-based task flows.
                   </p>
                 </div>
               </div>
@@ -903,7 +903,7 @@ export default function MonevoCaseStudy() {
                       <h4 className="font-semibold text-gray-900">Improved Task & Onboarding Completion</h4>
                     </div>
                     <p className="text-gray-600 text-base leading-relaxed">
-                     Usability tests showed a clear increase in task completion during onboarding. Step-by-step guidance and integrated task flows helped users complete more actions independently and with greater confidence.Task completion rate across core journeys reached  <strong>~85%</strong>, showing the effectiveness of progressive flows.
+                     Usability tests showed a clear increase in task completion during onboarding. Step by step guidance and integrated task flows helped users complete more actions independently and with greater confidence.Task completion rate across core journeys reached  <strong>~85%</strong>, showing the effectiveness of progressive flows.
                     </p>
                   </div>
 
@@ -928,7 +928,7 @@ export default function MonevoCaseStudy() {
                       <h4 className="font-semibold text-gray-900">Clarity Leads to Action</h4>
                     </div>
                     <p className="text-gray-600 text-base leading-relaxed">
-                      Users responded better to visual insights than raw data. Features like "Most-Spent Category" and
+                      Users responded better to visual insights than raw data. Features like "Most Spent Category" and
                       clear hierarchy helped users take action and stay engaged.
                     </p>
                   </div>
@@ -962,7 +962,7 @@ export default function MonevoCaseStudy() {
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">AI-powered spending predictions and alerts</span>
+                        <span className="text-gray-700 text-base">AI powered spending predictions and alerts</span>
                       </div>
                     </div>
                   </div>
