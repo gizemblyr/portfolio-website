@@ -1,5 +1,4 @@
-import { Clock, Users, Target, Settings, Shield, Layers, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { Clock, Users, Target, Settings, Shield, Layers } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -9,20 +8,20 @@ export default function RowndCaseStudy() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-slate-900 via-purple-950 to-slate-900">
+      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
                 Internal 3D Printing Machine Control Interface
               </h1>
-              <p className="text-lg md:text-xl text-purple-200 mb-6 md:mb-8">
+              <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
                 UI/UX improvements for a tablet-based precision machine control interface
               </p>
-              <p className="text-gray-300 mb-6 md:mb-8">
+              <p className="text-gray-700 mb-6 md:mb-8">
                 I worked on UI/UX improvements for an internal 3D printing machine control interface designed for tablet use. The product includes technical workflows such as axis control, machine movement, settings, system updates, safety alerts, and machine state feedback.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm text-purple-300">
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm text-gray-500">
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
                   <span>Internal Project</span>
@@ -39,13 +38,10 @@ export default function RowndCaseStudy() {
             </div>
             <div className="relative">
               <img
-                src="/images/rownd-control-panel.png"
+                src="/images/rownd-hero.png"
                 alt="Tablet-based machine control interface with axis values, machine controls, precision inputs, and system status areas"
-                className="w-full rounded-xl shadow-2xl"
+                className="w-full rounded-xl"
               />
-              <p className="text-sm text-purple-300 mt-3 text-center">
-                Tablet-based machine control interface with axis values, machine controls, precision inputs, and system status areas
-              </p>
             </div>
           </div>
         </div>
@@ -127,116 +123,101 @@ export default function RowndCaseStudy() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Key Improvements</h2>
 
           {/* Improvement 1: Control Panel */}
-          <div className="mb-12 md:mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <Settings className="w-5 h-5 text-purple-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900">Control Panel Improvements</h3>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  I refined the main control panel and updated the X, Y, and Z axis areas to support editable input states. I also worked on the top tab area and additional controls such as ATC and supporting machine control modules.
-                </p>
+          <div className="mb-16 md:mb-20">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                <Settings className="w-5 h-5 text-purple-600" />
               </div>
-              <div className="bg-slate-100 rounded-xl p-4">
-                <img
-                  src="/images/rownd-control-panel.png"
-                  alt="Editable axis controls, updated top area, and expanded machine control modules"
-                  className="w-full rounded-lg"
-                />
-                <p className="text-sm text-gray-500 mt-3 text-center">
-                  Editable axis controls, updated top area, and expanded machine control modules
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-900">Control Panel Improvements</h3>
             </div>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              I refined the main control panel and updated the X, Y, and Z axis areas to support editable input states. I also worked on the top tab area and additional controls such as ATC and supporting machine control modules.
+            </p>
+            <img
+              src="/images/rownd-control-panel.png"
+              alt="Editable axis controls, updated top area, and expanded machine control modules"
+              className="w-full rounded-xl"
+            />
+            <p className="text-sm text-gray-500 mt-3">
+              Editable axis controls, updated top area, and expanded machine control modules
+            </p>
           </div>
 
           {/* Improvement 2: Precision Input */}
-          <div className="mb-12 md:mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="order-2 lg:order-1 bg-slate-100 rounded-xl p-4">
-                <img
-                  src="/images/rownd-control-panel.png"
-                  alt="Precision inputs and action states for machine movement and value adjustments"
-                  className="w-full rounded-lg"
-                />
-                <p className="text-sm text-gray-500 mt-3 text-center">
-                  Precision inputs and action states for machine movement and value adjustments
-                </p>
+          <div className="mb-16 md:mb-20">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                <Target className="w-5 h-5 text-green-600" />
               </div>
-              <div className="order-1 lg:order-2">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Target className="w-5 h-5 text-green-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900">Precision Input and Action States</h3>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  I improved precision input components for values such as RPM, movement increments, and speed/feed settings. I also refined action states for controls like Go, Zero, Home, and Zero All.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-900">Precision Input and Action States</h3>
             </div>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              I improved precision input components for values such as RPM, movement increments, and speed/feed settings. I also refined action states for controls like Go, Zero, Home, and Zero All.
+            </p>
+            <img
+              src="/images/rownd-control-panel.png"
+              alt="Precision inputs and action states for machine movement and value adjustments"
+              className="w-full rounded-xl"
+            />
+            <p className="text-sm text-gray-500 mt-3">
+              Precision inputs and action states for machine movement and value adjustments
+            </p>
           </div>
 
           {/* Improvement 3: Settings and System Update */}
-          <div className="mb-12 md:mb-16">
-            <div className="flex items-center gap-3 mb-6 justify-center">
+          <div className="mb-16 md:mb-20">
+            <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                 <Layers className="w-5 h-5 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">Settings and System Update UX Flow</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto text-center mb-8">
+            <p className="text-gray-700 leading-relaxed mb-6">
               I worked on the Settings area and the full system update flow, including update availability, version details, download states, progress feedback, restart prompts, success messages, toast notifications, and final up-to-date confirmation. The goal was to make the update process clear and predictable.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-slate-100 rounded-xl p-4">
+            <div className="space-y-6">
+              <div>
                 <img
                   src="/images/rownd-settings-update.png"
                   alt="Settings and system update flow screens"
-                  className="w-full rounded-lg"
+                  className="w-full rounded-xl"
                 />
+                <p className="text-sm text-gray-500 mt-3">
+                  Settings and system update flow screens
+                </p>
               </div>
-              <div className="bg-slate-100 rounded-xl p-4">
+              <div>
                 <img
                   src="/images/rownd-update-flow.png"
                   alt="Version download, progress states, restart prompts, and success feedback"
-                  className="w-full rounded-lg"
+                  className="w-full rounded-xl"
                 />
+                <p className="text-sm text-gray-500 mt-3">
+                  Version download, progress states, restart prompts, and success feedback
+                </p>
               </div>
             </div>
-            <p className="text-sm text-gray-500 mt-4 text-center">
-              Settings and system update flow, including version download, progress states, restart prompts, success feedback, and toast messages
-            </p>
           </div>
 
           {/* Improvement 4: Safety and Warning States */}
-          <div className="mb-12 md:mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-red-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900">Safety and Warning States</h3>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  I worked on warning and safety dialogs such as Axis Limit Reached and Lid Is Open. These states were designed to explain machine-related issues clearly and guide the user toward the next safe action.
-                </p>
+          <div className="mb-16 md:mb-20">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                <Shield className="w-5 h-5 text-red-600" />
               </div>
-              <div className="bg-slate-100 rounded-xl p-4">
-                <img
-                  src="/images/rownd-safety-dialogs.png"
-                  alt="Safety and warning dialogs for machine-related states and edge conditions"
-                  className="w-full rounded-lg"
-                />
-                <p className="text-sm text-gray-500 mt-3 text-center">
-                  Safety and warning dialogs for machine-related states and edge conditions
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-900">Safety and Warning States</h3>
             </div>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              I worked on warning and safety dialogs such as Axis Limit Reached and Lid Is Open. These states were designed to explain machine-related issues clearly and guide the user toward the next safe action.
+            </p>
+            <img
+              src="/images/rownd-safety-dialogs.png"
+              alt="Safety and warning dialogs for machine-related states and edge conditions"
+              className="w-full rounded-xl"
+            />
+            <p className="text-sm text-gray-500 mt-3">
+              Safety and warning dialogs for machine-related states and edge conditions
+            </p>
           </div>
         </div>
       </section>
@@ -249,25 +230,28 @@ export default function RowndCaseStudy() {
             I helped create a compact design system foundation with color styles, reusable component states, and token structure. It included buttons, tabs, toggles, numeric steppers, editable inputs, keyboard patterns, toast messages, update cards, pop ups, and bottom sheets.
           </p>
 
-          <div className="space-y-6">
-            <div className="bg-slate-800 rounded-xl p-4 overflow-hidden">
+          <div className="space-y-8">
+            <div>
               <img
                 src="/images/rownd-ui-components.png"
                 alt="Compact component system with reusable states and technical control patterns"
-                className="w-full rounded-lg"
+                className="w-full rounded-xl"
               />
+              <p className="text-sm text-gray-400 mt-3">
+                Compact component system with reusable states and technical control patterns
+              </p>
             </div>
-            <div className="bg-slate-800 rounded-xl p-4 overflow-hidden">
+            <div>
               <img
                 src="/images/rownd-color-tokens.png"
                 alt="Color styles and token structure"
-                className="w-full rounded-lg"
+                className="w-full rounded-xl"
               />
+              <p className="text-sm text-gray-400 mt-3">
+                Color styles and token structure
+              </p>
             </div>
           </div>
-          <p className="text-sm text-gray-400 mt-4 text-center">
-            Compact component system with color styles, tokens, reusable states, and technical control patterns
-          </p>
         </div>
       </section>
 
@@ -281,45 +265,6 @@ export default function RowndCaseStudy() {
                 The next phase will include user interviews to better understand how users interact with the home screen and main control areas on tablet. Based on these insights, home screen improvements will continue through iterative design updates, usability testing, and refinement. Error states and edge cases will also be reviewed in more detail.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Navigation to other case studies */}
-      <section className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Explore More Work</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link href="/foodpanda-case-study" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="p-6">
-                  <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
-                    Foodpanda Menu Module
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-2">AI driven redesign for vendor management</p>
-                </div>
-              </div>
-            </Link>
-            <Link href="/monevo-case-study" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="p-6">
-                  <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
-                    Monevo Financial App
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-2">Gamified financial habits and wellness</p>
-                </div>
-              </div>
-            </Link>
-            <Link href="/foodpay-case-study" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="p-6">
-                  <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
-                    FoodPay Platform
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-2">Restaurant payment solution design</p>
-                </div>
-              </div>
-            </Link>
           </div>
         </div>
       </section>

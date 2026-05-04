@@ -230,7 +230,7 @@ export default function Portfolio() {
                   <img
                     src="/images/rownd-cover.png"
                     alt="Internal 3D Printing Machine Control Interface - Tablet-based precision machine control with axis values and RPM settings"
-                    className="w-full h-auto object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-3xl cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </Link>
               </div>
