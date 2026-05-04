@@ -8,40 +8,29 @@ export default function RowndCaseStudy() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
-                Internal 3D Printing Machine Control Interface
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
-                UI/UX improvements for a tablet-based precision machine control interface
-              </p>
-              <p className="text-gray-700 mb-6 md:mb-8">
-                I worked on UI/UX improvements for an internal 3D printing machine control interface designed for tablet use. The product includes technical workflows such as axis control, machine movement, settings, system updates, safety alerts, and machine state feedback.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm text-gray-500">
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span>Internal Project</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4" />
-                  <span>UI/UX Designer</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Target className="w-4 h-4" />
-                  <span>Technical Interface</span>
-                </div>
-              </div>
+      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+            Internal 3D Printing Machine Control Interface
+          </h1>
+          <p className="text-lg md:text-xl text-purple-200 mb-6 md:mb-8">
+            UI/UX improvements for a tablet-based precision machine control interface
+          </p>
+          <p className="text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto">
+            I worked on UI/UX improvements for an internal 3D printing machine control interface designed for tablet use. The product includes technical workflows such as axis control, machine movement, settings, system updates, safety alerts, and machine state feedback.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-purple-200">
+            <div className="flex items-center gap-2">
+              <Clock className="w-4 h-4" />
+              <span>Internal Project</span>
             </div>
-            <div className="relative">
-              <img
-                src="/images/rownd-hero.png"
-                alt="Tablet-based machine control interface with axis values, machine controls, precision inputs, and system status areas"
-                className="w-full max-w-sm mx-auto lg:max-w-md rounded-xl"
-              />
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4" />
+              <span>UI/UX Designer</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Target className="w-4 h-4" />
+              <span>Technical Interface</span>
             </div>
           </div>
         </div>
@@ -122,49 +111,28 @@ export default function RowndCaseStudy() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Key Improvements</h2>
 
-          {/* Improvement 1: Control Panel */}
+          {/* Improvement 1: Control Panel and Precision Input Combined */}
           <div className="mb-16 md:mb-20">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
                 <Settings className="w-5 h-5 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Control Panel Improvements</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Control Panel Improvements and Precision Input States</h3>
             </div>
             <p className="text-gray-700 leading-relaxed mb-6">
-              I refined the main control panel and updated the X, Y, and Z axis areas to support editable input states. I also worked on the top tab area and additional controls such as ATC and supporting machine control modules.
+              I refined the main control panel and updated the X, Y, and Z axis areas to support editable input states. I also worked on the top tab area and additional controls such as ATC and supporting machine control modules. I improved precision input components for values such as RPM, movement increments, and speed/feed settings. I also refined action states for controls like Go, Zero, Home, and Zero All.
             </p>
             <img
               src="/images/rownd-control-panel.png"
-              alt="Editable axis controls, updated top area, and expanded machine control modules"
+              alt="Editable axis controls, updated top area, expanded machine control modules, and precision input states"
               className="w-full rounded-xl"
             />
             <p className="text-sm text-gray-500 mt-3">
-              Editable axis controls, updated top area, and expanded machine control modules
+              Editable axis controls, updated top area, expanded machine control modules, and precision input states
             </p>
           </div>
 
-          {/* Improvement 2: Precision Input */}
-          <div className="mb-16 md:mb-20">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                <Target className="w-5 h-5 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900">Precision Input and Action States</h3>
-            </div>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              I improved precision input components for values such as RPM, movement increments, and speed/feed settings. I also refined action states for controls like Go, Zero, Home, and Zero All.
-            </p>
-            <img
-              src="/images/rownd-control-panel.png"
-              alt="Precision inputs and action states for machine movement and value adjustments"
-              className="w-full rounded-xl"
-            />
-            <p className="text-sm text-gray-500 mt-3">
-              Precision inputs and action states for machine movement and value adjustments
-            </p>
-          </div>
-
-          {/* Improvement 3: Settings and System Update */}
+          {/* Improvement 2: Settings and System Update */}
           <div className="mb-16 md:mb-20">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -199,7 +167,7 @@ export default function RowndCaseStudy() {
             </div>
           </div>
 
-          {/* Improvement 4: Safety and Warning States */}
+          {/* Improvement 3: Safety and Warning States */}
           <div className="mb-16 md:mb-20">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
