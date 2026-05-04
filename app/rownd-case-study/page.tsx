@@ -14,15 +14,13 @@ export default function RowndCaseStudy() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
-                Internal Machine Control Interface
+                Internal 3D Printing Machine Control Interface
               </h1>
               <p className="text-lg md:text-xl text-purple-200 mb-6 md:mb-8">
-                UI/UX improvements for a precision desktop manufacturing device
+                UI/UX improvements for a tablet-based precision machine control interface
               </p>
               <p className="text-gray-300 mb-6 md:mb-8">
-                I worked on UI/UX improvements for an internal machine control interface used on a precision desktop
-                manufacturing device. The product includes technical workflows such as axis control, machine movement,
-                settings, system updates, safety alerts, and machine state feedback.
+                I worked on UI/UX improvements for an internal 3D printing machine control interface designed for tablet use. The product includes technical workflows such as axis control, machine movement, settings, system updates, safety alerts, and machine state feedback.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm text-purple-300">
                 <div className="flex items-center gap-2">
@@ -42,9 +40,12 @@ export default function RowndCaseStudy() {
             <div className="relative">
               <img
                 src="/images/rownd-control-panel.png"
-                alt="Main control interface with axis values, machine controls, precision inputs, and system status areas"
+                alt="Tablet-based machine control interface with axis values, machine controls, precision inputs, and system status areas"
                 className="w-full rounded-xl shadow-2xl"
               />
+              <p className="text-sm text-purple-300 mt-3 text-center">
+                Tablet-based machine control interface with axis values, machine controls, precision inputs, and system status areas
+              </p>
             </div>
           </div>
         </div>
@@ -58,9 +59,7 @@ export default function RowndCaseStudy() {
             <div className="bg-gradient-to-br from-slate-50 to-purple-50 rounded-2xl p-6 md:p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
               <p className="text-gray-700 leading-relaxed">
-                My work focused on making the interface clearer, more editable, and easier to follow for touch based
-                use. Since the product controls a physical machine, the experience needed to support accuracy, quick
-                system feedback, and safer decision making during machine related actions.
+                My work focused on making the interface clearer, more editable, and easier to follow for tablet-based use. Since the product controls a physical machine, the experience needed to support accuracy, quick system feedback, and safer decision-making during machine-related actions.
               </p>
             </div>
 
@@ -90,7 +89,7 @@ export default function RowndCaseStudy() {
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
-                  Toast messages, popups, bottom sheets
+                  Toast messages, pop ups, and bottom sheets
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
@@ -116,10 +115,7 @@ export default function RowndCaseStudy() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Challenge</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              The interface included many technical controls, so the challenge was not only visual consistency. Users
-              needed clear feedback when entering values, triggering actions, updating the system, or seeing safety
-              warnings. The goal was to make complex machine control flows easier to understand without making the
-              interface feel heavier.
+              The interface included many technical controls, so the challenge was not only visual consistency. Users needed clear feedback when entering values, triggering actions, updating the system, or seeing safety warnings. The goal was to make complex machine-control flows easier to understand without making the interface feel heavier on a tablet screen.
             </p>
           </div>
         </div>
@@ -141,9 +137,7 @@ export default function RowndCaseStudy() {
                   <h3 className="text-xl font-semibold text-gray-900">Control Panel Improvements</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  I refined the main control panel and updated the X, Y, and Z axis areas to support editable input
-                  states. I also worked on the top tab area and additional controls such as ATC and supporting machine
-                  control modules.
+                  I refined the main control panel and updated the X, Y, and Z axis areas to support editable input states. I also worked on the top tab area and additional controls such as ATC and supporting machine control modules.
                 </p>
               </div>
               <div className="bg-slate-100 rounded-xl p-4">
@@ -180,8 +174,7 @@ export default function RowndCaseStudy() {
                   <h3 className="text-xl font-semibold text-gray-900">Precision Input and Action States</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  I improved precision input components for values such as RPM, movement increments, and speed/feed
-                  settings. I also refined action states for controls like Go, Zero, Home, and Zero All.
+                  I improved precision input components for values such as RPM, movement increments, and speed/feed settings. I also refined action states for controls like Go, Zero, Home, and Zero All.
                 </p>
               </div>
             </div>
@@ -196,9 +189,7 @@ export default function RowndCaseStudy() {
               <h3 className="text-xl font-semibold text-gray-900">Settings and System Update UX Flow</h3>
             </div>
             <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto text-center mb-8">
-              I worked on the Settings area and the full system update flow, including update availability, version
-              details, download states, progress feedback, restart prompts, success messages, toast notifications, and
-              final up to date confirmation. The goal was to make the update process clear and predictable.
+              I worked on the Settings area and the full system update flow, including update availability, version details, download states, progress feedback, restart prompts, success messages, toast notifications, and final up-to-date confirmation. The goal was to make the update process clear and predictable.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-slate-100 rounded-xl p-4">
@@ -217,8 +208,7 @@ export default function RowndCaseStudy() {
               </div>
             </div>
             <p className="text-sm text-gray-500 mt-4 text-center">
-              Settings and system update flow, including version download, progress states, restart prompts, success
-              feedback, and toast messages
+              Settings and system update flow, including version download, progress states, restart prompts, success feedback, and toast messages
             </p>
           </div>
 
@@ -233,8 +223,7 @@ export default function RowndCaseStudy() {
                   <h3 className="text-xl font-semibold text-gray-900">Safety and Warning States</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  I worked on warning and safety dialogs such as Axis Limit Reached and Lid Is Open. These states were
-                  designed to explain machine related issues clearly and guide the user toward the next safe action.
+                  I worked on warning and safety dialogs such as Axis Limit Reached and Lid Is Open. These states were designed to explain machine-related issues clearly and guide the user toward the next safe action.
                 </p>
               </div>
               <div className="bg-slate-100 rounded-xl p-4">
@@ -244,7 +233,7 @@ export default function RowndCaseStudy() {
                   className="w-full rounded-lg"
                 />
                 <p className="text-sm text-gray-500 mt-3 text-center">
-                  Safety and warning dialogs for machine related states and edge conditions
+                  Safety and warning dialogs for machine-related states and edge conditions
                 </p>
               </div>
             </div>
@@ -257,9 +246,7 @@ export default function RowndCaseStudy() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">Compact Design System</h2>
           <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto text-center mb-10">
-            I helped create a compact design system foundation with color styles, reusable component states, and token
-            structure. It included buttons, tabs, toggles, numeric steppers, editable inputs, keyboard patterns, toast
-            messages, update cards, popups, and bottom sheets.
+            I helped create a compact design system foundation with color styles, reusable component states, and token structure. It included buttons, tabs, toggles, numeric steppers, editable inputs, keyboard patterns, toast messages, update cards, pop ups, and bottom sheets.
           </p>
 
           <div className="space-y-6">
@@ -291,10 +278,7 @@ export default function RowndCaseStudy() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Next Steps</h2>
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8">
               <p className="text-gray-700 leading-relaxed">
-                The next phase will include user interviews to better understand how users interact with the home screen
-                and main control areas. Based on these insights, home screen improvements will continue through
-                iterative design updates, usability testing, and refinement. Error states and edge cases will also be
-                reviewed in more detail.
+                The next phase will include user interviews to better understand how users interact with the home screen and main control areas on tablet. Based on these insights, home screen improvements will continue through iterative design updates, usability testing, and refinement. Error states and edge cases will also be reviewed in more detail.
               </p>
             </div>
           </div>
