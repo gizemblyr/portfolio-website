@@ -40,7 +40,7 @@ export default function RowndCaseStudy() {
               <img
                 src="/images/rownd-hero.png"
                 alt="Tablet-based machine control interface with axis values, machine controls, precision inputs, and system status areas"
-                className="w-full rounded-xl"
+                className="w-full max-w-sm mx-auto lg:max-w-md rounded-xl"
               />
             </div>
           </div>
