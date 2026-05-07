@@ -47,7 +47,7 @@ export default function Blog() {
         </a>
 
                 <a
-          href="https://open.substack.com/pub/gizem466184/p/building-an-end-to-end-transfer-booking?r=edek1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+          href="https://open.substack.com/pub/gizemblyr/p/building-an-end-to-end-transfer-booking?r=edek1&utm_campaign=post&utm_medium=web"
           target="_blank"
           rel="noopener noreferrer"
           className="group block"
