@@ -223,38 +223,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Rownd Machine Control Interface Project */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
-              <div className="lg:col-span-5">
-                <Link href="/rownd-case-study">
-                  <img
-                    src="/images/rownd-cover.png"
-                    alt="Internal 3D Printing Machine Control Interface - Tablet-based precision machine control with axis values and RPM settings"
-                    className="w-full h-auto object-cover rounded-3xl cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </Link>
-              </div>
-              <div className="lg:col-span-7">
-                <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">PROJECT 07</p>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                  Internal 3D Printing Machine Control Interface
-                </h3>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Technical Interface</span>
-                  <span className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Tablet App</span>
-                  <span className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Design System</span>
-                </div>
-                <p className="text-gray-600 mb-6 text-base">
-                  UI/UX improvements for a tablet-based precision machine control interface, including axis control, settings, system updates, safety alerts, and a compact design system foundation.
-                </p>
-                <Link href="/rownd-case-study" className="block w-full sm:inline-flex sm:w-auto">
-                  <button className="w-full inline-flex items-center justify-center border border-gray-300 rounded-xl px-6 h-[50px] text-base font-medium text-gray-700 hover:bg-[#15171C] hover:text-[#B7FF87] hover:border-[#15171C] transition-colors">
-                    View Project
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </button>
-                </Link>
-              </div>
-            </div>
+       
           </div>
         </div>
       </section>
