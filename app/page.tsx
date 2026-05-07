@@ -223,18 +223,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Rownd Machine Control Interface Project */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
-              <div className="lg:col-span-5">
-                <Link href="/rownd-case-study">
-                  <img
-                    src="/images/rownd-cover.png"
-                    alt="Internal 3D Printing Machine Control Interface - Tablet-based precision machine control with axis values and RPM settings"
-                    className="w-full h-auto object-cover rounded-3xl cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </Link>
-           
-            </div>
+       
           </div>
         </div>
       </section>
