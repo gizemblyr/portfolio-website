@@ -61,7 +61,7 @@ export function Header() {
     <header
       className="fixed inset-x-0 top-0 z-50 bg-transparent px-4 pt-6 md:pt-8"
     >
-      <div className="mx-auto flex h-14 max-w-fit items-center gap-2 rounded-full border border-[#e5e3ef] bg-white/90 px-2 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:gap-3 md:px-3">
+      <div className="mx-auto flex h-14 max-w-fit items-center gap-2 rounded-[5px] border border-[#e5e3ef] bg-white/90 px-2 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:gap-3 md:px-3">
         {/* Logo */}
         <Link href="/#hero" className="sr-only">Gizem Bolayir</Link>
 
@@ -84,7 +84,7 @@ export function Header() {
                 key={item.label}
                 href={item.href}
                 onClick={item.onClick}
-                className={`relative rounded-full px-3 py-2 text-sm transition-colors ${
+                className={`relative rounded-[4px] px-3 py-2 text-sm transition-colors ${
                   item.label === "Me"
                     ? "bg-[#4f3df1] font-semibold text-white"
                     : "font-medium text-[#292747] hover:bg-[#f0eff8]"

@@ -381,7 +381,7 @@
   align-items: center;
   gap: 0.7rem;
   border: 1px solid rgba(35, 31, 82, 0.12);
-  border-radius: 999px;
+  border-radius: 5px;
   padding: 0.45rem 0.65rem 0.45rem 0.95rem;
   background: rgba(255, 255, 255, 0.86);
   box-shadow: 0 8px 24px rgba(60, 50, 120, 0.08);
@@ -539,7 +539,7 @@
   display: block;
   overflow: hidden;
   aspect-ratio: 1.48 / 1;
-  border-radius: 1.1rem;
+  border-radius: 0;
   background: transparent;
   cursor: pointer;
 }
