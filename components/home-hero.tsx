@@ -56,7 +56,14 @@ function InspectorText({
           {children}
         </Tag>
       </div>
-      <div className="hero-inspector" aria-hidden="true">
+      <div
+        className="hero-inspector"
+        aria-hidden="true"
+        style={{
+          "--hero-right-distance": `${metrics.right}px`,
+          "--hero-bottom-distance": `${metrics.bottom}px`,
+        } as React.CSSProperties}
+      >
         <span className="hero-inspector-label">&lt;{Tag} className=&quot;{className}&quot;&gt;</span>
         <span>{metrics.width}px × {metrics.height}px</span>
         <span className="hero-inspector-measure measure-right">{metrics.right}px</span>
