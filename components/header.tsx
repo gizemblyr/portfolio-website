@@ -52,9 +52,7 @@ export function Header() {
     if (isHomepage) {
       e.preventDefault()
       const blogSection = document.getElementById("blog")
-      if (blogSection) {
-        blogSection.scrollIntoView({ behavior: "smooth" })
-      }
+      if (blogSection) blogSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
