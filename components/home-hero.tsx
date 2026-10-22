@@ -43,22 +43,26 @@ function InspectorText({
       className={`hero-line ${isHovered ? "is-inspecting" : ""}`}
       style={{ "--hero-delay": delay } as React.CSSProperties}
     >
-      <Tag
-        ref={elementRef}
-        className={className}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onFocus={() => setIsHovered(true)}
-        onBlur={() => setIsHovered(false)}
-      >
-        {children}
-      </Tag>
+      <div className="hero-line-mask">
+        <Tag
+          ref={elementRef}
+          className={className}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onFocus={() => setIsHovered(true)}
+          onBlur={() => setIsHovered(false)}
+        >
+          {children}
+        </Tag>
+      </div>
       <div className="hero-inspector" aria-hidden="true">
         <span className="hero-inspector-label">&lt;{Tag} className=&quot;{className}&quot;&gt;</span>
         <span>{metrics.width}px × {metrics.height}px</span>
         <span>margin {metrics.marginTop} / {metrics.marginBottom}</span>
         <i className="hero-inspector-guide guide-top" />
         <i className="hero-inspector-guide guide-bottom" />
+        <i className="hero-inspector-handle handle-top-right" />
+        <i className="hero-inspector-handle handle-bottom-left" />
       </div>
     </div>
   )
@@ -82,6 +86,23 @@ export function HomeHero() {
           <span>SEE MY WORK</span>
           <span className="hero-arrow-button"><ArrowDown aria-hidden="true" /></span>
         </button>
+      </div>
+    </section>
+  )
+}
+
+export function WorkedWithMarquee() {
+  const brands = ["Delivery Hero", "Yemeksepeti", "Yemek.com", "NewAge", "Monevo", "AgeSA", "Doğuş Teknoloji"]
+
+  return (
+    <section className="worked-with" aria-label="Worked with">
+      <div className="worked-with-header">WORKED WITH</div>
+      <div className="worked-with-viewport">
+        <div className="worked-with-track">
+          {[...brands, ...brands].map((brand, index) => (
+            <span className="worked-with-brand" key={`${brand}-${index}`}>{brand}</span>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { HomeHero } from "@/components/home-hero"
+import { HomeHero, WorkedWithMarquee } from "@/components/home-hero"
 
 export default function Portfolio() {
   return (
@@ -12,6 +12,7 @@ export default function Portfolio() {
       <Header />
 
       <HomeHero />
+      <WorkedWithMarquee />
 
       {/* Selected Work Section */}
       <section id="work" className="py-12 md:py-16 px-4">

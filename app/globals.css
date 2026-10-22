@@ -142,15 +142,19 @@
   width: fit-content;
   max-width: 100%;
   overflow: visible;
-  animation: hero-line-reveal 820ms cubic-bezier(0.22, 1, 0.36, 1) var(--hero-delay) both;
 }
 
-.hero-line > h1,
-.hero-line > h2,
-.hero-line > p {
+.hero-line-mask {
+  overflow: hidden;
+}
+
+.hero-line-mask > h1,
+.hero-line-mask > h2,
+.hero-line-mask > p {
   position: relative;
   z-index: 1;
   margin: 0;
+  animation: hero-line-reveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) var(--hero-delay) both;
 }
 
 .hero-title {
@@ -263,6 +267,17 @@
 .guide-top { top: -0.55rem; }
 .guide-bottom { bottom: -0.55rem; }
 
+.hero-inspector-handle {
+  position: absolute;
+  width: 0.35rem;
+  height: 0.35rem;
+  border: 1px solid rgba(62, 190, 176, 0.7);
+  background: #fafafd;
+}
+
+.handle-top-right { top: -0.2rem; right: -0.2rem; }
+.handle-bottom-left { bottom: -0.2rem; left: -0.2rem; }
+
 .hero-line.is-inspecting .hero-inspector {
   opacity: 1;
   transform: scale(1);
@@ -328,6 +343,45 @@
 
 .resume-control svg { width: 1rem; height: 1rem; }
 
+.worked-with {
+  border-top: 1px solid rgba(35, 31, 82, 0.1);
+  background: #fafafd;
+  padding: 1.35rem 0 1.55rem;
+}
+
+.worked-with-header {
+  margin: 0 auto 1rem;
+  max-width: 1120px;
+  padding: 0 1.25rem;
+  color: #8b89a5;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+}
+
+.worked-with-viewport { overflow: hidden; }
+
+.worked-with-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: brand-marquee 26s linear infinite;
+}
+
+.worked-with-brand {
+  display: inline-flex;
+  min-width: 12rem;
+  justify-content: center;
+  color: #8b89a5;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.worked-with-viewport:hover .worked-with-track { animation-play-state: paused; }
+
 @keyframes hero-line-reveal {
   from { opacity: 0; transform: translateY(105%); }
   to { opacity: 1; transform: translateY(0); }
@@ -346,6 +400,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero-line { animation: none; }
+  .hero-line-mask > h1,
+  .hero-line-mask > h2,
+  .hero-line-mask > p { animation: none; }
+  .worked-with-track { animation: none; overflow-x: auto; }
   .hero-arrow-button, .hero-inspector { transition: none; }
 }
