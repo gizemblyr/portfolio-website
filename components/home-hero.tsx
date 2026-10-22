@@ -16,18 +16,19 @@ function InspectorText({
 }) {
   const elementRef = useRef<HTMLElement>(null)
   const [isHovered, setIsHovered] = useState(false)
-  const [metrics, setMetrics] = useState({ width: 0, height: 0, marginTop: "0px", marginBottom: "0px" })
+  const [metrics, setMetrics] = useState({ width: 0, height: 0, right: 0, bottom: 0 })
 
   const updateMetrics = useCallback(() => {
     const element = elementRef.current
     if (!element) return
     const rect = element.getBoundingClientRect()
     const styles = window.getComputedStyle(element)
+    const heroBounds = element.closest(".home-hero")?.getBoundingClientRect()
     setMetrics({
       width: Math.round(rect.width),
       height: Math.round(rect.height),
-      marginTop: styles.marginTop,
-      marginBottom: styles.marginBottom,
+      right: Math.max(0, Math.round((heroBounds?.right ?? rect.right) - rect.right)),
+      bottom: Math.max(0, Math.round((heroBounds?.bottom ?? rect.bottom) - rect.bottom)),
     })
   }, [])
 
@@ -58,11 +59,14 @@ function InspectorText({
       <div className="hero-inspector" aria-hidden="true">
         <span className="hero-inspector-label">&lt;{Tag} className=&quot;{className}&quot;&gt;</span>
         <span>{metrics.width}px × {metrics.height}px</span>
-        <span>margin {metrics.marginTop} / {metrics.marginBottom}</span>
-        <i className="hero-inspector-guide guide-top" />
+        <span className="hero-inspector-measure measure-right">{metrics.right}px</span>
+        <span className="hero-inspector-measure measure-bottom">{metrics.bottom}px</span>
+        <i className="hero-inspector-guide guide-right" />
         <i className="hero-inspector-guide guide-bottom" />
+        <i className="hero-inspector-handle handle-top-left" />
         <i className="hero-inspector-handle handle-top-right" />
         <i className="hero-inspector-handle handle-bottom-left" />
+        <i className="hero-inspector-handle handle-bottom-right" />
       </div>
     </div>
   )
@@ -96,7 +100,7 @@ export function WorkedWithMarquee() {
 
   return (
     <section className="worked-with" aria-label="Worked with">
-      <div className="worked-with-header">WORKED WITH</div>
+      <div className="worked-with-header">TRUSTED BY TEAMS AT</div>
       <div className="worked-with-viewport">
         <div className="worked-with-track">
           {[...brands, ...brands].map((brand, index) => (
