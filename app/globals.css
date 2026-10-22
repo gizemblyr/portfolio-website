@@ -540,12 +540,13 @@
   overflow: hidden;
   aspect-ratio: 1.48 / 1;
   border-radius: 1.1rem;
-  background: #ececf4;
+  background: transparent;
   cursor: pointer;
 }
 
 .editorial-project-cover img {
   object-fit: contain;
+  object-position: center;
   transition: transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
