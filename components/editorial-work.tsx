@@ -99,13 +99,9 @@ export function EditorialWork() {
           <p>from full-time roles</p>
         </header>
         <div className="editorial-projects">
-          <Project project={projects[0]} />
-          <div className="editorial-project-pair">
-            <Project project={projects[1]} />
-            <Project project={projects[2]} />
-          </div>
-          <Project project={projects[3]} />
-          <Project project={projects[4]} />
+          {projects.map((project) => (
+            <Project key={project.number} project={project} />
+          ))}
         </div>
       </div>
     </section>

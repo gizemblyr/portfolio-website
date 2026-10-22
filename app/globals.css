@@ -517,51 +517,46 @@
 }
 
 .editorial-projects {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(7rem, 12vw, 11rem);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(4rem, 6vw, 6.5rem) clamp(1.25rem, 2.8vw, 2.75rem);
 }
 
 .editorial-project {
   min-width: 0;
 }
 
-.editorial-project-pair {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1.5rem, 4vw, 3.5rem);
+.editorial-project:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.editorial-project:nth-child(n + 3) {
+  grid-column: span 2;
 }
 
 .editorial-project-cover {
   position: relative;
   display: block;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1.48 / 1;
+  border-radius: 1.1rem;
   background: #ececf4;
   cursor: pointer;
 }
 
-.editorial-project-feature .editorial-project-cover {
-  aspect-ratio: 1.95 / 1;
-}
-
-.editorial-project-compact {
-  width: min(100%, 56rem);
-  margin-inline: auto;
-}
-
-.editorial-project-compact .editorial-project-cover {
-  aspect-ratio: 2.15 / 1;
-}
-
 .editorial-project-cover img {
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .editorial-project-cover:hover img,
 .editorial-project-cover:focus-visible img {
   transform: scale(1.02);
+}
+
+.editorial-project-cover:focus-visible {
+  outline: 2px solid #4f3df1;
+  outline-offset: 0.35rem;
 }
 
 .editorial-project-cursor {
@@ -635,11 +630,16 @@
   to { opacity: 0.92; transform: translateY(-1.75rem); }
 }
 
+@media (max-width: 1023px) {
+  .editorial-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .editorial-project:nth-child(n) { grid-column: span 1; }
+}
+
 @media (max-width: 767px) {
   .editorial-work { padding-inline: 1rem; }
-  .editorial-project-pair { grid-template-columns: 1fr; gap: 5.5rem; }
-  .editorial-project-feature .editorial-project-cover,
-  .editorial-project-compact .editorial-project-cover { aspect-ratio: 1.2 / 1; }
+  .editorial-projects { grid-template-columns: 1fr; gap: 4.5rem; }
+  .editorial-project:nth-child(n) { grid-column: span 1; }
+  .editorial-project-cover { aspect-ratio: 1.15 / 1; }
   .editorial-project-cursor { display: none; }
   .hero-scroll-content { animation: none; }
 }
