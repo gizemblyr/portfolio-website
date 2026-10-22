@@ -329,19 +329,25 @@
 .resume-control svg { width: 1rem; height: 1rem; }
 
 .worked-with {
+  display: grid;
+  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
   border-top: 1px solid rgba(35, 31, 82, 0.1);
+  border-bottom: 1px solid rgba(35, 31, 82, 0.1);
   background: #fafafd;
-  padding: 1.35rem 0 1.55rem;
+  padding: 1.7rem 0;
 }
 
 .worked-with-header {
-  margin: 0 auto 1rem;
-  max-width: 1120px;
-  padding: 0 1.25rem;
+  padding-left: max(1.25rem, calc((100vw - 1120px) / 2 + 1.25rem));
   color: #8b89a5;
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.62rem;
   letter-spacing: 0.16em;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 .worked-with-viewport { overflow: hidden; }
@@ -350,19 +356,28 @@
   display: flex;
   width: max-content;
   align-items: center;
-  animation: brand-marquee 26s linear infinite;
+  animation: brand-marquee 28s linear infinite;
 }
 
 .worked-with-brand {
   display: inline-flex;
-  min-width: 12rem;
+  width: 10rem;
+  height: 2.2rem;
+  align-items: center;
   justify-content: center;
-  color: #8b89a5;
-  font-family: var(--font-geist-sans), sans-serif;
-  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  white-space: nowrap;
+  margin-right: 3.5rem;
+  flex: 0 0 auto;
+}
+
+.worked-with-brand img {
+  display: block;
+  width: auto;
+  max-width: 9.5rem;
+  height: 2rem;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.58;
+  mix-blend-mode: multiply;
 }
 
 .worked-with-viewport:hover .worked-with-track { animation-play-state: paused; }

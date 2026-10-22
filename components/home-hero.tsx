@@ -108,15 +108,38 @@ export function HomeHero() {
 }
 
 export function WorkedWithMarquee() {
-  const brands = ["Delivery Hero", "Yemeksepeti", "Yemek.com", "NewAge", "Monevo", "AgeSA", "Doğuş Teknoloji"]
+  const brands = [
+    {
+      name: "Delivery Hero",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_23%20PM-5%202-6ScrBXFdstckMSbfUeVUejfPMyMMdn.png",
+    },
+    {
+      name: "Yemeksepeti",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_26%20PM-7%202-rWN48QucSmLO3AL85o8nC2BqWpiMF0.png",
+    },
+    {
+      name: "Yemek.com",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_24%20PM-6%202-4QIaw9CnitGLnvV3uBQ77nFVY55iW4.png",
+    },
+    {
+      name: "NewAge",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_22%20PM-4%202-Y1csMqPI0UAltJGU1JqHxZQOYMYPhf.png",
+    },
+    {
+      name: "Monevo",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_17%20PM-1%202-mQ3zBZGzJ1MQCP9j9AMkqwscjFaCNn.png",
+    },
+  ]
 
   return (
-    <section className="worked-with" aria-label="Worked with">
+    <section className="worked-with" aria-label="Trusted by teams at">
       <div className="worked-with-header">TRUSTED BY TEAMS AT</div>
       <div className="worked-with-viewport">
         <div className="worked-with-track">
           {[...brands, ...brands].map((brand, index) => (
-            <span className="worked-with-brand" key={`${brand}-${index}`}>{brand}</span>
+            <div className="worked-with-brand" key={`${brand.name}-${index}`}>
+              <img src={brand.src} alt={brand.name} />
+            </div>
           ))}
         </div>
       </div>
