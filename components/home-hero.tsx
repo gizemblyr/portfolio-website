@@ -42,10 +42,15 @@ function InspectorText({
     <div
       className={`hero-line ${isHovered ? "is-inspecting" : ""}`}
       style={{ "--hero-delay": delay } as React.CSSProperties}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
-      <Tag ref={elementRef} className={className}>
+      <Tag
+        ref={elementRef}
+        className={className}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onFocus={() => setIsHovered(true)}
+        onBlur={() => setIsHovered(false)}
+      >
         {children}
       </Tag>
       <div className="hero-inspector" aria-hidden="true">
