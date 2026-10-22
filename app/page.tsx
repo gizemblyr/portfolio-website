@@ -1,57 +1,17 @@
 "use client"
 
-import { ArrowRight, ArrowDown } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { HomeHero } from "@/components/home-hero"
 
 export default function Portfolio() {
-  const handleViewProjects = () => {
-    const workSection = document.getElementById("work")
-    if (workSection) {
-      workSection.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section id="hero" className="bg-[#15171C] pt-20 md:pt-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-24 md:py-32 lg:py-40">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-16 items-center">
-            {/* Left: Text + CTA */}
-            <div className="flex flex-col gap-6 md:gap-8 max-w-[600px]">
-              <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white leading-snug mb-1 md:mb-3">{"Hi, I'm Gizem,"}</p>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#B7FF87] leading-snug mb-2 md:mb-5">
-                  <span className="block mb-1 md:mb-3">{"Product &"}</span>
-                  <span className="block">{"UX/UI Designer"}</span>
-                </h1>
-                <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white leading-snug mb-1 md:mb-4 mt-0">{"with an Engineering Mindset"}</p>
-              </div>
-
-              <button
-                onClick={handleViewProjects}
-                className="group inline-flex items-center gap-3 border border-gray-600 px-8 h-[50px] text-base font-medium text-white hover:bg-[#15171C] hover:border-[#B7FF87] hover:text-[#B7FF87] transition-all duration-300 w-fit mt-3 rounded-xl"
-              >
-                View Projects
-                <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-              </button>
-            </div>
-
-            {/* Right: Illustration */}
-            <div className="flex items-end justify-end flex-shrink-0">
-              <img
-                src="/images/hero-line-illustration.png"
-                alt="Line art illustration of a designer working at a desk with a laptop"
-                className="w-full max-w-[520px] h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeHero />
 
       {/* Selected Work Section */}
       <section id="work" className="py-12 md:py-16 px-4">
