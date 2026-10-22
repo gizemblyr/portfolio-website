@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { HomeHero, WorkedWithMarquee } from "@/components/home-hero"
+import { EditorialWork } from "@/components/editorial-work"
 
 export default function Portfolio() {
   return (
@@ -13,9 +14,10 @@ export default function Portfolio() {
 
       <HomeHero />
       <WorkedWithMarquee />
+      <EditorialWork />
 
-      {/* Selected Work Section */}
-      <section id="work" className="py-12 md:py-16 px-4">
+      {/* Legacy project markup retained for detail-page compatibility. */}
+      <section className="legacy-work py-12 md:py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-16 md:mb-20">Selected Work</h2>
           <div className="space-y-16 md:space-y-24">

@@ -99,7 +99,7 @@ export function HomeHero() {
           </span>
         ))}
       </div>
-      <div className="home-hero-content">
+      <div className="home-hero-content hero-scroll-content">
         <div className="hero-copy">
           <InspectorText as="h1" className="hero-title" delay="0ms">Hi, I&apos;m Gizem.</InspectorText>
           <InspectorText as="h2" className="hero-role" delay="110ms">Product Designer &amp; Builder.</InspectorText>
