@@ -22,7 +22,6 @@ function InspectorText({
     const element = elementRef.current
     if (!element) return
     const rect = element.getBoundingClientRect()
-    const styles = window.getComputedStyle(element)
     const heroBounds = element.closest(".home-hero")?.getBoundingClientRect()
     setMetrics({
       width: Math.round(rect.width),
@@ -35,8 +34,14 @@ function InspectorText({
   useEffect(() => {
     if (!isHovered) return
     updateMetrics()
+    const observer = new ResizeObserver(updateMetrics)
+    const element = elementRef.current
+    if (element) observer.observe(element)
     window.addEventListener("resize", updateMetrics)
-    return () => window.removeEventListener("resize", updateMetrics)
+    return () => {
+      observer.disconnect()
+      window.removeEventListener("resize", updateMetrics)
+    }
   }, [isHovered, updateMetrics])
 
   return (

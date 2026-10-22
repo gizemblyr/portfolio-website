@@ -217,7 +217,17 @@
   transform: translateX(50%);
 }
 
-  .hero-inspector-measure { font-size: 0.58rem !important; }
+  .hero-inspector > .hero-inspector-measure {
+  z-index: 1;
+  display: block;
+  padding: 0.18rem 0.34rem;
+  border: 1px solid rgba(16, 61, 58, 0.18);
+  border-radius: 0.16rem;
+  background: #5ad0c0 !important;
+  color: #103d3a !important;
+  font-size: 0.58rem !important;
+  line-height: 1;
+  }
   .measure-right {
   top: 50%;
   left: calc(100% + (var(--hero-right-distance) / 2));
@@ -225,7 +235,7 @@
   }
   .measure-bottom {
   top: calc(100% + (var(--hero-bottom-distance) / 2));
-  left: 50%;
+  left: calc(100% - 1.5rem);
   transform: translate(-50%, -50%);
   }
   
@@ -241,7 +251,7 @@
   }
   .guide-bottom {
   top: 100%;
-  left: 50%;
+  left: calc(100% - 1.5rem);
   width: 1px;
   height: var(--hero-bottom-distance);
   }
@@ -369,7 +379,6 @@
   .home-hero-content { padding-inline: 1rem; }
   .hero-role { margin-top: 1rem !important; }
   .hero-description { max-width: 22rem; margin-top: 1.25rem !important; }
-  .hero-inspector { inset-inline: -0.35rem; }
   .hero-inspector > span:nth-child(3) { display: none; }
 }
 
