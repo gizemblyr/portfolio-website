@@ -14,7 +14,7 @@ function InspectorText({
   children: React.ReactNode
   delay: string
 }) {
-  const elementRef = useRef<HTMLElement>(null)
+  const elementRef = useRef<HTMLSpanElement>(null)
   const [isHovered, setIsHovered] = useState(false)
   const [metrics, setMetrics] = useState({ width: 0, height: 0, right: 0, bottom: 0 })
 
@@ -51,14 +51,13 @@ function InspectorText({
     >
       <div className="hero-line-mask">
         <Tag
-          ref={elementRef}
           className={className}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onFocus={() => setIsHovered(true)}
           onBlur={() => setIsHovered(false)}
         >
-          {children}
+          <span ref={elementRef} className="hero-text-measure">{children}</span>
         </Tag>
       </div>
       <div
@@ -92,6 +91,14 @@ export function HomeHero() {
   return (
     <section id="hero" className="home-hero">
       <div className="home-hero-grid" aria-hidden="true" />
+      <div className="hero-grid-zones" aria-hidden="true">
+        {[7, 8, 9].map((column) => (
+          <span key={column} className="hero-grid-zone" style={{ "--zone-column": column } as React.CSSProperties}>
+            <span>Frame · Col {column}–{column + 1}</span>
+            <i /><i /><i /><i />
+          </span>
+        ))}
+      </div>
       <div className="home-hero-content">
         <div className="hero-copy">
           <InspectorText as="h1" className="hero-title" delay="0ms">Hi, I&apos;m Gizem.</InspectorText>
@@ -136,7 +143,7 @@ export function WorkedWithMarquee() {
       <div className="worked-with-viewport">
         <div className="worked-with-track">
           {[...brands, ...brands].map((brand, index) => (
-            <div className="worked-with-brand" key={`${brand.name}-${index}`}>
+            <div className={`worked-with-brand brand-${index % brands.length}`} key={`${brand.name}-${index}`}>
               <img src={brand.src} alt={brand.name} />
             </div>
           ))}
