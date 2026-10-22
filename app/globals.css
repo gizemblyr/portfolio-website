@@ -329,10 +329,6 @@
 .resume-control svg { width: 1rem; height: 1rem; }
 
 .worked-with {
-  display: grid;
-  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
-  align-items: center;
-  gap: 1.5rem;
   overflow: hidden;
   border-top: 1px solid rgba(35, 31, 82, 0.1);
   border-bottom: 1px solid rgba(35, 31, 82, 0.1);
@@ -340,47 +336,54 @@
   padding: 1.7rem 0;
 }
 
-.worked-with-header {
-  padding-left: max(1.25rem, calc((100vw - 1120px) / 2 + 1.25rem));
-  color: #8b89a5;
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.16em;
-  line-height: 1.4;
-  white-space: nowrap;
+.worked-with-viewport {
+  overflow: hidden;
+  width: 100%;
 }
-
-.worked-with-viewport { overflow: hidden; }
 
 .worked-with-track {
   display: flex;
   width: max-content;
   align-items: center;
-  animation: brand-marquee 28s linear infinite;
+  animation: brand-marquee 26s linear infinite;
+  will-change: transform;
 }
 
 .worked-with-brand {
   display: inline-flex;
-  width: 10rem;
+  width: 11rem;
   height: 2.2rem;
   align-items: center;
   justify-content: center;
-  margin-right: 3.5rem;
+  margin-right: 4rem;
   flex: 0 0 auto;
 }
 
 .worked-with-brand img {
   display: block;
   width: auto;
-  max-width: 9.5rem;
-  height: 2rem;
+  max-width: 12rem;
+  height: 2.2rem;
   object-fit: contain;
+  transform: scale(1.75);
   filter: grayscale(1);
   opacity: 0.58;
   mix-blend-mode: multiply;
 }
 
 .worked-with-viewport:hover .worked-with-track { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .worked-with-track {
+    animation: none;
+    transform: none;
+  }
+}
+
+@keyframes brand-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 @keyframes hero-line-reveal {
   from { opacity: 0; transform: translateY(105%); }

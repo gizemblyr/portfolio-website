@@ -118,22 +118,21 @@ export function WorkedWithMarquee() {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_26%20PM-7%202-rWN48QucSmLO3AL85o8nC2BqWpiMF0.png",
     },
     {
-      name: "Yemek.com",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_24%20PM-6%202-4QIaw9CnitGLnvV3uBQ77nFVY55iW4.png",
-    },
-    {
       name: "NewAge",
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_22%20PM-4%202-Y1csMqPI0UAltJGU1JqHxZQOYMYPhf.png",
     },
     {
-      name: "Monevo",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_17%20PM-1%202-mQ3zBZGzJ1MQCP9j9AMkqwscjFaCNn.png",
+      name: "AgeSA",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Minimal%20Gray%20AGESA%20Logo%20on%20Off-White%202-OP0MbAPdIIcaN9mrEXIrnOX7L1wP1l.png",
+    },
+    {
+      name: "Doğuş Teknoloji",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_21%20PM-3%202-xBfNO1f18qYo81Z4M3mhATAZWiMz9t.png",
     },
   ]
 
   return (
-    <section className="worked-with" aria-label="Trusted by teams at">
-      <div className="worked-with-header">TRUSTED BY TEAMS AT</div>
+    <section className="worked-with" aria-label="Selected companies">
       <div className="worked-with-viewport">
         <div className="worked-with-track">
           {[...brands, ...brands].map((brand, index) => (
