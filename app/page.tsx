@@ -6,6 +6,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { HomeHero, WorkedWithMarquee } from "@/components/home-hero"
 import { EditorialWork } from "@/components/editorial-work"
+import { EditorialBlog } from "@/components/editorial-blog"
 
 export default function Portfolio() {
   return (
@@ -15,6 +16,7 @@ export default function Portfolio() {
       <HomeHero />
       <WorkedWithMarquee />
       <EditorialWork />
+      <EditorialBlog />
 
       {/* Legacy project markup retained for detail-page compatibility. */}
       <section className="legacy-work py-12 md:py-16 px-4">

@@ -48,11 +48,21 @@ export function Header() {
     }
   }
 
+  const handleBlogClick = (e: React.MouseEvent) => {
+    if (isHomepage) {
+      e.preventDefault()
+      const blogSection = document.getElementById("blog")
+      if (blogSection) {
+        blogSection.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+  }
+
   const navItems = [
     { label: "Me", href: "/#hero", onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }) },
     { label: "Works", href: "/#work", onClick: handleWorkClick },
     { label: "Experience", href: "/#experience" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "/#blog", onClick: handleBlogClick },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ]
@@ -73,7 +83,7 @@ export function Header() {
                 ? pathname === "/about"
                 : item.href === "/resume"
                   ? pathname === "/resume"
-                  : item.href === "/blog"
+                  : item.label === "Blog"
                     ? pathname === "/blog"
                     : item.href === "/contact"
                       ? pathname === "/contact"
@@ -125,7 +135,7 @@ export function Header() {
                 ? pathname === "/about"
                 : item.href === "/resume"
                   ? pathname === "/resume"
-                  : item.href === "/blog"
+                  : item.label === "Blog"
                     ? pathname === "/blog"
                     : item.href === "/contact"
                       ? pathname === "/contact"
