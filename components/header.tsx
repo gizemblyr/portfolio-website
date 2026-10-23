@@ -59,7 +59,6 @@ export function Header() {
   const navItems = [
     { label: "Me", href: "/#hero", onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }) },
     { label: "Works", href: "/#work", onClick: handleWorkClick },
-    { label: "Experience", href: "/#experience" },
     { label: "Blog", href: "/#blog", onClick: handleBlogClick },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -69,7 +68,7 @@ export function Header() {
     <header
       className="fixed inset-x-0 top-0 z-50 bg-transparent px-4 pt-6 md:pt-8"
     >
-      <div className="mx-auto flex h-14 max-w-fit items-center gap-2 rounded-[5px] border border-[#e5e3ef] bg-white/90 px-2 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:gap-3 md:px-3">
+      <div className="mx-auto flex h-14 w-full max-w-fit items-center justify-end gap-2 rounded-[5px] md:w-fit md:justify-normal border border-[#e5e3ef] bg-white/90 px-2 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:gap-3 md:px-3">
         {/* Logo */}
         <Link href="/#hero" className="sr-only">Gizem Bolayir</Link>
 
@@ -161,6 +160,13 @@ export function Header() {
               </Link>
             )
           })}
+          <a
+            href="/resume"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-lg font-medium text-gray-700 transition-all duration-300"
+          >
+            Resume
+          </a>
         </nav>
       </div>
 
