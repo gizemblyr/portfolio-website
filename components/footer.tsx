@@ -1,63 +1,51 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { useState } from "react"
+import { ArrowUpRight, Download } from "lucide-react"
+
+const navigation = [
+  { label: "Works", id: "work" },
+  { label: "Blog", id: "blog" },
+  { label: "About", id: "about" },
+  { label: "Tools", id: "tools" },
+  { label: "Contact", id: "contact" },
+]
+
+function goToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+  window.dispatchEvent(new CustomEvent("portfolio-section-change", { detail: id }))
+}
 
 export function Footer() {
-  const pathname = usePathname()
-  const isHomepage = pathname === "/"
-
-  const handleWorkClick = (e: React.MouseEvent) => {
-    if (isHomepage) {
-      e.preventDefault()
-      const workSection = document.getElementById("work")
-      if (workSection) {
-        workSection.scrollIntoView({ behavior: "smooth" })
-      }
-    }
-  }
-
   return (
-    <footer className="bg-[#15171C] py-12 md:py-16 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
-            <img
-              src="/images/logo-signature.png"
-              alt="Gizem Bolayir"
-              className="h-10 md:h-14 w-auto"
-            />
-          </Link>
-
-          {/* Navigation */}
-          <nav className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-            <Link
-              href="/#work"
-              onClick={handleWorkClick}
-              className="text-base text-gray-400 hover:text-white transition-colors"
-            >
-              Work
-            </Link>
-            <Link href="/resume" className="text-base text-gray-400 hover:text-white transition-colors">
-              Resume
-            </Link>
-            <Link href="/blog" className="text-base text-gray-400 hover:text-white transition-colors">
-              Blog
-            </Link>
-            <Link href="/about" className="text-base text-gray-400 hover:text-white transition-colors">
-              About
-            </Link>
-            <Link href="/contact" className="text-base text-gray-400 hover:text-white transition-colors">
-              Contact Me
-            </Link>
-          </nav>
+    <footer className="site-footer">
+      <div className="site-footer-inner">
+        <div className="site-footer-grid">
+          <div>
+            <button type="button" className="brand-wordmark footer-brand" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>giz<span>.</span></button>
+            <p className="footer-kicker">PRODUCT DESIGNER &amp; BUILDER</p>
+            <p className="footer-description">Designing thoughtful digital products<br className="hidden sm:block" /> across design, AI, and technology.</p>
+          </div>
+          <div>
+            <p className="footer-heading">Navigation</p>
+            <nav className="footer-link-list" aria-label="Footer navigation">
+              {navigation.map((item) => <button key={item.id} type="button" onClick={() => goToSection(item.id)}>{item.label}</button>)}
+            </nav>
+          </div>
+          <div>
+            <p className="footer-heading">Elsewhere</p>
+            <div className="footer-link-list">
+              <a href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a>
+              <a href="https://github.com/gizembolayir" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a>
+              <a href="https://medium.com/@gizembolayir" target="_blank" rel="noreferrer">Medium <ArrowUpRight size={14} /></a>
+              <a href="https://gizembolayir.substack.com" target="_blank" rel="noreferrer">Substack <ArrowUpRight size={14} /></a>
+              <a href="/resume">Resume <Download size={14} /></a>
+            </div>
+          </div>
         </div>
-
-        <div className="mt-10 pt-8 border-t border-gray-800 flex items-center justify-center">
-          <p className="text-sm text-gray-500">
-            {"Gizem Bolayir. All rights reserved."}
-          </p>
+        <div className="site-footer-bottom">
+          <span>© 2026 Gizem Bolayır</span>
+          <span>Designed &amp; built with curiosity.</span>
         </div>
       </div>
     </footer>

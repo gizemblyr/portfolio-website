@@ -78,7 +78,7 @@ export function EditorialAboutTools() {
         </div>
       </section>
 
-      <section id="connect" className="editorial-connect-section" aria-label="Let's connect">
+      <section id="contact" className="editorial-connect-section" aria-label="Let's connect">
         <div className="editorial-section-inner editorial-connect-inner">
           <div>
             <h2>Let&apos;s Connect</h2>

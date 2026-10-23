@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.brand-wordmark { border: 0; background: transparent; color: #15171c; font-family: Georgia, 'Times New Roman', serif; font-size: 2.75rem; font-weight: 500; letter-spacing: -0.09em; line-height: 0.8; cursor: pointer; }
+.brand-wordmark span { color: #4f3df1; }
+.header-nav-link { position: relative; border: 0; background: transparent; color: #292747; font-size: 14px; font-weight: 500; padding: 0.7rem 0; transition: color 250ms ease; cursor: pointer; }
+.header-nav-link:hover, .header-nav-link.is-active { color: #4f3df1; }
+.header-nav-link.is-active::after { content: ''; position: absolute; left: 50%; bottom: 0.25rem; width: 18px; height: 2px; border-radius: 99px; background: #4f3df1; transform: translateX(-50%); }
+.resume-control { height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border-radius: 5px; background: #4f3df1; color: white; font-size: 14px; transition: background 250ms ease; }
+.resume-control:hover { background: #4030d8; }
+.mobile-backdrop { position: fixed; inset: 0; z-index: 190; background: rgba(20, 18, 45, 0.28); opacity: 0; pointer-events: none; transition: opacity 300ms ease; }
+.mobile-backdrop.is-open { opacity: 1; pointer-events: auto; }
+.mobile-drawer { position: fixed; right: 0; top: 0; z-index: 200; width: min(85vw, 380px); height: 100dvh; padding: 1.5rem 1.75rem; border-left: 1px solid #e1dfe8; background: #fff; box-shadow: -16px 0 40px rgba(20,18,45,0.12); transform: translateX(100%); transition: transform 350ms cubic-bezier(.22,1,.36,1); }
+.mobile-drawer.is-open { transform: translateX(0); }
+.mobile-nav-link { position: relative; border: 0; background: transparent; color: #292747; font-size: 1.25rem; font-weight: 500; cursor: pointer; }
+.mobile-nav-link:hover, .mobile-nav-link.is-active { color: #4f3df1; }
+.mobile-nav-link.is-active::after { content: ''; position: absolute; left: 0; bottom: -0.35rem; width: 100%; height: 2px; border-radius: 99px; background: #4f3df1; }
+.site-footer { background: #f3f3f5; border-top: 1px solid #dfdee6; padding: 4rem 1.25rem 2rem; color: #15171c; }
+.site-footer-inner { width: min(100%, 1285px); margin: 0 auto; }
+.site-footer-grid { display: grid; grid-template-columns: 1.35fr 0.75fr 0.75fr; gap: 4rem; padding: 0 3.25rem 4rem; }
+.footer-brand { display: block; margin-bottom: 1.5rem; }
+.footer-kicker, .footer-heading { color: #77758c; font-size: 12px; letter-spacing: 0.18em; }
+.footer-kicker { margin: 0 0 1.35rem; }
+.footer-heading { margin: 0 0 1.25rem; }
+.footer-description { color: #6d6a80; font-size: 16px; line-height: 1.55; }
+.footer-link-list { display: grid; justify-items: start; gap: 0.72rem; }
+.footer-link-list a, .footer-link-list button { display: inline-flex; align-items: center; gap: 0.35rem; border: 0; background: transparent; color: #292747; font-size: 16px; padding: 0; transition: color 250ms ease; cursor: pointer; }
+.footer-link-list a:hover, .footer-link-list button:hover { color: #4f3df1; }
+.site-footer-bottom { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid #dedde6; padding: 1.5rem 3.25rem 0; color: #88869a; font-size: 14px; }
+@media (max-width: 767px) { .site-header { padding-inline: 1rem; } .site-header-shell { border-color: transparent; background: transparent; box-shadow: none; padding-inline: 0; } .site-footer { padding-inline: 1rem; } .site-footer-grid { grid-template-columns: 1fr; gap: 2.75rem; padding: 0 0 3rem; } .site-footer-bottom { flex-direction: column; padding-inline: 0; } }
+
 /* Keep the global stylesheet as a single Next-managed CSS entrypoint. */
 
 @layer utilities {
@@ -378,17 +406,8 @@
   outline-offset: 0.5rem;
 }
 
-.resume-control {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-  border: 1px solid rgba(35, 31, 82, 0.12);
-  border-radius: 5px;
-  padding: 0.45rem 0.65rem 0.45rem 0.95rem;
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: 0 8px 24px rgba(60, 50, 120, 0.08);
-}
-
+.resume-control { display: inline-flex; height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border: 0; border-radius: 5px; padding: 0 1rem; background: #4f3df1; box-shadow: none; color: white; font-size: 14px; transition: background 250ms ease; }
+.resume-control:hover { background: #4030d8; }
 .resume-control svg { width: 1rem; height: 1rem; }
 
 .worked-with {
