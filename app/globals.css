@@ -698,7 +698,7 @@
 
 /* Keep metadata, titles, and descriptions aligned across each work row. */
 @media (min-width: 768px) {
-  .editorial-project-info { display: grid; grid-template-rows: 1.25rem 3.1rem minmax(4.1rem, auto); align-content: start; }
+  .editorial-project-info { display: grid; grid-template-rows: auto auto auto minmax(4.1rem, auto); align-content: start; }
   .editorial-project-meta, .editorial-project-info h3, .editorial-project-description { align-self: start; }
 }
 
