@@ -543,7 +543,8 @@
   font-size: 1rem;
   line-height: 1.58; }
 .editorial-connect-actions { display: grid; gap: 0.7rem; }
-.editorial-connect-actions a, .editorial-connect-actions button { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.7rem; width: 100%; border: 1px solid #dedde6; border-radius: 5px; background: #fff; color: #4f3df1; padding: 0.8rem 0.9rem; font: inherit; text-align: left; cursor: pointer; }
+.editorial-connect-actions a, .editorial-connect-actions button { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.7rem; width: 100%; border: 1px solid #dedde6; border-radius: 5px; background: #fff; color: #4f3df1; padding: 0.8rem 0.9rem; font: inherit; text-align: left; cursor: pointer; transition: border-color 200ms ease, background 200ms ease, box-shadow 200ms ease; }
+.editorial-connect-actions a:hover, .editorial-connect-actions button:hover { border-color: #4f3df1; background: #f7f5ff; box-shadow: 0 8px 20px rgba(79,61,241,0.08); }
 .editorial-connect-actions span { display: grid; gap: 0.18rem; }
 .editorial-connect-actions strong { color: #292747; font-size: 16px; font-weight: 600; }
 .editorial-connect-actions small { color: #77758c; font-size: 14px; font-weight: 400; }
