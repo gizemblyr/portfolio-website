@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowUpRight, Copy, Download, ExternalLink, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowUpRight, Copy, Download } from "lucide-react"
+import icons from "simple-icons/icons.json"
 
 const tools = [
   ["Figma", "figma"], ["Sketch", "sketch"], ["Adobe XD", "adobexd"], ["Miro", "miro"], ["Maze", "maze"],
@@ -18,6 +19,8 @@ const capabilities = [
 ]
 
 const email = "gizembolayir@gmail.com"
+const iconAliases: Record<string, string> = { openai: "OpenAI", anthropic: "Claude", v0: "Vercel", postgresql: "PostgreSQL", adobexd: "Adobe XD" }
+const toolIcons = new Map((icons as Array<{ title: string; path: string; hex: string }>).map((icon) => [icon.title, icon]))
 
 export function EditorialAboutTools() {
   const [copied, setCopied] = useState(false)
@@ -46,8 +49,8 @@ export function EditorialAboutTools() {
             <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
             <div className="editorial-about-actions">
               <a className="editorial-action-primary" href="/resume"><span>Download Resume</span><Download aria-hidden="true" size={14} /></a>
-              <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
-              <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><Github aria-hidden="true" size={14} /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
+              <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-1-VoChMfnRBlMuqMePOmlKYlpcPNWT4Y.svg" alt="" aria-hidden="true" /> LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
+              <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-6hdJwvMXG1PFx16vqi7Igqqa84PdLd.svg" alt="" aria-hidden="true" /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
             </div>
           </div>
           <div className="editorial-about-portrait">
@@ -61,7 +64,13 @@ export function EditorialAboutTools() {
           <h2>Tools &amp; capabilities</h2>
           <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
           <div className="editorial-tools-list" aria-label="Tools I use">
-            {tools.map(([label, slug]) => <span className="editorial-tool" key={slug}><span className="editorial-tool-mark" aria-hidden="true">{label.slice(0, 1)}</span><span>{label}</span></span>)}
+            {tools.map(([label, slug]) => {
+              const icon = toolIcons.get(iconAliases[slug] ?? label)
+              return <span className="editorial-tool" key={slug}>
+                {icon ? <svg className="editorial-tool-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path} fill={`#${icon.hex}`} /></svg> : null}
+                <span>{label}</span>
+              </span>
+            })}
           </div>
           <div className="editorial-capabilities" aria-label="Capabilities">
             {capabilities.map((capability) => <span className="editorial-capability" key={capability}>{capability}</span>)}
@@ -76,8 +85,8 @@ export function EditorialAboutTools() {
             <p className="editorial-connect-copy">If you&apos;d like to collaborate on a project, discuss ideas, or explore potential partnerships, feel free to reach out using the contact details below.</p>
           </div>
           <div className="editorial-connect-actions">
-            <a href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer"><Linkedin aria-hidden="true" size={16} /><span><strong>LinkedIn</strong><small>linkedin.com/in/gizembolayir</small></span><ExternalLink aria-hidden="true" size={14} /></a>
-            <button type="button" onClick={copyEmail}><Mail aria-hidden="true" size={16} /><span><strong>Email</strong><small>{copied ? "Email copied" : email}</small></span>{copied ? <span className="editorial-copied">Copied</span> : <Copy aria-hidden="true" size={14} />}</button>
+            <a href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-1-VoChMfnRBlMuqMePOmlKYlpcPNWT4Y.svg" alt="" aria-hidden="true" /><span><strong>LinkedIn</strong><small>linkedin.com/in/gizembolayir</small></span><ArrowUpRight aria-hidden="true" size={16} /></a>
+            <button type="button" onClick={copyEmail}><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-2-7VR4fD9QZ8cuPHNqC1Vxh5XnfFtL9k.svg" alt="" aria-hidden="true" /><span><strong>Email</strong><small>{copied ? "Email copied" : email}</small></span>{copied ? <span className="editorial-copied">Copied</span> : <Copy aria-hidden="true" size={14} />}</button>
           </div>
         </div>
       </section>
