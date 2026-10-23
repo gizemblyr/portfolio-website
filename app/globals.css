@@ -406,7 +406,7 @@
   outline-offset: 0.5rem;
 }
 
-.resume-control { display: inline-flex; height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border: 0; border-radius: 5px; padding: 0 1rem; background: #4f3df1; box-shadow: none; color: white; font-size: 14px; transition: background 250ms ease; }
+.resume-control { display: inline-flex; height: 42px; min-width: 112px; align-items: center; justify-content: center; gap: 0.55rem; border: 0; border-radius: 5px; padding: 0 1rem; background: #4f3df1; box-shadow: none; color: white; font-size: 14px; transition: background 250ms ease; }
 .resume-control:hover { background: #4030d8; }
 .resume-control svg { width: 1rem; height: 1rem; }
 
