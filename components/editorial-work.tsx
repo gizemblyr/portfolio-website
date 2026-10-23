@@ -95,7 +95,7 @@ export function EditorialWork() {
     <section id="work" className="editorial-work" aria-labelledby="recent-work-title">
       <div className="editorial-work-inner">
         <header className="editorial-work-heading">
-          <h2 id="recent-work-title">Some recent work</h2>
+          <h2 id="recent-work-title">Selected Works</h2>
         </header>
         <div className="editorial-projects">
           {projects.map((project) => (
