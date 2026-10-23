@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
 
 const articles = [
   {
@@ -33,7 +34,6 @@ export function EditorialBlog() {
       <div className="editorial-blog-inner">
         <header className="editorial-blog-heading">
           <h2 id="blog-title">Blog on Design, AI &amp; Tech</h2>
-          <p>Articles on product design, AI, systems, and technology.</p>
         </header>
         <div className="editorial-articles">
           {articles.map((article) => (
@@ -51,7 +51,7 @@ export function EditorialBlog() {
                 <p className="editorial-article-source">{article.source}</p>
                 <h3>{article.title}</h3>
                 <p className="editorial-article-description">{article.description}</p>
-                <span className="editorial-article-link" aria-hidden="true">↗</span>
+                <span className="editorial-article-link" aria-hidden="true"><ArrowUpRight size={18} /></span>
               </div>
             </a>
           ))}
