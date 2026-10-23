@@ -68,7 +68,7 @@ export function Header() {
     <header
       className="fixed inset-x-0 top-0 z-50 bg-transparent px-4 pt-6 md:pt-8"
     >
-      <div className="mx-auto flex h-14 w-full max-w-fit items-center justify-end gap-2 rounded-[5px] md:w-fit md:justify-normal border border-[#e5e3ef] bg-white/90 px-2 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:gap-3 md:px-3">
+      <div className="mx-auto flex h-14 w-full items-center justify-end gap-2 border border-transparent bg-transparent px-0 md:h-16 md:w-fit md:justify-normal md:gap-3 md:rounded-[5px] md:border-[#e5e3ef] md:bg-white/90 md:px-3 md:shadow-[0_12px_32px_rgba(72,60,150,0.1)] md:backdrop-blur-md">
         {/* Logo */}
         <Link href="/#hero" className="sr-only">Gizem Bolayir</Link>
 
@@ -110,7 +110,7 @@ export function Header() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`md:hidden p-2 transition-colors duration-500 ${
+          className={`menu-trigger md:hidden rounded-[5px] border border-[#e5e3ef] bg-white/90 p-2 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md transition-colors duration-500 ${
             isDark ? "text-white" : "text-[#15171C]"
           }`}
           aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
@@ -121,11 +121,20 @@ export function Header() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`md:hidden fixed top-16 right-0 h-[calc(100vh-4rem)] w-72 transition-transform duration-300 ease-in-out ${
+        aria-hidden={!isMobileMenuOpen}
+        className={`mobile-drawer md:hidden fixed right-0 top-0 z-[200] h-[100dvh] w-[min(85vw,380px)] border-l border-[#e5e3ef] bg-white px-7 pb-8 pt-24 shadow-[-16px_0_40px_rgba(20,18,45,0.12)] transition-transform duration-350 ease-[cubic-bezier(0.22,1,0.36,1)] ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        } ${isDark ? "bg-[#15171C]" : "bg-white"} shadow-xl`}
+        }`}
       >
-        <nav className="flex flex-col p-6 gap-6">
+        <button
+          type="button"
+          aria-label="Close menu"
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="absolute right-6 top-6 rounded-[5px] border border-[#e5e3ef] bg-white p-2 text-[#15171C] shadow-[0_8px_22px_rgba(72,60,150,0.08)]"
+        >
+          <X className="h-5 w-5" />
+        </button>
+        <nav className="flex flex-col items-start gap-5">
           {navItems.map((item) => {
             const isActive =
               item.href === "/about"
@@ -171,12 +180,13 @@ export function Header() {
       </div>
 
       {/* Overlay */}
-      {isMobileMenuOpen && (
-        <div
-          className="md:hidden fixed inset-0 top-16 bg-black/30 z-[-1]"
-          onClick={() => setIsMobileMenuOpen(false)}
-        />
-      )}
+      <div
+        aria-hidden="true"
+        onClick={() => setIsMobileMenuOpen(false)}
+        className={`mobile-backdrop md:hidden fixed inset-0 z-[190] bg-black/30 transition-opacity duration-350 ${
+          isMobileMenuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      />
     </header>
   )
 }
