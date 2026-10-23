@@ -455,8 +455,8 @@
 .worked-with-brand.brand-0 img { height: 3.8rem; max-width: 12rem; }
 .worked-with-brand.brand-1 img { height: 3.7rem; max-width: 12rem; }
 .worked-with-brand.brand-2 img { height: 3.5rem; max-width: 12rem; }
-.worked-with-brand.brand-3 img { height: 3.2rem; max-width: 11rem; }
-.worked-with-brand.brand-4 img { height: 4.1rem; max-width: 13rem; }
+.worked-with-brand.brand-3 img { height: 3.2rem; max-width: 11rem; transform: scale(1.18); transform-origin: center; }
+.worked-with-brand.brand-4 img { height: 4.1rem; max-width: 13rem; transform: scale(1.22); transform-origin: center; }
 
 .worked-with-viewport:hover .worked-with-track { animation-play-state: paused; }
 
