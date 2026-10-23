@@ -500,6 +500,13 @@
 .legacy-work { display: none; }
 
 .editorial-section-inner { width: min(100%, 76rem); margin: 0 auto; }
+
+/* Keep sticky-header navigation targets clear of the header without adding layout space. */
+#work, #blog, #about, #tools, #contact { scroll-margin-top: 104px; }
+
+@media (max-width: 767px) {
+  #work, #blog, #about, #tools, #contact { scroll-margin-top: 80px; }
+}
 .editorial-about-section { background: #f3f3f5; color: #11111b; padding: clamp(6rem, 10vw, 9rem) 1.25rem; }
 .editorial-about-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr); gap: clamp(2.5rem, 7vw, 7rem); align-items: center; }
 .editorial-about-portrait { width: min(100%, 300px); aspect-ratio: 4 / 5; justify-self: end; overflow: hidden; border-radius: 4px; }
