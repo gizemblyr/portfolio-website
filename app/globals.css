@@ -562,7 +562,7 @@
 
 .editorial-work-inner {
   width: min(100%, 76rem);
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .editorial-work-heading {
