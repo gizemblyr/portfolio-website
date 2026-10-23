@@ -48,7 +48,7 @@ export function EditorialAboutTools() {
             </div>
             <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
             <div className="editorial-about-actions">
-              <a className="editorial-action-primary" href="/resume"><span>Resume</span><Download aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-primary" href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf"><span>Resume</span><Download aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer">GitHub <ArrowUpRight aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://medium.com/@gizembolayir" target="_blank" rel="noreferrer">Medium <ArrowUpRight aria-hidden="true" size={14} /></a>
