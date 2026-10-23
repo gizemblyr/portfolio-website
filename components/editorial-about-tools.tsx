@@ -48,7 +48,7 @@ export function EditorialAboutTools() {
             </div>
             <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
             <div className="editorial-about-actions">
-              <a className="editorial-action-primary" href="/resume"><span>Download Resume</span><Download aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-primary" href="/resume"><span>Resume</span><Download aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-1-VoChMfnRBlMuqMePOmlKYlpcPNWT4Y.svg" alt="" aria-hidden="true" /> LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
               <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-6hdJwvMXG1PFx16vqi7Igqqa84PdLd.svg" alt="" aria-hidden="true" /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
             </div>
