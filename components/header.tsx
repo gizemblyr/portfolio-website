@@ -118,7 +118,10 @@ export function Header() {
               {item.label}
             </button>
           ))}
-          <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" onClick={() => setIsMobileMenuOpen(false)} className="mobile-nav-link">Resume</a>
+          <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" onClick={() => setIsMobileMenuOpen(false)} className="mobile-nav-link mobile-resume-link">
+            <span>Resume</span>
+            <Download aria-hidden="true" size={16} />
+          </a>
         </nav>
       </aside>
     </header>
