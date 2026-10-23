@@ -873,9 +873,10 @@
 }
 
 /* Homepage rhythm and contained tool marquee */
-.editorial-work { padding-top: 96px; padding-bottom: 96px; }
+.editorial-work { padding-top: 96px; padding-bottom: 48px; }
 .editorial-work-heading { margin-bottom: 64px; }
-.editorial-blog { padding-top: 96px; padding-bottom: 96px; }
+.editorial-projects { row-gap: 88px; }
+.editorial-blog { padding-top: 48px; padding-bottom: 96px; }
 .editorial-blog-heading { margin-bottom: 64px; }
 .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 96px; padding-bottom: 96px; }
 .editorial-tools-marquee { width: 100%; overflow: hidden; margin-top: 48px; }
