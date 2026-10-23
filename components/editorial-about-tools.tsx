@@ -39,7 +39,6 @@ export function EditorialAboutTools() {
         <div className="editorial-lower-grid">
           <section id="about" className="editorial-panel editorial-about-panel">
             <div className="editorial-about-copy">
-              <p className="editorial-eyebrow">ABOUT</p>
               <h2>About Me</h2>
               <div className="editorial-about-body">
                 <p>Hi! I&apos;m a Product Designer who bridges the gap between logic and emotion, creating meaningful experiences through structured thinking and human empathy.</p>
@@ -48,7 +47,7 @@ export function EditorialAboutTools() {
               </div>
               <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
               <div className="editorial-about-actions">
-                <a className="editorial-action-primary" href="/resume" download><span>Download CV</span><Download aria-hidden="true" size={14} /></a>
+                <a className="editorial-action-primary" href="/resume"><span>Download Resume</span><Download aria-hidden="true" size={14} /></a>
                 <a href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
                 <a href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><Github aria-hidden="true" size={14} /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
               </div>
@@ -59,7 +58,6 @@ export function EditorialAboutTools() {
           </section>
 
           <section id="tools" className="editorial-panel editorial-tools-panel">
-            <p className="editorial-eyebrow">TOOLS &amp; CAPABILITIES</p>
             <h2>Tools &amp; capabilities</h2>
             <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
             <div className="editorial-tools-viewport" aria-label="Tools I use">
@@ -77,7 +75,6 @@ export function EditorialAboutTools() {
       <section id="connect" className="editorial-connect" aria-label="Let's connect">
         <div className="editorial-connect-inner">
           <div>
-            <p className="editorial-eyebrow">CONTACT</p>
             <h2>Let&apos;s Connect</h2>
             <p className="editorial-connect-copy">If you&apos;d like to collaborate on a project, discuss ideas, or explore potential partnerships, feel free to reach out using the contact details below.</p>
           </div>
