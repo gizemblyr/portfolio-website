@@ -96,7 +96,6 @@ export function EditorialWork() {
       <div className="editorial-work-inner">
         <header className="editorial-work-heading">
           <h2 id="recent-work-title">Some recent work</h2>
-          <p>from full-time roles</p>
         </header>
         <div className="editorial-projects">
           {projects.map((project) => (
