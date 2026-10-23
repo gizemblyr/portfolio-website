@@ -86,7 +86,7 @@ export function EditorialAboutTools() {
       <section id="contact" className="editorial-connect-section" aria-label="Let's connect">
         <div className="editorial-section-inner editorial-connect-inner">
           <div>
-            <h2>Let&apos;s Connect</h2>
+            <h2>Contact Me</h2>
             <p className="editorial-connect-copy">If you&apos;d like to collaborate on a project, discuss ideas, or explore potential partnerships, feel free to reach out using the contact details below.</p>
           </div>
           <div className="editorial-connect-actions">
