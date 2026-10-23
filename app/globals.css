@@ -909,8 +909,8 @@
 .editorial-tools-track { display: flex; width: max-content; gap: 28px; animation: tools-marquee 36s linear infinite; }
 .editorial-tool { flex: 0 0 auto; font-size: 14px; }
 .editorial-tools-marquee:hover .editorial-tools-track { animation-play-state: paused; }
-.editorial-about-actions { gap: 10px; }
-.editorial-about-actions a { width: auto; min-width: 0; padding-inline: 14px; border: 1px solid #4f3df1; background: transparent; color: #4f3df1; }
+  .editorial-about-actions { gap: 12px; margin-top: 28px; margin-bottom: 28px; }
+ .editorial-about-actions a { width: auto; min-width: 0; padding-inline: 14px; border: 1px solid #4f3df1; background: transparent; color: #4f3df1; }
 .editorial-about-actions a:hover { background: #f0edff; }
 .editorial-about-actions .editorial-action-primary { border-color: #4f3df1; background: #4f3df1; color: #fff; }
 .editorial-about-actions .editorial-action-primary:hover { background: #4030d8; }
