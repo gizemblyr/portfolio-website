@@ -11,7 +11,7 @@
 .resume-control:hover { background: #4030d8; }
 .mobile-backdrop { position: fixed; inset: 0; z-index: 190; background: rgba(20, 18, 45, 0.28); opacity: 0; pointer-events: none; transition: opacity 300ms ease; }
 .mobile-backdrop.is-open { opacity: 1; pointer-events: auto; }
-.mobile-drawer { position: fixed; right: 0; top: 0; z-index: 200; width: min(85vw, 380px); height: 100dvh; padding: 1.5rem 1.75rem; border-left: 1px solid #e1dfe8; background: #fff; box-shadow: -16px 0 40px rgba(20,18,45,0.12); transform: translateX(100%); transition: transform 350ms cubic-bezier(.22,1,.36,1); }
+.mobile-drawer { position: fixed; right: 0; top: 0; z-index: 200; width: min(80vw, 350px); height: 100dvh; padding: 1.25rem 1.25rem; border-left: 1px solid #e1dfe8; background: #fff; box-shadow: -16px 0 40px rgba(20,18,45,0.12); transform: translateX(100%); transition: transform 350ms cubic-bezier(.22,1,.36,1); }
 .mobile-drawer.is-open { transform: translateX(0); }
 .mobile-nav-link { position: relative; border: 0; background: transparent; color: #292747; font-size: 1.25rem; font-weight: 500; cursor: pointer; }
 .mobile-nav-link:hover, .mobile-nav-link.is-active { color: #4f3df1; }
