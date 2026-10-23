@@ -18,7 +18,6 @@ const capabilities = [
 ]
 
 const email = "gizembolayir@gmail.com"
-const toolSequence = [...tools, ...tools]
 
 export function EditorialAboutTools() {
   const [copied, setCopied] = useState(false)
@@ -35,45 +34,43 @@ export function EditorialAboutTools() {
 
   return (
     <>
-      <section className="editorial-lower" aria-label="About and tools">
-        <div className="editorial-lower-grid">
-          <section id="about" className="editorial-panel editorial-about-panel">
-            <div className="editorial-about-copy">
-              <h2>About Me</h2>
-              <div className="editorial-about-body">
-                <p>Hi! I&apos;m a Product Designer who bridges the gap between logic and emotion, creating meaningful experiences through structured thinking and human empathy.</p>
-                <p>With a background in Computer Engineering, I bring a systems-thinking mindset to product design — combining technical understanding with a strong focus on human needs.</p>
-                <p>I&apos;ve worked across consumer and B2B products, from financial habits and insurance workflows to food and content experiences. I enjoy turning complex requirements into intuitive products and increasingly use prototyping, AI, and code as part of my design workflow.</p>
-              </div>
-              <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
-              <div className="editorial-about-actions">
-                <a className="editorial-action-primary" href="/resume"><span>Download Resume</span><Download aria-hidden="true" size={14} /></a>
-                <a href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
-                <a href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><Github aria-hidden="true" size={14} /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
-              </div>
+      <section id="about" className="editorial-about-section" aria-label="About Me">
+        <div className="editorial-section-inner editorial-about-layout">
+          <div className="editorial-about-copy">
+            <h2>About Me</h2>
+            <div className="editorial-about-body">
+              <p>Hi! I&apos;m a Product Designer who bridges the gap between logic and emotion, creating meaningful experiences through structured thinking and human empathy.</p>
+              <p>With a background in Computer Engineering, I bring a systems-thinking mindset to product design — combining technical understanding with a strong focus on human needs.</p>
+              <p>I&apos;ve worked across consumer and B2B products, from financial habits and insurance workflows to food and content experiences. I enjoy turning complex requirements into intuitive products and increasingly use prototyping, AI, and code as part of my design workflow.</p>
             </div>
-            <div className="editorial-about-portrait">
-              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1778276557460-xpHkD2tqWuLyJDUM3u7nwkGzBvOKk3.png" alt="Gizem Bolayir in profile" />
+            <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
+            <div className="editorial-about-actions">
+              <a className="editorial-action-primary" href="/resume"><span>Download Resume</span><Download aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
+              <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><Github aria-hidden="true" size={14} /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
             </div>
-          </section>
-
-          <section id="tools" className="editorial-panel editorial-tools-panel">
-            <h2>Tools &amp; capabilities</h2>
-            <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
-            <div className="editorial-tools-viewport" aria-label="Tools I use">
-              <div className="editorial-tools-track">
-                {toolSequence.map(([label, slug], index) => <span className="editorial-tool" key={`${slug}-${index}`}><img src={`https://cdn.simpleicons.org/${slug}`} alt="" aria-hidden="true" /><span>{label}</span></span>)}
-              </div>
-            </div>
-            <div className="editorial-capabilities" aria-label="Capabilities">
-              {capabilities.map((capability) => <span className="editorial-capability" key={capability}>{capability}</span>)}
-            </div>
-          </section>
+          </div>
+          <div className="editorial-about-portrait">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1778276557460-xpHkD2tqWuLyJDUM3u7nwkGzBvOKk3.png" alt="Gizem Bolayir in profile" />
+          </div>
         </div>
       </section>
 
-      <section id="connect" className="editorial-connect" aria-label="Let's connect">
-        <div className="editorial-connect-inner">
+      <section id="tools" className="editorial-tools-section" aria-label="Tools and capabilities">
+        <div className="editorial-section-inner">
+          <h2>Tools &amp; capabilities</h2>
+          <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
+          <div className="editorial-tools-list" aria-label="Tools I use">
+            {tools.map(([label, slug]) => <span className="editorial-tool" key={slug}><span className="editorial-tool-mark" aria-hidden="true">{label.slice(0, 1)}</span><span>{label}</span></span>)}
+          </div>
+          <div className="editorial-capabilities" aria-label="Capabilities">
+            {capabilities.map((capability) => <span className="editorial-capability" key={capability}>{capability}</span>)}
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" className="editorial-connect-section" aria-label="Let's connect">
+        <div className="editorial-section-inner editorial-connect-inner">
           <div>
             <h2>Let&apos;s Connect</h2>
             <p className="editorial-connect-copy">If you&apos;d like to collaborate on a project, discuss ideas, or explore potential partnerships, feel free to reach out using the contact details below.</p>
