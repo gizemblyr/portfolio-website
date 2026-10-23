@@ -927,6 +927,12 @@
 @media (max-width: 767px) {
   .editorial-work { padding-top: 72px; padding-bottom: 24px; }
   .editorial-blog { padding-top: 32px; padding-bottom: 72px; }
+  .editorial-about-layout { display: grid; }
+  .editorial-about-copy { display: contents; }
+  .editorial-about-copy h2 { order: 1; }
+  .editorial-about-portrait { order: 2; }
+  .editorial-about-body { order: 3; }
+  .editorial-about-actions { order: 4; }
   .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 72px; padding-bottom: 72px; }
   .editorial-work-heading, .editorial-blog-heading { margin-bottom: 48px; }
 }
