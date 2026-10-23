@@ -63,7 +63,7 @@ export function EditorialAboutTools() {
 
       <section id="tools" className="editorial-tools-section" aria-label="Tools and capabilities">
         <div className="editorial-section-inner">
-          <h2>Tools &amp; capabilities</h2>
+          <h2>Tools &amp; Capabilities</h2>
           <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
           <div className="editorial-tools-marquee" aria-label="Tools I use">
             <div className="editorial-tools-track">
