@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Keep the global stylesheet as a single Next-managed CSS entrypoint. */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
