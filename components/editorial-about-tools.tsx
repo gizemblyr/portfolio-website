@@ -46,7 +46,7 @@ export function EditorialAboutTools() {
               <p>With a background in Computer Engineering, I bring a systems-thinking mindset to product design — combining technical understanding with a strong focus on human needs.</p>
               <p>I&apos;ve worked across consumer and B2B products, from financial habits and insurance workflows to food and content experiences. I enjoy turning complex requirements into intuitive products and increasingly use prototyping, AI, and code as part of my design workflow.</p>
             </div>
-            <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
+
             <div className="editorial-about-actions">
               <a className="editorial-action-primary" href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf"><span>Resume</span><Download aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={14} /></a>
