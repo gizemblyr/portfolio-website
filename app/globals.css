@@ -4,7 +4,7 @@
 
 .brand-wordmark { border: 0; background: transparent; color: #15171c; font-family: Georgia, 'Times New Roman', serif; font-size: 2.25rem; font-weight: 500; letter-spacing: -0.09em; line-height: 0.8; cursor: pointer; }
 .brand-wordmark span { color: #4f3df1; }
-.header-nav-link { position: relative; border: 0; background: transparent; color: #292747; font-size: 14px; font-weight: 500; padding: 0.7rem 0; transition: color 250ms ease; cursor: pointer; }
+.header-nav-link { position: relative; border: 0; background: transparent; color: #292747; font-size: 16px; font-weight: 500; padding: 0.7rem 0; transition: color 250ms ease; cursor: pointer; }
 .header-nav-link:hover, .header-nav-link.is-active { color: #4f3df1; }
 .header-nav-link.is-active::after { content: ''; position: absolute; left: 50%; bottom: 0.25rem; width: 18px; height: 2px; border-radius: 99px; background: #4f3df1; transform: translateX(-50%); }
 .resume-control { height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border-radius: 5px; background: #4f3df1; color: white; font-size: 14px; transition: background 250ms ease; }
