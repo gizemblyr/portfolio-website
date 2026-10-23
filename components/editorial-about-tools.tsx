@@ -51,7 +51,7 @@ export function EditorialAboutTools() {
             <h2>About Me</h2>
             <div className="editorial-about-body">
               <p>Hi! I&apos;m a Product Designer who bridges the gap between logic and emotion, creating meaningful experiences through structured thinking and human empathy.</p>
-              <p>With a background in Computer Engineering, I bring a systems-thinking mindset to product design — combining technical understanding with a strong focus on human needs.</p>
+              <p>With a background in Computer Engineering, I bring a systems-thinking mindset to product design combining technical understanding with a strong focus on human needs.</p>
               <p>I&apos;ve worked across consumer and B2B products, from financial habits and insurance workflows to food and content experiences. I enjoy turning complex requirements into intuitive products and increasingly use prototyping, AI, and code as part of my design workflow.</p>
             </div>
 
