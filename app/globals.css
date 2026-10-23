@@ -515,7 +515,7 @@
 .editorial-about-body p { margin: 0 0 0.9rem; }
 .editorial-about-current { margin: 1.4rem 0 0; color: #626072; font-size: 0.82rem; }
 .editorial-about-actions { display: flex; flex-wrap: wrap; gap: 0.6rem 0.65rem; margin-top: 1.7rem; }
-.editorial-about-actions a { display: inline-flex; width: 142px; height: 42px; align-items: center; justify-content: center; gap: 0.4rem; border-radius: 5px; padding: 0 0.78rem; font-size: 14px; text-decoration: none; }
+.editorial-about-actions a { display: inline-flex; width: auto; min-width: 0; height: 42px; align-items: center; justify-content: center; gap: 0.4rem; border-radius: 5px; padding: 0 14px; font-size: 14px; text-decoration: none; }
 .editorial-about-actions .editorial-social-icon, .editorial-connect-actions .editorial-social-icon { width: 18px; height: 18px; object-fit: contain; flex: 0 0 auto; }
 .editorial-about-actions .editorial-action-primary { border: 1px solid #4f3df1; background: #4f3df1; color: #fff; }
 .editorial-about-actions .editorial-action-secondary { border: 1px solid #d6d4df; background: transparent; color: #4f3df1; }
@@ -541,9 +541,9 @@
 .editorial-connect-actions { display: grid; gap: 0.7rem; }
 .editorial-connect-actions a, .editorial-connect-actions button { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.7rem; width: 100%; border: 1px solid #dedde6; border-radius: 5px; background: #fff; color: #4f3df1; padding: 0.8rem 0.9rem; font: inherit; text-align: left; cursor: pointer; }
 .editorial-connect-actions span { display: grid; gap: 0.18rem; }
-.editorial-connect-actions strong { color: #292747; font-size: 0.8rem; font-weight: 600; }
-.editorial-connect-actions small { color: #77758c; font-size: 0.72rem; }
-.editorial-copied { color: #4f3df1 !important; font-size: 0.72rem; }
+.editorial-connect-actions strong { color: #292747; font-size: 14px; font-weight: 600; }
+.editorial-connect-actions small { color: #77758c; font-size: 14px; font-weight: 400; }
+.editorial-copied { color: #4f3df1 !important; font-size: 14px; }
 @media (max-width: 767px) { .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-inline: 1rem; } .editorial-about-layout, .editorial-connect-inner { grid-template-columns: 1fr; gap: 2.5rem; } .editorial-about-portrait { width: min(100%, 250px); justify-self: start; order: -1; } .editorial-about-actions a { flex: 0 0 auto; } }
 
 .editorial-work {
