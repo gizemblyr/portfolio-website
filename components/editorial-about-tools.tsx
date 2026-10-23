@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ArrowUpRight, Copy, Download } from "lucide-react"
-import icons from "simple-icons/icons.json"
+import * as simpleIcons from "simple-icons"
 
 const tools = [
   ["Figma", "figma"], ["Sketch", "sketch"], ["Adobe XD", "adobexd"], ["Miro", "miro"], ["Maze", "maze"],
@@ -19,8 +19,9 @@ const capabilities = [
 ]
 
 const email = "gizembolayir@gmail.com"
+type BrandIcon = { title: string; path: string; hex: string }
 const iconAliases: Record<string, string> = { openai: "OpenAI", anthropic: "Claude", v0: "Vercel", postgresql: "PostgreSQL", adobexd: "Adobe XD" }
-const toolIcons = new Map((icons as Array<{ title: string; path: string; hex: string }>).map((icon) => [icon.title, icon]))
+const toolIcons = new Map((Object.values(simpleIcons) as BrandIcon[]).map((icon) => [icon.title, icon]))
 
 export function EditorialAboutTools() {
   const [copied, setCopied] = useState(false)
