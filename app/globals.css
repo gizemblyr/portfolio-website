@@ -528,7 +528,8 @@
   line-height: 1.58; }
 .editorial-tools-list { display: flex; flex-wrap: wrap; gap: 0.85rem 1.4rem; margin-top: 3rem; }
 .editorial-tool { display: inline-flex; align-items: center; gap: 0.5rem; color: #292747; font-size: 0.78rem; white-space: nowrap; }
-.editorial-tool-icon { width: 20px; height: 20px; flex: 0 0 auto; }
+.editorial-tool-icon, .editorial-tool-fallback { width: 20px; height: 20px; flex: 0 0 auto; }
+.editorial-tool-fallback { display: inline-grid; place-items: center; font-size: 15px; font-weight: 700; line-height: 1; }
 .editorial-tool { display: inline-flex; align-items: center; gap: 0.55rem; color: #292747; font-size: 0.78rem; white-space: nowrap; }
 .editorial-capabilities { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2.5rem; }
 .editorial-capability { padding: 0.42rem 0.62rem; border: 1px solid #e1e0e8; border-radius: 4px; background: #f7f7fa; color: #666377; font-size: 14px; line-height: 1.35; }

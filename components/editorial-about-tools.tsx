@@ -20,8 +20,13 @@ const capabilities = [
 
 const email = "gizembolayir@gmail.com"
 type BrandIcon = { title: string; path: string; hex: string }
-const iconAliases: Record<string, string> = { openai: "OpenAI", anthropic: "Claude", v0: "Vercel", postgresql: "PostgreSQL", adobexd: "Adobe XD" }
+const iconAliases: Record<string, string> = { openai: "ChatGPT", anthropic: "Claude", v0: "Vercel", postgresql: "PostgreSQL", adobexd: "Adobe XD", css3: "CSS" }
 const toolIcons = new Map((Object.values(simpleIcons) as BrandIcon[]).map((icon) => [icon.title, icon]))
+const fallbackIcons: Record<string, { mark: string; color: string }> = {
+  ChatGPT: { mark: "✦", color: "#10a37f" },
+  Lovable: { mark: "L", color: "#ff5c35" },
+  "Adobe XD": { mark: "Xd", color: "#ff61f6" },
+}
 
 export function EditorialAboutTools() {
   const [copied, setCopied] = useState(false)
@@ -70,9 +75,11 @@ export function EditorialAboutTools() {
             <div className="editorial-tools-track">
               {[...tools, ...tools].map(([label, slug], index) => {
                 const key = `${slug}-${index}`
-              const icon = toolIcons.get(iconAliases[slug] ?? label)
+              const iconName = iconAliases[slug] ?? label
+              const icon = toolIcons.get(iconName)
+              const fallback = fallbackIcons[iconName]
                 return <span className="editorial-tool" key={key}>
-                {icon ? <svg className="editorial-tool-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path} fill={`#${icon.hex}`} /></svg> : null}
+                {icon ? <svg className="editorial-tool-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path} fill={`#${icon.hex}`} /></svg> : fallback ? <span className="editorial-tool-fallback" style={{ color: fallback.color }} aria-hidden="true">{fallback.mark}</span> : null}
                 <span>{label}</span>
               </span>
               })}
