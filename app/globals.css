@@ -909,17 +909,30 @@
 .editorial-tools-track { display: flex; width: max-content; gap: 28px; animation: tools-marquee 36s linear infinite; }
 .editorial-tool { flex: 0 0 auto; font-size: 14px; }
 .editorial-tools-marquee:hover .editorial-tools-track { animation-play-state: paused; }
-.editorial-about-actions { gap: 10px; }
-.editorial-about-actions a { width: auto; min-width: 0; padding-inline: 14px; border: 1px solid #4f3df1; background: transparent; color: #4f3df1; }
+  .editorial-about-actions { gap: 12px; margin-top: 28px; margin-bottom: 28px; }
+ .editorial-about-actions a { width: auto; min-width: 0; padding-inline: 14px; border: 1px solid #4f3df1; background: transparent; color: #4f3df1; }
 .editorial-about-actions a:hover { background: #f0edff; }
 .editorial-about-actions .editorial-action-primary { border-color: #4f3df1; background: #4f3df1; color: #fff; }
 .editorial-about-actions .editorial-action-primary:hover { background: #4030d8; }
 .editorial-about-actions .editorial-action-secondary { border-color: #4f3df1; color: #4f3df1; }
+
+@media (max-width: 767px) {
+  .editorial-work { padding-bottom: 24px; }
+  .editorial-blog { padding-top: 32px; }
+}
 .editorial-about-actions .editorial-social-icon { display: none; }
 .editorial-connect-actions strong { font-size: 16px; }
 .editorial-connect-actions small { font-size: 14px; }
 @keyframes tools-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (max-width: 767px) {
-  .editorial-work, .editorial-blog, .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 72px; padding-bottom: 72px; }
+  .editorial-work { padding-top: 72px; padding-bottom: 24px; }
+  .editorial-blog { padding-top: 32px; padding-bottom: 72px; }
+  .editorial-about-layout { display: grid; }
+  .editorial-about-copy { display: contents; }
+  .editorial-about-copy h2 { order: 1; }
+  .editorial-about-portrait { order: 2; }
+  .editorial-about-body { order: 3; }
+  .editorial-about-actions { order: 4; }
+  .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 72px; padding-bottom: 72px; }
   .editorial-work-heading, .editorial-blog-heading { margin-bottom: 48px; }
 }
