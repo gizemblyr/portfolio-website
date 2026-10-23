@@ -108,17 +108,19 @@ export function Header() {
 
       <div className={`mobile-backdrop md:hidden ${isMobileMenuOpen ? "is-open" : ""}`} onClick={() => setIsMobileMenuOpen(false)} aria-hidden="true" />
       <aside className={`mobile-drawer md:hidden ${isMobileMenuOpen ? "is-open" : ""}`} aria-hidden={!isMobileMenuOpen}>
-        <div className="flex items-center justify-between">
-          <button type="button" onClick={goHome} className="brand-wordmark" aria-label="Return to homepage">giz<span>.</span></button>
-          <button type="button" onClick={() => setIsMobileMenuOpen(false)} className="rounded-[5px] border border-[#e1dfe8] bg-white p-2" aria-label="Close menu"><X size={20} /></button>
+        <div className="flex items-center justify-end">
+          <button type="button" onClick={() => setIsMobileMenuOpen(false)} className="rounded-[5px] border border-[#e1dfe8] bg-white p-1.5" aria-label="Close menu"><X size={18} /></button>
         </div>
-        <nav className="mt-14 flex flex-col items-start gap-6" aria-label="Mobile navigation">
+        <nav className="mt-10 flex flex-col items-start gap-4" aria-label="Mobile navigation">
           {sectionItems.map((item) => (
             <button key={item.id} type="button" onClick={() => selectSection(item.id)} className={`mobile-nav-link ${activeSection === item.id ? "is-active" : ""}`}>
               {item.label}
             </button>
           ))}
-          <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" onClick={() => setIsMobileMenuOpen(false)} className="mobile-nav-link">Resume</a>
+          <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" onClick={() => setIsMobileMenuOpen(false)} className="mobile-nav-link mobile-resume-link">
+            <span>Resume</span>
+            <Download aria-hidden="true" size={16} />
+          </a>
         </nav>
       </aside>
     </header>
