@@ -406,7 +406,7 @@
   outline-offset: 0.5rem;
 }
 
-.resume-control { display: inline-flex; height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border: 0; border-radius: 5px; padding: 0 1rem; background: #4f3df1; box-shadow: none; color: white; font-size: 14px; transition: background 250ms ease; }
+.resume-control { display: inline-flex; height: 42px; min-width: 112px; align-items: center; justify-content: center; gap: 0.55rem; border: 0; border-radius: 5px; padding: 0 1rem; background: #4f3df1; box-shadow: none; color: white; font-size: 14px; transition: background 250ms ease; }
 .resume-control:hover { background: #4030d8; }
 .resume-control svg { width: 1rem; height: 1rem; }
 
@@ -698,7 +698,7 @@
 
 /* Keep metadata, titles, and descriptions aligned across each work row. */
 @media (min-width: 768px) {
-  .editorial-project-info { display: grid; grid-template-rows: 1.25rem 3.1rem minmax(4.1rem, auto); align-content: start; }
+  .editorial-project-info { display: grid; grid-template-rows: auto auto auto minmax(4.1rem, auto); align-content: start; }
   .editorial-project-meta, .editorial-project-info h3, .editorial-project-description { align-self: start; }
 }
 
@@ -873,9 +873,10 @@
 }
 
 /* Homepage rhythm and contained tool marquee */
-.editorial-work { padding-top: 96px; padding-bottom: 96px; }
+.editorial-work { padding-top: 96px; padding-bottom: 48px; }
 .editorial-work-heading { margin-bottom: 64px; }
-.editorial-blog { padding-top: 96px; padding-bottom: 96px; }
+.editorial-projects { row-gap: 40px; }
+.editorial-blog { padding-top: 48px; padding-bottom: 96px; }
 .editorial-blog-heading { margin-bottom: 64px; }
 .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 96px; padding-bottom: 96px; }
 .editorial-tools-marquee { width: 100%; overflow: hidden; margin-top: 48px; }
