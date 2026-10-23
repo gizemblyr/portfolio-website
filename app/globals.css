@@ -519,7 +519,9 @@
 .editorial-about-actions .editorial-social-icon, .editorial-connect-actions .editorial-social-icon { width: 18px; height: 18px; object-fit: contain; flex: 0 0 auto; }
 .editorial-about-actions .editorial-action-primary { border: 1px solid #4f3df1;
   background: #4f3df1; color: #fff;}
-.editorial-about-actions .editorial-action-secondary { border: 1px solid #d6d4df; background: transparent; color: #4f3df1; }
+.editorial-about-actions .editorial-action-secondary { border: 1px solid #4f3df1; background: #4f3df1; color: #fff; }
+.editorial-about-actions .editorial-action-primary:hover, .editorial-about-actions .editorial-action-secondary:hover { border-color: #4030d8; background: #4030d8; color: #fff; }
+.editorial-about-actions .editorial-action-icon { filter: brightness(0) invert(1); }
 .editorial-tools-section { background: #fff; color: #11111b; padding: clamp(6rem, 10vw, 9rem) 1.25rem; }
 .editorial-tools-intro {   max-width: 34rem;
   margin: 1rem 0 0;
