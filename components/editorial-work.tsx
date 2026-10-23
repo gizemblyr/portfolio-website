@@ -8,8 +8,8 @@ const projects = [
   {
     number: "01",
     meta: "FINTECH · MOBILE",
-    title: "Monevo — Financial Habit",
-    description: "Helping users build healthier financial habits through personalized, goal-oriented journeys.",
+    title: "Monevo, Financial Habit",
+    description: "Helping users build healthier financial habits through personalized, goal oriented journeys.",
     href: "/monevo-case-study",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/monevo.png-dWUXfBOpNkxq0giVRxLczd9VnFs3lz.jpeg",
     alt: "Monevo Financial Habit mobile app interfaces",
@@ -18,7 +18,7 @@ const projects = [
   {
     number: "02",
     meta: "B2B · PLATFORM",
-    title: "Foodpanda Partner — Vendor Portal",
+    title: "Foodpanda Partner, Vendor Portal",
     description: "Streamlining menu management for restaurant partners with clearer, faster workflows.",
     href: "/foodpanda-case-study",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menu.png-cGs1WwFpzq2yEwyJE2zCa92kTCxmJR.jpeg",
@@ -28,8 +28,8 @@ const projects = [
   {
     number: "03",
     meta: "INSURANCE · ENTERPRISE",
-    title: "VDF NewAge — Internal Platform",
-    description: "Turning complex insurance operations into clear, status-driven experiences for teams.",
+    title: "VDF NewAge, Internal Platform",
+    description: "Turning complex insurance operations into clear, status driven experiences for teams.",
     href: "/newage-case-study",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vdf%20newage.png-yjPbRBxE05YQl5DUGcdn9lQR5aMcXS.jpeg",
     alt: "VDF NewAge internal insurance platform dashboard",
@@ -38,7 +38,7 @@ const projects = [
   {
     number: "04",
     meta: "FINTECH · B2B",
-    title: "FoodPay — Yemeksepeti",
+    title: "FoodPay, Yemeksepeti",
     description: "A secure payment and virtual POS experience designed end to end for merchants.",
     href: "/foodpay-case-study",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yemekpay%201.png-fghqf84ooMdWHNSVVL12dSij3L3eRf.jpeg",
