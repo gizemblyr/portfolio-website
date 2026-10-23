@@ -90,7 +90,7 @@ export function Header() {
           ))}
         </nav>
 
-        <a href="/resume" className="resume-control hidden md:inline-flex" aria-label="Open resume">
+        <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control hidden md:inline-flex" aria-label="Download resume">
           <span>Resume</span>
           <Download aria-hidden="true" size={16} />
         </a>
@@ -118,7 +118,7 @@ export function Header() {
               {item.label}
             </button>
           ))}
-          <a href="/resume" onClick={() => setIsMobileMenuOpen(false)} className="mobile-nav-link">Resume</a>
+          <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" onClick={() => setIsMobileMenuOpen(false)} className="mobile-nav-link">Resume</a>
         </nav>
       </aside>
     </header>

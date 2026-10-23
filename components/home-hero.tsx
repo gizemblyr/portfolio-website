@@ -155,7 +155,7 @@ export function WorkedWithMarquee() {
 
 export function ResumeControl() {
   return (
-    <a href="/resume" className="resume-control">
+    <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control">
       <span>Resume</span>
       <Download aria-hidden="true" />
     </a>

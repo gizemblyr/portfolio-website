@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { ArrowUpRight } from "lucide-react"
 
 const articles = [
   {
@@ -51,7 +50,6 @@ export function EditorialBlog() {
                 <p className="editorial-article-source">{article.source}</p>
                 <h3>{article.title}</h3>
                 <p className="editorial-article-description">{article.description}</p>
-                <span className="editorial-article-link" aria-hidden="true"><ArrowUpRight size={18} /></span>
               </div>
             </a>
           ))}
