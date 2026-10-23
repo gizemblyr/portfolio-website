@@ -22,7 +22,7 @@ const email = "gizembolayir@gmail.com"
 type BrandIcon = { title: string; path: string; hex: string }
 const iconAliases: Record<string, string> = { openai: "ChatGPT", anthropic: "Claude", v0: "Vercel", postgresql: "PostgreSQL", css3: "CSS" }
 const providedToolIcons: Record<string, string> = { openai: "/icons/chatgpt.svg", figma: "/icons/figma.svg", lovable: "/icons/lovable.svg", css3: "/icons/css.svg" }
-const socialIcons: Record<string, string> = { LinkedIn: "/icons/linkedin.svg", GitHub: "/icons/github.svg", Medium: "/icons/medium.svg", Substack: "/icons/substack.svg" }
+const socialIcons: Record<string, string> = { LinkedIn: "/icons/linkedin.svg", GitHub: "/icons/github.svg", Medium: "/icons/medium.png", Substack: "/icons/substack.svg" }
 const toolIcons = new Map((Object.values(simpleIcons) as BrandIcon[]).map((icon) => [icon.title, icon]))
 const fallbackIcons: Record<string, { mark: string; color: string }> = {
   ChatGPT: { mark: "✦", color: "#10a37f" },
