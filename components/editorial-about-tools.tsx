@@ -49,8 +49,10 @@ export function EditorialAboutTools() {
             <p className="editorial-about-current">Currently working as a Senior Product Designer at Doğuş Teknoloji.</p>
             <div className="editorial-about-actions">
               <a className="editorial-action-primary" href="/resume"><span>Resume</span><Download aria-hidden="true" size={14} /></a>
-              <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-1-VoChMfnRBlMuqMePOmlKYlpcPNWT4Y.svg" alt="" aria-hidden="true" /> LinkedIn <ArrowUpRight aria-hidden="true" size={13} /></a>
-              <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><img className="editorial-social-icon" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Social-6hdJwvMXG1PFx16vqi7Igqqa84PdLd.svg" alt="" aria-hidden="true" /> GitHub <ArrowUpRight aria-hidden="true" size={13} /></a>
+              <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer">GitHub <ArrowUpRight aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-secondary" href="https://medium.com/@gizembolayir" target="_blank" rel="noreferrer">Medium <ArrowUpRight aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-secondary" href="https://gizembolayir.substack.com" target="_blank" rel="noreferrer">Substack <ArrowUpRight aria-hidden="true" size={14} /></a>
             </div>
           </div>
           <div className="editorial-about-portrait">
@@ -63,14 +65,17 @@ export function EditorialAboutTools() {
         <div className="editorial-section-inner">
           <h2>Tools &amp; capabilities</h2>
           <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
-          <div className="editorial-tools-list" aria-label="Tools I use">
-            {tools.map(([label, slug]) => {
+          <div className="editorial-tools-marquee" aria-label="Tools I use">
+            <div className="editorial-tools-track">
+              {[...tools, ...tools].map(([label, slug], index) => {
+                const key = `${slug}-${index}`
               const icon = toolIcons.get(iconAliases[slug] ?? label)
-              return <span className="editorial-tool" key={slug}>
+                return <span className="editorial-tool" key={key}>
                 {icon ? <svg className="editorial-tool-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path} fill={`#${icon.hex}`} /></svg> : null}
                 <span>{label}</span>
               </span>
-            })}
+              })}
+            </div>
           </div>
           <div className="editorial-capabilities" aria-label="Capabilities">
             {capabilities.map((capability) => <span className="editorial-capability" key={capability}>{capability}</span>)}
