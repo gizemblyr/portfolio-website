@@ -12,6 +12,11 @@
 .how-i-work-visual { width: 100%; height: 10rem; margin: 2rem 0 1.1rem; overflow: visible; }
 .how-i-work-visual path, .how-i-work-visual rect, .how-i-work-visual circle { vector-effect: non-scaling-stroke; }
 .how-i-work-lines, .how-i-work-flow-messy, .how-i-work-flow-clean, .how-i-work-rough, .how-i-work-component, .how-i-work-refined { fill: none; stroke: #aaa8b4; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.how-i-work-foundation { fill: none; stroke: #d9d8df; stroke-width: 1; opacity: .62; stroke-linecap: round; stroke-linejoin: round; transform: translateY(3px) skewX(-3deg); transform-origin: center; }
+.how-i-work-foundation path:first-child { fill: rgba(255,255,255,.18); stroke: #d3d1da; }
+.how-i-work-system .how-i-work-foundation { opacity: .48; }
+.how-i-work-flow .how-i-work-foundation { opacity: .58; transform: translateY(4px) skewX(-4deg) scale(1.02); }
+.how-i-work-components .how-i-work-foundation { opacity: .68; transform: translateY(5px) skewX(-5deg) scale(1.04); }
 .how-i-work-nodes circle, .how-i-work-clean-nodes circle { fill: #6d5ce7; stroke: none; }
 .how-i-work-flow-clean, .how-i-work-clean-nodes { opacity: .15; }
 .how-i-work-component { stroke: #6d5ce7; opacity: .25; }
@@ -42,8 +47,11 @@
   .how-i-work-flow-clean { stroke-dasharray: 260; stroke-dashoffset: 260; animation: how-i-work-draw-flow 9s cubic-bezier(.22,1,.36,1) infinite; }
   .how-i-work-clean-nodes { animation: how-i-work-emerge 9s cubic-bezier(.22,1,.36,1) infinite; }
   .how-i-work-rough { animation: how-i-work-rough 9s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
-  .how-i-work-component { animation: how-i-work-component 8.5s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
-  .how-i-work-refined { animation: how-i-work-refined 8.5s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
+  .how-i-work-component { animation: how-i-work-component 7s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
+  .how-i-work-refined { animation: how-i-work-refined 7s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
+  .how-i-work-rough { animation-duration: 7s; }
+  .how-i-work-component { animation-duration: 7s; }
+  .how-i-work-refined { animation-duration: 7s; }
 }
 @keyframes how-i-work-reveal { from { opacity: .45; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes how-i-work-draw-lines { 0%,8% { opacity: .25; stroke-dashoffset: 220; } 45%,78% { opacity: .8; stroke-dashoffset: 0; } 100% { opacity: .25; stroke-dashoffset: 0; } }

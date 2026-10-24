@@ -26,6 +26,7 @@ function MethodVisual({ type }: { type: (typeof workMethods)[number]["visual"] }
   if (type === "system") {
     return (
       <svg className="how-i-work-visual how-i-work-system" viewBox="0 0 280 150" aria-hidden="true">
+        <g className="how-i-work-foundation" aria-hidden="true"><path d="M28 116 140 82 252 116 140 148Z" /><path d="M52 110 140 136 228 110M76 103 140 122 204 103M100 96 140 108 180 96" /><path d="M76 103 76 129M100 96 100 133M124 89 124 140M156 89 156 140M180 96 180 133M204 103 204 129" /></g>
         <g className="how-i-work-lines">
           <path d="M36 96 88 46 143 94 202 40 246 79" />
           <path d="M88 46 112 122 202 40 224 120" />
@@ -41,6 +42,7 @@ function MethodVisual({ type }: { type: (typeof workMethods)[number]["visual"] }
   if (type === "flow") {
     return (
       <svg className="how-i-work-visual how-i-work-flow" viewBox="0 0 280 150" aria-hidden="true">
+        <g className="how-i-work-foundation" aria-hidden="true"><path d="M28 116 140 82 252 116 140 148Z" /><path d="M52 110 140 136 228 110M76 103 140 122 204 103M100 96 140 108 180 96" /><path d="M76 103 76 129M100 96 100 133M124 89 124 140M156 89 156 140M180 96 180 133M204 103 204 129" /></g>
         <g className="how-i-work-flow-messy">
           <path d="M24 40h48v32H40v34h58V70h45v46h53V84h60" />
           <path d="M24 112h28M88 24v28M132 36h24M180 26v38M240 48v40" />
@@ -54,6 +56,7 @@ function MethodVisual({ type }: { type: (typeof workMethods)[number]["visual"] }
 
   return (
     <svg className="how-i-work-visual how-i-work-components" viewBox="0 0 280 150" aria-hidden="true">
+      <g className="how-i-work-foundation" aria-hidden="true"><path d="M28 116 140 82 252 116 140 148Z" /><path d="M52 110 140 136 228 110M76 103 140 122 204 103M100 96 140 108 180 96" /><path d="M76 103 76 129M100 96 100 133M124 89 124 140M156 89 156 140M180 96 180 133M204 103 204 129" /></g>
       <g className="how-i-work-rough"><rect x="34" y="46" width="64" height="50" rx="4" /><rect x="108" y="28" width="54" height="82" rx="4" /><rect x="172" y="54" width="74" height="38" rx="4" /></g>
       <g className="how-i-work-component"><rect x="72" y="30" width="136" height="88" rx="12" /><path d="M92 54h54M92 70h92M92 88h62" /></g>
       <g className="how-i-work-refined"><rect x="48" y="44" width="184" height="62" rx="9" /><path d="M68 66h54M68 82h94M180 66h28M180 82h18" /></g>
