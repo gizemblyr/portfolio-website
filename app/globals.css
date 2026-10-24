@@ -7,6 +7,9 @@
 .header-nav-link { position: relative; border: 0; background: transparent; color: #292747; font-size: 16px; font-weight: 500; padding: 0.7rem 0; transition: color 250ms ease; cursor: pointer; }
 .header-nav-link:hover, .header-nav-link.is-active { color: #4f3df1; }
 .header-nav-link.is-active::after { content: ''; position: absolute; left: 50%; bottom: 0.25rem; width: 18px; height: 2px; border-radius: 99px; background: #4f3df1; transform: translateX(-50%); }
+.header-brand-group { display: flex; align-items: center; gap: .7rem; }
+.header-back-arrow { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border: 1px solid #e1dfe8; border-radius: 50%; color: #4f3df1; font-size: 1rem; line-height: 1; text-decoration: none; transition: border-color 180ms ease, background 180ms ease; }
+.header-back-arrow:hover { border-color: #4f3df1; background: #fafafd; }
 .resume-control { height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border-radius: 5px; background: #4f3df1; color: white; font-size: 14px; transition: background 250ms ease; }
 .resume-control:hover { background: #4030d8; }
 .mobile-backdrop { position: fixed; inset: 0; z-index: 190; background: rgba(20, 18, 45, 0.28); opacity: 0; pointer-events: none; transition: opacity 300ms ease; }

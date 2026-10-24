@@ -3,13 +3,11 @@ import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lu
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { MonevoToc } from "@/components/monevo-toc"
 
 export default function MonevoCaseStudy() {
   return (
     <div className="min-h-screen bg-white monevo-palette">
       <Header />
-      <MonevoToc />
 
       {/* Hero Section */}
       <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
