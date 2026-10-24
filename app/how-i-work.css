@@ -21,21 +21,29 @@
 .how-i-work-card-copy p { max-width: 22rem; margin: .9rem 0 0; color: #696777; font-size: .9rem; line-height: 1.6; }
 @media (prefers-reduced-motion: no-preference) {
   .how-i-work-card { animation: how-i-work-reveal 700ms cubic-bezier(.22,1,.36,1) both; animation-timeline: view(); animation-range: entry 0% cover 25%; }
-  .how-i-work-lines { animation: how-i-work-organize 8s ease-in-out infinite; transform-origin: center; }
-  .how-i-work-nodes { animation: how-i-work-node-drift 8s ease-in-out infinite; transform-origin: center; }
-  .how-i-work-flow-messy { animation: how-i-work-collapse 7s ease-in-out infinite; transform-origin: center; }
-  .how-i-work-flow-clean, .how-i-work-clean-nodes { animation: how-i-work-emerge 7s ease-in-out infinite; }
-  .how-i-work-rough { animation: how-i-work-rough 8s ease-in-out infinite; transform-origin: center; }
-  .how-i-work-component { animation: how-i-work-component 8s ease-in-out infinite; transform-origin: center; }
-  .how-i-work-refined { animation: how-i-work-refined 8s ease-in-out infinite; transform-origin: center; }
+  .how-i-work-lines { stroke-dasharray: 220; stroke-dashoffset: 220; animation: how-i-work-draw-lines 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work-nodes circle { opacity: 0; transform-box: fill-box; transform-origin: center; animation: how-i-work-node-appear 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work-nodes circle:nth-child(2) { animation-delay: .18s; }
+  .how-i-work-nodes circle:nth-child(3) { animation-delay: .36s; }
+  .how-i-work-nodes circle:nth-child(4) { animation-delay: .54s; }
+  .how-i-work-nodes circle:nth-child(5) { animation-delay: .72s; }
+  .how-i-work-nodes circle:nth-child(6) { animation-delay: .9s; }
+  .how-i-work-nodes circle:nth-child(7) { animation-delay: 1.08s; }
+  .how-i-work-flow-messy { animation: how-i-work-collapse 9s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
+  .how-i-work-flow-clean { stroke-dasharray: 260; stroke-dashoffset: 260; animation: how-i-work-draw-flow 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work-clean-nodes { animation: how-i-work-emerge 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work-rough { animation: how-i-work-rough 9s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
+  .how-i-work-component { animation: how-i-work-component 9s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
+  .how-i-work-refined { animation: how-i-work-refined 9s cubic-bezier(.22,1,.36,1) infinite; transform-origin: center; }
 }
 @keyframes how-i-work-reveal { from { opacity: .45; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes how-i-work-organize { 0%,100% { opacity: .45; transform: scale(.94); } 50% { opacity: 1; transform: scale(1); } }
-@keyframes how-i-work-node-drift { 0%,100% { transform: translate(0); } 50% { transform: translate(3px,-2px); } }
-@keyframes how-i-work-collapse { 0%,20% { opacity: 1; transform: translate(0) scale(1); } 55%,100% { opacity: .12; transform: translate(10px,3px) scale(.9); } }
-@keyframes how-i-work-emerge { 0%,20% { opacity: .12; } 55%,100% { opacity: 1; } }
-@keyframes how-i-work-rough { 0%,35% { opacity: 1; transform: translate(0); } 70%,100% { opacity: .18; transform: translate(-2px,4px); } }
-@keyframes how-i-work-component { 0%,35% { opacity: .2; transform: scale(.94); } 70%,100% { opacity: .45; transform: scale(1); } }
-@keyframes how-i-work-refined { 0%,35% { opacity: .2; transform: scale(.9); } 70%,100% { opacity: .95; transform: scale(1); } }
+@keyframes how-i-work-draw-lines { 0%,8% { opacity: .25; stroke-dashoffset: 220; } 45%,78% { opacity: .8; stroke-dashoffset: 0; } 100% { opacity: .25; stroke-dashoffset: 0; } }
+@keyframes how-i-work-node-appear { 0%,8% { opacity: 0; transform: scale(.72); } 18%,78% { opacity: 1; transform: scale(1); } 100% { opacity: .45; transform: scale(.98); } }
+@keyframes how-i-work-collapse { 0%,10% { opacity: .85; transform: translate(0) scale(1); } 58%,82% { opacity: .16; transform: translate(8px,2px) scale(.93); } 100% { opacity: .2; transform: translate(8px,2px) scale(.93); } }
+@keyframes how-i-work-draw-flow { 0%,20% { opacity: .12; stroke-dashoffset: 260; } 58%,82% { opacity: .9; stroke-dashoffset: 0; } 100% { opacity: .22; stroke-dashoffset: 0; } }
+@keyframes how-i-work-emerge { 0%,20% { opacity: .12; transform: translateY(4px); } 58%,82% { opacity: 1; transform: translateY(0); } 100% { opacity: .3; transform: translateY(0); } }
+@keyframes how-i-work-rough { 0%,12% { opacity: .9; transform: translate(0); } 58%,82% { opacity: .16; transform: translate(-3px,3px); } 100% { opacity: .2; transform: translate(-3px,3px); } }
+@keyframes how-i-work-component { 0%,18% { opacity: .16; transform: translate(4px,2px) scale(.97); } 58%,82% { opacity: .48; transform: translate(0) scale(1); } 100% { opacity: .22; transform: translate(0) scale(1); } }
+@keyframes how-i-work-refined { 0%,25% { opacity: .18; transform: translate(-4px,-2px) scale(.98); } 62%,84% { opacity: .95; transform: translate(0) scale(1); } 100% { opacity: .5; transform: translate(0) scale(1); } }
 @media (max-width: 767px) { .how-i-work { padding: 4.5rem 1.25rem 5rem; } .how-i-work-heading { margin-bottom: 2rem; } .how-i-work-grid { grid-template-columns: 1fr; gap: .85rem; } .how-i-work-card { min-height: 27rem; } }
 @media (prefers-reduced-motion: reduce) { .how-i-work-card { animation: none; } }
