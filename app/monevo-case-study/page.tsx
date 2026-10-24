@@ -3,16 +3,14 @@ import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lu
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { MonevoToc } from "@/components/monevo-toc"
 
 export default function MonevoCaseStudy() {
   return (
-    <div className="min-h-screen bg-white monevo-editorial">
+    <div className="min-h-screen bg-white">
       <Header />
-      <MonevoToc />
 
       {/* Hero Section */}
-      <section id="monevo-hero" className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
+      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
@@ -34,7 +32,7 @@ export default function MonevoCaseStudy() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Target className="w-4 h-4" />
-                  <span>Financial Wellness App</span>
+                  <span>FinTech Mobile App</span>
                 </div>
               </div>
             </div>
