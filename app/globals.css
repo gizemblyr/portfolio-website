@@ -962,5 +962,18 @@
   .editorial-about-body { order: 3; }
   .editorial-about-actions { order: 4; }
   .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 72px; padding-bottom: 72px; }
-  .editorial-work-heading, .editorial-blog-heading { margin-bottom: 48px; }
 }
+
+/* Monevo palette alignment: visual-only, content and layout unchanged */
+.monevo-palette { --monevo-gray: #fafafd; --monevo-purple: #4F3DF1; --monevo-ink: #15171c; --monevo-muted: #666377; background: #fff; color: var(--monevo-ink); }
+.monevo-palette [class*="bg-gradient"], .monevo-palette [class*="bg-red-"], .monevo-palette [class*="bg-orange-"], .monevo-palette [class*="bg-pink-"], .monevo-palette [class*="bg-blue-"], .monevo-palette [class*="bg-purple-"], .monevo-palette [class*="bg-indigo-"], .monevo-palette [class*="bg-green-"], .monevo-palette [class*="bg-emerald-"], .monevo-palette [class*="bg-teal-"] { background: var(--monevo-gray) !important; }
+.monevo-palette [class*="bg-gray-50"], .monevo-palette [class*="bg-white/"] { background: var(--monevo-gray) !important; }
+.monevo-palette [class*="text-red-"], .monevo-palette [class*="text-orange-"], .monevo-palette [class*="text-pink-"], .monevo-palette [class*="text-blue-"], .monevo-palette [class*="text-purple-"], .monevo-palette [class*="text-indigo-"], .monevo-palette [class*="text-green-"], .monevo-palette [class*="text-emerald-"], .monevo-palette [class*="text-teal-"] { color: var(--monevo-purple) !important; }
+.monevo-palette [class*="border-red-"], .monevo-palette [class*="border-orange-"], .monevo-palette [class*="border-pink-"], .monevo-palette [class*="border-blue-"], .monevo-palette [class*="border-purple-"], .monevo-palette [class*="border-indigo-"], .monevo-palette [class*="border-green-"], .monevo-palette [class*="border-teal-"] { border-color: color-mix(in srgb, var(--monevo-purple) 22%, white) !important; }
+.monevo-palette [class*="bg-"][class*="rounded-full"], .monevo-palette [class*="bg-"][class*="rounded-lg"] { background: var(--monevo-purple) !important; }
+.monevo-palette h1, .monevo-palette h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400 !important; letter-spacing: -.04em; line-height: 1.04; color: var(--monevo-ink) !important; }
+.monevo-palette h1 { font-size: clamp(2.7rem, 5vw, 5.3rem) !important; }
+.monevo-palette h2 { font-size: clamp(2rem, 3.65vw, 2.625rem) !important; }
+.monevo-palette p, .monevo-palette li, .monevo-palette span { color: inherit; }
+.monevo-palette [class*="shadow"] { box-shadow: 0 1px 0 rgba(21, 23, 28, .06) !important; }
+.monevo-palette [class*="backdrop"] { backdrop-filter: none !important; }

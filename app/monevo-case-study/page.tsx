@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 
 export default function MonevoCaseStudy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white monevo-palette">
       <Header />
 
       {/* Hero Section */}
