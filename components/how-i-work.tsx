@@ -7,7 +7,7 @@ const workMethods = [
     number: "01",
     title: "Understand the system",
     description:
-      "I look at the product as a whole — users, business goals, constraints, and how everything connects.",
+      "I look at the product as a whole users, business goals, constraints, and how everything connects.",
     visual: "system",
   },
   {
