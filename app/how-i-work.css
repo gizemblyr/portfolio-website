@@ -5,7 +5,7 @@
 .how-i-work-heading h2 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.2rem, 4vw, 3.35rem); font-weight: 400; letter-spacing: -.06em; line-height: 1; }
 .how-i-work-intro { max-width: 32rem; margin: 1.1rem 0 0; color: #77758c; font-size: .96rem; line-height: 1.65; }
 .how-i-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-  .how-i-work-card { min-height: 31rem; display: flex; flex-direction: column; overflow: hidden; border: 0; border-radius: 1.5rem; background: #f2f2f3; transition: transform 500ms cubic-bezier(.22,1,.36,1), box-shadow 500ms ease; }
+  .how-i-work-card { min-height: 31rem; display: flex; flex-direction: column; overflow: hidden; border: 0; border-radius: 1.5rem; background: #f9f9fa; transition: transform 500ms cubic-bezier(.22,1,.36,1), box-shadow 500ms ease; }
 .how-i-work-card:hover { transform: translateY(-6px); border-color: #cbc9d5; box-shadow: 0 18px 38px rgba(35,31,58,.08); }
 .how-i-work-card-top { display: flex; align-items: center; justify-content: space-between; padding: 1.35rem 1.4rem 0; color: #77758c; font-size: .72rem; font-weight: 600; letter-spacing: .12em; }
 .how-i-work-dot { width: .45rem; height: .45rem; border-radius: 50%; background: #6d5ce7; }
