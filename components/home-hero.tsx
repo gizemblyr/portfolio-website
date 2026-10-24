@@ -9,14 +9,14 @@ function InspectorText({
   children,
   delay,
   target,
-  automatedTarget,
+  activePhase,
 }: {
   as: "h1" | "h2" | "p"
   className: string
   children: React.ReactNode
   delay: string
   target: number
-  automatedTarget: number
+  activePhase: number
 }) { 
   const elementRef = useRef<HTMLSpanElement>(null)
   const [isHovered, setIsHovered] = useState(false)
@@ -35,7 +35,7 @@ function InspectorText({
     })
   }, [])
 
-  const isAutomated = automatedTarget === target
+  const isAutomated = activePhase === target * 2 + 2
 
   useEffect(() => {
     if (!isHovered && !isAutomated) return
@@ -90,36 +90,38 @@ function InspectorText({
 }
 
 export function HomeHero() {
-  const heroRef = useRef<HTMLElement>(null)
-  const [automatedTarget, setAutomatedTarget] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
+  const [activePhase, setActivePhase] = useState(0)
+  const timersRef = useRef<number[]>([])
 
-  useEffect(() => {
-    const hero = heroRef.current
-    if (!hero) return
-    const observer = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), { threshold: 0.18 })
-    observer.observe(hero)
-    return () => observer.disconnect()
-  }, [])
+  const startInspection = () => {
+    timersRef.current.forEach(window.clearTimeout)
+    timersRef.current = [
+      window.setTimeout(() => setActivePhase(1), 40),
+      window.setTimeout(() => setActivePhase(2), 650),
+      window.setTimeout(() => setActivePhase(3), 1450),
+      window.setTimeout(() => setActivePhase(4), 2050),
+      window.setTimeout(() => setActivePhase(5), 2850),
+      window.setTimeout(() => setActivePhase(6), 3450),
+      window.setTimeout(() => setActivePhase(7), 4050),
+      window.setTimeout(() => setActivePhase(8), 4450),
+      window.setTimeout(() => setActivePhase(9), 5100),
+    ]
+  }
 
-  useEffect(() => {
-    if (!isVisible) return
-    const sequence = [0, 3, 1, 2]
-    let index = 0
-    setAutomatedTarget(sequence[index])
-    const timer = window.setInterval(() => {
-      index = (index + 1) % sequence.length
-      setAutomatedTarget(sequence[index])
-    }, 1400)
-    return () => window.clearInterval(timer)
-  }, [isVisible])
+  const stopInspection = () => {
+    timersRef.current.forEach(window.clearTimeout)
+    timersRef.current = []
+    setActivePhase(0)
+  }
+
+  useEffect(() => () => timersRef.current.forEach(window.clearTimeout), [])
 
   const handleViewProjects = () => {
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
-    <section ref={heroRef} id="hero" className={`home-hero ${isVisible ? "is-inspection-active" : ""}`}>
+    <section id="hero" className={`home-hero phase-${activePhase}`} onMouseEnter={startInspection} onMouseLeave={stopInspection} onFocus={startInspection} onBlur={stopInspection}>
       <div className="home-hero-grid" aria-hidden="true" />
       <div className="hero-grid-zones" aria-hidden="true">
         {[7, 8, 9].map((column) => (
@@ -129,15 +131,15 @@ export function HomeHero() {
           </span>
         ))}
       </div>
-      <div className={`hero-automated-cursor target-${automatedTarget}`} aria-hidden="true"><i /></div>
-      <div className={`hero-spacing-inspection ${automatedTarget === 3 ? "is-inspecting" : ""}`} aria-hidden="true">
+      <div className={`hero-automated-cursor target-${Math.min(3, Math.max(0, Math.floor((activePhase - 1) / 2)))}`} aria-hidden="true"><i /></div>
+      <div className={`hero-spacing-inspection ${activePhase >= 8 ? "is-inspecting" : ""}`} aria-hidden="true">
         <span className="hero-spacing-label">24px</span><i className="hero-spacing-line" /><span className="hero-spacing-caption">gap / grid space</span>
       </div>
       <div className="home-hero-content hero-scroll-content">
         <div className="hero-copy">
-          <InspectorText as="h1" className="hero-title" delay="0ms" target={0} automatedTarget={automatedTarget}>Hi, I&apos;m Gizem.</InspectorText>
-          <InspectorText as="h2" className="hero-role" delay="110ms" target={1} automatedTarget={automatedTarget}>Product Designer &amp; Builder.</InspectorText>
-          <InspectorText as="p" className="hero-description" delay="220ms" target={2} automatedTarget={automatedTarget}>Sr. Product Designer with a Computer Engineering background.</InspectorText>
+          <InspectorText as="h1" className="hero-title" delay="0ms" target={0} activePhase={activePhase}>Hi, I&apos;m Gizem.</InspectorText>
+          <InspectorText as="h2" className="hero-role" delay="110ms" target={1} activePhase={activePhase}>Product Designer &amp; Builder.</InspectorText>
+          <InspectorText as="p" className="hero-description" delay="220ms" target={2} activePhase={activePhase}>Sr. Product Designer with a Computer Engineering background.</InspectorText>
         </div>
         <button type="button" className="hero-work-link" onClick={handleViewProjects}>
           <span>SEE MY WORK</span>
