@@ -88,16 +88,19 @@ export function Header() {
   }
 
   return (
-    <header className="site-header fixed inset-x-0 top-0 z-50 px-4 pt-6 md:pt-8">
-      <div className="site-header-shell mx-auto flex h-14 w-full items-center justify-between rounded-[5px] border border-[#e1dfe8] bg-white/90 px-4 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:max-w-[1285px] md:px-12">
-        <div className="header-brand-group">
-          <button type="button" onClick={goHome} className="brand-wordmark" aria-label="Return to homepage">
-            giz<span>.</span>
-          </button>
-          {isMonevo && <a className="header-back-arrow" href="/#work" aria-label="Back to Works">←</a>}
-        </div>
+    <header className={`site-header ${isMonevo ? "monevo-site-header" : ""} fixed inset-x-0 top-0 z-50 px-4 pt-6 md:pt-8`}>
+      <div className={`site-header-shell mx-auto flex h-14 w-full items-center justify-between rounded-[5px] border border-[#e1dfe8] bg-white/90 px-4 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:max-w-[1285px] md:px-12 ${isMonevo ? "monevo-header-shell" : ""}`}>
+        {isMonevo ? (
+          <a className="monevo-header-back" href="/#work" aria-label="Back to Works">←</a>
+        ) : (
+          <div className="header-brand-group">
+            <button type="button" onClick={goHome} className="brand-wordmark" aria-label="Return to homepage">
+              giz<span>.</span>
+            </button>
+          </div>
+        )}
 
-        <nav className="hidden items-center gap-9 md:flex" aria-label="Primary navigation">
+        <nav className={`items-center md:flex ${isMonevo ? "monevo-header-nav" : "hidden gap-9"}`} aria-label="Primary navigation">
           {navigationItems.map((item) => (
             <button
               key={item.id}
@@ -110,12 +113,12 @@ export function Header() {
           ))}
         </nav>
 
-        <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control hidden md:inline-flex" aria-label="Download resume">
+        {!isMonevo && <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control hidden md:inline-flex" aria-label="Download resume">
           <span>Resume</span>
           <Download aria-hidden="true" size={16} />
-        </a>
+        </a>}
 
-        <button
+        {!isMonevo && <button
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
           className="menu-trigger rounded-[5px] border border-[#e1dfe8] bg-white p-2 shadow-[0_8px_22px_rgba(72,60,150,0.08)] md:hidden"
@@ -123,9 +126,10 @@ export function Header() {
           aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
-        </button>
+        </button>}
       </div>
 
+      {!isMonevo && <>
       <div className={`mobile-backdrop md:hidden ${isMobileMenuOpen ? "is-open" : ""}`} onClick={() => setIsMobileMenuOpen(false)} aria-hidden="true" />
       <aside className={`mobile-drawer md:hidden ${isMobileMenuOpen ? "is-open" : ""}`} aria-hidden={!isMobileMenuOpen}>
         <div className="flex items-center justify-end">
@@ -143,6 +147,7 @@ export function Header() {
           </a>
         </nav>
       </aside>
+      </>}
     </header>
   )
 }
