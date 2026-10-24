@@ -10,10 +10,11 @@
 .header-brand-group { display: flex; align-items: center; gap: .7rem; }
 .header-back-arrow { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border: 1px solid #e1dfe8; border-radius: 50%; color: #4f3df1; font-size: 1rem; line-height: 1; text-decoration: none; transition: border-color 180ms ease, background 180ms ease; }
 .header-back-arrow:hover { border-color: #4f3df1; background: #fafafd; }
-.monevo-site-header { top: 1rem; padding-top: 0; background: transparent; }
-.monevo-site-header .monevo-header-shell { background: transparent !important; }
+.monevo-site-header { position: absolute; top: 0; right: 0; left: 0; padding-top: 0; background: transparent; }
+.monevo-site-header .monevo-header-shell { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }
+.monevo-palette .monevo-site-header .monevo-header-shell { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }
 .monevo-header-shell { position: relative; width: 100%; max-width: 1285px; min-width: 0; height: 3.25rem; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; backdrop-filter: none; }
-.monevo-header-back { position: absolute; top: calc(100% + .75rem); left: 50%; display: inline-flex; align-items: center; gap: .55rem; min-height: 2.35rem; padding: .55rem .9rem; border: 1px solid #d9d7e2; border-radius: 5px; color: #4F3DF1; white-space: nowrap; font-size: .86rem; line-height: 1; text-decoration: none; transform: translate(-50%, -50%); transition: background 180ms ease, border-color 180ms ease; }
+.monevo-header-back { position: absolute; top: 1.25rem; left: 50%; display: inline-flex; align-items: center; gap: .55rem; min-height: 2.35rem; padding: .55rem .9rem; border: 1px solid #d9d7e2; border-radius: 5px; color: #4F3DF1; white-space: nowrap; font-size: .86rem; line-height: 1; text-decoration: none; transform: translate(-50%, 0); transition: background 180ms ease, border-color 180ms ease; }
 .monevo-header-back span:first-child { font-size: 1.15rem; line-height: .8; }
 .monevo-header-back:hover { border-color: #4F3DF1; background: #fafafd; }
 .monevo-header-nav { margin-left: auto; }
