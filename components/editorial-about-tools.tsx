@@ -60,7 +60,7 @@ export function EditorialAboutTools() {
               <a className="editorial-action-secondary" href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer"><img className="editorial-action-icon" src={socialIcons.LinkedIn} alt="" aria-hidden="true" />LinkedIn <ArrowUpRight aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://github.com/gizembolayir" target="_blank" rel="noreferrer"><img className="editorial-action-icon" src={socialIcons.GitHub} alt="" aria-hidden="true" />GitHub <ArrowUpRight aria-hidden="true" size={14} /></a>
               <a className="editorial-action-secondary" href="https://medium.com/@gizembolayir" target="_blank" rel="noreferrer"><img className="editorial-action-icon" src={socialIcons.Medium} alt="" aria-hidden="true" />Medium <ArrowUpRight aria-hidden="true" size={14} /></a>
-              <a className="editorial-action-secondary" href="https://gizembolayir.substack.com" target="_blank" rel="noreferrer"><img className="editorial-action-icon" src={socialIcons.Substack} alt="" aria-hidden="true" />Substack <ArrowUpRight aria-hidden="true" size={14} /></a>
+              <a className="editorial-action-secondary" href="https://substack.com/@gizemblyr" target="_blank" rel="noreferrer"><img className="editorial-action-icon" src={socialIcons.Substack} alt="" aria-hidden="true" />Substack <ArrowUpRight aria-hidden="true" size={14} /></a>
             </div>
           </div>
           <div className="editorial-about-portrait">
