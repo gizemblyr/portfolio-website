@@ -8,12 +8,16 @@ function InspectorText({
   className,
   children,
   delay,
+  target,
+  automatedTarget,
 }: {
   as: "h1" | "h2" | "p"
   className: string
   children: React.ReactNode
   delay: string
-}) {
+  target: number
+  automatedTarget: number
+}) { 
   const elementRef = useRef<HTMLSpanElement>(null)
   const [isHovered, setIsHovered] = useState(false)
   const [metrics, setMetrics] = useState({ width: 0, height: 0, right: 0, bottom: 0 })
@@ -31,8 +35,10 @@ function InspectorText({
     })
   }, [])
 
+  const isAutomated = automatedTarget === target
+
   useEffect(() => {
-    if (!isHovered) return
+    if (!isHovered && !isAutomated) return
     updateMetrics()
     const observer = new ResizeObserver(updateMetrics)
     const element = elementRef.current
@@ -42,11 +48,11 @@ function InspectorText({
       observer.disconnect()
       window.removeEventListener("resize", updateMetrics)
     }
-  }, [isHovered, updateMetrics])
+  }, [isHovered, isAutomated, updateMetrics])
 
   return (
     <div
-      className={`hero-line ${isHovered ? "is-inspecting" : ""}`}
+      className={`hero-line ${isHovered || isAutomated ? "is-inspecting" : ""}`}
       style={{ "--hero-delay": delay } as React.CSSProperties}
     >
       <div className="hero-line-mask">
@@ -84,12 +90,36 @@ function InspectorText({
 }
 
 export function HomeHero() {
+  const heroRef = useRef<HTMLElement>(null)
+  const [automatedTarget, setAutomatedTarget] = useState(0)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const hero = heroRef.current
+    if (!hero) return
+    const observer = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), { threshold: 0.18 })
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!isVisible) return
+    const sequence = [0, 3, 1, 2]
+    let index = 0
+    setAutomatedTarget(sequence[index])
+    const timer = window.setInterval(() => {
+      index = (index + 1) % sequence.length
+      setAutomatedTarget(sequence[index])
+    }, 1400)
+    return () => window.clearInterval(timer)
+  }, [isVisible])
+
   const handleViewProjects = () => {
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
-    <section id="hero" className="home-hero">
+    <section ref={heroRef} id="hero" className={`home-hero ${isVisible ? "is-inspection-active" : ""}`}>
       <div className="home-hero-grid" aria-hidden="true" />
       <div className="hero-grid-zones" aria-hidden="true">
         {[7, 8, 9].map((column) => (
@@ -99,11 +129,15 @@ export function HomeHero() {
           </span>
         ))}
       </div>
+      <div className={`hero-automated-cursor target-${automatedTarget}`} aria-hidden="true"><i /></div>
+      <div className={`hero-spacing-inspection ${automatedTarget === 3 ? "is-inspecting" : ""}`} aria-hidden="true">
+        <span className="hero-spacing-label">24px</span><i className="hero-spacing-line" /><span className="hero-spacing-caption">gap / grid space</span>
+      </div>
       <div className="home-hero-content hero-scroll-content">
         <div className="hero-copy">
-          <InspectorText as="h1" className="hero-title" delay="0ms">Hi, I&apos;m Gizem.</InspectorText>
-          <InspectorText as="h2" className="hero-role" delay="110ms">Product Designer &amp; Builder.</InspectorText>
-          <InspectorText as="p" className="hero-description" delay="220ms">Sr. Product Designer with a Computer Engineering background.</InspectorText>
+          <InspectorText as="h1" className="hero-title" delay="0ms" target={0} automatedTarget={automatedTarget}>Hi, I&apos;m Gizem.</InspectorText>
+          <InspectorText as="h2" className="hero-role" delay="110ms" target={1} automatedTarget={automatedTarget}>Product Designer &amp; Builder.</InspectorText>
+          <InspectorText as="p" className="hero-description" delay="220ms" target={2} automatedTarget={automatedTarget}>Sr. Product Designer with a Computer Engineering background.</InspectorText>
         </div>
         <button type="button" className="hero-work-link" onClick={handleViewProjects}>
           <span>SEE MY WORK</span>
