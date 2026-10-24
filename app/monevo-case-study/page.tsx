@@ -563,7 +563,7 @@ export default function MonevoCaseStudy() {
             <div className="flex justify-center mb-6 md:mb-8">
               <div className="overflow-hidden rounded-xl shadow-lg max-w-4xl">
                 <img
-                  src="/images/design-mode/Frame%206.png"
+                  src="/images/design-mode/Frame%25206.png"
                   alt="Monevo onboarding screens showing value proposition - left screen demonstrates expense tracking and categorization, right screen shows gamified goal-setting and rewards system"
                   className="w-full h-auto object-cover"
                 />
@@ -654,7 +654,7 @@ export default function MonevoCaseStudy() {
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
                   <img
-                    src="/images/design-mode/Frame%206-2.png"
+                    src="/images/design-mode/Frame%25206-2.png"
                     alt="Monevo app screens showing My Monevo World dashboard, spending details with want/need categorization, and expense classification modal for individual transactions"
                     className="w-full h-auto object-cover"
                   />
@@ -696,7 +696,7 @@ export default function MonevoCaseStudy() {
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
                   <img
-                    src="/images/design-mode/Frame%202085664027.png"
+                    src="/images/design-mode/Frame%25202085664027.png"
                     alt="Monevo receipt scanning feature showing dashboard with expense entry modal and camera interface for receipt capture with real receipt visible"
                     className="w-full h-auto object-cover"
                   />
@@ -740,7 +740,7 @@ export default function MonevoCaseStudy() {
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
                   <img
-                    src="/images/design-mode/Frame%206-1.png"
+                    src="/images/design-mode/Frame%25206-1.png"
                     alt="Monevo app screens showing My Monay World dashboard, badge rewards for completing spending tracking series, reward options with discounts, and points system with trainings and expert consultations"
                     className="w-full h-auto object-cover"
                   />
@@ -837,14 +837,14 @@ export default function MonevoCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl shadow-sm">
                   <img
-                    src="/images/design-mode/Frame%206-4.png"
+                    src="/images/design-mode/Frame%25206-4.png"
                     alt="Monevo smart reminders feature showing quiz prompts for expense categorization and notifications for unspecified expenses"
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl shadow-sm">
                   <img
-                    src="/images/design-mode/Frame%206-3.png"
+                    src="/images/design-mode/Frame%25206-3.png"
                     alt="Monevo weekly reports showing spending distribution charts, wants vs needs analysis, and most-spent category insights with personalized recommendations"
                     className="w-full h-auto object-cover"
                   />

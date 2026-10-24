@@ -970,10 +970,16 @@
 .monevo-palette [class*="bg-gray-50"], .monevo-palette [class*="bg-white/"] { background: var(--monevo-gray) !important; }
 .monevo-palette [class*="text-red-"], .monevo-palette [class*="text-orange-"], .monevo-palette [class*="text-pink-"], .monevo-palette [class*="text-blue-"], .monevo-palette [class*="text-purple-"], .monevo-palette [class*="text-indigo-"], .monevo-palette [class*="text-green-"], .monevo-palette [class*="text-emerald-"], .monevo-palette [class*="text-teal-"] { color: var(--monevo-purple) !important; }
 .monevo-palette [class*="border-red-"], .monevo-palette [class*="border-orange-"], .monevo-palette [class*="border-pink-"], .monevo-palette [class*="border-blue-"], .monevo-palette [class*="border-purple-"], .monevo-palette [class*="border-indigo-"], .monevo-palette [class*="border-green-"], .monevo-palette [class*="border-teal-"] { border-color: color-mix(in srgb, var(--monevo-purple) 22%, white) !important; }
-.monevo-palette [class*="bg-"][class*="rounded-full"], .monevo-palette [class*="bg-"][class*="rounded-lg"] { background: var(--monevo-purple) !important; }
+.monevo-palette [class*="bg-"][class*="rounded-full"] { background: var(--monevo-purple) !important; }
+.monevo-palette li[class*="bg-"], .monevo-palette div[class*="p-3"][class*="rounded"], .monevo-palette div[class*="p-4"][class*="rounded"], .monevo-palette div[class*="p-6"][class*="rounded"] { background: var(--monevo-gray) !important; }
+.monevo-palette [class*="w-12"][class*="h-12"][class*="rounded-full"], .monevo-palette [class*="w-16"][class*="h-16"][class*="rounded-full"], .monevo-palette [class*="w-10"][class*="h-10"][class*="rounded-full"] { display: flex; align-items: center; justify-content: center; background: var(--monevo-purple) !important; }
+.monevo-palette [class*="w-12"][class*="h-12"][class*="rounded-full"] svg, .monevo-palette [class*="w-16"][class*="h-16"][class*="rounded-full"] svg, .monevo-palette [class*="w-10"][class*="h-10"][class*="rounded-full"] svg { color: #fff !important; }
 .monevo-palette h1, .monevo-palette h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400 !important; letter-spacing: -.04em; line-height: 1.04; color: var(--monevo-ink) !important; }
 .monevo-palette h1 { font-size: clamp(2.7rem, 5vw, 5.3rem) !important; }
 .monevo-palette h2 { font-size: clamp(2rem, 3.65vw, 2.625rem) !important; }
 .monevo-palette p, .monevo-palette li, .monevo-palette span { color: inherit; }
+.monevo-palette li [class*="text-"] { color: var(--monevo-ink) !important; }
+.monevo-palette li strong { color: var(--monevo-ink); }
 .monevo-palette [class*="shadow"] { box-shadow: 0 1px 0 rgba(21, 23, 28, .06) !important; }
 .monevo-palette [class*="backdrop"] { backdrop-filter: none !important; }
+.monevo-palette > main [class~="absolute"] { display: none !important; }
