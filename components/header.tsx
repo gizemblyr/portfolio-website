@@ -100,7 +100,7 @@ export function Header() {
           </div>
         )}
 
-        <nav className={`items-center md:flex ${isMonevo ? "monevo-header-nav" : "hidden gap-9"}`} aria-label="Primary navigation">
+        {!isMonevo && <nav className="hidden items-center gap-9 md:flex" aria-label="Primary navigation">
           {navigationItems.map((item) => (
             <button
               key={item.id}
@@ -111,7 +111,7 @@ export function Header() {
               {item.label}
             </button>
           ))}
-        </nav>
+        </nav>}
 
         {!isMonevo && <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control hidden md:inline-flex" aria-label="Download resume">
           <span>Resume</span>
