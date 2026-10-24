@@ -473,6 +473,29 @@
   to { transform: translateX(-50%); }
 }
 
+.section-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.section-reveal.is-visible {
+  animation: section-slide-up 620ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+@keyframes section-slide-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-reveal,
+  .section-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
 @keyframes hero-line-reveal {
   from { opacity: 0; transform: translateY(105%); }
   to { opacity: 1; transform: translateY(0); }

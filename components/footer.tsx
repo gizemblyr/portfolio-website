@@ -38,7 +38,7 @@ export function Footer() {
               <a href="https://www.linkedin.com/in/gizembolayir/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a>
               <a href="https://github.com/gizemblyr" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a>
               <a href="https://medium.com/@gizembolayir" target="_blank" rel="noreferrer">Medium <ArrowUpRight size={14} /></a>
-              <a href="https://gizembolayir.substack.com" target="_blank" rel="noreferrer">Substack <ArrowUpRight size={14} /></a>
+              <a href="https://substack.com/@gizemblyr" target="_blank" rel="noreferrer">Substack <ArrowUpRight size={14} /></a>
               <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf">Resume <Download size={14} /></a>
             </div>
           </div>
