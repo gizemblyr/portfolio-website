@@ -12,8 +12,8 @@
 .how-i-work-visual { width: 100%; height: 10rem; margin: 2rem 0 1.1rem; overflow: visible; }
 .how-i-work-visual path, .how-i-work-visual rect, .how-i-work-visual circle { vector-effect: non-scaling-stroke; }
 .how-i-work-lines, .how-i-work-flow-messy, .how-i-work-flow-clean, .how-i-work-rough, .how-i-work-component, .how-i-work-refined { fill: none; stroke: #aaa8b4; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.how-i-work-foundation { fill: none; stroke: #d9d8df; stroke-width: 1; opacity: .62; stroke-linecap: round; stroke-linejoin: round; transform: translateY(3px) skewX(-3deg); transform-origin: center; }
-.how-i-work-foundation path:first-child { fill: rgba(255,255,255,.18); stroke: #d3d1da; }
+.how-i-work-foundation { fill: none; stroke: #d5d1e0; stroke-width: .9; stroke-dasharray: 2 4; opacity: .58; stroke-linecap: round; stroke-linejoin: round; transform: translateY(3px) skewX(-3deg); transform-origin: center; }
+.how-i-work-foundation path:first-child { fill: rgba(255,255,255,.12); stroke: #d1ccdf; stroke-dasharray: 3 5; }
 .how-i-work-system .how-i-work-foundation { opacity: .48; }
 .how-i-work-flow .how-i-work-foundation { opacity: .58; transform: translateY(4px) skewX(-4deg) scale(1.02); }
 .how-i-work-components .how-i-work-foundation { opacity: .68; transform: translateY(5px) skewX(-5deg) scale(1.04); }
