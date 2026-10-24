@@ -75,7 +75,7 @@ export function HowIWork() {
 
     const observer = new IntersectionObserver(
       ([entry]) => setIsActive(entry.isIntersecting),
-      { rootMargin: "0px 0px -12% 0px", threshold: 0.01 },
+      { rootMargin: "0px 0px -18% 0px", threshold: 0.01 },
     )
 
     observer.observe(section)
