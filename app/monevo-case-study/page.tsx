@@ -11,7 +11,7 @@ export default function MonevoCaseStudy() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
+      <section className="monevo-hero pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>

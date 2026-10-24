@@ -1031,3 +1031,11 @@
 .monevo-palette section:first-of-type { background: #fff !important; }
 .monevo-palette section > div > div { background: var(--monevo-gray); }
 .monevo-palette section:first-of-type > div > div { background: transparent; }
+.monevo-palette .monevo-hero { background: #fff !important; }
+.monevo-palette .monevo-hero > div { width: min(1120px, 100%); }
+.monevo-palette .monevo-hero > div > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
+.monevo-palette .monevo-hero h1 { width: min(100%, 34rem); min-height: 2.08em; margin-bottom: 1.5rem; font-size: clamp(2.7rem, 5vw, 5.3rem) !important; }
+.monevo-palette .monevo-hero p { max-width: 36rem; font-size: 1.05rem !important; line-height: 1.65 !important; }
+.monevo-palette .monevo-hero > div > div > div:last-child { display: flex; min-height: 25rem; align-items: center; justify-content: center; }
+.monevo-palette .monevo-hero img { width: 100%; max-width: 34rem !important; max-height: 32rem; object-fit: contain; }
+@media (max-width: 767px) { .monevo-palette .monevo-hero > div > div { grid-template-columns: 1fr; gap: 2rem; } .monevo-palette .monevo-hero h1 { min-height: 0; } .monevo-palette .monevo-hero > div > div > div:last-child { min-height: 0; } }
