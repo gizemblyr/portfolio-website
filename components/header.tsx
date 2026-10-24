@@ -20,7 +20,7 @@ function scrollToSection(id: string) {
 
 export function Header() {
   const pathname = usePathname()
-  const isMonevo = pathname === "/monevo-case-study"
+  const isMonevo = ["/monevo-case-study", "/foodpanda-case-study", "/yemekcom-case-study", "/newage-case-study", "/foodpay-case-study"].includes(pathname)
   const [activeSection, setActiveSection] = useState<string | null>(null)
   const navigationItems = isMonevo ? [
     { label: "Problem", id: "problem" },

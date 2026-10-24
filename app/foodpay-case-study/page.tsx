@@ -3,14 +3,15 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function FoodPayCaseStudy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white monevo-palette" >
       <Header />
 
       {/* Hero Section */}
-      <section id="overview" className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-red-50 to-rose-100">
+      <section id="overview" className="monevo-hero pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-red-50 to-rose-100">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
@@ -450,6 +451,7 @@ export default function FoodPayCaseStudy() {
         </div>
       </section>
 
+      <ExploreMoreWork current="foodpay" />
       <Footer />
     </div>
   )

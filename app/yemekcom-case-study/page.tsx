@@ -3,14 +3,15 @@ import { ArrowRight, Clock, Users, Target } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function YemekcomCaseStudy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white monevo-palette">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-red-50 to-orange-100">
+      <section className="monevo-hero pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-red-50 to-orange-100">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
@@ -939,6 +940,7 @@ export default function YemekcomCaseStudy() {
         </div>
       </section>
 
+      <ExploreMoreWork current="yemekcom" />
       <Footer />
     </div>
   )
