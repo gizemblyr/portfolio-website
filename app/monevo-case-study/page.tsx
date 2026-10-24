@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 
 export default function MonevoCaseStudy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white monevo-editorial">
       <Header />
 
       {/* Hero Section */}
@@ -32,7 +32,7 @@ export default function MonevoCaseStudy() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Target className="w-4 h-4" />
-                  <span>FinTech Mobile App</span>
+                  <span>Financial Wellness App</span>
                 </div>
               </div>
             </div>

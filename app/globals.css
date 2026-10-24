@@ -964,3 +964,34 @@
   .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 72px; padding-bottom: 72px; }
   .editorial-work-heading, .editorial-blog-heading { margin-bottom: 48px; }
 }
+
+/* Monevo editorial case study overrides */
+.monevo-editorial { --monevo-purple: #4F3DF1; --monevo-ink: #24232b; --monevo-muted: #777680; color: var(--monevo-ink); background: #fff; }
+.monevo-editorial section { background: #fff !important; padding-block: clamp(4rem, 8vw, 7.5rem) !important; }
+.monevo-editorial section:nth-of-type(even) { background: #fafafa !important; }
+.monevo-editorial section > div { max-width: 1120px; }
+.monevo-editorial h1, .monevo-editorial h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400 !important; letter-spacing: -.04em; line-height: 1.04; }
+.monevo-editorial h1 { font-size: clamp(2.7rem, 5vw, 5.3rem) !important; }
+.monevo-editorial h2.text-center { text-align: left !important; }
+.monevo-editorial section:first-of-type > div > div { align-items: start; }
+.monevo-editorial section:first-of-type p { max-width: 600px; color: var(--monevo-muted) !important; line-height: 1.7 !important; }
+.monevo-editorial section:first-of-type img { display: block; width: 100%; max-width: 560px; margin-left: auto; }
+.monevo-editorial section:first-of-type .flex.items-center { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #dedde4; }
+.monevo-editorial section:first-of-type .flex.items-center > div { display: block; }
+.monevo-editorial section:first-of-type .flex.items-center svg { display: none; }
+.monevo-editorial section:first-of-type .flex.items-center span { display: block; color: var(--monevo-ink); font-size: .92rem; }
+.monevo-editorial section:first-of-type .flex.items-center span::before { display: block; margin-bottom: .45rem; color: var(--monevo-purple); font: 600 .68rem/1 Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+.monevo-editorial section:first-of-type .flex.items-center > div:nth-child(1) span::before { content: 'Timeline'; }
+.monevo-editorial section:first-of-type .flex.items-center > div:nth-child(2) span::before { content: 'Role'; }
+.monevo-editorial section:first-of-type .flex.items-center > div:nth-child(3) span::before { content: 'Product'; }
+.monevo-editorial [class*="rounded"], .monevo-editorial [class*="shadow"], .monevo-editorial [class*="backdrop"] { border-radius: 0 !important; box-shadow: none !important; backdrop-filter: none !important; }
+.monevo-editorial [class*="bg-gradient"], .monevo-editorial [class*="bg-red-"], .monevo-editorial [class*="bg-orange-"], .monevo-editorial [class*="bg-pink-"], .monevo-editorial [class*="bg-blue-"], .monevo-editorial [class*="bg-purple-"], .monevo-editorial [class*="bg-indigo-"], .monevo-editorial [class*="bg-green-"], .monevo-editorial [class*="bg-teal-"] { background: transparent !important; }
+.monevo-editorial .absolute { display: none; }
+.monevo-editorial section > div > div > div { border-color: #e2e1e6 !important; }
+.monevo-editorial section img { border-radius: 0 !important; box-shadow: none !important; }
+.monevo-editorial [class*="text-red-"], .monevo-editorial [class*="text-orange-"], .monevo-editorial [class*="text-green-"], .monevo-editorial [class*="text-blue-"], .monevo-editorial [class*="text-purple-"], .monevo-editorial [class*="text-indigo-"], .monevo-editorial [class*="text-teal-"] { color: var(--monevo-purple) !important; }
+.monevo-editorial [class*="bg-"][class*="rounded-full"] { width: .42rem !important; height: .42rem !important; background: var(--monevo-purple) !important; }
+.monevo-editorial section > div > div > div > div[class*="p-"] { border-bottom: 1px solid #e2e1e6 !important; }
+@media (max-width: 767px) { .monevo-editorial section:first-of-type .flex.items-center { grid-template-columns: 1fr; gap: .8rem; } .monevo-editorial section:first-of-type img { margin: 2rem 0 0; } }
+@media (prefers-reduced-motion: no-preference) { .monevo-editorial section > div { animation: monevo-editorial-reveal 650ms cubic-bezier(.22, 1, .36, 1) both; } }
+@keyframes monevo-editorial-reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
