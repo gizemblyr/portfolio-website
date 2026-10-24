@@ -964,6 +964,19 @@
   .editorial-about-section, .editorial-tools-section, .editorial-connect-section { padding-top: 72px; padding-bottom: 72px; }
 }
 
+.monevo-project-header { position: sticky; z-index: 30; top: 4rem; border-bottom: 1px solid #e6e5ea; background: rgba(255,255,255,.96); }
+.monevo-project-header-inner { display: flex; align-items: center; gap: 1.5rem; width: min(1120px, calc(100% - 2rem)); min-height: 3.5rem; margin: 0 auto; }
+.monevo-project-back { display: grid; flex: 0 0 2rem; width: 2rem; height: 2rem; place-items: center; border: 1px solid #dedde4; border-radius: 50%; color: #24232b; font-size: 1rem; text-decoration: none; transition: border-color 180ms ease, color 180ms ease; }
+.monevo-project-back:hover { border-color: #4F3DF1; color: #4F3DF1; }
+.monevo-project-header nav { display: flex; align-items: center; gap: clamp(.65rem, 1.8vw, 1.35rem); min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.monevo-project-header nav::-webkit-scrollbar { display: none; }
+.monevo-project-header nav a { position: relative; flex: 0 0 auto; padding: .35rem 0; color: #777680; font-size: .76rem; text-decoration: none; white-space: nowrap; }
+.monevo-project-header nav a::after { position: absolute; right: 0; bottom: -.9rem; left: 0; height: 2px; background: #4F3DF1; content: ''; opacity: 0; transform: scaleX(.45); transition: opacity 180ms ease, transform 180ms ease; }
+.monevo-project-header nav a:hover, .monevo-project-header nav a.is-active { color: #24232b; }
+.monevo-project-header nav a.is-active::after { opacity: 1; transform: scaleX(1); }
+.monevo-project-header-spacer { flex: 1; }
+@media (max-width: 640px) { .monevo-project-header-inner { width: calc(100% - 1rem); gap: .75rem; } .monevo-project-header nav { gap: .9rem; } .monevo-project-header nav a { font-size: .7rem; } }
+
 /* Monevo palette alignment: visual-only, content and layout unchanged */
 .monevo-palette { --monevo-gray: #fafafd; --monevo-purple: #4F3DF1; --monevo-ink: #15171c; --monevo-muted: #666377; background: #fff; color: var(--monevo-ink); }
 .monevo-palette [class*="bg-gradient"], .monevo-palette [class*="bg-red-"], .monevo-palette [class*="bg-orange-"], .monevo-palette [class*="bg-pink-"], .monevo-palette [class*="bg-blue-"], .monevo-palette [class*="bg-purple-"], .monevo-palette [class*="bg-indigo-"], .monevo-palette [class*="bg-green-"], .monevo-palette [class*="bg-emerald-"], .monevo-palette [class*="bg-teal-"] { background: var(--monevo-gray) !important; }

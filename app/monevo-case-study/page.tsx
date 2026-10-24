@@ -3,11 +3,13 @@ import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lu
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { MonevoToc } from "@/components/monevo-toc"
 
 export default function MonevoCaseStudy() {
   return (
     <div className="min-h-screen bg-white monevo-palette">
       <Header />
+      <MonevoToc />
 
       {/* Hero Section */}
       <section className="pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
@@ -50,7 +52,7 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Project Overview */}
-      <section id="overview" className="py-12 md:py-16 px-4 md:px-8">
+      <section id="problem" className="py-12 md:py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Problem Statement */}
           <div className="bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-6 md:p-8 mb-12 relative overflow-hidden">
@@ -114,7 +116,7 @@ export default function MonevoCaseStudy() {
 
           {/* Goals & Success Metrics */}
           <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+            <h2 id="goals" className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
               Goals & Success Metrics
             </h2>
 
@@ -192,7 +194,7 @@ export default function MonevoCaseStudy() {
 
             {/* Approach */}
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50 mt-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Approach</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center" id="approach">Approach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 <div className="text-center">
                   <div className="monevo-approach-number w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -459,7 +461,7 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Results */}
-      <section id="results" className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
+      <section id="impact" className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Usability Testing & Outcomes
@@ -552,7 +554,7 @@ export default function MonevoCaseStudy() {
 
           {/* Validated through usability testing */}
           <div className="mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+            <h2 id="testing" className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
               Validated Through Usability Testing
             </h2>
 
@@ -933,7 +935,7 @@ export default function MonevoCaseStudy() {
               <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-sm border border-white/50 mt-12">
                 <div className="flex items-center gap-3 mb-6">
                   
-                <h2 className="w-full text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 text-center relative z-10">
+                <h2 id="next-step" className="w-full text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 text-center relative z-10">
                Next Step
                 </h2>
                 </div>
