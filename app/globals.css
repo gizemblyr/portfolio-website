@@ -13,6 +13,18 @@
 .monevo-site-header { position: sticky; top: 8px; right: 0; left: 0; padding-top: 0; background: transparent; }
 .monevo-site-header .monevo-header-shell { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }
 .monevo-palette .monevo-site-header .monevo-header-shell { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }
+.explore-more-work { background: #fff; padding: clamp(4rem, 8vw, 7rem) 1rem; }
+.explore-more-work-inner { width: min(1120px, 100%); margin: 0 auto; }
+.explore-more-work h2 { margin: 0 0 2.5rem; color: #24232b; font: 400 clamp(2rem, 3.6vw, 2.75rem)/1.04 Georgia, 'Times New Roman', serif; letter-spacing: -.04em; }
+.explore-more-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 1.5rem; }
+.explore-more-work-card { display: block; color: #24232b; text-decoration: none; }
+.explore-more-work-image { position: relative; aspect-ratio: 1.35; overflow: hidden; background: #fafafd; }
+.explore-more-work-image img { object-fit: cover; transition: transform 500ms cubic-bezier(.22,1,.36,1); }
+.explore-more-work-card:hover .explore-more-work-image img { transform: scale(1.035); }
+.explore-more-work-card > p { margin: 1rem 0 .5rem; color: #4F3DF1; font: 600 .68rem/1 Arial, sans-serif; letter-spacing: .1em; }
+.explore-more-work-card h3 { margin: 0; color: #24232b; font: 400 clamp(1.1rem, 1.8vw, 1.45rem)/1.2 Georgia, 'Times New Roman', serif; }
+@media (max-width: 800px) { .explore-more-work { padding-inline: 1rem; } .explore-more-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1rem; } }
+@media (max-width: 520px) { .explore-more-work-grid { grid-template-columns: 1fr; } }
 .monevo-header-shell { position: relative; width: 100%; max-width: 1285px; min-width: 0; height: 3.25rem; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; backdrop-filter: none; }
 .monevo-header-back { position: absolute; top: -1.75rem; left: 50%; display: inline-flex; align-items: center; gap: .55rem; min-height: 2.35rem; padding: .55rem .9rem; border: 1px solid #d9d7e2; border-radius: 5px; background: #fff; color: #4F3DF1; white-space: nowrap; font-size: .86rem; line-height: 1; text-decoration: none; transform: translate(-50%, 0); transition: background 180ms ease, border-color 180ms ease; }
 .monevo-header-back span:first-child { font-size: 1.15rem; line-height: .8; }

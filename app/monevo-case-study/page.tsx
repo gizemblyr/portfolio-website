@@ -3,6 +3,7 @@ import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lu
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function MonevoCaseStudy() {
   return (
@@ -991,6 +992,7 @@ export default function MonevoCaseStudy() {
         </div>
       </section>
 
+      <ExploreMoreWork current="monevo" />
       <Footer />
     </div>
   )

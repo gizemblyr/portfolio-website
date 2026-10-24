@@ -3,10 +3,11 @@ import { ArrowRight, Clock, Users, Target } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function YemekcomCaseStudy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white monevo-palette">
       <Header />
 
       {/* Hero Section */}
@@ -939,6 +940,7 @@ export default function YemekcomCaseStudy() {
         </div>
       </section>
 
+      <ExploreMoreWork current="yemekcom" />
       <Footer />
     </div>
   )
