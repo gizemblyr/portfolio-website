@@ -66,7 +66,6 @@ export function HowIWork() {
     <section className="how-i-work" aria-labelledby="how-i-work-title">
       <div className="how-i-work-inner">
         <header className="how-i-work-heading">
-          <p className="how-i-work-eyebrow">Approach</p>
           <h2 id="how-i-work-title">How I Work</h2>
           <p className="how-i-work-intro">A calm, systems-minded approach from first question to shipped experience.</p>
         </header>
