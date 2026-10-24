@@ -11,14 +11,16 @@
 .header-back-arrow { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border: 1px solid #e1dfe8; border-radius: 50%; color: #4f3df1; font-size: 1rem; line-height: 1; text-decoration: none; transition: border-color 180ms ease, background 180ms ease; }
 .header-back-arrow:hover { border-color: #4f3df1; background: #fafafd; }
 .monevo-site-header { top: 1rem; padding-top: 0; }
-.monevo-header-shell { width: fit-content; max-width: calc(100vw - 2rem); min-width: min(680px, calc(100vw - 2rem)); height: 3.25rem; padding: .35rem .45rem; border-radius: 999px; box-shadow: 0 8px 26px rgba(21,23,28,.08); }
-.monevo-header-back { display: grid; flex: 0 0 2.35rem; width: 2.35rem; height: 2.35rem; place-items: center; border: 1px solid #e1dfe8; border-radius: 50%; color: #4F3DF1; font-size: 1.05rem; text-decoration: none; transition: background 180ms ease, border-color 180ms ease; }
+.monevo-header-shell { position: relative; width: fit-content; max-width: calc(100vw - 2rem); min-width: min(680px, calc(100vw - 2rem)); height: 3.25rem; padding: .35rem .45rem; border-radius: 5px; box-shadow: none; }
+.monevo-header-back { position: absolute; top: calc(100% + .75rem); left: 50%; display: inline-flex; align-items: center; gap: .55rem; min-height: 2.35rem; padding: .55rem .9rem; border: 1px solid #d9d7e2; border-radius: 5px; color: #4F3DF1; font-size: .86rem; line-height: 1; text-decoration: none; transform: translate(-50%, -50%); transition: background 180ms ease, border-color 180ms ease; }
+.monevo-header-back span:first-child { font-size: 1.15rem; line-height: .8; }
 .monevo-header-back:hover { border-color: #4F3DF1; background: #fafafd; }
+.monevo-header-nav { margin-left: auto; }
 .monevo-header-nav { display: flex; flex: 1; justify-content: center; gap: .15rem; padding: .2rem; border-radius: 999px; }
 .monevo-header-nav .header-nav-link { padding: .55rem .8rem; border-radius: 999px; color: #777680; font-size: .76rem; }
 .monevo-header-nav .header-nav-link.is-active { background: #4F3DF1; color: #fff; }
 .monevo-header-nav .header-nav-link.is-active::after { display: none; }
-@media (max-width: 800px) { .monevo-header-shell { min-width: 0; width: calc(100vw - 2rem); overflow-x: auto; } .monevo-header-nav { justify-content: flex-start; overflow-x: auto; } .monevo-header-nav .header-nav-link { flex: 0 0 auto; padding-inline: .65rem; } }
+@media (max-width: 800px) { .monevo-header-shell { min-width: 0; width: calc(100vw - 2rem); overflow-x: auto; } .monevo-header-nav { justify-content: flex-start; overflow-x: auto; } .monevo-header-nav .header-nav-link { flex: 0 0 auto; padding-inline: .65rem; } .monevo-header-back { position: absolute; top: calc(100% + .75rem); left: 50%; } }
 .resume-control { height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border-radius: 5px; background: #4f3df1; color: white; font-size: 14px; transition: background 250ms ease; }
 .resume-control:hover { background: #4030d8; }
 .mobile-backdrop { position: fixed; inset: 0; z-index: 190; background: rgba(20, 18, 45, 0.28); opacity: 0; pointer-events: none; transition: opacity 300ms ease; }

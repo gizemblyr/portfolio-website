@@ -91,7 +91,7 @@ export function Header() {
     <header className={`site-header ${isMonevo ? "monevo-site-header" : ""} fixed inset-x-0 top-0 z-50 px-4 pt-6 md:pt-8`}>
       <div className={`site-header-shell mx-auto flex h-14 w-full items-center justify-between rounded-[5px] border border-[#e1dfe8] bg-white/90 px-4 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:max-w-[1285px] md:px-12 ${isMonevo ? "monevo-header-shell" : ""}`}>
         {isMonevo ? (
-          <a className="monevo-header-back" href="/#work" aria-label="Back to Works">←</a>
+          <a className="monevo-header-back" href="/#work" aria-label="Back to home"><span aria-hidden="true">←</span><span>Back to home</span></a>
         ) : (
           <div className="header-brand-group">
             <button type="button" onClick={goHome} className="brand-wordmark" aria-label="Return to homepage">
