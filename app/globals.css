@@ -428,6 +428,7 @@
   width: max-content;
   align-items: center;
   animation: brand-marquee 26s linear infinite;
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
 
@@ -722,7 +723,6 @@
 @media (prefers-reduced-motion: no-preference) {
   .home-hero-content,
   .editorial-about-layout,
-  .editorial-work-heading,
   .editorial-blog-heading,
   .editorial-tools-intro,
   .editorial-connect-inner {
