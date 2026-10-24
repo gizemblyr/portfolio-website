@@ -20,8 +20,8 @@
 .how-i-work-card-copy h3 { max-width: 17rem; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.45rem, 2vw, 2rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.06; }
 .how-i-work-card-copy p { max-width: 22rem; margin: .9rem 0 0; color: #696777; font-size: .9rem; line-height: 1.6; }
 @media (prefers-reduced-motion: no-preference) {
-  .how-i-work-lines { stroke-dasharray: 220; stroke-dashoffset: 220; animation: how-i-work-draw-lines 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
-  .how-i-work-nodes circle { opacity: 0; transform-box: fill-box; transform-origin: center; animation: how-i-work-node-appear 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-lines { stroke-dasharray: 220; stroke-dashoffset: 220; animation: how-i-work-draw-lines 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
+  .how-i-work.is-active .how-i-work-nodes circle { opacity: 0; transform-box: fill-box; transform-origin: center; animation: how-i-work-node-appear 9s cubic-bezier(.22,1,.36,1) infinite; }
   .how-i-work-nodes circle:nth-child(2) { animation-delay: .18s; }
   .how-i-work-nodes circle:nth-child(3) { animation-delay: .36s; }
   .how-i-work-nodes circle:nth-child(4) { animation-delay: .54s; }
@@ -29,20 +29,20 @@
   .how-i-work-nodes circle:nth-child(6) { animation-delay: .9s; }
   .how-i-work-nodes circle:nth-child(7) { animation-delay: 1.08s; }
   .how-i-work-nodes circle:nth-child(2), .how-i-work-nodes circle:nth-child(5) { animation-name: how-i-work-node-pulse; animation-duration: 9s; }
-  .how-i-work-flow-messy { transform-origin: center; }
-  .how-i-work-flow-messy path:nth-child(1) { animation: how-i-work-fragment-left 9s cubic-bezier(.22,1,.36,1) infinite; }
-  .how-i-work-flow-messy path:nth-child(2) { animation: how-i-work-fragment-right 9s cubic-bezier(.22,1,.36,1) infinite; }
-  .how-i-work-flow-messy circle { animation: how-i-work-fragment-node 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-flow-messy { transform-origin: center; }
+  .how-i-work.is-active .how-i-work-flow-messy path:nth-child(1) { animation: how-i-work-fragment-left 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-flow-messy path:nth-child(2) { animation: how-i-work-fragment-right 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-flow-messy circle { animation: how-i-work-fragment-node 9s cubic-bezier(.22,1,.36,1) infinite; }
   .how-i-work-flow-messy circle:nth-of-type(2) { animation-delay: .16s; }
   .how-i-work-flow-messy circle:nth-of-type(3) { animation-delay: .32s; }
   .how-i-work-flow-messy circle:nth-of-type(4) { animation-delay: .48s; }
   .how-i-work-flow-messy circle:nth-of-type(5) { animation-delay: .64s; }
   .how-i-work-flow-messy circle:nth-of-type(6) { animation-delay: .8s; }
-  .how-i-work-flow-clean { stroke-dasharray: 260; stroke-dashoffset: 260; animation: how-i-work-draw-flow 6.5s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
-  .how-i-work-clean-nodes { animation: how-i-work-emerge 9s cubic-bezier(.22,1,.36,1) infinite; }
-  .how-i-work-rough { animation: how-i-work-rough 6.5s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
-  .how-i-work-component { animation: how-i-work-component 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
-  .how-i-work-refined { animation: how-i-work-refined 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-flow-clean { stroke-dasharray: 260; stroke-dashoffset: 260; animation: how-i-work-draw-flow 6.5s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
+  .how-i-work.is-active .how-i-work-clean-nodes { animation: how-i-work-emerge 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-rough { animation: how-i-work-rough 6.5s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-component { animation: how-i-work-component 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-refined { animation: how-i-work-refined 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
 }
 @keyframes how-i-work-reveal { from { opacity: .45; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes how-i-work-draw-lines { 0%,8% { opacity: .2; stroke-dashoffset: 220; } 45%,78% { opacity: 1; stroke-dashoffset: 0; } 100% { opacity: .32; stroke-dashoffset: 0; } }

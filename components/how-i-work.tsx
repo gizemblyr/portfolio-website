@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect, useRef, useState } from "react"
+
 const workMethods = [
   {
     number: "01",
@@ -62,8 +66,24 @@ function MethodVisual({ type }: { type: (typeof workMethods)[number]["visual"] }
 }
 
 export function HowIWork() {
+  const sectionRef = useRef<HTMLElement>(null)
+  const [isActive, setIsActive] = useState(false)
+
+  useEffect(() => {
+    const section = sectionRef.current
+    if (!section) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsActive(entry.isIntersecting),
+      { rootMargin: "0px 0px -12% 0px", threshold: 0.01 },
+    )
+
+    observer.observe(section)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="how-i-work" aria-labelledby="how-i-work-title">
+    <section ref={sectionRef} className={`how-i-work${isActive ? " is-active" : ""}`} aria-labelledby="how-i-work-title">
       <div className="how-i-work-inner">
         <header className="how-i-work-heading">
           <h2 id="how-i-work-title">How I Work</h2>
