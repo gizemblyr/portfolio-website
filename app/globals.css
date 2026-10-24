@@ -162,14 +162,14 @@
   height: 15rem;
   margin-top: -5rem;
   border: 1px solid transparent;
-  color: #2aa99b;
+  color: #4F3DF1;
   opacity: 0;
   transition: opacity 180ms ease, border-color 180ms ease;
 }
 
 .hero-grid-zone:hover {
   opacity: 1;
-  border-color: rgba(62, 190, 176, 0.68);
+  border-color: rgba(79, 61, 241, 0.68);
 }
 
 .hero-grid-zone > span {
@@ -188,7 +188,7 @@
   position: absolute;
   width: 0.38rem;
   height: 0.38rem;
-  border: 1px solid rgba(62, 190, 176, 0.78);
+  border: 1px solid rgba(79, 61, 241, 0.78);
   background: #fafafd;
   content: '';
 }
@@ -280,8 +280,8 @@
   position: absolute;
   z-index: 2;
   inset: 0;
-  border: 1px solid rgba(62, 190, 176, 0.72);
-  color: #2aa99b;
+  border: 1px solid rgba(79, 61, 241, 0.72);
+  color: #4F3DF1;
   opacity: 0;
   pointer-events: none;
   transition: opacity 180ms ease;
@@ -312,10 +312,10 @@
   z-index: 1;
   display: block;
   padding: 0.18rem 0.34rem;
-  border: 1px solid rgba(16, 61, 58, 0.18);
+  border: 1px solid rgba(79, 61, 241, 0.18);
   border-radius: 0.16rem;
-  background: #5ad0c0 !important;
-  color: #103d3a !important;
+  background: #4F3DF1 !important;
+  color: #ffffff !important;
   font-size: 0.58rem !important;
   line-height: 1;
   }
@@ -332,7 +332,7 @@
   
   .hero-inspector-guide {
   position: absolute;
-  background: rgba(62, 190, 176, 0.62);
+  background: rgba(79, 61, 241, 0.62);
   }
   .guide-right {
   top: 50%;
@@ -351,7 +351,7 @@
   position: absolute;
   width: 0.34rem;
   height: 0.34rem;
-  border: 1px solid rgba(62, 190, 176, 0.78);
+  border: 1px solid rgba(79, 61, 241, 0.78);
   background: #fafafd;
 }
 
