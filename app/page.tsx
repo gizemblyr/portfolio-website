@@ -8,6 +8,7 @@ import { HomeHero, WorkedWithMarquee } from "@/components/home-hero"
 import { EditorialWork } from "@/components/editorial-work"
 import { EditorialBlog } from "@/components/editorial-blog"
 import { EditorialAboutTools } from "@/components/editorial-about-tools"
+import { HowIWork } from "@/components/how-i-work"
 
 export default function Portfolio() {
   return (
@@ -17,6 +18,7 @@ export default function Portfolio() {
       <HomeHero />
       <WorkedWithMarquee />
       <EditorialWork />
+      <HowIWork />
       <EditorialBlog />
       <EditorialAboutTools />
 
