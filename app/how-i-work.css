@@ -40,9 +40,9 @@
   .how-i-work-flow-messy circle:nth-of-type(6) { animation-delay: .8s; }
   .how-i-work.is-active .how-i-work-flow-clean { stroke-dasharray: 260; stroke-dashoffset: 260; animation: how-i-work-draw-flow 4.2s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
   .how-i-work.is-active .how-i-work-clean-nodes { animation: how-i-work-emerge 4.2s cubic-bezier(.22,1,.36,1) infinite; }
-  .how-i-work.is-active .how-i-work-rough { animation: how-i-work-rough 4.4s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
-  .how-i-work.is-active .how-i-work-component { animation: how-i-work-component 4.1s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
-  .how-i-work.is-active .how-i-work-refined { animation: how-i-work-refined 4.1s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-components .how-i-work-rough { animation: how-i-work-rough 3.2s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-components .how-i-work-component { animation: how-i-work-component 3.2s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-components .how-i-work-refined { animation: how-i-work-refined 3.2s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
 }
 @keyframes how-i-work-reveal { from { opacity: .45; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes how-i-work-draw-lines { 0%,8% { opacity: .2; stroke-dashoffset: 220; } 45%,78% { opacity: 1; stroke-dashoffset: 0; } 100% { opacity: .32; stroke-dashoffset: 0; } }
@@ -54,9 +54,9 @@
 @keyframes how-i-work-collapse { 0%,10% { opacity: .25; } 58%,82% { opacity: .1; } 100% { opacity: .12; } }
 @keyframes how-i-work-draw-flow { 0%,16% { opacity: .08; stroke-dashoffset: 260; } 54%,84% { opacity: 1; stroke-dashoffset: 0; } 100% { opacity: .35; stroke-dashoffset: 0; } }
 @keyframes how-i-work-emerge { 0%,20% { opacity: .12; transform: translateY(4px); } 58%,82% { opacity: 1; transform: translateY(0); } 100% { opacity: .3; transform: translateY(0); } }
-@keyframes how-i-work-rough { 0%,12% { opacity: .9; transform: translate(0); } 58%,82% { opacity: .16; transform: translate(-3px,3px); } 100% { opacity: .2; transform: translate(-3px,3px); } }
-@keyframes how-i-work-component { 0%,18% { opacity: .16; transform: translate(4px,2px) scale(.97); } 58%,82% { opacity: .48; transform: translate(0) scale(1); } 100% { opacity: .22; transform: translate(0) scale(1); } }
-@keyframes how-i-work-refined { 0%,25% { opacity: .18; transform: translate(-4px,-2px) scale(.98); } 62%,84% { opacity: .95; transform: translate(0) scale(1); } 100% { opacity: .5; transform: translate(0) scale(1); } }
+@keyframes how-i-work-rough { 0%,12% { opacity: .9; transform: translate(0); } 58%,82% { opacity: .16; transform: translate(-7px,6px); } 100% { opacity: .2; transform: translate(-7px,6px); } }
+@keyframes how-i-work-component { 0%,10% { opacity: .16; transform: translate(9px,5px) scale(.97); } 58%,82% { opacity: .48; transform: translate(0) scale(1); } 100% { opacity: .22; transform: translate(0) scale(1); } }
+@keyframes how-i-work-refined { 0%,8% { opacity: .18; transform: translate(-8px,-4px) scale(.98); } 62%,84% { opacity: .95; transform: translate(0) scale(1); } 100% { opacity: .5; transform: translate(0) scale(1); } }
 @media (max-width: 767px) { .how-i-work { padding: 4.5rem 1.25rem 5rem; } .how-i-work-heading { margin-bottom: 2rem; } .how-i-work-grid { grid-template-columns: 1fr; gap: .85rem; } .how-i-work-card { min-height: 27rem; } }
 @media (prefers-reduced-motion: reduce) {
   .how-i-work-card,
