@@ -983,3 +983,10 @@
 .monevo-palette [class*="shadow"] { box-shadow: 0 1px 0 rgba(21, 23, 28, .06) !important; }
 .monevo-palette [class*="backdrop"] { backdrop-filter: none !important; }
 .monevo-palette > main [class~="absolute"] { display: none !important; }
+.monevo-palette .monevo-approach-number { background: var(--monevo-purple) !important; }
+.monevo-palette .monevo-approach-number span { color: #fff !important; }
+.monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
+.monevo-palette section { background: var(--monevo-gray) !important; }
+.monevo-palette section:first-of-type { background: #fff !important; }
+.monevo-palette section > div > div { background: var(--monevo-gray); }
+.monevo-palette section:first-of-type > div > div { background: transparent; }

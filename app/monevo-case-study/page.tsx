@@ -55,10 +55,7 @@ export default function MonevoCaseStudy() {
           {/* Problem Statement */}
           <div className="bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-6 md:p-8 mb-12 relative overflow-hidden">
             {/* Decorative Elements */}
-            <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-red-200/20 to-orange-200/20 rounded-full -translate-y-20 translate-x-20"></div>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-pink-200/20 to-red-200/20 rounded-full translate-y-16 -translate-x-16"></div>
-            <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-orange-300/30 rounded-full"></div>
-            <div className="absolute top-1/4 right-1/3 w-4 h-4 bg-red-300/30 rounded-full"></div>
+
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center relative z-10">
               Problem Statement
@@ -198,7 +195,7 @@ export default function MonevoCaseStudy() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Approach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="monevo-approach-number w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-blue-600 font-bold text-xl">1</span>
                   </div>
                   <h4 className="font-bold text-lg mb-3">Research & Discovery</h4>
@@ -208,7 +205,7 @@ export default function MonevoCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="monevo-approach-number w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-green-600 font-bold text-xl">2</span>
                   </div>
                   <h4 className="font-bold text-lg mb-3">Ideation & Design</h4>
@@ -218,7 +215,7 @@ export default function MonevoCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="monevo-approach-number w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-purple-600 font-bold text-xl">3</span>
                   </div>
                   <h4 className="font-bold text-lg mb-3">Validation & Iteration</h4>
@@ -512,25 +509,25 @@ export default function MonevoCaseStudy() {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                       <span className="text-gray-700 text-base font-medium">Onboarding Completion Increased from</span>
-                      <span className="text-green-600 font-bold">47.4% to 70% (+47.6%)</span>
+                      <span className="monevo-metric-value text-green-600 font-bold">47.4% to 70% (+47.6%)</span>
                     </div>
                     <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                       <span className="text-gray-700 text-base font-medium">Users Accessing Monay World Reached</span>
-                      <span className="text-green-600 font-bold">85.7% (newly introduced)</span>
+                      <span className="monevo-metric-value text-green-600 font-bold">85.7% (newly introduced)</span>
                     </div>
                     <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                       <span className="text-gray-700 text-base font-medium">Task Completion Increased from</span>
-                      <span className="text-green-600 font-bold">8.1% to 15% (+85.2%)</span>
+                      <span className="monevo-metric-value text-green-600 font-bold">8.1% to 15% (+85.2%)</span>
                     </div>
                     <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                       <span className="text-gray-700 text-base font-medium">Users Understanding Reports Achieved</span>
-                      <span className="text-green-600 font-bold">85.7% (newly introduced)</span>
+                      <span className="monevo-metric-value text-green-600 font-bold">85.7% (newly introduced)</span>
                     </div>
                     <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                       <span className="text-gray-700 text-base font-medium">
                         Positive Feedback on Homepage UI Options
                       </span>
-                      <span className="text-green-600 font-bold">85.7%</span>
+                      <span className="monevo-metric-value text-green-600 font-bold">85.7%</span>
                     </div>
                   </div>
                 </div>
@@ -884,10 +881,7 @@ export default function MonevoCaseStudy() {
               {/* Impact & Learnings */}
               <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 p-6 md:p-8 rounded-2xl relative overflow-hidden mt-12">
                 {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full -translate-y-16 translate-x-16"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-indigo-200/20 to-blue-200/20 rounded-full translate-y-12 -translate-x-12"></div>
-                <div className="absolute top-1/3 left-1/4 w-4 h-4 bg-purple-300/30 rounded-full"></div>
-                <div className="absolute top-1/4 right-1/3 w-3 h-3 bg-blue-300/30 rounded-full"></div>
+
 
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center relative z-10">
                   Impact & Key Learnings
