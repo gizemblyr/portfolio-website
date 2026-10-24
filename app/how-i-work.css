@@ -1,0 +1,66 @@
+.how-i-work { background: #fff; padding: 6rem 1.25rem 7rem; color: #11111b; }
+.how-i-work-inner { width: min(100%, 76rem); margin: 0 auto; }
+.how-i-work-heading { max-width: 40rem; margin-bottom: 3rem; }
+.how-i-work-eyebrow { margin: 0 0 .75rem; color: #6f6b80; font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.how-i-work-heading h2 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.2rem, 4vw, 3.35rem); font-weight: 400; letter-spacing: -.06em; line-height: 1; }
+.how-i-work-intro { max-width: 32rem; margin: 1.1rem 0 0; color: #77758c; font-size: .96rem; line-height: 1.65; }
+.how-i-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .how-i-work-card { min-height: 31rem; display: flex; flex-direction: column; overflow: hidden; border: 0; border-radius: 1.5rem; background: #f9f9fa; transition: transform 500ms cubic-bezier(.22,1,.36,1), box-shadow 500ms ease; }
+.how-i-work-card:hover { transform: translateY(-6px); border-color: #cbc9d5; box-shadow: 0 18px 38px rgba(35,31,58,.08); }
+.how-i-work-card-top { display: flex; align-items: center; justify-content: space-between; padding: 1.35rem 1.4rem 0; color: #77758c; font-size: .72rem; font-weight: 600; letter-spacing: .12em; }
+.how-i-work-dot { width: .45rem; height: .45rem; border-radius: 50%; background: #6d5ce7; }
+.how-i-work-visual { width: 100%; height: 10rem; margin: 2rem 0 1.1rem; overflow: visible; }
+.how-i-work-visual path, .how-i-work-visual rect, .how-i-work-visual circle { vector-effect: non-scaling-stroke; }
+  .how-i-work-lines, .how-i-work-flow-messy, .how-i-work-flow-clean, .how-i-work-rough, .how-i-work-component, .how-i-work-refined { fill: none; stroke: #aaa6b7; stroke-width: 1.15; stroke-linecap: round; stroke-linejoin: round; }
+.how-i-work-nodes circle, .how-i-work-clean-nodes circle { fill: #6d5ce7; stroke: none; }
+.how-i-work-flow-clean, .how-i-work-clean-nodes { opacity: .15; }
+.how-i-work-component { stroke: #7669d8; stroke-width: 1.2; opacity: .34; }
+.how-i-work-refined { stroke: #5e596f; stroke-width: 1.2; opacity: .68; }
+.how-i-work-card-copy { margin-top: auto; padding: 0 1.4rem 1.6rem; }
+.how-i-work-card-copy h3 { max-width: 17rem; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.45rem, 2vw, 2rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.06; }
+.how-i-work-card-copy p { max-width: 22rem; margin: .9rem 0 0; color: #696777; font-size: .9rem; line-height: 1.6; }
+@media (prefers-reduced-motion: no-preference) {
+  .how-i-work.is-active .how-i-work-lines { stroke-dasharray: 220; stroke-dashoffset: 220; animation: how-i-work-draw-lines 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
+  .how-i-work.is-active .how-i-work-nodes circle { opacity: 0; transform-box: fill-box; transform-origin: center; animation: how-i-work-node-appear 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work-nodes circle:nth-child(2) { animation-delay: .18s; }
+  .how-i-work-nodes circle:nth-child(3) { animation-delay: .36s; }
+  .how-i-work-nodes circle:nth-child(4) { animation-delay: .54s; }
+  .how-i-work-nodes circle:nth-child(5) { animation-delay: .72s; }
+  .how-i-work-nodes circle:nth-child(6) { animation-delay: .9s; }
+  .how-i-work-nodes circle:nth-child(7) { animation-delay: 1.08s; }
+  .how-i-work-nodes circle:nth-child(2), .how-i-work-nodes circle:nth-child(5) { animation-name: how-i-work-node-pulse; animation-duration: 9s; }
+  .how-i-work.is-active .how-i-work-flow-messy { transform-origin: center; }
+  .how-i-work.is-active .how-i-work-flow-messy path:nth-child(1) { animation: how-i-work-fragment-left 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-flow-messy path:nth-child(2) { animation: how-i-work-fragment-right 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-flow-messy circle { animation: how-i-work-fragment-node 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work-flow-messy circle:nth-of-type(2) { animation-delay: .16s; }
+  .how-i-work-flow-messy circle:nth-of-type(3) { animation-delay: .32s; }
+  .how-i-work-flow-messy circle:nth-of-type(4) { animation-delay: .48s; }
+  .how-i-work-flow-messy circle:nth-of-type(5) { animation-delay: .64s; }
+  .how-i-work-flow-messy circle:nth-of-type(6) { animation-delay: .8s; }
+  .how-i-work.is-active .how-i-work-flow-clean { stroke-dasharray: 260; stroke-dashoffset: 260; animation: how-i-work-draw-flow 6.5s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; }
+  .how-i-work.is-active .how-i-work-clean-nodes { animation: how-i-work-emerge 9s cubic-bezier(.22,1,.36,1) infinite; }
+  .how-i-work.is-active .how-i-work-rough { animation: how-i-work-rough 6.5s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-component { animation: how-i-work-component 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+  .how-i-work.is-active .how-i-work-refined { animation: how-i-work-refined 6s ease-in-out infinite alternate; transform: translate3d(0,0,0); will-change: transform, opacity; transform-origin: center; }
+}
+@keyframes how-i-work-reveal { from { opacity: .45; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes how-i-work-draw-lines { 0%,8% { opacity: .2; stroke-dashoffset: 220; } 45%,78% { opacity: 1; stroke-dashoffset: 0; } 100% { opacity: .32; stroke-dashoffset: 0; } }
+@keyframes how-i-work-node-appear { 0%,8% { opacity: 0; transform: scale(.72); } 18%,78% { opacity: 1; transform: scale(1); } 100% { opacity: .45; transform: scale(.98); } }
+@keyframes how-i-work-node-pulse { 0%,18%,78%,100% { opacity: .5; transform: scale(.98); } 30% { opacity: 1; transform: scale(1.24); } 42% { opacity: .72; transform: scale(1); } }
+@keyframes how-i-work-fragment-left { 0%,12% { opacity: .85; transform: translate(-8px,5px); } 58%,84% { opacity: .12; transform: translate(0); } 100% { opacity: .2; transform: translate(0); } }
+@keyframes how-i-work-fragment-right { 0%,12% { opacity: .7; transform: translate(9px,-6px); } 58%,84% { opacity: .08; transform: translate(0); } 100% { opacity: .16; transform: translate(0); } }
+@keyframes how-i-work-fragment-node { 0%,12% { opacity: .9; transform: translate(8px,-5px) scale(.82); } 54%,84% { opacity: .08; transform: translate(0) scale(.72); } 100% { opacity: .14; transform: translate(0) scale(.72); } }
+@keyframes how-i-work-collapse { 0%,10% { opacity: .25; } 58%,82% { opacity: .1; } 100% { opacity: .12; } }
+@keyframes how-i-work-draw-flow { 0%,16% { opacity: .08; stroke-dashoffset: 260; } 54%,84% { opacity: 1; stroke-dashoffset: 0; } 100% { opacity: .35; stroke-dashoffset: 0; } }
+@keyframes how-i-work-emerge { 0%,20% { opacity: .12; transform: translateY(4px); } 58%,82% { opacity: 1; transform: translateY(0); } 100% { opacity: .3; transform: translateY(0); } }
+@keyframes how-i-work-rough { 0%,12% { opacity: .9; transform: translate(0); } 58%,82% { opacity: .16; transform: translate(-3px,3px); } 100% { opacity: .2; transform: translate(-3px,3px); } }
+@keyframes how-i-work-component { 0%,18% { opacity: .16; transform: translate(4px,2px) scale(.97); } 58%,82% { opacity: .48; transform: translate(0) scale(1); } 100% { opacity: .22; transform: translate(0) scale(1); } }
+@keyframes how-i-work-refined { 0%,25% { opacity: .18; transform: translate(-4px,-2px) scale(.98); } 62%,84% { opacity: .95; transform: translate(0) scale(1); } 100% { opacity: .5; transform: translate(0) scale(1); } }
+@media (max-width: 767px) { .how-i-work { padding: 4.5rem 1.25rem 5rem; } .how-i-work-heading { margin-bottom: 2rem; } .how-i-work-grid { grid-template-columns: 1fr; gap: .85rem; } .how-i-work-card { min-height: 27rem; } }
+@media (prefers-reduced-motion: reduce) {
+  .how-i-work-card,
+  .how-i-work-visual * { animation: none; }
+  .how-i-work-nodes circle { opacity: 1; }
+  .how-i-work-flow-clean, .how-i-work-clean-nodes { opacity: .9; }
+}
