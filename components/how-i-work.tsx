@@ -87,7 +87,7 @@ export function HowIWork() {
       <div className="how-i-work-inner">
         <header className="how-i-work-heading">
           <h2 id="how-i-work-title">How I Work</h2>
-          <p className="how-i-work-intro">A calm, systems-minded approach from first question to shipped experience.</p>
+          <p className="how-i-work-intro">A systems-minded approach to turning complex product problems into clear, shippable experiences.</p>
         </header>
         <div className="how-i-work-grid">
           {workMethods.map((method) => (
