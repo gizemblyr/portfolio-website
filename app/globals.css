@@ -10,7 +10,7 @@
 .header-brand-group { display: flex; align-items: center; gap: .7rem; }
 .header-back-arrow { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border: 1px solid #e1dfe8; border-radius: 50%; color: #4f3df1; font-size: 1rem; line-height: 1; text-decoration: none; transition: border-color 180ms ease, background 180ms ease; }
 .header-back-arrow:hover { border-color: #4f3df1; background: #fafafd; }
-.monevo-site-header { position: absolute; top: 0; right: 0; left: 0; padding-top: 0; background: transparent; }
+.monevo-site-header { position: sticky; top: 16px; right: 0; left: 0; padding-top: 0; background: transparent; }
 .monevo-site-header .monevo-header-shell { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }
 .monevo-palette .monevo-site-header .monevo-header-shell { background: transparent !important; box-shadow: none !important; border-color: transparent !important; }
 .monevo-header-shell { position: relative; width: 100%; max-width: 1285px; min-width: 0; height: 3.25rem; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; backdrop-filter: none; }
@@ -22,7 +22,7 @@
 .monevo-header-nav .header-nav-link { padding: .55rem .8rem; border-radius: 999px; color: #777680; font-size: .76rem; }
 .monevo-header-nav .header-nav-link.is-active { background: #4F3DF1; color: #fff; }
 .monevo-header-nav .header-nav-link.is-active::after { display: none; }
-@media (max-width: 800px) { .monevo-header-shell { min-width: 0; width: calc(100vw - 2rem); overflow-x: auto; } .monevo-header-nav { justify-content: flex-start; overflow-x: auto; } .monevo-header-nav .header-nav-link { flex: 0 0 auto; padding-inline: .65rem; } .monevo-header-back { position: absolute; top: calc(100% + .75rem); left: 50%; } }
+@media (max-width: 800px) { .monevo-header-shell { min-width: 0; width: 100%; overflow: visible; } .monevo-header-nav { justify-content: flex-start; overflow-x: auto; } .monevo-header-nav .header-nav-link { flex: 0 0 auto; padding-inline: .65rem; } .monevo-header-back { position: sticky; top: 16px; left: 16px; display: inline-grid; width: 2.35rem; height: 2.35rem; min-height: 2.35rem; padding: 0; place-items: center; transform: none; } .monevo-header-back span:last-child { display: none; } .monevo-header-back span:first-child { font-size: 1.15rem; } }
 .resume-control { height: 42px; min-width: 158px; align-items: center; justify-content: center; gap: 1.1rem; border-radius: 5px; background: #4f3df1; color: white; font-size: 14px; transition: background 250ms ease; }
 .resume-control:hover { background: #4030d8; }
 .mobile-backdrop { position: fixed; inset: 0; z-index: 190; background: rgba(20, 18, 45, 0.28); opacity: 0; pointer-events: none; transition: opacity 300ms ease; }
