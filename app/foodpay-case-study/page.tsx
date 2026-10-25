@@ -7,7 +7,7 @@ import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function FoodPayCaseStudy() {
   return (
-    <div className="min-h-screen bg-white monevo-palette" >
+    <div className="min-h-screen bg-white monevo-palette foodpay-palette">
       <Header />
 
       {/* Hero Section */}
@@ -381,7 +381,7 @@ export default function FoodPayCaseStudy() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Impact */}
-            <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
+            <div className="foodpay-impact bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-200/20 to-emerald-200/20 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-teal-200/20 to-green-200/20 rounded-full translate-y-12 -translate-x-12"></div>
 
@@ -415,7 +415,7 @@ export default function FoodPayCaseStudy() {
             </div>
 
             {/* Key Learnings */}
-            <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
+            <div className="foodpay-learning bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-200/20 to-blue-200/20 rounded-full translate-y-12 -translate-x-12"></div>
 

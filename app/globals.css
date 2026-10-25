@@ -1052,6 +1052,13 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .newage-palette section:has(.text-green-500) .absolute, .newage-palette section:has(.text-blue-500) .absolute { display: none !important; }
 .newage-palette section:has(.text-green-500), .newage-palette section:has(.text-blue-500) { border-color: #e5e5e8 !important; }
 .newage-palette section:has(.text-green-500) [class*="border-"], .newage-palette section:has(.text-blue-500) [class*="border-"] { border-color: #e5e5e8 !important; }
+.foodpay-palette [class*="border-red-"], .foodpay-palette [class*="border-rose-"], .foodpay-palette [class*="border-orange-"], .foodpay-palette [class*="border-amber-"], .foodpay-palette [class*="border-blue-"], .foodpay-palette [class*="border-indigo-"], .foodpay-palette [class*="border-green-"], .foodpay-palette [class*="border-emerald-"], .foodpay-palette [class*="border-teal-"] { border-color: #e5e5e8 !important; }
+.foodpay-palette [class*="text-blue-"] { color: var(--monevo-purple) !important; }
+.foodpay-palette [class*="bg-blue-"] { background: var(--monevo-gray) !important; }
+.foodpay-palette .foodpay-impact, .foodpay-palette .foodpay-learning { background: var(--monevo-gray) !important; }
+.foodpay-palette .foodpay-impact .absolute, .foodpay-palette .foodpay-learning .absolute { display: none !important; }
+.foodpay-palette .foodpay-impact [class*="border-"], .foodpay-palette .foodpay-learning [class*="border-"] { border-color: #e5e5e8 !important; }
+.foodpay-palette .foodpay-impact [class*="bg-white/"], .foodpay-palette .foodpay-learning [class*="bg-white/"] { background: var(--monevo-gray) !important; }
 .monevo-palette .monevo-approach-number span { color: #fff !important; }
 .monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
 .monevo-palette section { background: var(--monevo-gray) !important; }
