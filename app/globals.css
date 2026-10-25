@@ -1050,7 +1050,7 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .newage-palette .newage-payment-scenarios svg {
   color: #4F3DF1 !important;
 }
-.newage-palette .newage-payment-scenarios [class*="bg-white"] { background: rgba(255,255,255,.12) !important; border-color: rgba(255,255,255,.28) !important; }
+.newage-palette .newage-payment-scenarios [class*="bg-white"] { background: rgba(255,255,255,.12) !important; border-color: #e5e5e8 !important;) !important; }
 .newage-palette .newage-payment-scenario-card {   background: #4F3DF1 !important; border-color: #e5e5e8 !important; }
 .newage-palette .newage-payment-scenario-card span {   color: #374151 !important;}
 .newage-palette .newage-payment-scenario-card > div { background: #fff !important; }
