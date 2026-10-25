@@ -1031,6 +1031,13 @@
 .foodpanda-palette .text-green-600, .foodpanda-palette .text-red-600, .foodpanda-palette .text-blue-600 { color: var(--monevo-ink) !important; }
 .foodpanda-palette .bg-green-50, .foodpanda-palette .bg-red-50, .foodpanda-palette .bg-blue-50 { background: var(--monevo-gray) !important; }
 .foodpanda-palette section:has(.text-emerald-500) .absolute, .foodpanda-palette section:has(.text-emerald-500) [class*="border-purple"], .foodpanda-palette section:has(.text-emerald-500) [class*="bg-purple-50"] { border-color: transparent !important; background: var(--monevo-gray) !important; }
+.foodpanda-palette .foodpanda-approach-number { background: var(--monevo-purple) !important; color: #fff !important; }
+.foodpanda-palette .foodpanda-approach-number span { color: #fff !important; }
+.foodpanda-palette [class*="border-blue"], .foodpanda-palette [class*="border-indigo"], .foodpanda-palette [class*="border-purple"], .foodpanda-palette [class*="border-green"], .foodpanda-palette [class*="border-emerald"], .foodpanda-palette [class*="border-teal"] { border-color: #e5e5e8 !important; }
+.foodpanda-palette .foodpanda-impact { background: var(--monevo-gray) !important; }
+.foodpanda-palette .foodpanda-impact::before, .foodpanda-palette .foodpanda-impact::after, .foodpanda-palette .foodpanda-impact .absolute { display: none !important; }
+.foodpanda-palette .foodpanda-impact [class*="bg-blue-50"], .foodpanda-palette .foodpanda-impact [class*="bg-indigo-50"], .foodpanda-palette .foodpanda-impact [class*="bg-purple-50"] { background: var(--monevo-gray) !important; }
+.foodpanda-palette .foodpanda-impact [class*="border-"] { border-color: #e5e5e8 !important; }
 .monevo-palette .monevo-approach-number span { color: #fff !important; }
 .monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
 .monevo-palette section { background: var(--monevo-gray) !important; }
