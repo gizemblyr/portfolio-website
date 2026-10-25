@@ -1025,6 +1025,12 @@
 .monevo-palette [class*="backdrop"] { backdrop-filter: none !important; }
 .monevo-palette > main [class~="absolute"] { display: none !important; }
 .monevo-palette .monevo-approach-number { background: var(--monevo-purple) !important; }
+.foodpanda-palette .foodpanda-approach-number { background: var(--monevo-purple) !important; color: #fff !important; }
+.foodpanda-palette .foodpanda-approach-number svg, .foodpanda-palette .foodpanda-approach-number span { color: #fff !important; stroke: #fff !important; }
+.foodpanda-palette .text-green-800, .foodpanda-palette .text-red-800, .foodpanda-palette .text-blue-800 { color: var(--monevo-ink) !important; }
+.foodpanda-palette .text-green-600, .foodpanda-palette .text-red-600, .foodpanda-palette .text-blue-600 { color: var(--monevo-ink) !important; }
+.foodpanda-palette .bg-green-50, .foodpanda-palette .bg-red-50, .foodpanda-palette .bg-blue-50 { background: var(--monevo-gray) !important; }
+.foodpanda-palette section:has(.text-emerald-500) .absolute, .foodpanda-palette section:has(.text-emerald-500) [class*="border-purple"], .foodpanda-palette section:has(.text-emerald-500) [class*="bg-purple-50"] { border-color: transparent !important; background: var(--monevo-gray) !important; }
 .monevo-palette .monevo-approach-number span { color: #fff !important; }
 .monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
 .monevo-palette section { background: var(--monevo-gray) !important; }

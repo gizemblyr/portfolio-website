@@ -7,7 +7,7 @@ import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function FoodpandaCaseStudy() {
   return (
-    <div className="min-h-screen bg-white monevo-palette">
+    <div className="min-h-screen bg-white monevo-palette foodpanda-palette">
       <Header />
 
       {/* Hero Section */}
@@ -226,7 +226,7 @@ export default function FoodpandaCaseStudy() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Approach</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="foodpanda-approach-number w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-blue-600 font-bold text-xl">1</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">Research & Insights</h3>
@@ -236,7 +236,7 @@ export default function FoodpandaCaseStudy() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="foodpanda-approach-number w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-green-600 font-bold text-xl">2</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">Design Strategy</h3>
@@ -247,7 +247,7 @@ export default function FoodpandaCaseStudy() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="foodpanda-approach-number w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-purple-600 font-bold text-xl">3</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">Validation & Iteration</h3>
@@ -877,8 +877,7 @@ export default function FoodpandaCaseStudy() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
             {/* Impact */}
             <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-200/20 to-emerald-200/20 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-teal-200/20 to-green-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+
 
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center relative z-10 flex items-center justify-center gap-2">
                 <TrendingUp className="w-6 h-6 text-green-600" />
@@ -930,8 +929,7 @@ export default function FoodpandaCaseStudy() {
 
             {/* Key Learnings */}
             <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-200/20 to-blue-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+
 
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center relative z-10 flex items-center justify-center gap-2">
                 <Star className="w-6 h-6 text-blue-600" />
