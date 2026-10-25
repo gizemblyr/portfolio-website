@@ -1076,6 +1076,6 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .monevo-palette .monevo-hero > div > div > div:last-child { display: flex; min-height: 25rem; align-items: center; justify-content: center; }
 .monevo-palette .monevo-hero img { width: 100%; max-width: 34rem !important; max-height: 32rem; object-fit: contain; }
 @media (max-width: 767px) { .monevo-palette .monevo-hero > div > div { grid-template-columns: 1fr; gap: 2rem; } .monevo-palette .monevo-hero h1 { min-height: 0; } .monevo-palette .monevo-hero > div > div > div:last-child { min-height: 0; } }
-.monevo-palette div.yemekcom-app-button { background: #4F3DF1 !important; color: #fff !important; }
+html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
