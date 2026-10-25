@@ -1038,6 +1038,20 @@
 .foodpanda-palette .foodpanda-impact::before, .foodpanda-palette .foodpanda-impact::after, .foodpanda-palette .foodpanda-impact .absolute { display: none !important; }
 .foodpanda-palette .foodpanda-impact [class*="bg-blue-50"], .foodpanda-palette .foodpanda-impact [class*="bg-indigo-50"], .foodpanda-palette .foodpanda-impact [class*="bg-purple-50"] { background: var(--monevo-gray) !important; }
 .foodpanda-palette .foodpanda-impact [class*="border-"] { border-color: #e5e5e8 !important; }
+.newage-palette [class*="border-"] { border-color: #e5e5e8 !important; }
+.newage-palette .newage-lead-number { background: transparent !important; }
+.newage-palette .newage-lead-number span { color: var(--monevo-purple) !important; }
+.newage-palette #scope svg { color: var(--monevo-purple) !important; }
+div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-image: none !important; }
+.newage-palette .newage-payment-scenarios h3, .newage-palette .newage-payment-scenarios svg { color: #fff !important; }
+.newage-palette .newage-payment-scenarios [class*="bg-white"] { background: rgba(255,255,255,.12) !important; border-color: rgba(255,255,255,.28) !important; }
+.newage-palette .newage-payment-scenarios [class*="text-gray"] { color: #fff !important; }
+.newage-palette .newage-payment-scenario-card { background: #4F3DF1 !important; border-color: rgba(255,255,255,.28) !important; }
+.newage-palette .newage-payment-scenario-card span { color: #fff !important; }
+.newage-palette .newage-payment-scenario-card > div { background: #fff !important; }
+.newage-palette section:has(.text-green-500) .absolute, .newage-palette section:has(.text-blue-500) .absolute { display: none !important; }
+.newage-palette section:has(.text-green-500), .newage-palette section:has(.text-blue-500) { border-color: #e5e5e8 !important; }
+.newage-palette section:has(.text-green-500) [class*="border-"], .newage-palette section:has(.text-blue-500) [class*="border-"] { border-color: #e5e5e8 !important; }
 .monevo-palette .monevo-approach-number span { color: #fff !important; }
 .monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
 .monevo-palette section { background: var(--monevo-gray) !important; }

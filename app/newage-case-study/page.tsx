@@ -7,7 +7,7 @@ import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function NewAgeCaseStudy() {
   return (
-    <div className="min-h-screen bg-white monevo-palette">
+    <div className="min-h-screen bg-white monevo-palette newage-palette">
       <Header />
 
       {/* Hero Section */}
@@ -71,7 +71,7 @@ export default function NewAgeCaseStudy() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="flex items-center gap-4 p-5 bg-white rounded-xl border shadow-sm">
-              <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="newage-lead-number w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-cyan-600 font-bold text-lg">1</span>
               </div>
               <div>
@@ -216,14 +216,14 @@ export default function NewAgeCaseStudy() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* Payment Scenarios */}
-            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 md:p-8">
+            <div className="newage-payment-scenarios bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#4F3DF1", backgroundImage: "none" }}>
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <CreditCard className="w-5 h-5 text-cyan-600" />
                 Payment Scenarios
               </h3>
               <div className="space-y-3">
                 {["Credit Card", "Bank Transfer (EFT)", "Open Account (with reconciliation)"].map((scenario) => (
-                  <div key={scenario} className="flex items-center gap-3 p-4 bg-white/80 rounded-lg border border-white/50">
+                  <div key={scenario} className="newage-payment-scenario-card flex items-center gap-3 p-4 bg-white/80 rounded-lg border border-white/50" style={{ backgroundColor: "#4F3DF1", borderColor: "rgba(255,255,255,.28)" }}>
                     <div className="w-2 h-2 bg-cyan-500 rounded-full flex-shrink-0"></div>
                     <span className="text-gray-700 text-base font-medium">{scenario}</span>
                   </div>
@@ -358,8 +358,7 @@ export default function NewAgeCaseStudy() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Impact */}
             <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-200/20 to-emerald-200/20 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-teal-200/20 to-green-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+
 
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center relative z-10 flex items-center justify-center gap-2">
                 <TrendingUp className="w-6 h-6 text-green-600" />
@@ -392,8 +391,7 @@ export default function NewAgeCaseStudy() {
 
             {/* Key Learnings */}
             <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-200/20 to-blue-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+
 
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center relative z-10 flex items-center justify-center gap-2">
                 <Star className="w-6 h-6 text-blue-600" />
