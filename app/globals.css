@@ -1043,7 +1043,7 @@
 .newage-palette .newage-lead-number span { color: var(--monevo-purple) !important; }
 .newage-palette #scope svg { color: var(--monevo-purple) !important; }
 div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-image: none !important; }
-.newage-palette .newage-payment-scenarios h3, .newage-palette .newage-payment-scenarios svg {  color: #374151 !important;}
+.newage-palette .newage-payment-scenarios h3, .newage-palette .newage-payment-scenarios svg {  color: #374151 !important;  color: #4F3DF1 !important;}
 .newage-palette .newage-payment-scenarios [class*="bg-white"] { background: rgba(255,255,255,.12) !important; border-color: rgba(255,255,255,.28) !important; }
 .newage-palette .newage-payment-scenario-card { background: #4F3DF1 !important; border-color: rgba(255,255,255,.28) !important; }
 .newage-palette .newage-payment-scenario-card span { color: #fff !important; }
