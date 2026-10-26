@@ -1080,7 +1080,18 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .monevo-palette .explore-more-work-image { background: #fff !important; }
 .monevo-palette .monevo-hero > div > div > div:last-child { display: flex; min-height: 25rem; align-items: center; justify-content: center; }
 .monevo-palette .monevo-hero img { width: 100%; max-width: 34rem !important; max-height: 32rem; object-fit: contain; }
-@media (max-width: 767px) { .monevo-palette .monevo-hero > div > div { grid-template-columns: 1fr; gap: 2rem; } .monevo-palette .monevo-hero h1 { min-height: 0; } .monevo-palette .monevo-hero > div > div > div:last-child { min-height: 0; } }
+@media (max-width: 767px) {
+  .monevo-palette section:not(.explore-more-work) { padding-inline: 16px !important; }
+  .monevo-palette section:not(.explore-more-work) > div { width: 100% !important; max-width: none !important; padding-inline: 0 !important; }
+  .monevo-palette section:not(.explore-more-work) > div > div { width: 100%; max-width: none; }
+  .monevo-palette [class~="p-8"], .monevo-palette [class~="p-6"], .monevo-palette [class~="p-5"], .monevo-palette [class~="px-8"], .monevo-palette [class~="px-6"] { padding-inline: 16px !important; }
+  .monevo-palette [class~="-mx-4"], .monevo-palette [class~="-mx-6"], .monevo-palette [class~="-mx-8"] { margin-inline: 0 !important; }
+  .monevo-palette .monevo-hero > div > div { grid-template-columns: 1fr; gap: 2rem; }
+  .monevo-palette .monevo-hero h1 { min-height: 0; }
+  .monevo-palette .monevo-hero > div > div > div:last-child { min-height: 0; }
+  .monevo-palette .monevo-hero img { max-width: 100% !important; }
+  .monevo-palette .explore-more-work { padding-inline: 16px !important; }
+}
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
