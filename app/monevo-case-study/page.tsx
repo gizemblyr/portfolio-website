@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ExploreMoreWork } from "@/components/explore-more-work"
+import { MonevoLightboxImage } from "@/components/monevo-lightbox-image"
 
 export default function MonevoCaseStudy() {
   return (
@@ -39,7 +40,7 @@ export default function MonevoCaseStudy() {
             </div>
             <div className="relative">
               <div className="max-w-lg mx-auto lg:max-w-xl">
-                <img
+                <MonevoLightboxImage
                   src="/images/design-mode/herosection.png"
                   alt="Monevo app interface showing light and dark mode dashboards with balance information and gamified task series"
                   className="w-full h-auto"
@@ -242,7 +243,7 @@ export default function MonevoCaseStudy() {
           <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Benchmarking</h3>
             <div className="overflow-x-auto">
-              <img
+              <MonevoLightboxImage
                 src="/images/monevo-benchmark.png"
                 alt="Competitive Analysis comparing Duolingo, Cleo, and Revolut"
                 className="w-full min-w-[800px] md:min-w-0 rounded-xl shadow-lg"
@@ -560,7 +561,7 @@ export default function MonevoCaseStudy() {
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Welcoming Screens</h3>
             <div className="flex justify-center mb-6 md:mb-8">
               <div className="overflow-hidden rounded-xl shadow-lg max-w-4xl">
-                <img
+                <MonevoLightboxImage
                   src="/images/design-mode/Frame%25206.png"
                   alt="Monevo onboarding screens showing value proposition - left screen demonstrates expense tracking and categorization, right screen shows gamified goal-setting and rewards system"
                   className="w-full h-auto object-cover"
@@ -605,7 +606,7 @@ export default function MonevoCaseStudy() {
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/onboarding.png"
                     alt="Monevo gamified onboarding flow showing welcome screen with Monny mascot, name input form, progress tracking with Let's Get to Know You series, and weakness prioritization selection for spending categories"
                     className="w-full h-auto object-cover"
@@ -651,7 +652,7 @@ export default function MonevoCaseStudy() {
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-2.png"
                     alt="Monevo app screens showing My Monevo World dashboard, spending details with want/need categorization, and expense classification modal for individual transactions"
                     className="w-full h-auto object-cover"
@@ -693,7 +694,7 @@ export default function MonevoCaseStudy() {
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Receipt-Based Expense Input</h3>
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25202085664027.png"
                     alt="Monevo receipt scanning feature showing dashboard with expense entry modal and camera interface for receipt capture with real receipt visible"
                     className="w-full h-auto object-cover"
@@ -737,7 +738,7 @@ export default function MonevoCaseStudy() {
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-1.png"
                     alt="Monevo app screens showing My Monay World dashboard, badge rewards for completing spending tracking series, reward options with discounts, and points system with trainings and expert consultations"
                     className="w-full h-auto object-cover"
@@ -781,7 +782,7 @@ export default function MonevoCaseStudy() {
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/homepage.png"
                     alt="Monevo app showing two homepage variants - Sequential Tasks with step-by-step progression on the left, and Open Tasks with all options visible in both light and dark mode on the right"
                     className="w-full h-auto object-cover"
@@ -834,14 +835,14 @@ export default function MonevoCaseStudy() {
               {/* Side-by-side image layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl shadow-sm">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-4.png"
                     alt="Monevo smart reminders feature showing quiz prompts for expense categorization and notifications for unspecified expenses"
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl shadow-sm">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-3.png"
                     alt="Monevo weekly reports showing spending distribution charts, wants vs needs analysis, and most-spent category insights with personalized recommendations"
                     className="w-full h-auto object-cover"

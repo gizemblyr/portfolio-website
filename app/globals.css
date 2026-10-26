@@ -1102,6 +1102,12 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
   .monevo-detail section [class*="overflow-x-auto"] { margin-inline: 0 !important; }
   .monevo-detail #research > div > div[class*="rounded-2xl"] > div[class*="bg-white"], .monevo-detail #impact > div > div[class*="rounded-2xl"] > div[class*="bg-white"] { padding-inline: 0 !important; border: 0 !important; background: transparent !important; }
 }
+.monevo-lightbox-trigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; text-align: inherit; }
+.monevo-lightbox-trigger img { display: block; }
+.monevo-lightbox { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 1.5rem; background: rgba(20, 18, 30, .82); cursor: zoom-out; }
+.monevo-lightbox > img { max-width: min(96vw, 1400px); max-height: 92vh; width: auto; height: auto; object-fit: contain; cursor: default; }
+.monevo-lightbox-close { position: absolute; top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; border: 1px solid rgba(255,255,255,.7); border-radius: 999px; background: rgba(20,18,30,.45); color: #fff; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+@media (max-width: 767px) { .monevo-detail .monevo-lightbox-trigger { width: 100% !important; } .monevo-detail .monevo-lightbox-trigger img { width: 100% !important; max-width: 100% !important; height: auto !important; } .monevo-detail .monevo-lightbox { padding: 1rem; } }
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
