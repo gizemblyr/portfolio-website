@@ -7,7 +7,7 @@ import { ExploreMoreWork } from "@/components/explore-more-work"
 
 export default function MonevoCaseStudy() {
   return (
-    <div className="min-h-screen bg-white monevo-palette">
+    <div className="min-h-screen bg-white monevo-palette monevo-detail">
       <Header />
 
       {/* Hero Section */}

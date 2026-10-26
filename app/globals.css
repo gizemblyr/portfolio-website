@@ -1091,6 +1091,16 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
   .monevo-palette .monevo-hero > div > div > div:last-child { min-height: 0; }
   .monevo-palette .monevo-hero img { max-width: 100% !important; }
   .monevo-palette .explore-more-work { padding-inline: 16px !important; }
+  .monevo-detail section { padding-inline: 16px !important; }
+  .monevo-detail section > div { padding-inline: 0 !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] { margin-inline: 0 !important; padding-inline: 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] > div[class*="rounded-xl"] { padding-inline: 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] > div[class*="grid"] { gap: 1.5rem !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] [class*="p-6"], .monevo-detail section > div > div[class*="rounded-2xl"] [class*="p-8"] { padding-inline: 0 !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] img { width: 100% !important; max-width: 100% !important; }
+  .monevo-detail section table, .monevo-detail section [class*="min-w-[800px]"] { width: 100% !important; min-width: 0 !important; }
+  .monevo-detail section [class*="overflow-x-auto"] { margin-inline: 0 !important; }
+  .monevo-detail #research > div > div[class*="rounded-2xl"] > div[class*="bg-white"], .monevo-detail #impact > div > div[class*="rounded-2xl"] > div[class*="bg-white"] { padding-inline: 0 !important; border: 0 !important; background: transparent !important; }
 }
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
