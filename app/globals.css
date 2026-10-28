@@ -1076,7 +1076,7 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .monevo-palette .monevo-hero h1 { width: min(100%, 34rem); min-height: 2.08em; margin-bottom: 1.5rem; font-size: clamp(2.35rem, 4.35vw, 4.65rem) !important; }
 .monevo-palette .monevo-hero p { max-width: 36rem; font-size: 1.05rem !important; line-height: 1.65 !important; }
 .monevo-palette section:not(.monevo-hero):not(.explore-more-work) { border-top: 1px solid #e2e1e6; }
-.monevo-palette .explore-more-work { border-top: 1px solid #e2e1e6; background: #fff !important; }
+.monevo-palette .explore-more-work, .monevo-palette .explore-more-work > div, .monevo-palette .explore-more-work > div > div { border-top-color: #e2e1e6; background: #fff !important; }
 .monevo-palette .explore-more-work-image { background: #fff !important; }
 .monevo-palette .monevo-hero > div > div > div:last-child { display: flex; min-height: 25rem; align-items: center; justify-content: center; }
 .monevo-palette .monevo-hero img { width: 100%; max-width: 34rem !important; max-height: 32rem; object-fit: contain; }
