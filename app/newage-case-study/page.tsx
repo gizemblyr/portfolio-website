@@ -50,11 +50,11 @@ export default function NewAgeCaseStudy() {
       {/* Project Overview */}
       <section className="py-12 md:py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
             Project Overview
           </h2>
           <div className="bg-white/80 rounded-xl p-6 md:p-8 mb-8">
-            <p className="text-gray-600 text-base leading-relaxed mb-6 text-center max-w-3xl mx-auto">
+            <p className="text-gray-600 text-base leading-relaxed mb-6 text-left md:text-center max-w-3xl mx-auto">
               VDF NewAge is an internal B2B insurance platform used by Volkswagen Dogus Finans sales and operations teams.
               The system supports complex insurance processes under regulatory constraints, covering customer management, policy creation, payments, and operational tracking.
             </p>
@@ -65,8 +65,8 @@ export default function NewAgeCaseStudy() {
       {/* Process Context */}
       <section id="process" className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Process Context</h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-left md:text-center">Process Context</h2>
+          <p className="text-gray-600 text-base leading-relaxed mb-10 text-left md:text-center max-w-3xl mx-auto">
             From lead creation to policy issuance, the product follows a multi-stage lifecycle. At a system level, this lifecycle is represented through a progress-based structure, enabling agents to track advancement across Lead, Offer, and Policy stages at a glance.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -116,10 +116,10 @@ export default function NewAgeCaseStudy() {
       {/* Scope of My Work */}
       <section id="scope" className="py-12 md:py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
             Scope of My Work
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+          <p className="text-gray-600 text-base leading-relaxed mb-10 text-left md:text-center max-w-3xl mx-auto">
             My contribution focused on areas where operational complexity and error risk are highest.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -160,10 +160,10 @@ export default function NewAgeCaseStudy() {
       {/* Customer 360 Experience */}
       <section id="design" className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
             Customer 360 Experience
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+          <p className="text-gray-600 text-base leading-relaxed mb-10 text-left md:text-center max-w-3xl mx-auto">
             A unified Customer 360 view was designed as a single source of truth, bringing together all customer-related data.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -184,7 +184,7 @@ export default function NewAgeCaseStudy() {
               <span className="text-gray-700 text-base">Coverage and guarantee relationships</span>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-6 text-center">
+          <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-6 text-left md:text-center">
             <p className="text-gray-700 text-base leading-relaxed max-w-3xl mx-auto">
               This reduced context switching and supported faster, more confident decision-making.
             </p>
@@ -199,7 +199,7 @@ export default function NewAgeCaseStudy() {
                 className="w-full h-auto"
               />
             </div>
-            <p className="text-center text-gray-600 text-sm mt-4 font-medium">Customer 360 - Unified Customer Detail View</p>
+            <p className="text-left md:text-center text-gray-600 text-sm mt-4 font-medium">Customer 360 - Unified Customer Detail View</p>
           </div>
         </div>
       </section>
@@ -207,23 +207,23 @@ export default function NewAgeCaseStudy() {
       {/* Policy & Payment Management */}
       <section className="py-12 md:py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
             Policy & Payment Management
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+          <p className="text-gray-600 text-base leading-relaxed mb-10 text-left md:text-center max-w-3xl mx-auto">
             Policy-related experiences were designed to clearly separate commercial approval from operational and financial completion.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* Payment Scenarios */}
-            <div className="newage-payment-scenarios bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#4F3DF1", backgroundImage: "none" }}>
+            <div className="newage-payment-scenarios bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-4 md:p-8" style={{ backgroundColor: "#4F3DF1", backgroundImage: "none" }}>
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <CreditCard className="w-5 h-5 text-cyan-600" />
                 Payment Scenarios
               </h3>
               <div className="space-y-3">
                 {["Credit Card", "Bank Transfer (EFT)", "Open Account (with reconciliation)"].map((scenario) => (
-                  <div key={scenario} className="newage-payment-scenario-card flex items-center gap-3 p-4 bg-white/80 rounded-lg border border-white/50" style={{ backgroundColor: "#4F3DF1", borderColor: "rgba(255,255,255,.28)" }}>
+                  <div key={scenario} className="newage-payment-scenario-card flex items-center gap-3 px-4 py-3 md:p-4 bg-white/80 rounded-lg border border-white/50" style={{ backgroundColor: "#4F3DF1", borderColor: "rgba(255,255,255,.28)" }}>
                     <div className="w-2 h-2 bg-cyan-500 rounded-full flex-shrink-0"></div>
                     <span className="text-gray-700 text-base font-medium">{scenario}</span>
                   </div>
@@ -232,14 +232,14 @@ export default function NewAgeCaseStudy() {
             </div>
 
             {/* Status Design */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 md:p-8">
+            <div className="newage-status-scenarios bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-4 md:p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <GitBranch className="w-5 h-5 text-blue-600" />
                 Status-Based Design
               </h3>
               <div className="space-y-3">
                 {["Pending", "Success", "Failure"].map((status) => (
-                  <div key={status} className="flex items-center gap-3 p-4 bg-white/80 rounded-lg border border-white/50">
+                  <div key={status} className="newage-status-item flex items-center gap-3 px-4 py-3 md:p-4 bg-white/80 rounded-lg border border-white/50">
                     <div className={`w-2 h-2 rounded-full flex-shrink-0 ${
                       status === "Pending" ? "bg-yellow-500" : status === "Success" ? "bg-green-500" : "bg-red-500"
                     }`}></div>
@@ -250,7 +250,7 @@ export default function NewAgeCaseStudy() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 text-center">
+          <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 text-left md:text-center">
             <p className="text-gray-700 text-base leading-relaxed max-w-3xl mx-auto">
               Each scenario includes explicit pending, success, and failure states to <strong>prevent ambiguity</strong> in operational workflows.
             </p>
@@ -266,7 +266,7 @@ export default function NewAgeCaseStudy() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-center text-gray-600 text-sm mt-4 font-medium">Credit Card Payment Flow</p>
+              <p className="text-left md:text-center text-gray-600 text-sm mt-4 font-medium">Credit Card Payment Flow</p>
             </div>
 
             <div>
@@ -277,7 +277,7 @@ export default function NewAgeCaseStudy() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-center text-gray-600 text-sm mt-4 font-medium">IVR Payment Flow</p>
+              <p className="text-left md:text-center text-gray-600 text-sm mt-4 font-medium">IVR Payment Flow</p>
             </div>
 
             <div>
@@ -288,7 +288,7 @@ export default function NewAgeCaseStudy() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-center text-gray-600 text-sm mt-4 font-medium">Bank Transfer (EFT) Payment Flow</p>
+              <p className="text-left md:text-center text-gray-600 text-sm mt-4 font-medium">Bank Transfer (EFT) Payment Flow</p>
             </div>
 
             <div>
@@ -299,7 +299,7 @@ export default function NewAgeCaseStudy() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-center text-gray-600 text-sm mt-4 font-medium">Open Account Payment Flow</p>
+              <p className="text-left md:text-center text-gray-600 text-sm mt-4 font-medium">Open Account Payment Flow</p>
             </div>
 
             <div>
@@ -310,7 +310,7 @@ export default function NewAgeCaseStudy() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-center text-gray-600 text-sm mt-4 font-medium">View Policy Details & Documents</p>
+              <p className="text-left md:text-center text-gray-600 text-sm mt-4 font-medium">View Policy Details & Documents</p>
             </div>
           </div>
         </div>
@@ -319,10 +319,10 @@ export default function NewAgeCaseStudy() {
       {/* Coverage & Guarantee Mapping */}
       <section className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
             Coverage & Guarantee Mapping
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+          <p className="text-gray-600 text-base leading-relaxed mb-10 text-left md:text-center max-w-3xl mx-auto">
             Coverage and guarantee structures were designed to be explicit, reusable, and scalable.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -351,35 +351,35 @@ export default function NewAgeCaseStudy() {
       {/* Impact & Key Learnings */}
       <section id="results" className="py-12 md:py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-left md:text-center">
             Impact & Key Learnings
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Impact */}
-            <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
+            <div className="newage-impact-card bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-2xl p-4 md:p-8 relative overflow-hidden">
 
 
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center relative z-10 flex items-center justify-center gap-2">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-left md:text-center relative z-10 flex items-center justify-center gap-2">
                 <TrendingUp className="w-6 h-6 text-green-600" />
                 Impact
               </h3>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50 relative z-10">
+              <div className="newage-impact-list bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-sm border border-white/50 relative z-10">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3 p-4 bg-green-50/70 rounded-lg border border-green-100">
+                  <div className="newage-impact-item flex items-start gap-3 px-4 py-3 bg-green-50/70 rounded-lg border border-green-100">
                     <div className="w-3 h-3 bg-green-500 rounded-full mt-1 flex-shrink-0"></div>
                     <span className="text-gray-800 text-base font-medium">
                       Improved operational clarity in policy and payment stages
                     </span>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-emerald-50/70 rounded-lg border border-emerald-100">
+                  <div className="newage-impact-item flex items-start gap-3 px-4 py-3 bg-emerald-50/70 rounded-lg border border-emerald-100">
                     <div className="w-3 h-3 bg-emerald-500 rounded-full mt-1 flex-shrink-0"></div>
                     <span className="text-gray-800 text-base font-medium">
                       Reduced configuration and payment-related errors
                     </span>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-teal-50/70 rounded-lg border border-teal-100">
+                  <div className="newage-impact-item flex items-start gap-3 px-4 py-3 bg-teal-50/70 rounded-lg border border-teal-100">
                     <div className="w-3 h-3 bg-teal-500 rounded-full mt-1 flex-shrink-0"></div>
                     <span className="text-gray-800 text-base font-medium">
                       Clearer separation between sales, policy, and finance workflows
@@ -390,15 +390,15 @@ export default function NewAgeCaseStudy() {
             </div>
 
             {/* Key Learnings */}
-            <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 relative overflow-hidden">
+            <div className="newage-impact-card bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-4 md:p-8 relative overflow-hidden">
 
 
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center relative z-10 flex items-center justify-center gap-2">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-left md:text-center relative z-10 flex items-center justify-center gap-2">
                 <Star className="w-6 h-6 text-blue-600" />
                 Key Learnings
               </h3>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50 relative z-10">
+              <div className="newage-impact-list bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-sm border border-white/50 relative z-10">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3 p-4 bg-blue-50/70 rounded-lg border border-blue-100">
                     <div className="w-3 h-3 bg-blue-500 rounded-full mt-1 flex-shrink-0"></div>

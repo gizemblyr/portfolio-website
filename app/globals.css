@@ -1109,5 +1109,16 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .monevo-lightbox-close { position: absolute; top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; border: 1px solid rgba(255,255,255,.7); border-radius: 999px; background: rgba(20,18,30,.45); color: #fff; font-size: 1.5rem; line-height: 1; cursor: pointer; }
 @media (max-width: 767px) { .monevo-detail .monevo-lightbox-trigger { width: 100% !important; } .monevo-detail .monevo-lightbox-trigger img { width: 100% !important; max-width: 100% !important; height: auto !important; } .monevo-detail .monevo-lightbox { padding: 1rem; } }
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
+@media (max-width: 767px) {
+  .newage-palette .newage-payment-scenarios, .newage-palette .newage-status-scenarios { padding: 1rem !important; }
+  .newage-palette .newage-payment-scenario-card, .newage-palette .newage-status-item { padding: .75rem 1rem !important; }
+  .newage-palette .newage-impact-card { padding: 1rem !important; }
+  .newage-palette .newage-impact-list { padding: 0 !important; border: 0 !important; border-radius: 0 !important; background: none !important; background-color: rgba(255,255,255,0) !important; background-image: none !important; box-shadow: none !important; }
+  .newage-palette .newage-impact-list > div { gap: 0 !important; }
+  .newage-palette .newage-impact-list > div > div { padding: .75rem 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; background-color: transparent !important; background-image: none !important; }
+  .newage-palette div.newage-impact-list, .newage-palette div.newage-impact-item { background: transparent !important; background-color: transparent !important; }
+  .newage-palette .newage-impact-list > div > div + div { border-top: 1px solid hsl(var(--border)) !important; }
+  .newage-palette .newage-impact-card h3 { justify-content: flex-start !important; text-align: left !important; }
+}
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
