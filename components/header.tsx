@@ -25,15 +25,12 @@ export function Header() {
   return pathname.endsWith("-case-study") ? <CaseStudyHeader /> : <SiteHeader />
 }
 
-// Case study pages: a plain bar with a way back and the CV, no logo or section menu.
+// Case study pages: a sticky bar with a single way back, no logo, menu or CV link.
 function CaseStudyHeader() {
   return (
     <header className="cs-header">
       <div className="cs-header-inner">
-        <Link href="/#work">← All work</Link>
-        <a href={RESUME_HREF} download="Gizem-Bolayir-CV.pdf">
-          Resume
-        </a>
+        <Link href="/">← Back to home</Link>
       </div>
     </header>
   )

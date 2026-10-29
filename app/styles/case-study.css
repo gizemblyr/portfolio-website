@@ -5,6 +5,9 @@
  */
 
 .cs-page {
+  /* Sticky offsets: header height, and the section menu below it. */
+  --cs-header-h: 72px;
+  --cs-nav-h: 55px;
   min-height: 100vh;
   background: var(--color-page);
   color: var(--color-text-brand);
@@ -19,23 +22,28 @@
 
 /* Header ------------------------------------------------------------------ */
 
-.cs-header { border-bottom: 1px solid var(--color-cs-line); background: var(--color-page); }
+.cs-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: var(--cs-header-h); /* includes the bottom line */
+  border-bottom: 1px solid var(--color-cs-line);
+  background: var(--color-page);
+}
 
 .cs-header-inner {
   display: flex;
   max-width: 1200px; /* 1120px content + padding */
-  height: 72px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 40px;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
   font-size: 15px;
 }
 
 /* Page frame and intro ----------------------------------------------------- */
 
-.cs-main { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.cs-container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 .cs-intro { padding: 96px 0 56px; }
 
@@ -95,25 +103,57 @@
 
 /* Section menu */
 
+/*
+ * Section menu. In place its line runs under the content column only; once it
+ * sticks under the header the line spans the viewport and, on desktop, the tabs
+ * center. The bottom line moves between the track and the bar so the height
+ * stays the same and the accent line always sits right on top of it.
+ */
 .cs-section-nav {
+  position: sticky;
+  top: var(--cs-header-h);
+  z-index: 10;
+  border-bottom: 0 solid var(--color-cs-line);
+  background: var(--color-page);
+}
+
+.cs-section-nav.is-stuck { border-bottom-width: 1px; }
+.cs-section-nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+.cs-section-nav-track {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 18px 0;
-  gap: 8px 32px;
-  border-top: 1px solid var(--color-cs-line);
+  column-gap: 32px;
   border-bottom: 1px solid var(--color-cs-line);
   font-size: 14px;
 }
 
-.cs-page .cs-section-nav a { color: var(--color-cs-muted); }
-.cs-page .cs-section-nav a.is-active,
-.cs-page .cs-section-nav a:hover { color: var(--color-accent); }
+.cs-section-nav.is-stuck .cs-section-nav-track { justify-content: center; border-bottom-width: 0; }
+
+.cs-section-nav-track a { padding: 18px 0; }
+.cs-page .cs-section-nav-track a { color: var(--color-cs-muted); }
+.cs-page .cs-section-nav-track a.is-active,
+.cs-page .cs-section-nav-track a:hover { color: var(--color-accent); }
+
+.cs-section-nav-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  pointer-events: none;
+  transition: transform 250ms var(--ease-out), width 250ms var(--ease-out);
+}
 
 /* Sections: label column + content column --------------------------------- */
 
 .cs-section {
   display: grid;
   padding-top: 112px;
+  /* A menu jump leaves the heading 32px below the sticky header and menu. */
+  scroll-margin-top: calc(var(--cs-header-h) + var(--cs-nav-h) + 32px - 112px);
   grid-template-columns: 240px minmax(0, 1fr);
   gap: 48px;
 }
@@ -375,13 +415,14 @@
 /* Mobile (<768px) ------------------------------------------------------------ */
 
 @media (max-width: 767px) {
+  .cs-page { --cs-header-h: 56px; --cs-nav-h: 47px; }
   .cs-desktop-only { display: none; }
   .cs-mobile-only { display: inline; }
 
-  .cs-header-inner { height: 56px; padding: 0 20px; }
+  .cs-header-inner { padding: 0 20px; }
   .cs-header-inner a { padding: 12px 0; }
 
-  .cs-main { padding: 0 20px; }
+  .cs-container { padding: 0 20px; }
 
   .cs-intro { padding: 48px 0 32px; }
   .cs-category { margin-bottom: 14px; font-size: 13px; }
@@ -393,7 +434,6 @@
 
   /* Hero, section menu and content images run edge to edge. */
   .cs-hero,
-  .cs-section-nav,
   .cs-figure,
   .cs-solution-figure { margin-right: -20px; margin-left: -20px; }
 
@@ -405,11 +445,23 @@
   .cs-glance h3 { font-size: 16px; }
   .cs-glance p { font-size: 15px; }
 
-  .cs-section-nav { flex-wrap: nowrap; overflow-x: auto; padding: 0 20px; gap: 24px; white-space: nowrap; }
-  .cs-section-nav a { padding: 14px 0; }
+  /* The menu runs edge to edge and scrolls sideways; tabs stay left-aligned. */
+  .cs-section-nav-inner { padding: 0; }
+  .cs-section-nav-track,
+  .cs-section-nav.is-stuck .cs-section-nav-track {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0 20px;
+    column-gap: 24px;
+    scrollbar-width: none;
+    white-space: nowrap;
+  }
+  .cs-section-nav-track::-webkit-scrollbar { display: none; }
+  .cs-section-nav-track a { flex: 0 0 auto; padding: 14px 0; }
 
-  .cs-section { display: block; padding-top: 72px; }
-  .cs-section-nav + .cs-section { padding-top: 56px; }
+  .cs-section { display: block; padding-top: 72px; scroll-margin-top: calc(var(--cs-header-h) + var(--cs-nav-h) + 24px - 72px); }
+  .cs-section:first-child { padding-top: 56px; scroll-margin-top: calc(var(--cs-header-h) + var(--cs-nav-h) + 24px - 56px); }
   .cs-eyebrow { display: block; margin: 0 0 12px; font-size: 13px; line-height: normal; }
   .cs-eyebrow-rule { display: none; }
 
