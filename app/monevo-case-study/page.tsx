@@ -1,17 +1,22 @@
+
+
+
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ExploreMoreWork } from "@/components/explore-more-work"
+import { MonevoLightboxImage } from "@/components/monevo-lightbox-image"
 
 export default function MonevoCaseStudy() {
   return (
-    <div className="min-h-screen bg-white monevo-palette">
+    <div className="min-h-screen bg-white monevo-palette monevo-detail px-4 md:px-0">
       <Header />
 
       {/* Hero Section */}
-      <section className="monevo-hero pt-28 md:pt-32 pb-12 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
+      <section className="monevo-hero pt-28 md:pt-32 pb-12 md:pb-20 px-0 md:px-8 bg-gradient-to-br from-blue-50 to-purple-100">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
@@ -39,7 +44,7 @@ export default function MonevoCaseStudy() {
             </div>
             <div className="relative">
               <div className="max-w-lg mx-auto lg:max-w-xl">
-                <img
+                <MonevoLightboxImage
                   src="/images/design-mode/herosection.png"
                   alt="Monevo app interface showing light and dark mode dashboards with balance information and gamified task series"
                   className="w-full h-auto"
@@ -51,10 +56,10 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Project Overview */}
-      <section id="problem" className="py-12 md:py-16 px-4 md:px-8">
+      <section id="problem" className="py-12 md:py-16 px-0 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Problem Statement */}
-          <div className="bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-6 md:p-8 mb-12 relative overflow-hidden">
+          <div className="bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-4 md:p-8 mb-12 relative overflow-hidden">
             {/* Decorative Elements */}
 
 
@@ -62,7 +67,7 @@ export default function MonevoCaseStudy() {
               Problem Statement
             </h2>
 
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50 relative z-10">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 relative z-10">
               <p className="text-gray-700 mb-6 text-base leading-relaxed">
                 Monevo faced poor onboarding completion, low user engagement, and weak motivation mechanisms. Users
                 struggled with understanding financial concepts, navigating the app, and staying committed to tasks
@@ -114,14 +119,14 @@ export default function MonevoCaseStudy() {
           </div>
 
           {/* Goals & Success Metrics */}
-          <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 mb-12">
+          <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 mb-12">
             <h2 id="goals" className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
               Goals & Success Metrics
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
               {/* Project Goals */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                     <Target className="w-6 h-6 text-white" />
@@ -153,7 +158,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               {/* Success Metrics */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
                     <Award className="w-6 h-6 text-white" />
@@ -192,7 +197,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Approach */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50 mt-12">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 mt-12">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center" id="approach">Approach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 <div className="text-center">
@@ -232,17 +237,17 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Research Section */}
-      <section id="research" className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
+      <section id="research" className="py-12 md:py-16 px-0 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Research & User Insights
           </h2>
 
           {/* Benchmark Analysis */}
-          <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12">
+          <div className="bg-gray-50 rounded-2xl p-4 md:p-8 mb-12">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Benchmarking</h3>
             <div className="overflow-x-auto">
-              <img
+              <MonevoLightboxImage
                 src="/images/monevo-benchmark.png"
                 alt="Competitive Analysis comparing Duolingo, Cleo, and Revolut"
                 className="w-full min-w-[800px] md:min-w-0 rounded-xl shadow-lg"
@@ -275,7 +280,7 @@ export default function MonevoCaseStudy() {
           <div className="mb-12 md:mb-16">
             <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center">User Persona</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                     <Users className="w-6 h-6 text-blue-600" />
@@ -290,7 +295,7 @@ export default function MonevoCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                     <Users className="w-6 h-6 text-purple-600" />
@@ -315,7 +320,7 @@ export default function MonevoCaseStudy() {
           {/* User Journey */}
           <div className="mb-12 md:mb-16">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">User Journey Mapping</h3>
-            <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100">
+            <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 p-4 md:p-6 rounded-xl border border-blue-100">
               <h4 className="font-semibold text-gray-900 mb-3">Key Insights</h4>
               <p className="text-gray-700 text-base leading-relaxed">
                 Users faced unclear guidance, overwhelming onboarding, low motivation, confusing visual design, and a
@@ -329,12 +334,12 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Design Process */}
-      <section id="design" className="py-12 md:py-16 px-4 md:px-8">
+      <section id="design" className="py-12 md:py-16 px-0 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Design Strategy */}
           <div className="mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Design Strategy</h2>
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
@@ -406,7 +411,7 @@ export default function MonevoCaseStudy() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
               Key Design Solutions
             </h2>
-            <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
@@ -460,7 +465,7 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Results */}
-      <section id="impact" className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
+      <section id="impact" className="py-12 md:py-16 px-0 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Usability Testing & Outcomes
@@ -468,7 +473,7 @@ export default function MonevoCaseStudy() {
 
           {/* Usability Test Overview */}
           <div className="mb-12 md:mb-16">
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">Test Overview</h4>
@@ -560,7 +565,7 @@ export default function MonevoCaseStudy() {
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Welcoming Screens</h3>
             <div className="flex justify-center mb-6 md:mb-8">
               <div className="overflow-hidden rounded-xl shadow-lg max-w-4xl">
-                <img
+                <MonevoLightboxImage
                   src="/images/design-mode/Frame%25206.png"
                   alt="Monevo onboarding screens showing value proposition - left screen demonstrates expense tracking and categorization, right screen shows gamified goal-setting and rewards system"
                   className="w-full h-auto object-cover"
@@ -568,7 +573,7 @@ export default function MonevoCaseStudy() {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 p-6 rounded-xl">
+              <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                 <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                 <p className="text-gray-600 space-y-2 text-base">
                   The old welcome screen lacked clarity and failed to explain the app's value, leading to early
@@ -576,7 +581,7 @@ export default function MonevoCaseStudy() {
                   visuals and app previews helping users quickly understand what to expect.
                 </p>
               </div>
-              <div className="bg-green-50 p-6 rounded-xl">
+              <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                 <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                 <ul className="text-gray-600 space-y-2 text-base">
                   <li>• Previous drop-off rate at welcome screen: Over 50% did not proceed after the first open</li>
@@ -587,7 +592,7 @@ export default function MonevoCaseStudy() {
                   <li>• Users who described the welcome experience as "inviting" or "clearer than expected": 85.7%</li>
                 </ul>
               </div>
-              <div className="bg-purple-50 p-6 rounded-xl">
+              <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
                 <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                 <ul className="text-gray-600 space-y-2 text-base">
                   <li>• "I understood what the app was about before signing up that made a difference."</li>
@@ -598,14 +603,14 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Onboarding */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-2xl mb-8 mt-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8 mt-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
                 Gamified Onboarding via "Getting to Know You" Series
               </h3>
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/onboarding.png"
                     alt="Monevo gamified onboarding flow showing welcome screen with Monny mascot, name input form, progress tracking with Let's Get to Know You series, and weakness prioritization selection for spending categories"
                     className="w-full h-auto object-cover"
@@ -614,7 +619,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     In the old version of the app, users were asked to enter personal and financial information right
@@ -626,7 +631,7 @@ export default function MonevoCaseStudy() {
                     and gave users an early sense of achievement.
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Onboarding Completion Rate: Increased from 47.4% → 70% (+47.6%)</li>
@@ -634,7 +639,7 @@ export default function MonevoCaseStudy() {
                     <li>• Users reporting onboarding as "clear and engaging": 85.7% during testing</li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• "It felt like a journey, not a boring form."</li>
@@ -646,12 +651,12 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* My Monevo World Dashboard */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-2xl mb-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">My Monevo World</h3>
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-2.png"
                     alt="Monevo app screens showing My Monevo World dashboard, spending details with want/need categorization, and expense classification modal for individual transactions"
                     className="w-full h-auto object-cover"
@@ -660,7 +665,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     My Monay World was created to help users visually track progress and stay motivated through a
@@ -669,7 +674,7 @@ export default function MonevoCaseStudy() {
                     buying valuable metals, without relying heavily on gamification.
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Users who accessed and explored My Monay World: 85.7%</li>
@@ -677,7 +682,7 @@ export default function MonevoCaseStudy() {
                     <li>• Task motivation & feedback increased based on post-task interview responses</li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• "I loved seeing my progress. it felt like I was actually getting somewhere."</li>
@@ -689,11 +694,11 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Receipt-Based Expense Input */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-2xl mb-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Receipt-Based Expense Input</h3>
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25202085664027.png"
                     alt="Monevo receipt scanning feature showing dashboard with expense entry modal and camera interface for receipt capture with real receipt visible"
                     className="w-full h-auto object-cover"
@@ -701,7 +706,7 @@ export default function MonevoCaseStudy() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     Users found manual expense entry time consuming and prone to skipping. To streamline the process and
@@ -710,7 +715,7 @@ export default function MonevoCaseStudy() {
                     expenses.
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Users who preferred receipt-based input over manual entry: 71.4%</li>
@@ -718,7 +723,7 @@ export default function MonevoCaseStudy() {
                     <li>• Perceived usefulness for monthly reports: 72% said it made tracking feel more reliable</li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• "Uploading a receipt felt faster and easier than typing everything."</li>
@@ -730,14 +735,14 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Goal-Based Task Series & Reward System */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-2xl mb-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
                 Goal-Based Task Series & Reward System
               </h3>
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-1.png"
                     alt="Monevo app screens showing My Monay World dashboard, badge rewards for completing spending tracking series, reward options with discounts, and points system with trainings and expert consultations"
                     className="w-full h-auto object-cover"
@@ -746,7 +751,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     In the previous version, users earned points but had no way to use them making the system feel empty
@@ -757,14 +762,14 @@ export default function MonevoCaseStudy() {
                     motivating experience.
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Task completion (within series): Increased from 8.1% → 15% (+85.2%)</li>
                     <li>• Users who preferred series based flow over isolated tasks: 71.4%</li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• "It was satisfying to finish a full series it felt like a win."</li>
@@ -776,12 +781,12 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Testing Two Homepage Variants */}
-            <div className="bg-white p-6 md:p-8 rounded-2xl mb-8">
+            <div className="bg-white p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Testing Two Homepage Variants</h3>
 
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/homepage.png"
                     alt="Monevo app showing two homepage variants - Sequential Tasks with step-by-step progression on the left, and Open Tasks with all options visible in both light and dark mode on the right"
                     className="w-full h-auto object-cover"
@@ -790,7 +795,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <p className="text-gray-600 space-y-2 text-base">
                     The original homepage lacked structure and clarity users struggled to understand where to start and
@@ -799,7 +804,7 @@ export default function MonevoCaseStudy() {
                     layout that best supports task engagement and ease of navigation.
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• Users who preferred sequential tasks: 3 out of 7</li>
@@ -811,7 +816,7 @@ export default function MonevoCaseStudy() {
                     </li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 p-6 rounded-xl">
+                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
                   <ul className="text-gray-600 space-y-2 text-base">
                     <li>• "The step by step layout made me feel more focused."</li>
@@ -834,14 +839,14 @@ export default function MonevoCaseStudy() {
               {/* Side-by-side image layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl shadow-sm">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-4.png"
                     alt="Monevo smart reminders feature showing quiz prompts for expense categorization and notifications for unspecified expenses"
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl shadow-sm">
-                  <img
+                  <MonevoLightboxImage
                     src="/images/design-mode/Frame%25206-3.png"
                     alt="Monevo weekly reports showing spending distribution charts, wants vs needs analysis, and most-spent category insights with personalized recommendations"
                     className="w-full h-auto object-cover"
@@ -849,7 +854,7 @@ export default function MonevoCaseStudy() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-blue-50 p-6 rounded-xl">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
                   <h4 className="text-gray-600 font-semibold text-base mb-1">Most-Spent Category in Reports</h4>
                   <p className="text-gray-600 space-y-2 text-base mb-3">
@@ -863,7 +868,7 @@ export default function MonevoCaseStudy() {
                     “Push notifications feel robotic, but in-chat felt like someone was guiding me.”
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-xl">
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
                   <h4 className="font-semibold text-green-900 mb-3">Expected Impact</h4>
                   <h4 className="text-gray-600 font-semibold text-base mb-1">Most-Spent Category in Reports</h4>
                   <p className="text-gray-600 space-y-2 text-base mb-3">
@@ -880,7 +885,7 @@ export default function MonevoCaseStudy() {
 
               {/* Key Learnings */}
               {/* Impact & Learnings */}
-              <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 p-6 md:p-8 rounded-2xl relative overflow-hidden mt-12">
+              <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 p-4 md:p-8 rounded-2xl relative overflow-hidden mt-12">
                 {/* Decorative Elements */}
 
 
@@ -890,7 +895,7 @@ export default function MonevoCaseStudy() {
 
                 {/* Impact & Learnings Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 relative z-10">
-                  <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-white/50">
+                  <div className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-sm border border-white/50">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
                         <Award className="w-6 h-6 text-white" />
@@ -902,7 +907,7 @@ export default function MonevoCaseStudy() {
                     </p>
                   </div>
 
-                  <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-white/50">
+                  <div className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-sm border border-white/50">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
                         <Lightbulb className="w-6 h-6 text-white" />
@@ -915,7 +920,7 @@ export default function MonevoCaseStudy() {
                     </p>
                   </div>
 
-                  <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-white/50">
+                  <div className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-sm border border-white/50">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center">
                         <Target className="w-6 h-6 text-white" />
@@ -931,7 +936,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               {/* Next Steps */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-sm border border-white/50 mt-12">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-8 shadow-sm border border-white/50 mt-12">
                 <div className="flex items-center gap-3 mb-6">
                   
                 <h2 id="next-step" className="w-full text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 text-center relative z-10">
