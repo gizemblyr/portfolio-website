@@ -1101,6 +1101,11 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
   .monevo-detail section table, .monevo-detail section [class*="min-w-[800px]"] { width: 100% !important; min-width: 0 !important; }
   .monevo-detail section [class*="overflow-x-auto"] { margin-inline: 0 !important; }
   .monevo-detail #research > div > div[class*="rounded-2xl"] > div[class*="bg-white"], .monevo-detail #impact > div > div[class*="rounded-2xl"] > div[class*="bg-white"] { padding-inline: 0 !important; border: 0 !important; background: transparent !important; }
+  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) { background: transparent !important; }
+  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) > div > div[class*="rounded-2xl"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) h2, .monevo-detail section:not(.monevo-hero):not(.explore-more-work) h3 { text-align: left !important; }
+  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) ul, .monevo-detail section:not(.monevo-hero):not(.explore-more-work) ol { padding-left: 0 !important; margin-left: 0 !important; }
+  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) > div > div[class*="rounded-2xl"] > div[class*="rounded-xl"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
 }
 .monevo-lightbox-trigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; text-align: inherit; }
 .monevo-lightbox-trigger img { display: block; }
