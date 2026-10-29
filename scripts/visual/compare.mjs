@@ -5,7 +5,7 @@ import path from "node:path"
 import { PNG } from "pngjs"
 import pixelmatch from "pixelmatch"
 
-const [baselineDir = ".visual/baseline", currentDir = ".visual/current", diffDir = ".visual/diff"] = process.argv.slice(2)
+const [baselineDir, currentDir, diffDir = path.join(currentDir, "../diff")] = process.argv.slice(2)
 await mkdir(diffDir, { recursive: true })
 
 let failed = false
