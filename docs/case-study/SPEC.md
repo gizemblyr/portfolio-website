@@ -37,11 +37,11 @@ app/<slug>-case-study/page.tsx   # sadece ilgili içeriği CaseStudyLayout'a ver
 
 ## 3. Sayfa yapısı (yukarıdan aşağıya)
 
-1. **Header**: solda `← All work` (ana sayfadaki `#work`'e gider), sağda `Resume` (CV indirme). 72px yükseklik (mobil 56px), altında 1px `--line` çizgi. Logo, ikon veya ana sayfa menüsü yok. Mevcut `components/header.tsx` içindeki case study dalı (`isMonevo`) bununla değiştirilir.
+1. **Header**: solda tek link, `← Back to home`, ana sayfaya (`/`) gider. Resume linki yok. Sayfanın üstünde **sticky** (`top: 0`), beyaz zemin, alt kenarda 1px `--line` çizgi. Yükseklik çizgi dahil 72px (mobil 56px). Logo, ikon veya ana sayfa menüsü yok. Mevcut `components/header.tsx` içindeki case study dalı bununla değiştirilir. Referans dosyalardaki eski header (`All work` / `Resume`) geçersizdir, dikkate alınmaz.
 2. **Başlık bloğu**: kategori etiketi (`Fintech · Mobile app`), H1, tek paragraf özet, 4'lü meta satırı (Role, Duration, Platform/Client, Scope). Meta satırı `<dl>`; mobilde 2×2.
 3. **Hero görseli**: `--surface` gri zemin üzerinde cihaz mockup'ı. Desktop: padding 64px, görsel `max-height: 560px`, ortalanmış. Mobil: padding 32px 20px, görsel tam genişlik.
 4. **At a glance**: Problem / What I did / Outcome. Desktop'ta 3 sütun, mobilde alt alta. Kart değil, düz metin.
-5. **Bölüm menüsü**: sayfadaki bölümlerden **otomatik üretilir**, sabit liste yok. Üstte ve altta 1px çizgi. Desktop: `flex-wrap`. Mobil: yatay kaydırılabilir, `white-space: nowrap`. Aktif bölüm `--accent` renginde, diğerleri `--muted`. Aktif durum IntersectionObserver ile.
+5. **Bölüm menüsü**: sayfadaki bölümlerden **otomatik üretilir**, sabit liste yok. Ayrıntı için bkz. 6.1.
 6. **Bölümler**: her biri `NN Başlık` etiketi (örn. `01 Problem`), H2 ve bloklar. Desktop'ta etiket solda ayrı sütunda, başlığa uzanan çizgiyle; mobilde H2'nin üstünde. Ayrıntı bölüm 6'da.
 7. **Other Projects**: o proje hariç diğer 4 proje, `content/case-studies/index.ts`'ten otomatik. Desktop 2 sütun, mobil tek sütun. 4:3 kapak görseli (`object-fit: cover`), başlık, tek satır kategori. Üstte 1px `--ink` çizgi.
 
@@ -93,6 +93,24 @@ Bu token'lar ana sayfanın yeni token sistemine eklenir. Varsa aynı değerdeki 
 - İçerik görselleri: **zeminsiz**, sağ sütun genişliğinde (mobilde ekranın kenarından kenarına). Gri zemin sadece hero ve Other Projects kapaklarında.
 - 390px'te **yatay kaydırma olmamalı**; geniş tablolar `overflow-x: auto` kutu içinde.
 - Referans dosyalar (`reference/*.html`) bu yerleşimin birebir halidir; çelişki olursa referans geçerli.
+
+### 6.1 Bölüm menüsü (section nav)
+
+Referans dosyalardaki menü çizgileri bu bölümle değişti; çelişkide bu bölüm geçerli.
+
+**Normal hali** (At a glance'in altında, sayfa akışında):
+- Üst çizgi yok, sadece alt 1px `--line` çizgi. Çizgi içerik sütunu genişliğinde.
+- Sekmeler sola yaslı, içerikle aynı hizada. Desktop: `flex-wrap`. Mobil: yatay kaydırılabilir, `white-space: nowrap`, kenardan kenara.
+- Pasif sekmeler `--muted`. Aktif sekmenin metni `--accent` (#4F3DF1); altında, alt çizginin tam üstüne oturan, sekme metni genişliğinde 1px `--accent` çizgi.
+
+**Scroll edilince** (sticky):
+- Menü header'ın hemen altına yapışır: desktop `top: 72px`, mobil `top: 56px`. Beyaz zemin, alt 1px `--line` çizgi; yapışıkken çizgi ekran genişliğinde.
+- Yapışınca desktop'ta sekmeler ortalanır; normal halde sola yaslı kalır. Mobilde her iki durumda da sola yaslı ve kaydırılabilir.
+- Aktif sekme scroll'la değişir (IntersectionObserver). Mor çizgi aktif sekmeye kısa bir geçişle (~250ms) kayar.
+- Mobilde aktif sekme görünür alanın dışındaysa menü yatayda ona kayar.
+- Menüden bir bölüme gidildiğinde başlık header ve menünün altında kalmaz: section'lar `scroll-margin-top` alır (başlık menünün ~32px altında, mobilde ~24px).
+
+Ana sayfanın header'ı ve menüsü bu kurallardan etkilenmez.
 
 ## 7. Blok tipleri
 
