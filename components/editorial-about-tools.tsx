@@ -73,7 +73,7 @@ export function EditorialAboutTools() {
             </div>
           </div>
           <div className="editorial-about-portrait">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1778276557460-xpHkD2tqWuLyJDUM3u7nwkGzBvOKk3.png" alt="Gizem Bolayir in profile" />
+            <img src="/images/about-portrait.png" alt="Gizem Bolayir in profile" />
           </div>
         </div>
       </section>
