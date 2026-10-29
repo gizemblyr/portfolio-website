@@ -969,7 +969,9 @@ a.editorial-connect-row:hover > svg { transform: translate(2px, -2px); }
   .editorial-project-cover img,
   .editorial-article-image img,
   .editorial-article-title { transition: none; }
-  .editorial-tools-track { animation: none; }
+  /* Matches the old site, where this rule lost to the marquee rule below it:
+     the tools marquee keeps running under reduced motion. Candidate fix. */
+  .editorial-tools-track { transition: none; }
   .how-i-work-card,
   .how-i-work-visual * { animation: none; }
   .how-i-work-nodes circle { opacity: 1; }
