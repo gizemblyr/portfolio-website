@@ -1,0 +1,617 @@
+/*
+ * Case study pages (components/case-study). Desktop first; the single
+ * breakpoint at 768px switches to the one-column mobile layout.
+ * Values follow docs/case-study/reference/*.html.
+ */
+
+.cs-page {
+  /* Sticky offsets: header height, and the section menu below it. */
+  --cs-header-h: 72px;
+  --cs-nav-h: 55px;
+  min-height: 100vh;
+  background: var(--color-page);
+  color: var(--color-text-brand);
+  font-family: var(--font-sans-stack);
+  line-height: normal;
+}
+
+.cs-page a { color: inherit; text-decoration: none; transition: color 200ms ease; }
+.cs-page a:hover { color: var(--color-accent); }
+
+.cs-mobile-only { display: none; }
+
+/* Header ------------------------------------------------------------------ */
+
+.cs-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: var(--cs-header-h); /* includes the bottom line */
+  border-bottom: 1px solid var(--color-cs-line);
+  background: var(--color-page);
+}
+
+.cs-header-inner {
+  display: flex;
+  max-width: 1200px; /* 1120px content + padding */
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* Page frame and intro ----------------------------------------------------- */
+
+.cs-container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+.cs-intro { padding: 96px 0 56px; }
+
+.cs-category { margin-bottom: 20px; color: var(--color-cs-muted); font-size: 14px; }
+
+.cs-title {
+  max-width: 860px;
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.cs-summary {
+  max-width: 680px;
+  margin-top: 28px;
+  color: var(--color-cs-body);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.cs-meta {
+  display: grid;
+  margin-top: 64px;
+  padding-top: 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  border-top: 1px solid var(--color-cs-line);
+}
+
+.cs-meta > div { display: flex; flex-direction: column; gap: 6px; }
+.cs-meta dt { color: var(--color-cs-muted); font-size: 13px; }
+.cs-meta dd { font-size: 16px; line-height: 1.45; }
+
+.cs-hero {
+  display: flex;
+  justify-content: center;
+  padding: 64px;
+  background: var(--color-cs-surface);
+}
+
+.cs-hero img { width: auto; max-width: 100%; height: auto; max-height: var(--cs-hero-max-h, 560px); }
+
+/* At a glance */
+
+.cs-glance {
+  display: grid;
+  padding: 80px 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.cs-glance h2 { grid-column: 1 / -1; color: var(--color-cs-muted); font-size: 13px; font-weight: 500; }
+.cs-glance > div { display: flex; flex-direction: column; gap: 10px; }
+.cs-glance h3 { font-size: 17px; font-weight: 600; }
+.cs-glance p { color: var(--color-cs-body); font-size: 16px; line-height: 1.6; }
+
+/*
+ * Section menu. In place its line runs under the content column only; once it
+ * sticks under the header the line spans the viewport. Tabs stay left-aligned
+ * with the content in both states. The bottom line moves between the track and the bar so the height
+ * stays the same and the accent line always sits right on top of it.
+ */
+.cs-section-nav {
+  position: sticky;
+  top: var(--cs-header-h);
+  z-index: 10;
+  border-bottom: 0 solid var(--color-cs-line);
+  background: var(--color-page);
+}
+
+.cs-section-nav.is-stuck { border-bottom-width: 1px; }
+.cs-section-nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+.cs-section-nav-track {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  border-bottom: 1px solid var(--color-cs-line);
+  font-size: 14px;
+}
+
+.cs-section-nav.is-stuck .cs-section-nav-track { border-bottom-width: 0; }
+
+.cs-section-nav-track a { padding: 18px 0; }
+.cs-page .cs-section-nav-track a { color: var(--color-cs-muted); }
+.cs-page .cs-section-nav-track a.is-active,
+.cs-page .cs-section-nav-track a:hover { color: var(--color-accent); }
+
+.cs-section-nav-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  pointer-events: none;
+  transition: transform 250ms var(--ease-out), width 250ms var(--ease-out);
+}
+
+/* Sections: label column + content column --------------------------------- */
+
+.cs-section {
+  display: grid;
+  padding-top: 112px;
+  /* A menu jump leaves the heading 32px below the sticky header and menu. */
+  scroll-margin-top: calc(var(--cs-header-h) + var(--cs-nav-h) + 32px - 112px);
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 48px;
+}
+
+.cs-eyebrow {
+  display: flex;
+  margin-top: 11px;
+  align-self: start;
+  align-items: center;
+  gap: 14px;
+  color: var(--color-cs-muted);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.cs-eyebrow > span:first-child { flex: 0 0 auto; }
+
+/* Reaches across the column gap towards the heading. */
+.cs-eyebrow-rule { height: 1px; margin-right: -36px; flex: 1 1 auto; background: var(--color-cs-rule); }
+
+.cs-section-body { min-width: 0; }
+
+/* Text stays at reading width; images, solutions and wide grids use the full column. */
+.cs-section-body > :not(.cs-figure, .cs-solution, .cs-principles, .cs-columns.cols-3) { max-width: 720px; }
+
+.cs-h2 { font-size: 34px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; }
+
+/* Vertical rhythm. The space above a block depends on what precedes it. */
+
+.cs-paragraph { margin-top: 24px; }
+.cs-note { margin-top: 12px; }
+.cs-subheading { margin-top: 64px; }
+.cs-subsection { margin-top: 112px; }
+.cs-list-block { margin-top: 16px; }
+.cs-list-block.has-title { margin-top: 40px; }
+.cs-two-lists { margin-top: 32px; }
+.cs-metrics { margin-top: 48px; }
+.cs-steps { margin-top: 32px; }
+.cs-principles { margin-top: 32px; }
+.cs-label-value { margin-top: 32px; }
+.cs-table-block { margin-top: 40px; }
+.cs-quote { margin-top: 32px; }
+.cs-quotes-block { margin-top: 48px; }
+.cs-figure { margin-top: 32px; }
+.cs-personas { margin-top: 20px; }
+.cs-columns { margin-top: 24px; }
+.cs-stack { margin-top: 32px; }
+.cs-stack.has-title { margin-top: 40px; }
+.cs-solution { margin-top: 96px; }
+
+.cs-h2 + *,
+.cs-subsection + * { margin-top: 32px; }
+.cs-h2 + .cs-paragraph.is-lead,
+.cs-subsection + .cs-paragraph.is-lead { margin-top: 24px; }
+.cs-h2 + .cs-metrics { margin-top: 40px; }
+.cs-h2 + .cs-solution { margin-top: 56px; }
+.cs-subheading + .cs-paragraph { margin-top: 12px; }
+.cs-subheading + .cs-label-value,
+.cs-subheading + .cs-personas { margin-top: 20px; }
+.cs-subheading + .cs-solution { margin-top: 40px; }
+.cs-paragraph.is-lead + .cs-subheading { margin-top: 40px; }
+.cs-principles + .cs-subheading { margin-top: 72px; }
+.cs-two-lists + .cs-paragraph { margin-top: 32px; }
+.cs-metrics + .cs-list-block { margin-top: 40px; }
+.cs-metrics + .cs-list-block.has-title,
+.cs-list-block + .cs-stack.has-title,
+.cs-principles + .cs-two-lists,
+.cs-paragraph.is-lead + .cs-figure,
+.cs-principles + .cs-figure { margin-top: 48px; }
+.cs-figure + .cs-two-lists,
+.cs-figure + .cs-list-block.has-title { margin-top: 40px; }
+.cs-figure + .cs-figure { margin-top: 64px; }
+.cs-label-value + .cs-columns { margin-top: 32px; }
+
+/* Text */
+
+.cs-paragraph { color: var(--color-cs-body); font-size: 16px; line-height: 1.7; }
+.cs-page .cs-paragraph a { color: var(--color-text-brand); text-decoration: underline; }
+.cs-page .cs-paragraph a:hover { color: var(--color-accent); }
+.cs-paragraph.is-lead { font-size: 17px; }
+.cs-note { color: var(--color-cs-muted); font-size: 14px; line-height: 1.6; }
+.cs-subheading { font-size: 20px; font-weight: 500; letter-spacing: -0.01em; }
+.cs-subsection { font-size: 24px; font-weight: 500; letter-spacing: -0.01em; }
+
+/* Lists */
+
+.cs-list-title { margin-bottom: 14px; font-size: 17px; font-weight: 600; }
+
+.cs-list,
+.cs-column-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+  gap: 8px;
+  color: var(--color-cs-body);
+  font-size: 16px;
+  line-height: 1.7;
+  list-style: disc;
+}
+
+.cs-list.is-small { font-size: 15px; line-height: 1.65; }
+.cs-list.is-dense { gap: 0; line-height: 1.8; }
+.cs-list.is-small.is-dense { line-height: 1.65; }
+
+.cs-list strong,
+.cs-column-list strong { color: var(--color-text-brand); font-weight: 600; }
+
+.cs-two-lists { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+
+.cs-quotes-title { margin-bottom: 16px; font-size: 17px; font-weight: 600; }
+
+.cs-quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--color-cs-body);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Numbers */
+
+.cs-metrics-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 48px; }
+.cs-metrics-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.cs-metric { padding-top: 16px; border-top: 1px solid var(--color-text-brand); }
+.cs-metric-value { font-size: 40px; font-weight: 500; letter-spacing: -0.02em; }
+.cs-metric-label { margin-top: 8px; color: var(--color-cs-body); font-size: 15px; line-height: 1.5; }
+.cs-source { margin-top: 24px; color: var(--color-cs-muted); font-size: 13px; }
+
+.cs-steps > li {
+  display: grid;
+  padding: 24px 0;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  border-top: 1px solid var(--color-cs-line);
+}
+
+.cs-steps.is-plain > li { padding: 20px 0; }
+.cs-steps > li:last-child { border-bottom: 1px solid var(--color-cs-line); }
+.cs-step-number { color: var(--color-cs-muted); font-size: 15px; }
+.cs-step-title { font-size: 17px; font-weight: 600; }
+.cs-step-text { margin-top: 8px; color: var(--color-cs-body); font-size: 16px; line-height: 1.65; }
+.cs-step-text.is-only { margin-top: 0; }
+
+.cs-principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 48px; }
+.cs-principles.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+.cs-principles > div { padding-top: 16px; border-top: 1px solid var(--color-cs-line); }
+.cs-principle-title { font-size: 17px; font-weight: 600; }
+.cs-principles.cols-4 .cs-principle-title { font-size: 16px; }
+.cs-principle-text { margin-top: 8px; color: var(--color-cs-body); font-size: 15px; line-height: 1.65; }
+
+.cs-label-value {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 14px 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cs-label-value.is-profile { grid-template-columns: 140px minmax(0, 1fr); gap: 10px 24px; }
+.cs-label-value > div { display: contents; }
+.cs-label-value dt { color: var(--color-cs-muted); }
+.cs-label-value dd { color: var(--color-cs-body); }
+
+.cs-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+
+.cs-table th {
+  padding: 0 12px 12px 0;
+  border-bottom: 1px solid var(--color-text-brand);
+  color: var(--color-cs-muted);
+  font-weight: 500;
+  text-align: left;
+}
+
+.cs-table td { padding: 16px 12px 16px 0; border-bottom: 1px solid var(--color-cs-line); }
+.cs-table th:last-child,
+.cs-table td:last-child { padding-right: 0; }
+.cs-table-block .cs-list-title { margin-bottom: 16px; }
+
+/* Quotes and people */
+
+.cs-quote blockquote { font-size: 22px; letter-spacing: -0.01em; line-height: 1.4; }
+.cs-quote figcaption { margin-top: 8px; color: var(--color-cs-muted); font-size: 14px; }
+
+.cs-personas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+.cs-persona-name { font-size: 17px; font-weight: 600; }
+.cs-persona-meta { margin-top: 4px; color: var(--color-cs-muted); font-size: 14px; }
+.cs-persona-text { margin-top: 10px; color: var(--color-cs-body); font-size: 16px; line-height: 1.7; }
+
+.cs-stack-items { display: flex; flex-direction: column; gap: 32px; }
+.cs-stack-title { font-size: 17px; font-weight: 600; }
+.cs-stack-text { margin-top: 8px; color: var(--color-cs-body); font-size: 16px; line-height: 1.7; }
+.cs-stack.has-title .cs-list-title { margin-bottom: 16px; }
+.cs-stack.has-title .cs-stack-items { gap: 24px; }
+.cs-stack.has-title .cs-stack-title { font-size: 16px; }
+.cs-stack.has-title .cs-stack-text { margin-top: 6px; font-size: 15px; line-height: 1.65; }
+.cs-stack-quote { margin-top: 6px; color: var(--color-cs-muted); font-size: 15px; line-height: 1.65; }
+
+/* Columns: persona details and the Why / Testing results / What users said rows */
+
+.cs-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.cs-columns.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+.cs-column-title { margin-bottom: 10px; color: var(--color-cs-muted); font-size: 14px; font-weight: 500; }
+.cs-column-text { color: var(--color-cs-body); font-size: 15px; line-height: 1.65; }
+.cs-column-list { padding-left: 16px; gap: 6px; font-size: 15px; line-height: 1.65; }
+.cs-column-list.is-dense { gap: 0; }
+
+.cs-column-quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-cs-body);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* Images */
+
+.cs-image { width: 100%; height: auto; }
+.cs-figure figcaption { margin-top: 14px; color: var(--color-cs-muted); font-size: 14px; }
+
+.cs-solution-title { font-size: 24px; font-weight: 500; letter-spacing: -0.01em; }
+.cs-solution-figure { margin-top: 32px; }
+.cs-solution-columns { margin-top: 40px; }
+
+/* Figure pair: images 24px apart on one row, their texts 48px apart below. */
+.cs-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  column-gap: 24px;
+}
+
+.cs-feature { display: contents; }
+.cs-feature-body { margin-top: 40px; }
+.cs-feature:first-child .cs-feature-body { padding-right: 12px; }
+.cs-feature:last-child .cs-feature-body { padding-left: 12px; }
+.cs-feature-title { font-size: 17px; font-weight: 600; }
+.cs-feature-text,
+.cs-feature-quote,
+.cs-feature-impact { color: var(--color-cs-body); font-size: 15px; line-height: 1.65; }
+.cs-feature-text { margin-top: 10px; }
+.cs-feature-quote { margin-top: 12px; }
+.cs-feature-label { margin: 20px 0 6px; color: var(--color-cs-muted); font-size: 14px; font-weight: 500; }
+
+/* Other projects ------------------------------------------------------------ */
+
+.cs-others { margin-top: 160px; padding: 40px 0 120px; border-top: 1px solid var(--color-text-brand); }
+.cs-others h2 { margin-bottom: 40px; font-size: 34px; font-weight: 500; letter-spacing: -0.02em; }
+.cs-others-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 40px; }
+.cs-other { display: flex; flex-direction: column; gap: 14px; }
+.cs-other-cover { display: block; overflow: hidden; aspect-ratio: 4 / 3; background: var(--color-cs-surface); }
+.cs-other-cover img { width: 100%; height: 100%; object-fit: cover; }
+.cs-other-text { display: flex; flex-direction: column; gap: 4px; }
+.cs-other-title { font-size: 20px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3; }
+.cs-other-category { color: var(--color-cs-muted); font-size: 14px; }
+
+/* Mobile (<768px) ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+  .cs-page { --cs-header-h: 56px; --cs-nav-h: 47px; }
+  .cs-desktop-only { display: none; }
+  .cs-mobile-only { display: inline; }
+
+  .cs-header-inner { padding: 0 20px; }
+  .cs-header-inner a { padding: 12px 0; }
+
+  .cs-container { padding: 0 20px; }
+
+  .cs-intro { padding: 48px 0 32px; }
+  .cs-category { margin-bottom: 14px; font-size: 13px; }
+  .cs-title { font-size: 34px; letter-spacing: -0.025em; line-height: 1.1; }
+  .cs-summary { margin-top: 18px; font-size: 17px; }
+  .cs-meta { margin-top: 32px; padding-top: 20px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+  .cs-meta > div { gap: 4px; }
+  .cs-meta dd { font-size: 15px; line-height: 1.4; }
+
+  /* Hero, section menu and content images run edge to edge. */
+  .cs-hero,
+  .cs-figure,
+  .cs-solution-figure { margin-right: -20px; margin-left: -20px; }
+
+  .cs-hero { padding: 32px 20px; }
+  .cs-hero img { width: 100%; max-height: none; }
+
+  .cs-glance { display: flex; padding: 48px 0; flex-direction: column; gap: 28px; }
+  .cs-glance > div { gap: 6px; }
+  .cs-glance h3 { font-size: 16px; }
+  .cs-glance p { font-size: 15px; }
+
+  /* The menu runs edge to edge and scrolls sideways; tabs stay left-aligned. */
+  .cs-section-nav-inner { padding: 0; }
+  .cs-section-nav-track {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 20px;
+    column-gap: 24px;
+    scrollbar-width: none;
+    white-space: nowrap;
+  }
+  .cs-section-nav-track::-webkit-scrollbar { display: none; }
+  .cs-section-nav-track a { flex: 0 0 auto; padding: 14px 0; }
+
+  .cs-section { display: block; padding-top: 72px; scroll-margin-top: calc(var(--cs-header-h) + var(--cs-nav-h) + 24px - 72px); }
+  .cs-section:first-child { padding-top: 56px; scroll-margin-top: calc(var(--cs-header-h) + var(--cs-nav-h) + 24px - 56px); }
+  .cs-eyebrow { display: block; margin: 0 0 12px; font-size: 13px; line-height: normal; }
+  .cs-eyebrow-rule { display: none; }
+
+  .cs-h2 { font-size: 26px; line-height: 1.2; }
+
+  .cs-paragraph { margin-top: 20px; }
+  .cs-note { margin-top: 10px; }
+  .cs-subheading { margin-top: 48px; }
+  .cs-subsection { margin-top: 72px; }
+  .cs-list-block { margin-top: 14px; }
+  .cs-list-block.has-title { margin-top: 28px; }
+  .cs-two-lists { margin-top: 28px; }
+  .cs-metrics { margin-top: 32px; }
+  .cs-steps { margin-top: 24px; }
+  .cs-principles { margin-top: 24px; }
+  .cs-label-value { margin-top: 24px; }
+  .cs-table-block { margin-top: 28px; }
+  .cs-quote { margin-top: 28px; }
+  .cs-quotes-block { margin-top: 36px; }
+  .cs-figure { margin-top: 20px; }
+  .cs-personas { margin-top: 20px; }
+  .cs-columns { margin-top: 24px; }
+  .cs-stack,
+  .cs-stack.has-title { margin-top: 28px; }
+  .cs-solution { margin-top: 64px; }
+
+  .cs-h2 + *,
+  .cs-subsection + * { margin-top: 28px; }
+  .cs-h2 + .cs-paragraph.is-lead,
+  .cs-subsection + .cs-paragraph.is-lead { margin-top: 18px; }
+  .cs-h2 + .cs-metrics { margin-top: 32px; }
+  .cs-h2 + .cs-steps,
+  .cs-h2 + .cs-principles,
+  .cs-h2 + .cs-stack { margin-top: 24px; }
+  .cs-h2 + .cs-solution { margin-top: 40px; }
+  .cs-subheading + .cs-paragraph { margin-top: 10px; }
+  .cs-subheading + .cs-label-value { margin-top: 16px; }
+  .cs-subsection + .cs-label-value { margin-top: 24px; }
+  .cs-label-value + .cs-table-block { margin-top: 16px; } /* the last value already has 12px below */
+  .cs-subheading + .cs-personas { margin-top: 20px; }
+  .cs-subheading + .cs-solution { margin-top: 28px; }
+  .cs-paragraph.is-lead + .cs-subheading { margin-top: 32px; }
+  .cs-principles + .cs-subheading { margin-top: 48px; }
+  .cs-two-lists + .cs-paragraph { margin-top: 20px; }
+  .cs-metrics + .cs-list-block,
+  .cs-metrics + .cs-list-block.has-title,
+  .cs-figure + .cs-two-lists,
+  .cs-figure + .cs-list-block.has-title,
+  .cs-list-block + .cs-stack.has-title,
+  .cs-principles + .cs-two-lists { margin-top: 28px; }
+  .cs-paragraph.is-lead + .cs-figure,
+  .cs-principles + .cs-figure { margin-top: 28px; }
+  .cs-figure + .cs-figure { margin-top: 40px; }
+  .cs-label-value + .cs-columns { margin-top: 24px; }
+
+  .cs-paragraph { font-size: 15px; }
+  .cs-paragraph.is-lead { font-size: 16px; }
+  .cs-note { font-size: 13px; }
+  .cs-subheading { font-size: 18px; }
+  .cs-subsection { font-size: 20px; }
+
+  .cs-list-title { margin-bottom: 10px; font-size: 16px; }
+  .cs-list { font-size: 15px; }
+  .cs-two-lists { display: block; }
+  .cs-two-lists > div + div { margin-top: 28px; }
+  .cs-quotes-title { margin-bottom: 14px; font-size: 16px; }
+  .cs-quotes { font-size: 15px; }
+
+  .cs-metrics-grid,
+  .cs-metrics-grid.cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; }
+  .cs-metrics-grid.cols-3 { display: flex; flex-direction: column; gap: 24px; }
+  .cs-metric { padding-top: 12px; }
+  .cs-metric-value { font-size: 28px; }
+  .cs-metric-label { margin-top: 6px; font-size: 14px; line-height: 1.45; }
+  .cs-source { margin-top: 18px; }
+
+  .cs-steps > li { padding: 20px 0; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; }
+  .cs-steps.is-plain > li { padding: 16px 0; }
+  .cs-step-number { font-size: 14px; }
+  .cs-step-title { font-size: 16px; }
+  .cs-step-text { margin-top: 6px; font-size: 15px; }
+
+  .cs-principles,
+  .cs-principles.cols-4 { display: flex; flex-direction: column; gap: 20px; }
+  .cs-principles > div { padding-top: 14px; }
+  .cs-principle-title { font-size: 16px; }
+  .cs-principle-text { margin-top: 6px; }
+
+  .cs-label-value { display: flex; flex-direction: column; gap: 4px; font-size: 15px; }
+  .cs-label-value dd { margin-bottom: 12px; }
+  .cs-label-value.is-profile { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 8px 16px; line-height: 1.55; }
+  .cs-label-value.is-profile dd { margin-bottom: 0; }
+
+  .cs-table-scroll { overflow-x: auto; }
+  .cs-table { font-size: 14px; }
+  .cs-table th { padding-bottom: 10px; }
+  .cs-table td { padding-top: 14px; padding-bottom: 14px; }
+
+  /* Stacked table: "Pain point · Severity" on one line, evidence below. */
+  .cs-table-scroll.is-stacked thead { display: none; }
+  .cs-table-scroll.is-stacked tbody { display: flex; flex-direction: column; gap: 16px; }
+  .cs-table-scroll.is-stacked tr { display: block; padding-top: 12px; border-top: 1px solid var(--color-cs-line); }
+  .cs-table-scroll.is-stacked td { display: inline; padding: 0; border: 0; font-size: 15px; font-weight: 600; }
+  .cs-table-scroll.is-stacked td:nth-child(2) { color: var(--color-cs-muted); font-weight: 400; }
+  .cs-table-scroll.is-stacked td:nth-child(2)::before { content: " · "; }
+  .cs-table-scroll.is-stacked td:nth-child(3) {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-cs-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .cs-quote blockquote { font-size: 20px; }
+  .cs-quote figcaption { margin-top: 6px; font-size: 13px; }
+
+  .cs-personas { display: flex; flex-direction: column; gap: 24px; }
+  .cs-persona-name { font-size: 16px; }
+  .cs-persona-meta { font-size: 13px; }
+  .cs-persona-text { margin-top: 8px; font-size: 15px; }
+
+  .cs-stack-items { gap: 24px; }
+  .cs-stack-title { font-size: 16px; }
+  .cs-stack-text { margin-top: 6px; font-size: 15px; }
+  .cs-stack.has-title .cs-list-title { margin-bottom: 14px; }
+  .cs-stack.has-title .cs-stack-items { gap: 20px; }
+  .cs-stack.has-title .cs-stack-title { font-size: 15px; }
+  .cs-stack.has-title .cs-stack-text,
+  .cs-stack-quote { margin-top: 4px; }
+
+  .cs-columns,
+  .cs-columns.cols-2 { display: flex; flex-direction: column; gap: 24px; }
+  .cs-column-title { margin-bottom: 8px; font-size: 13px; }
+
+  .cs-figure figcaption { margin: 10px 20px 0; font-size: 13px; }
+
+  .cs-solution-title { font-size: 20px; }
+  .cs-solution-figure { margin-top: 20px; }
+  .cs-solution-columns { margin-top: 28px; }
+
+  .cs-features { display: block; }
+  .cs-feature { display: block; }
+  .cs-feature + .cs-feature .cs-solution-figure { margin-top: 40px; }
+  .cs-feature-body,
+  .cs-feature:first-child .cs-feature-body,
+  .cs-feature:last-child .cs-feature-body { margin-top: 24px; padding: 0; }
+  .cs-feature-title { font-size: 16px; }
+  .cs-feature-text { margin-top: 8px; }
+  .cs-feature-quote { margin-top: 10px; }
+  .cs-feature-label { margin: 16px 0 6px; font-size: 13px; }
+
+  .cs-others { margin-top: 96px; padding: 28px 0 72px; }
+  .cs-others h2 { margin-bottom: 28px; font-size: 22px; letter-spacing: -0.015em; }
+  .cs-others-grid { display: flex; flex-direction: column; gap: 40px; }
+  .cs-other-title { font-size: 18px; }
+}

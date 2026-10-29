@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yemek.com case study, mobile</title>
+<!-- Design reference exported from the case study canvas. Image paths point to /public. Not production code. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#15171c}a:hover{color:#4F3DF1}
+img{display:block;max-width:100%}
+</style>
+</head>
+<body>
+<div style="max-width: 390px; margin: 0 auto; box-sizing: border-box; font-family: 'Geist', system-ui, sans-serif; color: #15171c; background: #ffffff; -webkit-font-smoothing: antialiased">
+
+  <header style="border-bottom: 1px solid #ececf0; height: 56px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between">
+    <a href="#" style="font-size: 15px; text-decoration: none; color: #15171c; padding: 12px 0">← All work</a>
+    <a href="#" style="font-size: 15px; text-decoration: none; color: #15171c; padding: 12px 0">Resume</a>
+  </header>
+
+  <div style="padding: 0 20px">
+    <section style="padding: 48px 0 32px">
+      <p style="margin: 0 0 14px; font-size: 13px; color: #6b6977">Content · Mobile app</p>
+      <h1 style="margin: 0; font-size: 34px; line-height: 1.1; font-weight: 500; letter-spacing: -0.025em">Redesigning Yemek.com: A Modern Recipe Platform</h1>
+      <p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3d3c45">The recipe app experience was reimagined to enhance clarity, improve navigation and foster user engagement through data-informed design.</p>
+      <dl style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; border-top: 1px solid #ececf0; padding-top: 20px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Role</dt>
+          <dd style="margin: 0; font-size: 15px">UX/UI Designer</dd>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Duration</dt>
+          <dd style="margin: 0; font-size: 15px">6 months</dd>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Platform</dt>
+          <dd style="margin: 0; font-size: 15px">Recipe platform, mobile app</dd>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Scope</dt>
+          <dd style="margin: 0; font-size: 15px; line-height: 1.4">Research, IA, design system, UI</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+
+  <figure style="margin: 0; background: #f4f4f6; padding: 32px 20px; display: flex; justify-content: center">
+    <img src="/images/yemekcom-hero-mockup.png" alt="Yemek.com recipe app on two phones" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <section aria-labelledby="ymm-glance" style="padding: 48px 0; display: flex; flex-direction: column; gap: 28px">
+      <h2 id="ymm-glance" style="margin: 0; font-size: 13px; font-weight: 500; color: #6b6977">At a glance</h2>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h3 style="margin: 0; font-size: 16px; font-weight: 600">Problem</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d3c45">Users struggled to find relevant recipes, manage their collections and navigate the platform. Mobile sessions were 30% shorter than desktop.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h3 style="margin: 0; font-size: 16px; font-weight: 600">What I did</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d3c45">Rebuilt search and filters, added a cooking mode, recipe lists, recipe creation and user profiles, on a scalable UI library.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h3 style="margin: 0; font-size: 16px; font-weight: 600">Outcome</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d3c45">In usability testing, use of advanced search filters rose 32% and successful completion of key actions rose 28%.</p>
+      </div>
+    </section>
+  </div>
+
+  <nav aria-label="Case study sections" style="border-top: 1px solid #ececf0; border-bottom: 1px solid #ececf0; background: #ffffff; overflow-x: auto; white-space: nowrap; display: flex; gap: 24px; padding: 0 20px">
+    <a href="#ymm-problem" style="font-size: 14px; text-decoration: none; color: #4F3DF1; padding: 14px 0">Problem</a>
+    <a href="#ymm-goals" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Goals</a>
+    <a href="#ymm-research" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Research</a>
+    <a href="#ymm-design" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Design</a>
+    <a href="#ymm-impact" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Impact</a>
+    <a href="#ymm-next" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Next steps</a>
+  </nav>
+
+  <div style="padding: 0 20px">
+    <section id="ymm-problem" style="padding: 56px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">01 Problem</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Hard to Find, Hard to Keep, Hard to Use on a Phone</h2>
+      <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.7; color: #3d3c45">Yemek.com users faced significant challenges in discovering relevant recipes, managing their personal recipe collections and navigating the platform efficiently. The existing interface lacked modern design principles and failed to meet expectations for a contemporary recipe platform.</p>
+      <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Current challenges</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.8; color: #3d3c45">
+        <li>Complex and outdated user interface</li>
+        <li>Limited search and filtering</li>
+        <li>Poor recipe discovery and recommendations</li>
+        <li>Inadequate mobile experience and responsiveness</li>
+        <li>Lack of personalisation</li>
+      </ul>
+      <h3 style="margin: 28px 0 14px; font-size: 16px; font-weight: 600">Key pain points</h3>
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <div style="border-top: 1px solid #ececf0; padding-top: 12px">
+          <p style="margin: 0; font-size: 15px; font-weight: 600">Navigation difficulty <span style="font-weight: 400; color: #6b6977">· High</span></p>
+          <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: #3d3c45">Interviews showed frequent confusion in navigating core categories</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 12px">
+          <p style="margin: 0; font-size: 15px; font-weight: 600">Search effectiveness <span style="font-weight: 400; color: #6b6977">· High</span></p>
+          <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: #3d3c45">Many users needed multiple keywords to find relevant recipes</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 12px">
+          <p style="margin: 0; font-size: 15px; font-weight: 600">Mobile usability <span style="font-weight: 400; color: #6b6977">· High</span></p>
+          <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: #3d3c45">Mobile sessions were 30% shorter than desktop</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 12px">
+          <p style="margin: 0; font-size: 15px; font-weight: 600">Recipe organisation <span style="font-weight: 400; color: #6b6977">· Moderate</span></p>
+          <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: #3d3c45">No folders or tags for saved recipes</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 12px">
+          <p style="margin: 0; font-size: 15px; font-weight: 600">Recipe discovery <span style="font-weight: 400; color: #6b6977">· Moderate</span></p>
+          <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: #3d3c45">Category pages had a bounce rate over 50%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ymm-goals" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">02 Goals</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Goals and Success Metrics</h2>
+      <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Project goals</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Modernise the platform to current UX/UI standards</li>
+        <li>Enhance search and filtering for quicker discovery</li>
+        <li>Improve mobile usability to increase engagement</li>
+        <li>Personalise the experience around cooking preferences</li>
+        <li>Increase content accessibility across categories</li>
+        <li>Build a scalable UI system for future updates</li>
+      </ul>
+      <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Success metrics</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Time on site: +20% mobile session duration</li>
+        <li>Bounce rate on category pages: −15%</li>
+        <li>Search-to-recipe success: +25% successful finds per search session</li>
+        <li>Saved recipes: +30% use of "Save"</li>
+        <li>User satisfaction: 80%+ in post-launch surveys on navigation and mobile usability</li>
+      </ul>
+    </section>
+
+    <section id="ymm-research" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">03 Research</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Research and User Insights</h2>
+      <h3 style="margin: 28px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Persona: Seren, the practical home cook</h3>
+      <dl style="margin: 16px 0 0; display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 8px 16px; font-size: 15px; line-height: 1.55">
+        <dt style="color: #6b6977">Age</dt>
+        <dd style="margin: 0; color: #3d3c45">29</dd>
+        <dt style="color: #6b6977">Occupation</dt>
+        <dd style="margin: 0; color: #3d3c45">Marketing specialist, works full-time</dd>
+        <dt style="color: #6b6977">Location</dt>
+        <dd style="margin: 0; color: #3d3c45">İstanbul</dd>
+        <dt style="color: #6b6977">Household</dt>
+        <dd style="margin: 0; color: #3d3c45">Lives with partner</dd>
+        <dt style="color: #6b6977">Tech use</dt>
+        <dd style="margin: 0; color: #3d3c45">Active smartphone user; uses apps for cooking, shopping and planning</dd>
+        <dt style="color: #6b6977">Cooking</dt>
+        <dd style="margin: 0; color: #3d3c45">4–5 times a week</dd>
+      </dl>
+      <h4 style="margin: 24px 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Goals</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Find quick, reliable and healthy recipes after work</li>
+        <li>Discover meal ideas based on what's in the fridge</li>
+        <li>Save and organise go-to recipes</li>
+        <li>Share successful recipes with friends or on social media</li>
+      </ul>
+      <h4 style="margin: 20px 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Pain points</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Recipe platforms are cluttered and hard to navigate</li>
+        <li>Most don't allow saving or categorising favourites</li>
+        <li>No filters for ingredients on hand or prep time</li>
+        <li>Long blog-style introductions before recipes</li>
+        <li>Mobile isn't optimised for use while cooking</li>
+      </ul>
+      <h4 style="margin: 20px 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">App usage behaviour</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Uses Yemek.com, Nefis Yemek Tarifleri and Instagram food creators</li>
+        <li>Searches by ingredient first ("What can I cook with eggplant and yogurt?")</li>
+        <li>Filters for "under 30 minutes" or "low calorie"</li>
+        <li>Scrolls for visuals before reading details</li>
+      </ul>
+      <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">User interview insights</h3>
+      <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Interviews with 14 users based on the defined personas, to understand their cooking habits, app usage and expectations from a recipe platform.</p>
+      <ul style="margin: 14px 0 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Many users search by available ingredients, not just dish names</li>
+        <li>Categories like "quick meals" or "budget-friendly" were preferred over traditional ones</li>
+        <li>Users wanted to save recipes more easily and organise them into folders (e.g. "weeknight dinners", "diet meals")</li>
+        <li>Search and filters felt overwhelming or not specific enough</li>
+        <li>Strong preference for visual, step-by-step guidance while cooking</li>
+        <li>Few interact with the community, but they trust recipes with high ratings and real user photos</li>
+      </ul>
+      <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Affinity mapping</h3>
+      <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">14 user interviews and over 100 user comments from Google Play, the App Store and other public platforms were grouped in an affinity map to uncover recurring patterns and prioritise design decisions.</p>
+    </section>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-affinity-mapping.png" alt="Affinity map of user interview and review insights" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <h3 style="margin: 28px 0 14px; font-size: 16px; font-weight: 600">Key findings</h3>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <div>
+        <h4 style="margin: 0; font-size: 15px; font-weight: 600">Discovery and search frustration</h4>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Limited filters and no visual categorisation made it hard to find things.</p>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #6b6977">"I wish I could just filter by cooking time or ingredients I already have."</p>
+      </div>
+      <div>
+        <h4 style="margin: 0; font-size: 15px; font-weight: 600">Organisation and recipe management</h4>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Users wanted better tools to save, organise and access favourite recipes.</p>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #6b6977">"I save so many recipes, but can't find them later unless I scroll forever."</p>
+      </div>
+      <div>
+        <h4 style="margin: 0; font-size: 15px; font-weight: 600">Cooking experience issues</h4>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Long recipe blocks were hard to follow while cooking; users preferred step-by-step instructions with images.</p>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #6b6977">"I want clear steps and photos. I can't scroll and stir at the same time."</p>
+      </div>
+      <div>
+        <h4 style="margin: 0; font-size: 15px; font-weight: 600">Desire for personalisation</h4>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">High interest in features that adapt to dietary preferences or cooking goals.</p>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #6b6977">"I'm vegan. I wish it didn't always show me meat recipes first."</p>
+      </div>
+      <div>
+        <h4 style="margin: 0; font-size: 15px; font-weight: 600">Trust through community content</h4>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Recipes with user comments or photos were trusted more.</p>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #6b6977">"If I see others tried it and shared pictures, I trust it more."</p>
+      </div>
+    </div>
+    <p style="margin: 20px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">These insights formed the foundation of the design strategy and helped prioritise solutions for a more intuitive, personalised and motivating cooking experience.</p>
+    <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Competitive analysis</h3>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-detailed-competitive-analysis.png" alt="Detailed competitive analysis of recipe platforms" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Market analysis</h3>
+    <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45">
+      <li>Analysed leading recipe platforms and their features</li>
+      <li>Identified gaps in current offerings</li>
+      <li>Evaluated UX patterns across competitors</li>
+      <li>Assessed mobile vs. desktop usage trends</li>
+    </ul>
+    <h3 style="margin: 24px 0 10px; font-size: 16px; font-weight: 600">Key differentiators</h3>
+    <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45">
+      <li>Enhanced search with photo recognition</li>
+      <li>Comprehensive recipe management</li>
+      <li>Advanced filtering and categorisation</li>
+      <li>Integrated social features for sharing</li>
+    </ul>
+
+    <section id="ymm-design" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">04 Design</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Design Solutions</h2>
+      <h3 style="margin: 28px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Information architecture</h3>
+    </section>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-information-architecture.png" alt="Yemek.com information architecture" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Wireframes</h3>
+    <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Low-fidelity wireframes outlined core layouts and flows, focused on recipe discovery, search usability and personal recipe management. They validated ideas early and became the foundation for the final UI.</p>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-wireframes.png" alt="Low fidelity wireframes" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Design system</h3>
+    <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">A scalable UI library to keep the app consistent.</p>
+    <h4 style="margin: 20px 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Core components</h4>
+    <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.7; color: #3d3c45">
+      <li>Base styles for colour, typography and spacing</li>
+      <li>Core components like buttons, inputs and tags</li>
+      <li>App-specific elements such as recipe cards and timers</li>
+    </ul>
+    <h4 style="margin: 20px 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Implementation benefits</h4>
+    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Responsive variants and interactive states supported mobile use and developer handoff. The system streamlined the UI process and supports future growth.</p>
+    <h3 style="margin: 56px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">UI design</h3>
+    <h3 style="margin: 28px 0 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Home and search experience</h3>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-home-search.png" alt="Home and search screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Limited filtering, non-visual category lists and a basic search made discovery hard. Comments and analytics showed users often abandoned search when they couldn't find something quickly or visually.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What improved</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">The filter panel allows multi-dimensional sorting (meal type, prep time, cooking method, diet). Categories were restructured visually for easier scanning, and smart search suggestions improve speed and accuracy.</p>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Recipe details and cooking mode</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-recipe-details.png" alt="Recipe details and cooking mode screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Users needed a clearer, distraction-free cooking flow and struggled with long recipe texts. The old layout didn't track steps, didn't surface similar recipes and hid community feedback.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What improved</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>A scrollable cooking mode with step-by-step instructions</li>
+        <li>Clearer layout for ingredients and timing</li>
+        <li>User comments and similar recipes highlighted</li>
+        <li>Clear "Start" and "Finish" calls to action</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Recipe management and lists</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-recipe-lists.png" alt="Recipe lists and favourites screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Users wanted a better way to organise and revisit recipes. The old system had no grouping, no public sharing and no easy access to saved content.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What improved</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Custom recipe lists with editable titles</li>
+        <li>A favourites tab for quick access</li>
+        <li>Public/private toggle for shared inspiration</li>
+        <li>A clean, visual layout for list previews</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Recipe creation and sharing</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-recipe-sharing.png" alt="Step by step recipe creation screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Users needed a structured, flexible way to share recipes</li>
+        <li>The existing flow lacked step-by-step clarity and visual cues</li>
+        <li>There was no space for tips or serving suggestions</li>
+        <li>Users wanted reassurance their content wouldn't be lost mid-entry</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What improved</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Multiple steps with optional images</li>
+        <li>Optional fields for tips, serving suggestions and an intro</li>
+        <li>Step-by-step navigation with Back and Next</li>
+        <li>Auto-save with a visible timestamp</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">User profiles and social features</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/yemekcom-user-profiles.png" alt="User profile and social screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Users wanted to showcase shared recipes under their own profiles</li>
+        <li>There was no way to explore others' collections or follow authors</li>
+        <li>Lack of social presence reduced engagement and repeat visits</li>
+        <li>Users asked for a simple space to edit their profile and track content</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What improved</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45">
+        <li>Public profiles with follower and following counts</li>
+        <li>Recipe lists others can browse and save</li>
+        <li>A clear toggle between "Shared Recipes" and "Recipe List"</li>
+        <li>Social links plus "Edit Profile" and "Follow" buttons</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px">
+    <section id="ymm-impact" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">05 Impact</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Impact and Key Learnings</h2>
+      <div style="margin: 28px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+        <div style="border-top: 1px solid #15171c; padding-top: 12px">
+          <p style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">+32%</p>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: #3d3c45">users using advanced search filters</p>
+        </div>
+        <div style="border-top: 1px solid #15171c; padding-top: 12px">
+          <p style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">+28%</p>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: #3d3c45">successful completion of key actions</p>
+        </div>
+      </div>
+      <p style="margin: 18px 0 0; font-size: 13px; color: #6b6977">Source: usability testing.</p>
+      <ul style="margin: 24px 0 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 8px">
+        <li><strong style="font-weight: 600; color: #15171c">Enhanced recipe discoverability</strong> through better search, filtering and tags.</li>
+        <li><strong style="font-weight: 600; color: #15171c">Higher user engagement.</strong> Users spent more time exploring new categories and community content.</li>
+      </ul>
+      <h3 style="margin: 36px 0 0; font-size: 16px; font-weight: 600">Key learnings</h3>
+      <div style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 18px">
+        <div>
+          <h4 style="margin: 0; font-size: 15px; font-weight: 600">Personalisation matters</h4>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Ingredient-based search and "just for you" sections resonated strongly.</p>
+        </div>
+        <div>
+          <h4 style="margin: 0; font-size: 15px; font-weight: 600">Structured cooking mode</h4>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">A visually clear cooking mode improves usability and reduces cognitive load, especially on mobile.</p>
+        </div>
+        <div>
+          <h4 style="margin: 0; font-size: 15px; font-weight: 600">Social features drive engagement</h4>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Sharing and following build long-term engagement when they are easy to discover.</p>
+        </div>
+        <div>
+          <h4 style="margin: 0; font-size: 15px; font-weight: 600">Small UI improvements matter</h4>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">A favourites tab or recipe folders can significantly affect retention when tied to real user needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ymm-next" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">06 Next steps</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Next Steps</h2>
+      <ol style="margin: 24px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 18px 0; border-top: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">1</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Monitor key metrics</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Tracking of recipe discovery and completion rates has started and will continue to validate impact with real user data.</p>
+          </div>
+        </li>
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 18px 0; border-top: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">2</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Iterate based on live feedback</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Continuous improvements based on behaviour analytics and feedback from the live platform.</p>
+          </div>
+        </li>
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 18px 0; border-top: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">3</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Expand personalisation</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Refining personalised content and recommendations to increase relevance.</p>
+          </div>
+        </li>
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 18px 0; border-top: 1px solid #ececf0; border-bottom: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">4</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Explore the recipe creation flow</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">More interviews and usability testing to improve recipe creation.</p>
+          </div>
+        </li>
+      </ol>
+      <p style="margin: 32px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">The redesigned app is available on the <a href="#" style="color: #15171c">App Store</a> and <a href="#" style="color: #15171c">Google Play</a>.</p>
+    </section>
+
+    <section aria-labelledby="ymm-others" style="margin: 96px 0 0; padding: 28px 0 72px; border-top: 1px solid #15171c">
+      <h2 id="ymm-others" style="margin: 0 0 28px; font-size: 22px; font-weight: 500; letter-spacing: -0.015em">Other Projects</h2>
+      <div style="display: flex; flex-direction: column; gap: 40px">
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/monevo-cover.jpg" alt="Monevo app on two phones" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">Monevo, Financial Habits</span>
+            <span style="font-size: 14px; color: #6b6977">Fintech · Mobile app</span>
+          </span>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/foodpanda-cover.jpg" alt="Foodpanda Partner menu management on a laptop and a phone" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">Foodpanda Partner, Menu Management</span>
+            <span style="font-size: 14px; color: #6b6977">B2B SaaS · AI integration</span>
+          </span>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/newage-cover.jpg" alt="VDF NewAge customer details dashboard" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">VDF NewAge, Internal Insurance Platform</span>
+            <span style="font-size: 14px; color: #6b6977">Enterprise UX · Insurance</span>
+          </span>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/foodpay-cover.jpg" alt="FoodPay landing page on desktop and mobile" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">FoodPay (Yemeksepeti)</span>
+            <span style="font-size: 14px; color: #6b6977">Fintech · Payment system</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

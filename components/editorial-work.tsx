@@ -11,7 +11,7 @@ const projects = [
     title: "Monevo, Financial Habit",
     description: "Helping users build healthier financial habits through personalized, goal oriented journeys.",
     href: "/monevo-case-study",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/monevo.png-dWUXfBOpNkxq0giVRxLczd9VnFs3lz.jpeg",
+    image: "/images/projects/monevo-cover.jpg",
     alt: "Monevo Financial Habit mobile app interfaces",
     layout: "feature",
   },
@@ -21,7 +21,7 @@ const projects = [
     title: "Foodpanda Partner, Vendor Portal",
     description: "Streamlining menu management for restaurant partners with clearer, faster workflows.",
     href: "/foodpanda-case-study",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menu.png-cGs1WwFpzq2yEwyJE2zCa92kTCxmJR.jpeg",
+    image: "/images/projects/foodpanda-cover.jpg",
     alt: "Foodpanda Partner vendor portal interface",
     layout: "column",
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "VDF NewAge, Internal Platform",
     description: "Turning complex insurance operations into clear, status driven experiences for teams.",
     href: "/newage-case-study",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vdf%20newage.png-yjPbRBxE05YQl5DUGcdn9lQR5aMcXS.jpeg",
+    image: "/images/projects/newage-cover.jpg",
     alt: "VDF NewAge internal insurance platform dashboard",
     layout: "column",
   },
@@ -41,7 +41,7 @@ const projects = [
     title: "FoodPay, Yemeksepeti",
     description: "A secure payment and virtual POS experience designed end to end for merchants.",
     href: "/foodpay-case-study",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yemekpay%201.png-fghqf84ooMdWHNSVVL12dSij3L3eRf.jpeg",
+    image: "/images/projects/foodpay-cover.jpg",
     alt: "FoodPay payment platform interface",
     layout: "feature",
   },
@@ -51,7 +51,7 @@ const projects = [
     title: "Yemek.com",
     description: "A clearer recipe discovery experience built around useful moments and everyday cooking.",
     href: "/yemekcom-case-study",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yemekcom.png-GOKRIIyWcjkOh4nPiVUo3L49DR9ri7.jpeg",
+    image: "/images/projects/yemekcom-cover.jpg",
     alt: "Yemek.com recipe app interfaces",
     layout: "compact",
   },
@@ -83,7 +83,7 @@ function Project({ project }: { project: (typeof projects)[number] }) {
       <ProjectCover project={project} />
       <div className="editorial-project-info">
         <p className="editorial-project-meta">{project.number} / {project.meta}</p>
-        <h3>{project.title}</h3>
+        <h3 className="editorial-project-title">{project.title}</h3>
         <p className="editorial-project-description">{project.description}</p>
       </div>
     </article>
@@ -93,9 +93,9 @@ function Project({ project }: { project: (typeof projects)[number] }) {
 export function EditorialWork() {
   return (
     <section id="work" className="editorial-work" aria-labelledby="recent-work-title">
-      <div className="editorial-work-inner">
+      <div className="section-inner">
         <header className="editorial-work-heading">
-          <h2 id="recent-work-title">Selected Works</h2>
+          <h2 id="recent-work-title" className="section-title">Selected Works</h2>
         </header>
         <div className="editorial-projects">
           {projects.map((project) => (
