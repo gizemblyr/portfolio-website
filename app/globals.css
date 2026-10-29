@@ -1075,7 +1075,7 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .monevo-palette .monevo-hero > div > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
 .monevo-palette .monevo-hero h1 { width: min(100%, 34rem); min-height: 2.08em; margin-bottom: 1.5rem; font-size: clamp(2.35rem, 4.35vw, 4.65rem) !important; }
 .monevo-palette .monevo-hero p { max-width: 36rem; font-size: 1.05rem !important; line-height: 1.65 !important; }
-.monevo-palette section:not(.monevo-hero):not(.explore-more-work) { border-top: 1px solid #e2e1e6; }
+.monevo-palette section { border-top: 1px solid #e2e1e6; }
 .monevo-palette .explore-more-work, .monevo-palette .explore-more-work > div, .monevo-palette .explore-more-work > div > div { border-top-color: #e2e1e6; background: #fff !important; }
 .monevo-palette .explore-more-work-image { background: #fff !important; }
 .monevo-palette .monevo-hero > div > div > div:last-child { display: flex; min-height: 25rem; align-items: center; justify-content: center; }
@@ -1101,11 +1101,11 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
   .monevo-detail section table, .monevo-detail section [class*="min-w-[800px]"] { width: 100% !important; min-width: 0 !important; }
   .monevo-detail section [class*="overflow-x-auto"] { margin-inline: 0 !important; }
   .monevo-detail #research > div > div[class*="rounded-2xl"] > div[class*="bg-white"], .monevo-detail #impact > div > div[class*="rounded-2xl"] > div[class*="bg-white"] { padding-inline: 0 !important; border: 0 !important; background: transparent !important; }
-  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) { background: transparent !important; }
-  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) > div > div[class*="rounded-2xl"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
-  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) h2, .monevo-detail section:not(.monevo-hero):not(.explore-more-work) h3 { text-align: left !important; }
-  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) ul, .monevo-detail section:not(.monevo-hero):not(.explore-more-work) ol { padding-left: 0 !important; margin-left: 0 !important; }
-  .monevo-detail section:not(.monevo-hero):not(.explore-more-work) > div > div[class*="rounded-2xl"] > div[class*="rounded-xl"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-detail section { background: transparent !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-detail section h2, .monevo-detail section h3 { text-align: left !important; }
+  .monevo-detail section ul, .monevo-detail section ol { padding-left: 0 !important; margin-left: 0 !important; }
+  .monevo-detail section > div > div[class*="rounded-2xl"] > div[class*="rounded-xl"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
 }
 .monevo-lightbox-trigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; text-align: inherit; }
 .monevo-lightbox-trigger img { display: block; }
@@ -1116,7 +1116,7 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 @media (max-width: 767px) {
   .monevo-palette:not(.home-page) { background: #fff !important; }
-  .monevo-palette:not(.home-page) section { background: #fff !important; padding-inline: 16px !important; text-align: left !important; }
+  .monevo-palette:not(.home-page) section { background: #fff !important; padding-inline: 0 !important; text-align: left !important; }
   .monevo-palette:not(.home-page) section > div,
   .monevo-palette:not(.home-page) section > div > div { width: 100% !important; max-width: none !important; margin-inline: 0 !important; padding-inline: 0 !important; }
   .monevo-palette:not(.home-page) section > div > div[class*="rounded"],
@@ -1133,6 +1133,20 @@ html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { back
   .monevo-palette:not(.home-page) section svg { width: 1.25rem !important; height: 1.25rem !important; flex: 0 0 1.25rem !important; }
   .monevo-palette:not(.home-page) section img { max-width: 100% !important; }
   .monevo-palette:not(.home-page) .monevo-metric-value { min-width: 0 !important; max-width: 100% !important; width: auto !important; text-align: left !important; }
+  .monevo-palette:not(.home-page) section { padding-inline: 16px !important; background: #fff !important; }
+  .monevo-palette:not(.home-page) section > div,
+  .monevo-palette:not(.home-page) section > div > div,
+  .monevo-palette:not(.home-page) section [class*="rounded"],
+  .monevo-palette:not(.home-page) section [class*="shadow"],
+  .monevo-palette:not(.home-page) section [class*="border-"] { max-width: none !important; margin-inline: 0 !important; padding-inline: 0 !important; background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-palette:not(.home-page) section h1,
+  .monevo-palette:not(.home-page) section h2,
+  .monevo-palette:not(.home-page) section h3,
+  .monevo-palette:not(.home-page) section h4,
+  .monevo-palette:not(.home-page) section p,
+  .monevo-palette:not(.home-page) section li { text-align: left !important; }
+  .monevo-palette:not(.home-page) section ul,
+  .monevo-palette:not(.home-page) section ol { padding-left: 0 !important; margin-left: 0 !important; }
   .newage-palette .newage-payment-scenarios, .newage-palette .newage-status-scenarios { padding: 1rem !important; }
   .newage-palette .newage-payment-scenario-card, .newage-palette .newage-status-item { padding: .75rem 1rem !important; }
   .newage-palette .newage-impact-card { padding: 1rem !important; }
