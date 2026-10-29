@@ -1,7 +1,3 @@
-
-
-
-
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lucide-react"
 import Link from "next/link"
