@@ -1157,6 +1157,35 @@ html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { back
   .newage-palette .newage-impact-list > div > div + div { border-top: 1px solid hsl(var(--border)) !important; }
   .newage-palette .newage-impact-card h3 { justify-content: flex-start !important; text-align: left !important; }
 }
+@media (max-width: 767px) {
+  .monevo-palette:not(.home-page) { padding-inline: 16px !important; background: #fff !important; }
+  .monevo-palette:not(.home-page) section { width: 100% !important; padding-inline: 0 !important; margin-inline: 0 !important; background: #fff !important; border: 0 !important; text-align: left !important; }
+  .monevo-palette:not(.home-page) section > div,
+  .monevo-palette:not(.home-page) section > div > div,
+  .monevo-palette:not(.home-page) section [class*="rounded"],
+  .monevo-palette:not(.home-page) section [class*="shadow"],
+  .monevo-palette:not(.home-page) section [class*="border-"] { width: 100% !important; max-width: none !important; margin-inline: 0 !important; padding-inline: 0 !important; background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-palette:not(.home-page) section h1,
+  .monevo-palette:not(.home-page) section h2,
+  .monevo-palette:not(.home-page) section h3,
+  .monevo-palette:not(.home-page) section h4,
+  .monevo-palette:not(.home-page) section p,
+  .monevo-palette:not(.home-page) section li { text-align: left !important; }
+  .monevo-palette:not(.home-page) section ul,
+  .monevo-palette:not(.home-page) section ol { margin-left: 0 !important; padding-left: 0 !important; }
+  .monevo-palette:not(.home-page) section svg { width: 1.25rem !important; height: 1.25rem !important; flex: 0 0 1.25rem !important; }
+  .monevo-palette:not(.home-page) .monevo-metric-value { width: auto !important; min-width: 0 !important; max-width: 100% !important; text-align: left !important; }
+  .monevo-palette:not(.home-page) section div,
+  .monevo-palette:not(.home-page) section li,
+  .monevo-palette:not(.home-page) section h1,
+  .monevo-palette:not(.home-page) section h2,
+  .monevo-palette:not(.home-page) section h3,
+  .monevo-palette:not(.home-page) section h4,
+  .monevo-palette:not(.home-page) section p { min-width: 0 !important; overflow-wrap: anywhere; }
+  .monevo-palette:not(.home-page) section li:has(> div) { display: grid !important; grid-template-columns: 1rem minmax(0, 1fr) !important; column-gap: .75rem !important; }
+  .monevo-palette:not(.home-page) section li:has(> div) > span { min-width: 0 !important; }
+  .monevo-palette:not(.home-page) section span { max-width: 100% !important; overflow-wrap: anywhere; }
+}
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
 
