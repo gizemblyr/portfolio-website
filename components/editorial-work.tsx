@@ -27,7 +27,7 @@ const projects = [
   },
   {
     number: "03",
-    meta: "INSURANCE · ENTERPRISE",
+    meta: "B2B · ENTERPRISE",
     title: "VDF NewAge, Internal Platform",
     description: "Turning complex insurance operations into clear, status driven experiences for teams.",
     href: "/newage-case-study",
