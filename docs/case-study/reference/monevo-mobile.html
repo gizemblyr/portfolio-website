@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monevo case study, mobile</title>
+<!-- Design reference exported from the case study canvas. Image paths point to /public. Not production code. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#15171c}a:hover{color:#4F3DF1}
+img{display:block;max-width:100%}
+</style>
+</head>
+<body>
+<div style="max-width: 390px; margin: 0 auto; box-sizing: border-box; font-family: 'Geist', system-ui, sans-serif; color: #15171c; background: #ffffff; -webkit-font-smoothing: antialiased">
+
+  <header style="border-bottom: 1px solid #ececf0; height: 56px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between">
+    <a href="#" style="font-size: 15px; text-decoration: none; color: #15171c; padding: 12px 0">← All work</a>
+    <a href="#" style="font-size: 15px; text-decoration: none; color: #15171c; padding: 12px 0">Resume</a>
+  </header>
+
+  <div style="padding: 0 20px">
+    <section style="padding: 48px 0 32px">
+      <p style="margin: 0 0 14px; font-size: 13px; color: #6b6977">Fintech · Mobile app</p>
+      <h1 style="margin: 0; font-size: 34px; line-height: 1.1; font-weight: 500; letter-spacing: -0.025em">Monevo: Gamified Financial Habits</h1>
+      <p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3d3c45">Designing a gamified approach to financial wellness that helps users distinguish between wants and needs while building healthy spending habits through engaging interactions.</p>
+      <dl style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; border-top: 1px solid #ececf0; padding-top: 20px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Role</dt>
+          <dd style="margin: 0; font-size: 15px">UX/UI Designer</dd>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Duration</dt>
+          <dd style="margin: 0; font-size: 15px">3 months</dd>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Platform</dt>
+          <dd style="margin: 0; font-size: 15px">Mobile app</dd>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <dt style="font-size: 13px; color: #6b6977">Scope</dt>
+          <dd style="margin: 0; font-size: 15px; line-height: 1.4">Benchmarking, journey mapping, wireframes, testing</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+
+  <figure style="margin: 0; background: #f4f4f6; padding: 32px 20px">
+    <img src="/images/design-mode/herosection.png" alt="Monevo dashboards in light and dark mode with balance and gamified task series" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <section aria-labelledby="m-glance" style="padding: 48px 0; display: flex; flex-direction: column; gap: 28px">
+      <h2 id="m-glance" style="margin: 0; font-size: 13px; font-weight: 500; color: #6b6977">At a glance</h2>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h3 style="margin: 0; font-size: 16px; font-weight: 600">Problem</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d3c45">Over half of new users left at the welcome screen, and only 8.1% completed tasks. Onboarding asked for everything upfront.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h3 style="margin: 0; font-size: 16px; font-weight: 600">What I did</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d3c45">Rebuilt onboarding as a short gamified task series, added a reward store and goal-based task flows, and tested two homepage structures.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h3 style="margin: 0; font-size: 16px; font-weight: 600">Outcome</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d3c45">In usability testing with 7 participants, onboarding completion reached 70% and task completion 15%.</p>
+      </div>
+    </section>
+  </div>
+
+  <nav aria-label="Case study sections" style="border-top: 1px solid #ececf0; border-bottom: 1px solid #ececf0; background: #ffffff; overflow-x: auto; white-space: nowrap; display: flex; gap: 24px; padding: 0 20px">
+    <a href="#m-problem" style="font-size: 14px; text-decoration: none; color: #4F3DF1; padding: 14px 0">Problem</a>
+    <a href="#m-goals" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Goals</a>
+    <a href="#m-approach" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Approach</a>
+    <a href="#m-research" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Research</a>
+    <a href="#m-design" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Strategy</a>
+    <a href="#m-testing" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Design &amp; Testing</a>
+    <a href="#m-impact" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Impact</a>
+    <a href="#m-next" style="font-size: 14px; text-decoration: none; color: #6b6977; padding: 14px 0">Next steps</a>
+  </nav>
+
+  <div style="padding: 0 20px">
+
+    <section id="m-problem" style="padding: 56px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">01 Problem</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Understanding the Problem Through Metrics</h2>
+      <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.7; color: #3d3c45">Monevo faced poor onboarding completion, low user engagement and weak motivation mechanisms. Users struggled with understanding financial concepts, navigating the app and staying committed to tasks, leading to high abandonment and retention issues.</p>
+      <div style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px">
+        <div style="border-top: 1px solid #15171c; padding-top: 12px">
+          <p style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">52.6%</p>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: #3d3c45">abandoned the welcome screen; only 47.4% completed onboarding</p>
+        </div>
+        <div style="border-top: 1px solid #15171c; padding-top: 12px">
+          <p style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">28.8%</p>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: #3d3c45">retained after onboarding, from 85.3% at first open</p>
+        </div>
+        <div style="border-top: 1px solid #15171c; padding-top: 12px">
+          <p style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">32.6%</p>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: #3d3c45">of users accessed the task list</p>
+        </div>
+        <div style="border-top: 1px solid #15171c; padding-top: 12px">
+          <p style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">8.1%</p>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: #3d3c45">task completion rate</p>
+        </div>
+      </div>
+      <p style="margin: 18px 0 0; font-size: 13px; color: #6b6977">Source: live product analytics before the redesign.</p>
+      <ul style="margin: 28px 0 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li><strong style="font-weight: 600; color: #15171c">Generic and unclear guidance.</strong> Users were confused by financial terms, unengaging tasks and the lack of personalised onboarding.</li>
+        <li><strong style="font-weight: 600; color: #15171c">Wasted acquisition costs.</strong> Poor onboarding and retention undermined user acquisition efforts and revenue opportunities.</li>
+      </ul>
+    </section>
+
+    <section id="m-goals" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">02 Goals</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Goals and Success Metrics</h2>
+      <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Project goals</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.8; color: #3d3c45">
+        <li>Reduce onboarding abandonment</li>
+        <li>Improve task discoverability and engagement</li>
+        <li>Increase task completion and retention</li>
+        <li>Personalise and gamify the experience</li>
+        <li>Simplify the onboarding flow</li>
+      </ul>
+      <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Success metrics</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.8; color: #3d3c45">
+        <li>Onboarding completion: 70%</li>
+        <li>Task engagement: 50% (measurable on live)</li>
+        <li>Task completion: 15%</li>
+        <li>Completed onboarding and explored key features: 85.7%</li>
+        <li>Retention drop target: 30% (measurable on live)</li>
+      </ul>
+    </section>
+
+    <section id="m-approach" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">03 Approach</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Research, Design, Validate</h2>
+      <ol style="margin: 24px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 20px 0; border-top: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">1</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Research and discovery</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Benchmarked gamified and financial apps, mapped user journeys and reviewed analytics to identify pain points and motivation gaps.</p>
+          </div>
+        </li>
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 20px 0; border-top: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">2</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Ideation and design</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Created wireframes and task flows focused on gamification and clarity, including personalised tasks and streamlined onboarding.</p>
+          </div>
+        </li>
+        <li style="display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; padding: 20px 0; border-top: 1px solid #ececf0; border-bottom: 1px solid #ececf0">
+          <span style="font-size: 14px; color: #6b6977">3</span>
+          <div>
+            <h3 style="margin: 0; font-size: 16px; font-weight: 600">Validation and iteration</h3>
+            <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Tested with users, collected feedback through wireframe testing sessions and iterated designs based on user insights and engagement metrics.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="m-research" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">04 Research</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Research and User Insights</h2>
+      <h3 style="margin: 28px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Benchmarking</h3>
+    </section>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/monevo-benchmark.png" alt="Benchmark comparison of Duolingo, Cleo and Revolut" style="width: 100%; height: auto">
+  </figure>
+
+  <div style="padding: 0 20px">
+    <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Key insights</h3>
+    <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+      <li>Duolingo's gamification model proves highly effective for habit formation</li>
+      <li>Cleo's conversational interface engages users but lacks comprehensive tools</li>
+      <li>Revolut offers robust features but can overwhelm new users</li>
+    </ul>
+    <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Our differentiators</h3>
+    <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+      <li>Focus on wants vs. needs categorisation</li>
+      <li>Educational content integrated into daily interactions</li>
+      <li>Potential for cashback and brand-based rewards, offering real-world value unlike most competitor apps</li>
+    </ul>
+    <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">User personas</h3>
+    <h4 style="margin: 20px 0 0; font-size: 16px; font-weight: 600">Home economists</h4>
+    <p style="margin: 4px 0 0; font-size: 13px; color: #6b6977">32–50 years old</p>
+    <p style="margin: 8px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Users managing family finances, looking for practical savings tips and stress-free budgeting tools.</p>
+    <h4 style="margin: 24px 0 0; font-size: 16px; font-weight: 600">Professionals</h4>
+    <p style="margin: 4px 0 0; font-size: 13px; color: #6b6977">23–32 years old</p>
+    <p style="margin: 8px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Career-driven individuals paying off debt or loans and seeking smart financial management. They tend to buy more than they need and are motivated by rewards and goal tracking.</p>
+    <p style="margin: 20px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">These personas, based on client-led research, ensured the onboarding, gamified task system and financial content were tailored to diverse user needs.</p>
+    <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">User journey mapping</h3>
+    <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Users faced unclear guidance, overwhelming onboarding, low motivation, confusing visual design and a lack of understanding around key features like the Monevo Score. The research highlighted the need for simpler language, streamlined flows, personalised goal setting and a clearer visual hierarchy.</p>
+
+    <section id="m-design" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">05 Strategy</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Design Strategy</h2>
+      <div style="margin: 24px 0 0; display: flex; flex-direction: column; gap: 20px">
+        <div style="border-top: 1px solid #ececf0; padding-top: 14px">
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Progressive learning</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Broke complex financial concepts into small, manageable steps to reduce cognitive load.</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 14px">
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Gamification</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Built habit loops using points, badges and rewards to drive ongoing engagement.</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 14px">
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Personalisation</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Tailored tasks and goals to user types, aligned with AI logic through collaboration with developers.</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 14px">
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Visual clarity</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">A clean visual hierarchy and chat-based guidance improved comprehension and ease of use.</p>
+        </div>
+        <div style="border-top: 1px solid #ececf0; padding-top: 14px">
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Guided structure</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">After testing sequential and open task flows, we chose a structured approach that supports goal setting and reduces decision fatigue.</p>
+        </div>
+      </div>
+      <h3 style="margin: 48px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.01em">Key design solutions</h3>
+      <ul style="margin: 14px 0 0; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Step-by-step onboarding clarified concepts like wants vs. needs, reducing drop-off</li>
+        <li>A gamified task system with points, rewards and progress flow increased engagement and completion</li>
+        <li>Clear visual hierarchy and chat cues improved navigation and understanding</li>
+        <li>Personalised task flows based on user types, aligned with AI through dev collaboration</li>
+        <li>Motivational chat reminders helped users stay on track with spending and tasks</li>
+        <li>Enhanced reports showed key spending categories, completed tasks and earned points</li>
+        <li>Reward choice at the end of a series boosted autonomy and motivation</li>
+      </ul>
+      <p id="m-testing" style="margin: 72px 0 12px; font-size: 13px; color: #6b6977">06 Design &amp; Testing</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Validated Through Usability Testing</h2>
+      <h3 style="margin: 40px 0 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Welcome screens</h3>
+    </section>
+  </div>
+
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/Frame%206.png" alt="Redesigned Monevo welcome screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">The old welcome screen lacked clarity and failed to explain the app's value, leading to early drop-offs. We redesigned it to showcase key features like gamification and financial education using visuals and app previews, so users quickly understand what to expect.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Testing results</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Before: over 50% did not proceed after the first open (live)</li>
+        <li>After: 70% of participants continued into the first series</li>
+        <li>85.7% described it as "inviting" or "clearer than expected"</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What users said</h4>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li>"I understood what the app was about before signing up, that made a difference."</li>
+        <li>"The visuals helped me see that it wasn't just another finance app."</li>
+        <li>"I felt like I was being introduced, not just dropped into something."</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Gamified onboarding via "Getting to know you" series</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/onboarding.png" alt="Gamified onboarding task series screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">The old app asked for personal and financial information right after opening, leading to a 52.6% drop-off at the welcome screen. We restructured onboarding as a gamified task series: small interactive tasks (e.g. "Tell us about your financial goals") that earn points. This reduced friction and gave users an early sense of achievement.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Testing results</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Onboarding completion: 47.4% → 70% (+47.6%)</li>
+        <li>Welcome screen drop-off: 52.6% → under 30%</li>
+        <li>85.7% called onboarding "clear and engaging"</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What users said</h4>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li>"It felt like a journey, not a boring form."</li>
+        <li>"I wanted to keep going to see what came next and get the points."</li>
+        <li>"Much better than being asked for everything upfront. I actually completed it."</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">My Monevo World</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/Frame%206-2.png" alt="My Monevo World progress screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Created to help users visually track progress and stay motivated through a gamified journey. It also serves users who prefer a practical, finance-focused approach: quick actions like viewing insights, accessing expert advice or buying precious metals, without relying on gamification.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Testing results</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>85.7% accessed and explored My Monevo World</li>
+        <li>85.7% understood their progress and rewards</li>
+        <li>Task motivation increased, based on post-task interviews</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What users said</h4>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li>"I loved seeing my progress. It felt like I was actually getting somewhere."</li>
+        <li>"This made the app feel more fun and less stressful."</li>
+        <li>"I like that I can both track and take action without digging through menus."</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Receipt-based expense input</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/Frame%202085664027.png" alt="Uploading and scanning receipts to add expenses" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Manual expense entry was time-consuming and often skipped. A receipt-based option lets users upload or scan receipts directly, which also helps with shared or recurring expenses.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Testing results</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>71.4% preferred receipt input over manual entry</li>
+        <li>85.7% found it "easy" or "very easy"</li>
+        <li>72% said it made monthly tracking feel more reliable</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What users said</h4>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li>"Uploading a receipt felt faster and easier than typing everything."</li>
+        <li>"It's helpful when I split bills with someone."</li>
+        <li>"This saves me from forgetting what I spent on."</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Goal-based task series and reward system</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/Frame%206-1.png" alt="Goal based task series and reward store screens" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Users earned points but couldn't spend them, so the system felt empty. We added a store to redeem points and goal-based series (e.g. expense tracking for users paying off debt), each with 5–6 short tasks and mini quizzes. At the end, users get a congratulation, points and a reward of their choice.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Testing results</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>Task completion within series: 8.1% → 15% (+85.2%)</li>
+        <li>71.4% preferred series over isolated tasks</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What users said</h4>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li>"It was satisfying to finish a full series. It felt like a win."</li>
+        <li>"I actually care about the points now because I can use them."</li>
+        <li>"Choosing my own reward made it feel more personal and fun."</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Testing two homepage variants</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/homepage.png" alt="Sequential and open access homepage variants" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 28px 20px 0; display: flex; flex-direction: column; gap: 24px">
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Why</h4>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">The original homepage lacked structure; users didn't know where to start. We tested two variants: sequential task cards and open access task blocks, to find the layout that best supports engagement and navigation.</p>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">Testing results</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 6px">
+        <li>3 of 7 preferred sequential tasks</li>
+        <li>2 of 7 preferred open access</li>
+        <li>1 liked both equally</li>
+        <li>Decision: sequential layout, to guide users step by step and reduce decision fatigue</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 500; color: #6b6977">What users said</h4>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 10px">
+        <li>"The step by step layout made me feel more focused."</li>
+        <li>"I liked having everything visible, but I wasn't sure where to begin."</li>
+        <li>"The card based version felt more like a journey, which helped me stay on track."</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin: 64px 20px 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Feature enhancements based on testing</h3>
+  <figure style="margin: 20px 0 0">
+    <img src="/images/design-mode/Frame%206-4.png" alt="Report highlighting the most spent category" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 24px 20px 0">
+    <h4 style="margin: 0; font-size: 16px; font-weight: 600">Most-spent category in reports</h4>
+    <p style="margin: 8px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Users wanted a clearer view of where they overspent. Reports now highlight the most-spent category with clear labels and visual cues.</p>
+    <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">"I want to know instantly where my money went the most."</p>
+    <h5 style="margin: 16px 0 6px; font-size: 13px; font-weight: 500; color: #6b6977">Expected impact</h5>
+    <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Stronger spending awareness and better monthly planning, by drawing attention to problem areas without overwhelming users.</p>
+  </div>
+  <figure style="margin: 40px 0 0">
+    <img src="/images/design-mode/Frame%206-3.png" alt="Smart reminders delivered through the chat assistant" style="width: 100%; height: auto">
+  </figure>
+  <div style="padding: 24px 20px 0">
+    <h4 style="margin: 0; font-size: 16px; font-weight: 600">Smart reminders via chat assistant</h4>
+    <p style="margin: 8px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Push notifications were mostly ignored. In-app chat reminders, triggered by unclassified spending or inactivity, felt more personal.</p>
+    <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.65; color: #3d3c45">"Push notifications feel robotic, but in-chat felt like someone was guiding me."</p>
+    <h5 style="margin: 16px 0 6px; font-size: 13px; font-weight: 500; color: #6b6977">Expected impact</h5>
+    <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3d3c45">Higher task completion, more accurate expense categorisation and less drop-off in journey-based task flows.</p>
+  </div>
+
+  <div style="padding: 0 20px">
+    <section style="padding: 72px 0 0">
+      <h3 style="margin: 0; font-size: 20px; font-weight: 500; letter-spacing: -0.01em">Usability testing and outcomes</h3>
+      <dl style="margin: 24px 0 0; display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.6">
+        <dt style="color: #6b6977">Participants</dt>
+        <dd style="margin: 0 0 12px; color: #3d3c45">7 users (3 potential, 4 existing)</dd>
+        <dt style="color: #6b6977">Demographics</dt>
+        <dd style="margin: 0 0 12px; color: #3d3c45">Aged 23–49: students, doctors, police officers, IT specialists and bankers</dd>
+        <dt style="color: #6b6977">Scenarios</dt>
+        <dd style="margin: 0; color: #3d3c45">Onboarding and welcome screens; "Getting to know you" series; expense entry and wants vs. needs; navigating My Monevo World; viewing reports and spending patterns; feedback on homepage alternatives</dd>
+      </dl>
+      <div style="margin: 28px 0 0; overflow-x: auto">
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px">
+<thead>
+<tr><th scope="col" style="text-align: left; font-weight: 500; color: #6b6977; padding: 0 12px 10px 0; border-bottom: 1px solid #15171c">Metric</th><th scope="col" style="text-align: left; font-weight: 500; color: #6b6977; padding: 0 12px 10px 0; border-bottom: 1px solid #15171c">Live</th><th scope="col" style="text-align: left; font-weight: 500; color: #6b6977; padding: 0 12px 10px 0; border-bottom: 1px solid #15171c">Test</th><th scope="col" style="text-align: left; font-weight: 500; color: #6b6977; padding: 0 0 10px 0; border-bottom: 1px solid #15171c">Change</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">Onboarding completion</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">47.4%</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">70%</td><td style="padding: 14px 0 14px 0; border-bottom: 1px solid #ececf0">+47.6%</td></tr>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">Task completion</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">8.1%</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">15%</td><td style="padding: 14px 0 14px 0; border-bottom: 1px solid #ececf0">+85.2%</td></tr>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">Users accessing My Monevo World</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">New</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">85.7%</td><td style="padding: 14px 0 14px 0; border-bottom: 1px solid #ececf0">Newly introduced</td></tr>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">Users understanding reports</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">New</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">85.7%</td><td style="padding: 14px 0 14px 0; border-bottom: 1px solid #ececf0">Newly introduced</td></tr>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">Positive feedback on homepage UI options</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">n/a</td><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #ececf0">85.7%</td><td style="padding: 14px 0 14px 0; border-bottom: 1px solid #ececf0">n/a</td></tr>
+</tbody>
+</table>
+      </div>
+      <h3 style="margin: 36px 0 14px; font-size: 16px; font-weight: 600">What users said</h3>
+      <ul style="margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.65; color: #3d3c45; display: flex; flex-direction: column; gap: 12px">
+        <li>"I didn't understand what wants vs. needs meant at first. The explanation helped a lot."</li>
+        <li>"The chat reminders felt like a coach guiding me through."</li>
+        <li>"Seeing my most spent category made me rethink my priorities."</li>
+        <li>"I liked being able to choose my own reward. It felt more personal."</li>
+        <li>"Without the visual cues, I wouldn't have known where to go next. This version made it obvious."</li>
+      </ul>
+    </section>
+
+    <section id="m-impact" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">07 Impact</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Impact and Key Learnings</h2>
+      <div style="margin: 24px 0 0; display: flex; flex-direction: column; gap: 24px">
+        <div>
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Improved task and onboarding completion</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Usability tests showed a clear increase in task completion during onboarding. Step-by-step guidance and integrated task flows helped users complete more actions independently and with greater confidence. In testing, 85.7% of participants completed onboarding and explored key features.</p>
+        </div>
+        <div>
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Purposeful gamification</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Gamified elements boosted engagement only when tied to clear goals, real rewards and visible progress. Decorative gamification alone was not effective.</p>
+        </div>
+        <div>
+          <h3 style="margin: 0; font-size: 16px; font-weight: 600">Clarity leads to action</h3>
+          <p style="margin: 6px 0 0; font-size: 15px; line-height: 1.7; color: #3d3c45">Users responded better to visual insights than raw data. Features like "Most spent category" and a clear hierarchy helped users take action and stay engaged.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="m-next" style="padding: 72px 0 0">
+      <p style="margin: 0 0 12px; font-size: 13px; color: #6b6977">08 Next steps</p>
+      <h2 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em">Next Steps</h2>
+      <h3 style="margin: 24px 0 10px; font-size: 16px; font-weight: 600">Immediate roadmap</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.8; color: #3d3c45">
+        <li>Finalise and apply the new design system across all UI screens</li>
+        <li>Develop validated UI designs based on tested low-fidelity wireframes</li>
+        <li>AI-powered spending predictions and alerts</li>
+      </ul>
+      <h3 style="margin: 28px 0 10px; font-size: 16px; font-weight: 600">Long-term vision</h3>
+      <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.8; color: #3d3c45">
+        <li>Monitor onboarding, task engagement and retention using live metrics</li>
+        <li>Experiment with adaptive task series tailored to user goals (e.g. debt payoff, savings)</li>
+        <li>Test diverse and customisable rewards (financial tools, expert sessions)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="m-others" style="margin: 96px 0 0; padding: 28px 0 72px; border-top: 1px solid #15171c">
+      <h2 id="m-others" style="margin: 0 0 28px; font-size: 22px; font-weight: 500; letter-spacing: -0.015em">Other Projects</h2>
+      <div style="display: flex; flex-direction: column; gap: 40px">
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/foodpanda-cover.jpg" alt="Foodpanda Partner menu management on a laptop and a phone" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">Foodpanda Partner, Menu Management</span>
+            <span style="font-size: 14px; color: #6b6977">B2B SaaS · AI integration</span>
+          </span>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/newage-cover.jpg" alt="VDF NewAge customer details dashboard" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">VDF NewAge, Internal Insurance Platform</span>
+            <span style="font-size: 14px; color: #6b6977">Enterprise UX · Insurance</span>
+          </span>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/foodpay-cover.jpg" alt="FoodPay landing page on desktop and mobile" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">FoodPay (Yemeksepeti)</span>
+            <span style="font-size: 14px; color: #6b6977">Fintech · Payment system</span>
+          </span>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #15171c">
+          <span style="display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f4f4f6">
+            <img src="/images/projects/yemekcom-cover.jpg" alt="Yemek.com recipe app on two phones" style="width: 100%; height: 100%; object-fit: cover">
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3">Yemek.com</span>
+            <span style="font-size: 14px; color: #6b6977">Recipe platform · Mobile app</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>
