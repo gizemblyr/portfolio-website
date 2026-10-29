@@ -1115,6 +1115,24 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 @media (max-width: 767px) { .monevo-detail .monevo-lightbox-trigger { width: 100% !important; } .monevo-detail .monevo-lightbox-trigger img { width: 100% !important; max-width: 100% !important; height: auto !important; } .monevo-detail .monevo-lightbox { padding: 1rem; } }
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 @media (max-width: 767px) {
+  .monevo-palette:not(.home-page) { background: #fff !important; }
+  .monevo-palette:not(.home-page) section { background: #fff !important; padding-inline: 16px !important; text-align: left !important; }
+  .monevo-palette:not(.home-page) section > div,
+  .monevo-palette:not(.home-page) section > div > div { width: 100% !important; max-width: none !important; margin-inline: 0 !important; padding-inline: 0 !important; }
+  .monevo-palette:not(.home-page) section > div > div[class*="rounded"],
+  .monevo-palette:not(.home-page) section > div > div[class*="border"],
+  .monevo-palette:not(.home-page) section > div > div[class*="shadow"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-palette:not(.home-page) section h1,
+  .monevo-palette:not(.home-page) section h2,
+  .monevo-palette:not(.home-page) section h3,
+  .monevo-palette:not(.home-page) section h4,
+  .monevo-palette:not(.home-page) section p,
+  .monevo-palette:not(.home-page) section li { text-align: left !important; }
+  .monevo-palette:not(.home-page) section ul,
+  .monevo-palette:not(.home-page) section ol { padding-left: 0 !important; margin-left: 0 !important; }
+  .monevo-palette:not(.home-page) section svg { width: 1.25rem !important; height: 1.25rem !important; flex: 0 0 1.25rem !important; }
+  .monevo-palette:not(.home-page) section img { max-width: 100% !important; }
+  .monevo-palette:not(.home-page) .monevo-metric-value { min-width: 0 !important; max-width: 100% !important; width: auto !important; text-align: left !important; }
   .newage-palette .newage-payment-scenarios, .newage-palette .newage-status-scenarios { padding: 1rem !important; }
   .newage-palette .newage-payment-scenario-card, .newage-palette .newage-status-item { padding: .75rem 1rem !important; }
   .newage-palette .newage-impact-card { padding: 1rem !important; }
