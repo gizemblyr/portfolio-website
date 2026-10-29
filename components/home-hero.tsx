@@ -120,33 +120,33 @@ export function WorkedWithMarquee() {
       name: "Delivery Hero",
       height: "3.8rem",
       maxWidth: "12rem",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_23%20PM-5%202-6ScrBXFdstckMSbfUeVUejfPMyMMdn.png",
+      src: "/images/logos/delivery-hero.png",
     },
     {
       name: "Yemeksepeti",
       height: "3.7rem",
       maxWidth: "12rem",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_26%20PM-7%202-rWN48QucSmLO3AL85o8nC2BqWpiMF0.png",
+      src: "/images/logos/yemeksepeti.png",
     },
     {
       name: "NewAge",
       height: "3.5rem",
       maxWidth: "12rem",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_22%20PM-4%202-Y1csMqPI0UAltJGU1JqHxZQOYMYPhf.png",
+      src: "/images/logos/newage.png",
     },
     {
       name: "AgeSA",
       height: "3.2rem",
       maxWidth: "11rem",
       transform: "scale(1.18)",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Minimal%20Gray%20AGESA%20Logo%20on%20Off-White%202-OP0MbAPdIIcaN9mrEXIrnOX7L1wP1l.png",
+      src: "/images/logos/agesa.png",
     },
     {
       name: "Doğuş Teknoloji",
       height: "4.1rem",
       maxWidth: "13rem",
       transform: "scale(1.22)",
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2022%2C%202026%2C%2008_08_21%20PM-3%202-xBfNO1f18qYo81Z4M3mhATAZWiMz9t.png",
+      src: "/images/logos/dogus-teknoloji.png",
     },
   ]
 
