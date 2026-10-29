@@ -1,3 +1,7 @@
+
+
+
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lucide-react"
 import Link from "next/link"
@@ -55,7 +59,7 @@ export default function MonevoCaseStudy() {
       <section id="problem" className="py-12 md:py-16 px-0 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Problem Statement */}
-          <div className="m-flat bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-4 md:p-8 mb-12 relative overflow-hidden">
+          <div className="bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-4 md:p-8 mb-12 relative overflow-hidden">
             {/* Decorative Elements */}
 
 
@@ -63,7 +67,7 @@ export default function MonevoCaseStudy() {
               Problem Statement
             </h2>
 
-            <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 relative z-10">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 relative z-10">
               <p className="text-gray-700 mb-6 text-base leading-relaxed">
                 Monevo faced poor onboarding completion, low user engagement, and weak motivation mechanisms. Users
                 struggled with understanding financial concepts, navigating the app, and staying committed to tasks
@@ -72,7 +76,7 @@ export default function MonevoCaseStudy() {
 
               <h3 className="font-semibold text-gray-900 mb-4">Key Pain Points:</h3>
               <ul className="space-y-3">
-                <li className="m-flat flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
+                <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong>High Onboarding Drop-off: </strong> <span className="font-bold text-red-600">52.6% </span>{" "}
@@ -80,7 +84,7 @@ export default function MonevoCaseStudy() {
                     <span className="font-bold text-green-600"> 47.4% </span>completed onboarding.
                   </span>
                 </li>
-                <li className="m-flat flex items-start gap-3 p-3 bg-orange-50/70 rounded-lg">
+                <li className="flex items-start gap-3 p-3 bg-orange-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong>Sharp Retention Decline: </strong> Retention dropped from{" "}
@@ -88,7 +92,7 @@ export default function MonevoCaseStudy() {
                     <span className="font-bold text-green-600"> 28.8%</span> (onboarding complete).
                   </span>
                 </li>
-                <li className="m-flat flex items-start gap-3 p-3 bg-pink-50/70 rounded-lg">
+                <li className="flex items-start gap-3 p-3 bg-pink-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong> Low Task Engagement:</strong> Only <span className="font-bold text-red-600">32.6%</span> of
@@ -96,14 +100,14 @@ export default function MonevoCaseStudy() {
                     <span className="font-bold text-green-600">8.1%.</span>
                   </span>
                 </li>
-                <li className="m-flat flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
+                <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong> Generic & Unclear Guidance:</strong> Users were confused by financial terms, unengaging
                     tasks, and the lack of personalized onboarding.
                   </span>
                 </li>
-                <li className="m-flat flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
+                <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong> Wasted Acquisition Costs: </strong>Poor onboarding and retention undermined user
@@ -115,14 +119,14 @@ export default function MonevoCaseStudy() {
           </div>
 
           {/* Goals & Success Metrics */}
-          <div className="m-flat bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 mb-12">
+          <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 mb-12">
             <h2 id="goals" className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
               Goals & Success Metrics
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
               {/* Project Goals */}
-              <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                     <Target className="w-6 h-6 text-white" />
@@ -154,7 +158,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               {/* Success Metrics */}
-              <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
                     <Award className="w-6 h-6 text-white" />
@@ -193,7 +197,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Approach */}
-            <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 mt-12">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 mt-12">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center" id="approach">Approach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 <div className="text-center">
@@ -233,14 +237,14 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Research Section */}
-      <section id="research" className="m-nobg py-12 md:py-16 px-0 md:px-8 bg-gray-50">
+      <section id="research" className="py-12 md:py-16 px-0 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Research & User Insights
           </h2>
 
           {/* Benchmark Analysis */}
-          <div className="m-flat bg-gray-50 rounded-2xl p-4 md:p-8 mb-12">
+          <div className="bg-gray-50 rounded-2xl p-4 md:p-8 mb-12">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Benchmarking</h3>
             <div className="overflow-x-auto">
               <MonevoLightboxImage
@@ -335,7 +339,7 @@ export default function MonevoCaseStudy() {
           {/* Design Strategy */}
           <div className="mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Design Strategy</h2>
-            <div className="m-flat bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
@@ -407,7 +411,7 @@ export default function MonevoCaseStudy() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
               Key Design Solutions
             </h2>
-            <div className="m-flat bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
@@ -461,7 +465,7 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Results */}
-      <section id="impact" className="m-nobg py-12 md:py-16 px-0 md:px-8 bg-gray-50">
+      <section id="impact" className="py-12 md:py-16 px-0 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Usability Testing & Outcomes
@@ -469,7 +473,7 @@ export default function MonevoCaseStudy() {
 
           {/* Usability Test Overview */}
           <div className="mb-12 md:mb-16">
-            <div className="m-flat bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">Test Overview</h4>
@@ -599,7 +603,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Onboarding */}
-            <div className="m-flat bg-gray-50 p-4 md:p-8 rounded-2xl mb-8 mt-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8 mt-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
                 Gamified Onboarding via "Getting to Know You" Series
               </h3>
@@ -647,7 +651,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* My Monevo World Dashboard */}
-            <div className="m-flat bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">My Monevo World</h3>
 
               <div className="flex justify-center mb-6 md:mb-8">
@@ -690,7 +694,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Receipt-Based Expense Input */}
-            <div className="m-flat bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Receipt-Based Expense Input</h3>
               <div className="flex justify-center mb-6 md:mb-8">
                 <div className="overflow-hidden rounded-xl max-w-4xl">
@@ -731,7 +735,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Goal-Based Task Series & Reward System */}
-            <div className="m-flat bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
+            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
                 Goal-Based Task Series & Reward System
               </h3>
@@ -777,7 +781,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Testing Two Homepage Variants */}
-            <div className="m-flat bg-white p-4 md:p-8 rounded-2xl mb-8">
+            <div className="bg-white p-4 md:p-8 rounded-2xl mb-8">
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Testing Two Homepage Variants</h3>
 
               <div className="flex justify-center mb-6 md:mb-8">
@@ -881,7 +885,7 @@ export default function MonevoCaseStudy() {
 
               {/* Key Learnings */}
               {/* Impact & Learnings */}
-              <div className="m-flat bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 p-4 md:p-8 rounded-2xl relative overflow-hidden mt-12">
+              <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 p-4 md:p-8 rounded-2xl relative overflow-hidden mt-12">
                 {/* Decorative Elements */}
 
 
@@ -932,7 +936,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               {/* Next Steps */}
-              <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-8 shadow-sm border border-white/50 mt-12">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-8 shadow-sm border border-white/50 mt-12">
                 <div className="flex items-center gap-3 mb-6">
                   
                 <h2 id="next-step" className="w-full text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 text-center relative z-10">
