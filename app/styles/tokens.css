@@ -53,6 +53,14 @@
   --color-illustration-refined: #5e596f;
   --color-icon-strong: #151522;
 
+  /* Case study pages. Ink (#15171c), accent and white reuse --color-text-brand,
+     --color-accent and --color-page. */
+  --color-cs-body: #3d3c45;
+  --color-cs-muted: #6b6977;
+  --color-cs-line: #ececf0;
+  --color-cs-rule: #e2e1e8; /* the line next to a section label */
+  --color-cs-surface: #f4f4f6;
+
   /* Overlays and shadows */
   --shadow-header: 0 12px 32px rgb(72 60 150 / 0.1);
   --shadow-header-mobile: 0 2px 10px rgb(20 18 45 / 0.04);

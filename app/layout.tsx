@@ -6,7 +6,7 @@ import './globals.css'                     // Tailwind + shadcn theme variables
 import './styles/tokens.css'               // colors, fonts, spacing
 import './styles/site-chrome.css'          // header, mobile drawer, footer
 import './styles/home.css'                 // home page sections
-import './styles/case-studies.legacy.css'  // detail pages, untouched until their redesign
+import './styles/case-study.css'           // project detail pages
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
