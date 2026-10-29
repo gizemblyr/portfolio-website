@@ -1,4 +1,4 @@
-// Captures deterministic screenshots for visual regression.
+// Captures deterministic home-page screenshots for visual regression.
 // Usage: node scripts/visual/snapshot.mjs <outDir outside the repo> [baseUrl]
 import { chromium } from "playwright"
 import { mkdir } from "node:fs/promises"
@@ -10,26 +10,8 @@ const baseUrl = process.argv[3] ?? "http://localhost:3000"
 
 const viewports = {
   desktop: { width: 1440, height: 900 },
-  laptop: { width: 1024, height: 768 },
-  tablet: { width: 768, height: 1024 },
   mobile: { width: 390, height: 844 },
 }
-
-// Home gets every viewport plus interaction states; other pages get full-page shots.
-const pages = [
-  { name: "home", path: "/", devices: ["desktop", "laptop", "tablet", "mobile"], states: true },
-  ...[
-    "monevo-case-study",
-    "foodpanda-case-study",
-    "newage-case-study",
-    "foodpay-case-study",
-    "yemekcom-case-study",
-    "about",
-    "blog",
-    "contact",
-    "resume",
-  ].map((name) => ({ name, path: `/${name}`, devices: ["desktop", "mobile"] })),
-]
 
 // Test-harness only: kill transitions so hover/scroll states settle instantly.
 const FREEZE_CSS = `
@@ -83,18 +65,13 @@ async function preparePage(page, url) {
 async function captureStates(page, prefix, viewport) {
   const shot = (name, opts) => page.screenshot({ path: path.join(outDir, `${prefix}-${name}.png`), animations: "disabled", ...opts })
 
-  // Viewport-sized shots don't resize, so observers can run again (How I Work needs them).
+  // Viewport-sized shots don't resize, so observers can run again (header active link needs them).
   await page.evaluate(() => (window.__ioFrozen = false))
 
   // Header after scrolling away from the hero.
   await page.evaluate(() => window.scrollTo(0, 1200))
   await page.waitForTimeout(200)
   await shot("header-scrolled", { clip: { x: 0, y: 0, width: viewport.width, height: 140 } })
-
-  // "How I Work" with its scroll-triggered is-active state.
-  await page.locator(".how-i-work").scrollIntoViewIfNeeded()
-  await page.waitForTimeout(300)
-  await shot("how-i-work-active")
 
   await page.evaluate(() => window.scrollTo(0, 0))
   await page.waitForTimeout(200)
@@ -120,22 +97,19 @@ const browser = await chromium.launch({
 })
 await mkdir(outDir, { recursive: true })
 
-// Warm up the dev server so every route is compiled before the first capture.
-for (const { path: route } of pages) await fetch(baseUrl + route)
+// Warm up the dev server so the page is compiled before the first capture.
+await fetch(baseUrl)
 
-for (const { name, path: route, devices, states } of pages) {
-  for (const device of devices) {
-    const viewport = viewports[device]
-    const context = await browser.newContext({ viewport, deviceScaleFactor: 1 })
-    const page = await context.newPage()
-    await preparePage(page, baseUrl + route)
+for (const [device, viewport] of Object.entries(viewports)) {
+  const context = await browser.newContext({ viewport, deviceScaleFactor: 1 })
+  const page = await context.newPage()
+  await preparePage(page, baseUrl)
 
-    const prefix = `${name}-${device}`
-    await page.screenshot({ path: path.join(outDir, `${prefix}-full.png`), animations: "disabled", fullPage: true })
-    if (states) await captureStates(page, prefix, viewport)
+  const prefix = `home-${device}`
+  await page.screenshot({ path: path.join(outDir, `${prefix}-full.png`), animations: "disabled", fullPage: true })
+  await captureStates(page, prefix, viewport)
 
-    await context.close()
-  }
+  await context.close()
 }
 
 await browser.close()
