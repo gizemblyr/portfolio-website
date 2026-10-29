@@ -1128,25 +1128,3 @@ html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { back
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
 
-/* Monevo case study — SADECE MOBİL düzeltmesi (768px altı). Desktop'a dokunmaz. */
-@media (max-width: 767px) {
-  .monevo-detail .m-flat {
-    background: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    backdrop-filter: none !important;
-    padding: 0 !important;
-  }
-  .monevo-detail .m-nobg {
-    background: none !important;
-  }
-  .monevo-detail h2,
-  .monevo-detail h3,
-  .monevo-detail .text-center {
-    text-align: left !important;
-  }
-  .monevo-detail .monevo-approach-number {
-    margin-left: 0 !important;
-  }
-}
