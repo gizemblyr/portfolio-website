@@ -55,7 +55,7 @@ export default function MonevoCaseStudy() {
       <section id="problem" className="py-12 md:py-16 px-0 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Problem Statement */}
-          <div className="bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-4 md:p-8 mb-12 relative overflow-hidden">
+          <div className="m-flat bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 rounded-2xl p-4 md:p-8 mb-12 relative overflow-hidden">
             {/* Decorative Elements */}
 
 
@@ -63,7 +63,7 @@ export default function MonevoCaseStudy() {
               Problem Statement
             </h2>
 
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 relative z-10">
+            <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 relative z-10">
               <p className="text-gray-700 mb-6 text-base leading-relaxed">
                 Monevo faced poor onboarding completion, low user engagement, and weak motivation mechanisms. Users
                 struggled with understanding financial concepts, navigating the app, and staying committed to tasks
@@ -72,7 +72,7 @@ export default function MonevoCaseStudy() {
 
               <h3 className="font-semibold text-gray-900 mb-4">Key Pain Points:</h3>
               <ul className="space-y-3">
-                <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
+                <li className="m-flat flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong>High Onboarding Drop-off: </strong> <span className="font-bold text-red-600">52.6% </span>{" "}
@@ -80,7 +80,7 @@ export default function MonevoCaseStudy() {
                     <span className="font-bold text-green-600"> 47.4% </span>completed onboarding.
                   </span>
                 </li>
-                <li className="flex items-start gap-3 p-3 bg-orange-50/70 rounded-lg">
+                <li className="m-flat flex items-start gap-3 p-3 bg-orange-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong>Sharp Retention Decline: </strong> Retention dropped from{" "}
@@ -88,7 +88,7 @@ export default function MonevoCaseStudy() {
                     <span className="font-bold text-green-600"> 28.8%</span> (onboarding complete).
                   </span>
                 </li>
-                <li className="flex items-start gap-3 p-3 bg-pink-50/70 rounded-lg">
+                <li className="m-flat flex items-start gap-3 p-3 bg-pink-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong> Low Task Engagement:</strong> Only <span className="font-bold text-red-600">32.6%</span> of
@@ -96,14 +96,14 @@ export default function MonevoCaseStudy() {
                     <span className="font-bold text-green-600">8.1%.</span>
                   </span>
                 </li>
-                <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
+                <li className="m-flat flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong> Generic & Unclear Guidance:</strong> Users were confused by financial terms, unengaging
                     tasks, and the lack of personalized onboarding.
                   </span>
                 </li>
-                <li className="flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
+                <li className="m-flat flex items-start gap-3 p-3 bg-red-50/70 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-700 text-base">
                     <strong> Wasted Acquisition Costs: </strong>Poor onboarding and retention undermined user
@@ -115,14 +115,14 @@ export default function MonevoCaseStudy() {
           </div>
 
           {/* Goals & Success Metrics */}
-          <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 mb-12">
+          <div className="m-flat bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 mb-12">
             <h2 id="goals" className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
               Goals & Success Metrics
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
               {/* Project Goals */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
+              <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                     <Target className="w-6 h-6 text-white" />
@@ -154,7 +154,7 @@ export default function MonevoCaseStudy() {
               </div>
 
               {/* Success Metrics */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
+              <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
                     <Award className="w-6 h-6 text-white" />
@@ -193,7 +193,7 @@ export default function MonevoCaseStudy() {
             </div>
 
             {/* Approach */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 mt-12">
+            <div className="m-flat bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/50 mt-12">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center" id="approach">Approach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 <div className="text-center">
@@ -233,14 +233,14 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Research Section */}
-      <section id="research" className="py-12 md:py-16 px-0 md:px-8 bg-gray-50">
+      <section id="research" className="m-nobg py-12 md:py-16 px-0 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Research & User Insights
           </h2>
 
           {/* Benchmark Analysis */}
-          <div className="bg-gray-50 rounded-2xl p-4 md:p-8 mb-12">
+          <div className="m-flat bg-gray-50 rounded-2xl p-4 md:p-8 mb-12">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Benchmarking</h3>
             <div className="overflow-x-auto">
               <MonevoLightboxImage
@@ -335,7 +335,7 @@ export default function MonevoCaseStudy() {
           {/* Design Strategy */}
           <div className="mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Design Strategy</h2>
-            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="m-flat bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
@@ -407,7 +407,7 @@ export default function MonevoCaseStudy() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
               Key Design Solutions
             </h2>
-            <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="m-flat bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 rounded-2xl p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
@@ -461,7 +461,7 @@ export default function MonevoCaseStudy() {
       </section>
 
       {/* Results */}
-      <section id="impact" className="py-12 md:py-16 px-0 md:px-8 bg-gray-50">
+      <section id="impact" className="m-nobg py-12 md:py-16 px-0 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
             Usability Testing & Outcomes
@@ -469,7 +469,7 @@ export default function MonevoCaseStudy() {
 
           {/* Usability Test Overview */}
           <div className="mb-12 md:mb-16">
-            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="m-flat bg-white p-4 md:p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">Test Overview</h4>
@@ -555,446 +555,4 @@ export default function MonevoCaseStudy() {
           {/* Validated through usability testing */}
           <div className="mb-12 md:mb-16">
             <h2 id="testing" className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
-              Validated Through Usability Testing
-            </h2>
-
-            <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Welcoming Screens</h3>
-            <div className="flex justify-center mb-6 md:mb-8">
-              <div className="overflow-hidden rounded-xl shadow-lg max-w-4xl">
-                <MonevoLightboxImage
-                  src="/images/design-mode/Frame%25206.png"
-                  alt="Monevo onboarding screens showing value proposition - left screen demonstrates expense tracking and categorization, right screen shows gamified goal-setting and rewards system"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                <p className="text-gray-600 space-y-2 text-base">
-                  The old welcome screen lacked clarity and failed to explain the app's value, leading to early
-                  drop offs. We redesigned it to showcase key features like gamification and financial education using
-                  visuals and app previews helping users quickly understand what to expect.
-                </p>
-              </div>
-              <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
-                <ul className="text-gray-600 space-y-2 text-base">
-                  <li>• Previous drop-off rate at welcome screen: Over 50% did not proceed after the first open</li>
-                  <li>
-                    • Post-redesign (usability testing): 70% of users continued into the first series and more users
-                    motivated to explore
-                  </li>
-                  <li>• Users who described the welcome experience as "inviting" or "clearer than expected": 85.7%</li>
-                </ul>
-              </div>
-              <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
-                <ul className="text-gray-600 space-y-2 text-base">
-                  <li>• "I understood what the app was about before signing up that made a difference."</li>
-                  <li>• "The visuals helped me see that it wasn't just another finance app."</li>
-                  <li>• "I felt like I was being introduced, not just dropped into something."</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Onboarding */}
-            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8 mt-8">
-              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
-                Gamified Onboarding via "Getting to Know You" Series
-              </h3>
-
-              <div className="flex justify-center mb-6 md:mb-8">
-                <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/onboarding.png"
-                    alt="Monevo gamified onboarding flow showing welcome screen with Monny mascot, name input form, progress tracking with Let's Get to Know You series, and weakness prioritization selection for spending categories"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                  <p className="text-gray-600 space-y-2 text-base">
-                    In the old version of the app, users were asked to enter personal and financial information right
-                    after opening the app leading to a 52.6% drop off at the welcome screen. The onboarding felt tedious
-                    and overwhelming, causing many to abandon before engaging with the product. To solve this, we
-                    restructured onboarding as a gamified task series called "Getting to Know You." Instead of
-                    traditional forms, users completed small, interactive tasks (e.g., "Tell us about your financial
-                    goals") and earned points upon completion. This approach helped reduce friction, improve engagement,
-                    and gave users an early sense of achievement.
-                  </p>
-                </div>
-                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• Onboarding Completion Rate: Increased from 47.4% → 70% (+47.6%)</li>
-                    <li>• Drop-off at welcome screen: Reduced from 52.6% → under 30%</li>
-                    <li>• Users reporting onboarding as "clear and engaging": 85.7% during testing</li>
-                  </ul>
-                </div>
-                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "It felt like a journey, not a boring form."</li>
-                    <li>• "I wanted to keep going to see what came next and get the points."</li>
-                    <li>• "Much better than being asked for everything upfront I actually completed it."</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* My Monevo World Dashboard */}
-            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
-              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">My Monevo World</h3>
-
-              <div className="flex justify-center mb-6 md:mb-8">
-                <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/Frame%25206-2.png"
-                    alt="Monevo app screens showing My Monevo World dashboard, spending details with want/need categorization, and expense classification modal for individual transactions"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                  <p className="text-gray-600 space-y-2 text-base">
-                    My Monay World was created to help users visually track progress and stay motivated through a
-                    gamified journey. At the same time, it also served users who prefer a more practical,
-                    finance-focused approach enabling quick actions like viewing insights, accessing expert advice, or
-                    buying valuable metals, without relying heavily on gamification.
-                  </p>
-                </div>
-                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• Users who accessed and explored My Monay World: 85.7%</li>
-                    <li>• Users who understood their progress and rewards within the space: 85.7%</li>
-                    <li>• Task motivation & feedback increased based on post-task interview responses</li>
-                  </ul>
-                </div>
-                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "I loved seeing my progress. it felt like I was actually getting somewhere."</li>
-                    <li>• "This made the app feel more fun and less stressful."</li>
-                    <li>• "I like that I can both track and take action without digging through menus."</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Receipt-Based Expense Input */}
-            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
-              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Receipt-Based Expense Input</h3>
-              <div className="flex justify-center mb-6 md:mb-8">
-                <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/Frame%25202085664027.png"
-                    alt="Monevo receipt scanning feature showing dashboard with expense entry modal and camera interface for receipt capture with real receipt visible"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                  <p className="text-gray-600 space-y-2 text-base">
-                    Users found manual expense entry time consuming and prone to skipping. To streamline the process and
-                    increase accuracy, we introduced a receipt-based input option, allowing users to upload or scan
-                    receipts directly. This also supported better tracking for users managing shared or recurring
-                    expenses.
-                  </p>
-                </div>
-                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• Users who preferred receipt-based input over manual entry: 71.4%</li>
-                    <li>• Reported ease of use (from post-test interviews): 85.7% found it "easy" or "very easy"</li>
-                    <li>• Perceived usefulness for monthly reports: 72% said it made tracking feel more reliable</li>
-                  </ul>
-                </div>
-                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "Uploading a receipt felt faster and easier than typing everything."</li>
-                    <li>• "It's helpful when I split bills with someone."</li>
-                    <li>• "This saves me from forgetting what I spent on."</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Goal-Based Task Series & Reward System */}
-            <div className="bg-gray-50 p-4 md:p-8 rounded-2xl mb-8">
-              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
-                Goal-Based Task Series & Reward System
-              </h3>
-
-              <div className="flex justify-center mb-6 md:mb-8">
-                <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/Frame%25206-1.png"
-                    alt="Monevo app screens showing My Monay World dashboard, badge rewards for completing spending tracking series, reward options with discounts, and points system with trainings and expert consultations"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                  <p className="text-gray-600 space-y-2 text-base">
-                    In the previous version, users earned points but had no way to use them making the system feel empty
-                    and demotivating. To fix this, we introduced a store where users can redeem their points. We also
-                    created goal-based task series (e.g., Expense Tracking for users paying off debt), each consisting
-                    of 5 or 6 short tasks and mini quizzes to avoid fatigue. At the end of each series, users receive a
-                    congratulatory message, earn points, and get to choose a reward, turning progress into a clear and
-                    motivating experience.
-                  </p>
-                </div>
-                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• Task completion (within series): Increased from 8.1% → 15% (+85.2%)</li>
-                    <li>• Users who preferred series based flow over isolated tasks: 71.4%</li>
-                  </ul>
-                </div>
-                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "It was satisfying to finish a full series it felt like a win."</li>
-                    <li>• "I actually care about the points now because I can use them."</li>
-                    <li>• "Choosing my own reward made it feel more personal and fun."</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Testing Two Homepage Variants */}
-            <div className="bg-white p-4 md:p-8 rounded-2xl mb-8">
-              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">Testing Two Homepage Variants</h3>
-
-              <div className="flex justify-center mb-6 md:mb-8">
-                <div className="overflow-hidden rounded-xl max-w-4xl">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/homepage.png"
-                    alt="Monevo app showing two homepage variants - Sequential Tasks with step-by-step progression on the left, and Open Tasks with all options visible in both light and dark mode on the right"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                  <p className="text-gray-600 space-y-2 text-base">
-                    The original homepage lacked structure and clarity users struggled to understand where to start and
-                    which features were most important. To improve this, we designed and tested two homepage variants:
-                    one with sequential task cards, and another with open access task blocks. The goal was to find the
-                    layout that best supports task engagement and ease of navigation.
-                  </p>
-                </div>
-                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-3">Testing Results</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• Users who preferred sequential tasks: 3 out of 7</li>
-                    <li>• Users who preferred open access structure: 2 out of 7</li>
-                    <li>• 1 user liked both equally</li>
-                    <li>
-                      • Final Decision: Moved forward with the sequential layout to guide users step by step and reduce
-                      decision fatigue
-                    </li>
-                  </ul>
-                </div>
-                <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-purple-900 mb-3">User Feedback</h4>
-                  <ul className="text-gray-600 space-y-2 text-base">
-                    <li>• "The step by step layout made me feel more focused."</li>
-                    <li>• "I liked having everything visible, but I wasn't sure where to begin."</li>
-                    <li>• "The card based version felt more like a journey, which helped me stay on track."</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Feature Enhancements Based on User Feedback */}
-            <div className="mb-12 md:mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
-                Feature Enhancements Based on Usability Testing
-              </h2>
-              <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center">
-                Most-Spent Category and Smart Reminders
-              </h3>
-
-              {/* Side-by-side image layout */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
-                <div className="overflow-hidden rounded-xl shadow-sm">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/Frame%25206-4.png"
-                    alt="Monevo smart reminders feature showing quiz prompts for expense categorization and notifications for unspecified expenses"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-                <div className="overflow-hidden rounded-xl shadow-sm">
-                  <MonevoLightboxImage
-                    src="/images/design-mode/Frame%25206-3.png"
-                    alt="Monevo weekly reports showing spending distribution charts, wants vs needs analysis, and most-spent category insights with personalized recommendations"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-3">Why it was designed</h4>
-                  <h4 className="text-gray-600 font-semibold text-base mb-1">Most-Spent Category in Reports</h4>
-                  <p className="text-gray-600 space-y-2 text-base mb-3">
-                    Users wanted a clearer view of where they overspent, especially in monthly summaries. The original reports lacked visual focus, so we redesigned them to highlight the most spent category using clear labels and visual cues.
-                    “I want to know instantly where my money went the most.”
-                  </p>
-                  <h4 className="text-gray-600 font-semibold text-base mb-1">Smart Reminders via Chat Assistants</h4>
-
-                  <p className="text-gray-600 space-y-2 text-base">
-                    Users often forgot to classify expenses or complete tasks without prompts. While push notifications were mostly ignored, in app chat reminders felt more personal and effective. We added smart reminders triggered by behaviors like unclassified spending or inactivity, delivered through the chat assistant in a friendly tone.
-                    “Push notifications feel robotic, but in-chat felt like someone was guiding me.”
-                  </p>
-                </div>
-                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-3">Expected Impact</h4>
-                  <h4 className="text-gray-600 font-semibold text-base mb-1">Most-Spent Category in Reports</h4>
-                  <p className="text-gray-600 space-y-2 text-base mb-3">
-                    We believe this enhancement will help users develop stronger spending awareness and better monthly
-                    planning habits by drawing attention to problem areas without overwhelming them.
-                  </p>
-                  <h4 className="text-gray-600 font-semibold text-base mb-1">Smart Reminders via Chat Assistants</h4>
-                  <p className="text-gray-600 space-y-2 text-base">
-                    We assume this feature will lead to higher task completion, more accurate expense categorization,
-                    and reduced user drop off especially in financial journey-based task flows.
-                  </p>
-                </div>
-              </div>
-
-              {/* Key Learnings */}
-              {/* Impact & Learnings */}
-              <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 p-4 md:p-8 rounded-2xl relative overflow-hidden mt-12">
-                {/* Decorative Elements */}
-
-
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 text-center relative z-10">
-                  Impact & Key Learnings
-                </h2>
-
-                {/* Impact & Learnings Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 relative z-10">
-                  <div className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-sm border border-white/50">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
-                        <Award className="w-6 h-6 text-white" />
-                      </div>
-                      <h4 className="font-semibold text-gray-900">Improved Task & Onboarding Completion</h4>
-                    </div>
-                    <p className="text-gray-600 text-base leading-relaxed">
-                     Usability tests showed a clear increase in task completion during onboarding. Step by step guidance and integrated task flows helped users complete more actions independently and with greater confidence.Task completion rate across core journeys reached  <strong>~85%</strong>, showing the effectiveness of progressive flows.
-                    </p>
-                  </div>
-
-                  <div className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-sm border border-white/50">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
-                        <Lightbulb className="w-6 h-6 text-white" />
-                      </div>
-                      <h4 className="font-semibold text-gray-900">Purposeful Gamification</h4>
-                    </div>
-                    <p className="text-gray-600 text-base leading-relaxed">
-                      Gamified elements boosted engagement only when tied to clear goals, real rewards, and visible
-                      progress. Decorative gamification alone was not effective.
-                    </p>
-                  </div>
-
-                  <div className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-sm border border-white/50">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                        <Target className="w-6 h-6 text-white" />
-                      </div>
-                      <h4 className="font-semibold text-gray-900">Clarity Leads to Action</h4>
-                    </div>
-                    <p className="text-gray-600 text-base leading-relaxed">
-                      Users responded better to visual insights than raw data. Features like "Most Spent Category" and
-                      clear hierarchy helped users take action and stay engaged.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Next Steps */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-8 shadow-sm border border-white/50 mt-12">
-                <div className="flex items-center gap-3 mb-6">
-                  
-                <h2 id="next-step" className="w-full text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 text-center relative z-10">
-               Next Step
-                </h2>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h5 className="font-semibold text-gray-900 mb-4">Immediate Roadmap</h5>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">
-                          Finalize and apply the new design system across all UI screens
-                        </span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">
-                          Develop validated UI designs based on tested low-fidelity wireframes
-                        </span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">AI powered spending predictions and alerts</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h5 className="font-semibold text-gray-900 mb-4">Long-Term Vision</h5>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">
-                          Start monitoring onboarding, task engagement, and retention using live metrics
-                        </span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">
-                          Experiment with adaptive task series tailored to user goals (e.g. debt payoff, savings)
-                        </span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700 text-base">
-                          Test diverse and customizable rewards (financial tools, expert sessions, etc.)
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <ExploreMoreWork current="monevo" />
-      <Footer />
-    </div>
-  )
-}
+              Validated Through Usability
