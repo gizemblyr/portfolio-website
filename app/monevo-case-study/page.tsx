@@ -1,3 +1,7 @@
+
+
+
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Clock, Users, Target, Lightbulb, Award, PieChart } from "lucide-react"
 import Link from "next/link"
@@ -34,7 +38,7 @@ export default function MonevoCaseStudy() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Target className="w-4 h-4" />
-                  <span>FinTech Mobile App</span>
+                  <span>Mobile App</span>
                 </div>
               </div>
             </div>

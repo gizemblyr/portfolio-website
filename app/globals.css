@@ -1066,9 +1066,9 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .foodpay-palette .foodpay-impact [class*="bg-white/"], .foodpay-palette .foodpay-learning [class*="bg-white/"] { background: var(--monevo-gray) !important; }
 .monevo-palette .monevo-approach-number span { color: #fff !important; }
 .monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
-.monevo-palette section { background: var(--monevo-gray) !important; }
+.monevo-palette section { background: #fff !important; }
 .monevo-palette section:first-of-type { background: #fff !important; }
-.monevo-palette section > div > div { background: var(--monevo-gray); }
+.monevo-palette section > div > div { background: transparent; }
 .monevo-palette section:first-of-type > div > div { background: transparent; }
 .monevo-palette .monevo-hero { background: #fff !important; }
 .monevo-palette .monevo-hero > div { width: min(1120px, 100%); }
@@ -1115,6 +1115,24 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 @media (max-width: 767px) { .monevo-detail .monevo-lightbox-trigger { width: 100% !important; } .monevo-detail .monevo-lightbox-trigger img { width: 100% !important; max-width: 100% !important; height: auto !important; } .monevo-detail .monevo-lightbox { padding: 1rem; } }
 html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { background-color: #4F3DF1 !important; background-image: none !important; color: #fff !important; }
 @media (max-width: 767px) {
+  .monevo-palette:not(.home-page) { background: #fff !important; }
+  .monevo-palette:not(.home-page) section { background: #fff !important; padding-inline: 16px !important; text-align: left !important; }
+  .monevo-palette:not(.home-page) section > div,
+  .monevo-palette:not(.home-page) section > div > div { width: 100% !important; max-width: none !important; margin-inline: 0 !important; padding-inline: 0 !important; }
+  .monevo-palette:not(.home-page) section > div > div[class*="rounded"],
+  .monevo-palette:not(.home-page) section > div > div[class*="border"],
+  .monevo-palette:not(.home-page) section > div > div[class*="shadow"] { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  .monevo-palette:not(.home-page) section h1,
+  .monevo-palette:not(.home-page) section h2,
+  .monevo-palette:not(.home-page) section h3,
+  .monevo-palette:not(.home-page) section h4,
+  .monevo-palette:not(.home-page) section p,
+  .monevo-palette:not(.home-page) section li { text-align: left !important; }
+  .monevo-palette:not(.home-page) section ul,
+  .monevo-palette:not(.home-page) section ol { padding-left: 0 !important; margin-left: 0 !important; }
+  .monevo-palette:not(.home-page) section svg { width: 1.25rem !important; height: 1.25rem !important; flex: 0 0 1.25rem !important; }
+  .monevo-palette:not(.home-page) section img { max-width: 100% !important; }
+  .monevo-palette:not(.home-page) .monevo-metric-value { min-width: 0 !important; max-width: 100% !important; width: auto !important; text-align: left !important; }
   .newage-palette .newage-payment-scenarios, .newage-palette .newage-status-scenarios { padding: 1rem !important; }
   .newage-palette .newage-payment-scenario-card, .newage-palette .newage-status-item { padding: .75rem 1rem !important; }
   .newage-palette .newage-impact-card { padding: 1rem !important; }
@@ -1127,3 +1145,4 @@ html body div.min-h-screen.monevo-palette section div.yemekcom-app-button { back
 }
 .yemekcom-app-button:hover { background: #3f2fd0 !important; }
 .yemekcom-app-button svg, .yemekcom-app-button div { color: #fff !important; }
+
