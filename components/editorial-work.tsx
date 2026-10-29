@@ -7,7 +7,7 @@ import { useState } from "react"
 const projects = [
   {
     number: "01",
-    meta: "FINTECH · MOBILE",
+    meta: "B2C · MOBILE",
     title: "Monevo, Financial Habit",
     description: "Helping users build healthier financial habits through personalized, goal oriented journeys.",
     href: "/monevo-case-study",
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     number: "04",
-    meta: "FINTECH · B2B",
+    meta: "FINTECH · B2B2C",
     title: "FoodPay, Yemeksepeti",
     description: "A secure payment and virtual POS experience designed end to end for merchants.",
     href: "/foodpay-case-study",
