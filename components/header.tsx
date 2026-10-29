@@ -88,8 +88,8 @@ export function Header() {
   }
 
   return (
-    <header className={`site-header ${isMonevo ? "monevo-site-header" : ""} fixed inset-x-0 top-0 z-50 px-4 pt-6 md:pt-8`}>
-      <div className={`site-header-shell mx-auto flex h-14 w-full items-center justify-between rounded-[5px] border border-[#e1dfe8] bg-white/90 px-4 shadow-[0_12px_32px_rgba(72,60,150,0.1)] backdrop-blur-md md:h-16 md:max-w-[1285px] md:px-12 ${isMonevo ? "monevo-header-shell" : ""}`}>
+    <header className={`site-header ${isMonevo ? "monevo-site-header" : ""}`}>
+      <div className={`site-header-shell ${isMonevo ? "monevo-header-shell" : ""}`}>
         {isMonevo ? (
           <a className="monevo-header-back" href="/#work" aria-label="Back to home"><span aria-hidden="true">←</span><span>Back to home</span></a>
         ) : (
@@ -100,7 +100,7 @@ export function Header() {
           </div>
         )}
 
-        {!isMonevo && <nav className="hidden items-center gap-9 md:flex" aria-label="Primary navigation">
+        {!isMonevo && <nav className="header-nav" aria-label="Primary navigation">
           {navigationItems.map((item) => (
             <button
               key={item.id}
@@ -113,7 +113,7 @@ export function Header() {
           ))}
         </nav>}
 
-        {!isMonevo && <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control hidden md:inline-flex" aria-label="Download resume">
+        {!isMonevo && <a href="/Gizem-Bolayir-CV.pdf" download="Gizem-Bolayir-CV.pdf" className="resume-control" aria-label="Download resume">
           <span>Resume</span>
           <Download aria-hidden="true" size={16} />
         </a>}
@@ -121,7 +121,7 @@ export function Header() {
         {!isMonevo && <button
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
-          className="menu-trigger rounded-[5px] border border-[#e1dfe8] bg-white p-2 shadow-[0_8px_22px_rgba(72,60,150,0.08)] md:hidden"
+          className="menu-trigger"
           aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMobileMenuOpen}
         >
@@ -130,12 +130,12 @@ export function Header() {
       </div>
 
       {!isMonevo && <>
-      <div className={`mobile-backdrop md:hidden ${isMobileMenuOpen ? "is-open" : ""}`} onClick={() => setIsMobileMenuOpen(false)} aria-hidden="true" />
-      <aside className={`mobile-drawer md:hidden ${isMobileMenuOpen ? "is-open" : ""}`} aria-hidden={!isMobileMenuOpen}>
-        <div className="flex items-center justify-end">
-          <button type="button" onClick={() => setIsMobileMenuOpen(false)} className="rounded-[5px] border border-[#e1dfe8] bg-white p-1.5" aria-label="Close menu"><X size={18} /></button>
+      <div className={`mobile-backdrop ${isMobileMenuOpen ? "is-open" : ""}`} onClick={() => setIsMobileMenuOpen(false)} aria-hidden="true" />
+      <aside className={`mobile-drawer ${isMobileMenuOpen ? "is-open" : ""}`} aria-hidden={!isMobileMenuOpen}>
+        <div className="mobile-drawer-top">
+          <button type="button" onClick={() => setIsMobileMenuOpen(false)} className="mobile-drawer-close" aria-label="Close menu"><X size={18} /></button>
         </div>
-        <nav className="mt-10 flex flex-col items-start gap-4" aria-label="Mobile navigation">
+        <nav className="mobile-nav" aria-label="Mobile navigation">
           {navigationItems.map((item) => (
             <button key={item.id} type="button" onClick={() => selectSection(item.id)} className={`mobile-nav-link ${activeSection === item.id ? "is-active" : ""}`}>
               {item.label}

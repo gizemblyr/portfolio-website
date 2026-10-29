@@ -83,7 +83,7 @@ function Project({ project }: { project: (typeof projects)[number] }) {
       <ProjectCover project={project} />
       <div className="editorial-project-info">
         <p className="editorial-project-meta">{project.number} / {project.meta}</p>
-        <h3>{project.title}</h3>
+        <h3 className="editorial-project-title">{project.title}</h3>
         <p className="editorial-project-description">{project.description}</p>
       </div>
     </article>
@@ -93,9 +93,9 @@ function Project({ project }: { project: (typeof projects)[number] }) {
 export function EditorialWork() {
   return (
     <section id="work" className="editorial-work" aria-labelledby="recent-work-title">
-      <div className="editorial-work-inner">
+      <div className="section-inner">
         <header className="editorial-work-heading">
-          <h2 id="recent-work-title">Selected Works</h2>
+          <h2 id="recent-work-title" className="section-title">Selected Works</h2>
         </header>
         <div className="editorial-projects">
           {projects.map((project) => (

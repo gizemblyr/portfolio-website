@@ -30,9 +30,9 @@ const articles = [
 export function EditorialBlog() {
   return (
     <section id="blog" className="editorial-blog" aria-labelledby="blog-title">
-      <div className="editorial-blog-inner">
+      <div className="section-inner">
         <header className="editorial-blog-heading">
-          <h2 id="blog-title">Blog on Design, AI &amp; Tech</h2>
+          <h2 id="blog-title" className="section-title">Blog on Design, AI &amp; Tech</h2>
         </header>
         <div className="editorial-articles">
           {articles.map((article) => (
@@ -48,7 +48,7 @@ export function EditorialBlog() {
               </div>
               <div className="editorial-article-copy">
                 <p className="editorial-article-source">{article.source}</p>
-                <h3>{article.title}</h3>
+                <h3 className="editorial-article-title">{article.title}</h3>
                 <p className="editorial-article-description">{article.description}</p>
               </div>
             </a>

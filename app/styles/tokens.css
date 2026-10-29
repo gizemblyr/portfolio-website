@@ -1,0 +1,82 @@
+/*
+ * Design tokens for the site chrome (header, drawer, footer) and the home page.
+ *
+ * Every value is an exact copy of a color that used to be hard-coded, so the
+ * rewrite stays pixel-identical. Several grays are near-duplicates (e.g. the
+ * text-* family); merging them is a visual change and is left for later.
+ */
+:root {
+  /* Brand */
+  --color-accent: #4f3df1;
+  --color-accent-hover: #4030d8;
+  --color-accent-focus: #3f31c9;
+  --color-accent-soft: #ebe8ff;
+  --accent-rgb: 79 61 241; /* for translucent accent lines: rgb(var(--accent-rgb) / .5) */
+
+  /* Text */
+  --color-text: #11111b;
+  --color-text-brand: #15171c;
+  --color-text-nav: #292747;
+  --color-text-muted: #77758c;
+  --color-text-body: #6d6a80;
+  --color-text-about: #5f5d70;
+  --color-text-intro: #625f73;
+  --color-text-soft: #666377;
+  --color-text-card: #696777;
+  --color-text-hero: #6d6a8d;
+  --color-text-hero-link: #67658b;
+  --color-text-footer-meta: #88869a;
+  --color-on-accent: #fff;
+
+  /* Surfaces */
+  --color-page: #fff;
+  --color-surface: #fafafd;
+  --color-surface-alt: #f9f9fa;
+  --color-surface-chip: #f7f7fa;
+  --color-surface-media: #eeedf5;
+
+  /* Lines */
+  --color-border: #e1dfe8;
+  --color-border-chip: #e1e0e8;
+  --color-border-row: #dedde6;
+  --color-border-row-hover: #c8c3e8;
+  --color-border-footer: #dfdee6;
+  --color-border-control: #a6a4bc;
+  --color-border-band: rgb(35 31 82 / 0.1);
+  --color-hero-grid: rgb(112 96 234 / 0.105);
+  --color-hero-grid-mobile: rgb(112 96 234 / 0.12);
+
+  /* "How I Work" illustrations */
+  --color-illustration-node: #6d5ce7;
+  --color-illustration-line: #aaa6b7;
+  --color-illustration-component: #7669d8;
+  --color-illustration-refined: #5e596f;
+  --color-icon-strong: #151522;
+
+  /* Overlays and shadows */
+  --shadow-header: 0 12px 32px rgb(72 60 150 / 0.1);
+  --shadow-header-mobile: 0 2px 10px rgb(20 18 45 / 0.04);
+  --shadow-drawer: -16px 0 40px rgb(20 18 45 / 0.12);
+  --shadow-card-hover: 0 18px 38px rgb(35 31 58 / 0.08);
+  --color-backdrop: rgb(20 18 45 / 0.28);
+
+  /* Type */
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans-stack: var(--font-geist-sans), sans-serif;
+  --font-mono-stack: var(--font-geist-mono), monospace;
+
+  /* Layout */
+  --content-width: 76rem;
+  --page-gutter: 1.25rem;
+  --section-space: 96px;
+  --header-offset: 104px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --page-gutter: 1rem;
+    --section-space: 72px;
+    --header-offset: 80px;
+  }
+}

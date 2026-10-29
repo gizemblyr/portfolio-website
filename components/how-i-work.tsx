@@ -84,9 +84,9 @@ export function HowIWork() {
 
   return (
     <section ref={sectionRef} className={`how-i-work${isActive ? " is-active" : ""}`} aria-labelledby="how-i-work-title">
-      <div className="how-i-work-inner">
+      <div className="section-inner">
         <header className="how-i-work-heading">
-          <h2 id="how-i-work-title">How I Work</h2>
+          <h2 id="how-i-work-title" className="how-i-work-title">How I Work</h2>
           <p className="how-i-work-intro">A systems-minded approach to turning complex product problems into clear, shippable experiences.</p>
         </header>
         <div className="how-i-work-grid">

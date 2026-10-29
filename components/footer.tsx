@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <button type="button" className="brand-wordmark footer-brand" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>giz<span>.</span></button>
             <p className="footer-kicker">PRODUCT DESIGNER &amp; BUILDER</p>
-            <p className="footer-description">Designing thoughtful digital products<br className="hidden sm:block" /> across design, AI, and technology.</p>
+            <p className="footer-description">Designing thoughtful digital products<br className="footer-break" /> across design, AI, and technology.</p>
           </div>
           <div>
             <p className="footer-heading">Navigation</p>
