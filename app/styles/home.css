@@ -863,10 +863,7 @@
   white-space: nowrap;
 }
 
-.editorial-tool-icon,
-.editorial-tool-fallback { width: 20px; height: 20px; flex: 0 0 auto; object-fit: contain; }
-
-.editorial-tool-fallback { display: inline-grid; place-items: center; font-size: 15px; font-weight: 700; line-height: 1; }
+.editorial-tool-icon { width: 20px; height: 20px; flex: 0 0 auto; object-fit: contain; }
 
 .editorial-capabilities { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2.5rem; }
 

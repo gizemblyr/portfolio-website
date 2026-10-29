@@ -2,14 +2,32 @@
 
 import { useState } from "react"
 import { ArrowUpRight, Copy, Download } from "lucide-react"
-import * as simpleIcons from "simple-icons"
+// Named imports only: `import * as` pulled all ~3,000 icons into the bundle.
+import {
+  siClaude, siConfluence, siCursor, siHtml5, siJavascript, siJira, siMaze, siMiro,
+  siPostgresql, siPostman, siReact, siSketch, siVercel, type SimpleIcon,
+} from "simple-icons"
 
-const tools = [
-  ["Figma", "figma"], ["Sketch", "sketch"], ["Miro", "miro"], ["Maze", "maze"],
-  ["Jira", "jira"], ["Confluence", "confluence"], ["Postman", "postman"], ["ChatGPT", "openai"], ["Claude", "anthropic"],
-  ["Cursor", "cursor"], ["Vercel v0", "v0"], ["Lovable", "lovable"], ["HTML5", "html5"], ["CSS3", "css3"],
-  ["JavaScript", "javascript"], ["React", "react"], ["SQL", "postgresql"],
-] as const
+// icon: a file in /public or a simple-icons glyph.
+const tools: { label: string; icon: string | SimpleIcon }[] = [
+  { label: "Figma", icon: "/icons/figma.svg" },
+  { label: "Sketch", icon: siSketch },
+  { label: "Miro", icon: siMiro },
+  { label: "Maze", icon: siMaze },
+  { label: "Jira", icon: siJira },
+  { label: "Confluence", icon: siConfluence },
+  { label: "Postman", icon: siPostman },
+  { label: "ChatGPT", icon: "/icons/chatgpt.svg" },
+  { label: "Claude", icon: siClaude },
+  { label: "Cursor", icon: siCursor },
+  { label: "Vercel v0", icon: siVercel },
+  { label: "Lovable", icon: "/icons/lovable.svg" },
+  { label: "HTML5", icon: siHtml5 },
+  { label: "CSS3", icon: "/icons/css.svg" },
+  { label: "JavaScript", icon: siJavascript },
+  { label: "React", icon: siReact },
+  { label: "SQL", icon: siPostgresql },
+]
 
 const capabilities = [
   "Product Design", "Wireframing", "Prototyping", "Information Architecture", "Journey Mapping", "User Research",
@@ -19,16 +37,7 @@ const capabilities = [
 ]
 
 const email = "gizembolayir@gmail.com"
-type BrandIcon = { title: string; path: string; hex: string }
-const iconAliases: Record<string, string> = { openai: "ChatGPT", anthropic: "Claude", v0: "Vercel", postgresql: "PostgreSQL", css3: "CSS" }
-const providedToolIcons: Record<string, string> = { openai: "/icons/chatgpt.svg", figma: "/icons/figma.svg", lovable: "/icons/lovable.svg", css3: "/icons/css.svg" }
 const socialIcons: Record<string, string> = { LinkedIn: "/icons/linkedin.svg", GitHub: "/icons/github.svg", Medium: "/icons/medium.png", Substack: "/icons/substack.svg" }
-const toolIcons = new Map((Object.values(simpleIcons) as BrandIcon[]).map((icon) => [icon.title, icon]))
-const fallbackIcons: Record<string, { mark: string; color: string }> = {
-  ChatGPT: { mark: "✦", color: "#10a37f" },
-  Lovable: { mark: "L", color: "#ff5c35" },
-  "Adobe XD": { mark: "Xd", color: "#ff61f6" },
-}
 
 export function EditorialAboutTools() {
   const [copied, setCopied] = useState(false)
@@ -75,16 +84,16 @@ export function EditorialAboutTools() {
           <p className="editorial-tools-intro">Design, prototyping, AI, and development tools I use to move from idea to working product.</p>
           <div className="editorial-tools-marquee" aria-label="Tools I use">
             <div className="editorial-tools-track">
-              {[...tools, ...tools].map(([label, slug], index) => {
-                const key = `${slug}-${index}`
-              const iconName = iconAliases[slug] ?? label
-              const icon = toolIcons.get(iconName)
-              const fallback = fallbackIcons[iconName]
-                return <span className="editorial-tool" key={key}>
-                {providedToolIcons[slug] ? <img className="editorial-tool-icon" src={providedToolIcons[slug]} alt="" aria-hidden="true" /> : icon ? <svg className="editorial-tool-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path} fill={`#${icon.hex}`} /></svg> : fallback ? <span className="editorial-tool-fallback" style={{ color: fallback.color }} aria-hidden="true">{fallback.mark}</span> : null}
-                <span>{label}</span>
-              </span>
-              })}
+              {[...tools, ...tools].map(({ label, icon }, index) => (
+                <span className="editorial-tool" key={`${label}-${index}`}>
+                  {typeof icon === "string" ? (
+                    <img className="editorial-tool-icon" src={icon} alt="" aria-hidden="true" />
+                  ) : (
+                    <svg className="editorial-tool-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path} fill={`#${icon.hex}`} /></svg>
+                  )}
+                  <span>{label}</span>
+                </span>
+              ))}
             </div>
           </div>
           <div className="editorial-capabilities" aria-label="Capabilities">
