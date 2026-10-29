@@ -1066,9 +1066,9 @@ div.newage-payment-scenarios { background-color: #4F3DF1 !important; background-
 .foodpay-palette .foodpay-impact [class*="bg-white/"], .foodpay-palette .foodpay-learning [class*="bg-white/"] { background: var(--monevo-gray) !important; }
 .monevo-palette .monevo-approach-number span { color: #fff !important; }
 .monevo-palette .monevo-metric-value { display: block; min-width: 13rem; color: var(--monevo-purple) !important; text-align: right; }
-.monevo-palette section { background: var(--monevo-gray) !important; }
+.monevo-palette section { background: #fff !important; }
 .monevo-palette section:first-of-type { background: #fff !important; }
-.monevo-palette section > div > div { background: var(--monevo-gray); }
+.monevo-palette section > div > div { background: transparent; }
 .monevo-palette section:first-of-type > div > div { background: transparent; }
 .monevo-palette .monevo-hero { background: #fff !important; }
 .monevo-palette .monevo-hero > div { width: min(1120px, 100%); }
