@@ -16,16 +16,21 @@ export function SectionNav({ items }: { items: Item[] }) {
   const indicator = useRef<HTMLSpanElement>(null)
   const placed = useRef(false)
 
-  // Stuck once the spot the nav started from has scrolled under the header.
+  // Stuck once the spot the nav started from has scrolled under the header. Checked
+  // on scroll rather than with an observer, so a jump straight past it (anchor link,
+  // reload mid-page) is caught too.
   useEffect(() => {
-    const el = sentinel.current
-    if (!el) return
-    const observer = new IntersectionObserver(
-      ([entry]) => setStuck(!entry.isIntersecting && entry.boundingClientRect.top < window.innerHeight / 2),
-      { rootMargin: `-${height(".cs-header")}px 0px 0px 0px` },
-    )
-    observer.observe(el)
-    return () => observer.disconnect()
+    const update = () => {
+      const el = sentinel.current
+      if (el) setStuck(el.getBoundingClientRect().top < height(".cs-header"))
+    }
+    update()
+    window.addEventListener("scroll", update, { passive: true })
+    window.addEventListener("resize", update)
+    return () => {
+      window.removeEventListener("scroll", update)
+      window.removeEventListener("resize", update)
+    }
   }, [])
 
   // Active section: the first one whose content reaches the band just below the nav.

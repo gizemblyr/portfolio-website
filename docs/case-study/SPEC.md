@@ -105,7 +105,7 @@ Referans dosyalardaki menü çizgileri bu bölümle değişti; çelişkide bu b�
 
 **Scroll edilince** (sticky):
 - Menü header'ın hemen altına yapışır: desktop `top: 72px`, mobil `top: 56px`. Beyaz zemin, alt 1px `--line` çizgi; yapışıkken çizgi ekran genişliğinde.
-- Yapışınca desktop'ta sekmeler ortalanır; normal halde sola yaslı kalır. Mobilde her iki durumda da sola yaslı ve kaydırılabilir.
+- Sekmeler hem normal hem yapışık halde sola yaslıdır, içerikle aynı hizada (container'ın sol kenarı); yapışınca yatayda kaymaz. Desktop ve mobilde aynı. Mobilde ayrıca yatay kaydırılabilir.
 - Aktif sekme scroll'la değişir (IntersectionObserver). Mor çizgi aktif sekmeye kısa bir geçişle (~250ms) kayar.
 - Mobilde aktif sekme görünür alanın dışındaysa menü yatayda ona kayar.
 - Menüden bir bölüme gidildiğinde başlık header ve menünün altında kalmaz: section'lar `scroll-margin-top` alır (başlık menünün ~32px altında, mobilde ~24px).

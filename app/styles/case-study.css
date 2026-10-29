@@ -101,12 +101,10 @@
 .cs-glance h3 { font-size: 17px; font-weight: 600; }
 .cs-glance p { color: var(--color-cs-body); font-size: 16px; line-height: 1.6; }
 
-/* Section menu */
-
 /*
  * Section menu. In place its line runs under the content column only; once it
- * sticks under the header the line spans the viewport and, on desktop, the tabs
- * center. The bottom line moves between the track and the bar so the height
+ * sticks under the header the line spans the viewport. Tabs stay left-aligned
+ * with the content in both states. The bottom line moves between the track and the bar so the height
  * stays the same and the accent line always sits right on top of it.
  */
 .cs-section-nav {
@@ -129,7 +127,7 @@
   font-size: 14px;
 }
 
-.cs-section-nav.is-stuck .cs-section-nav-track { justify-content: center; border-bottom-width: 0; }
+.cs-section-nav.is-stuck .cs-section-nav-track { border-bottom-width: 0; }
 
 .cs-section-nav-track a { padding: 18px 0; }
 .cs-page .cs-section-nav-track a { color: var(--color-cs-muted); }
@@ -447,10 +445,8 @@
 
   /* The menu runs edge to edge and scrolls sideways; tabs stay left-aligned. */
   .cs-section-nav-inner { padding: 0; }
-  .cs-section-nav-track,
-  .cs-section-nav.is-stuck .cs-section-nav-track {
+  .cs-section-nav-track {
     flex-wrap: nowrap;
-    justify-content: flex-start;
     overflow-x: auto;
     padding: 0 20px;
     column-gap: 24px;
