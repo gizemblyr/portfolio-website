@@ -62,6 +62,8 @@ export type CaseStudy = {
   summary: string
   meta: { label: string; value: Copy }[]
   hero: Image
+  /** Desktop height cap for the hero image, in px (default 560). Width follows the image's aspect ratio. */
+  heroMaxHeight?: number
   glance: { title: string; text: string }[]
   sections: Section[]
   /** How the project appears in "Other Projects". */

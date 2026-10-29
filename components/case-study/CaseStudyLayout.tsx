@@ -33,7 +33,14 @@ export function CaseStudyLayout({ study }: { study: CaseStudy }) {
             </dl>
           </section>
 
-          <figure className="cs-hero">
+          <figure
+            className="cs-hero"
+            style={
+              study.heroMaxHeight
+                ? ({ "--cs-hero-max-h": `${study.heroMaxHeight}px` } as React.CSSProperties)
+                : undefined
+            }
+          >
             <Image src={study.hero.src} alt={study.hero.alt} sizes="(min-width: 768px) 992px, 100vw" priority />
           </figure>
 

@@ -85,7 +85,7 @@
   background: var(--color-cs-surface);
 }
 
-.cs-hero img { width: auto; max-width: 100%; height: auto; max-height: 560px; }
+.cs-hero img { width: auto; max-width: 100%; height: auto; max-height: var(--cs-hero-max-h, 560px); }
 
 /* At a glance */
 

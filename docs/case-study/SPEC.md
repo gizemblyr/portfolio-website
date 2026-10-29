@@ -39,7 +39,7 @@ app/<slug>-case-study/page.tsx   # sadece ilgili içeriği CaseStudyLayout'a ver
 
 1. **Header**: solda tek link, `← Back to home`, ana sayfaya (`/`) gider. Resume linki yok. Sayfanın üstünde **sticky** (`top: 0`), beyaz zemin, alt kenarda 1px `--line` çizgi. Yükseklik çizgi dahil 72px (mobil 56px). Logo, ikon veya ana sayfa menüsü yok. Mevcut `components/header.tsx` içindeki case study dalı bununla değiştirilir. Referans dosyalardaki eski header (`All work` / `Resume`) geçersizdir, dikkate alınmaz.
 2. **Başlık bloğu**: kategori etiketi (`Fintech · Mobile app`), H1, tek paragraf özet, 4'lü meta satırı (Role, Duration, Platform/Client, Scope). Meta satırı `<dl>`; mobilde 2×2.
-3. **Hero görseli**: `--surface` gri zemin üzerinde cihaz mockup'ı. Desktop: padding 64px, görsel `max-height: 560px`, ortalanmış. Mobil: padding 32px 20px, görsel tam genişlik.
+3. **Hero görseli**: `--surface` gri zemin üzerinde cihaz mockup'ı. Desktop: padding 64px, görsel `max-height: 560px`, ortalanmış. İstisna: Foodpanda hero'su oranı korunarak 778px genişlikte gösterilir (`max-height: 630px`); referanstaki gibi gerilmez. Mobil: padding 32px 20px, görsel tam genişlik.
 4. **At a glance**: Problem / What I did / Outcome. Desktop'ta 3 sütun, mobilde alt alta. Kart değil, düz metin.
 5. **Bölüm menüsü**: sayfadaki bölümlerden **otomatik üretilir**, sabit liste yok. Ayrıntı için bkz. 6.1.
 6. **Bölümler**: her biri `NN Başlık` etiketi (örn. `01 Problem`), H2 ve bloklar. Desktop'ta etiket solda ayrı sütunda, başlığa uzanan çizgiyle; mobilde H2'nin üstünde. Ayrıntı bölüm 6'da.

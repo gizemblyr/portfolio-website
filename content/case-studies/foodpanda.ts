@@ -32,6 +32,8 @@ export const foodpanda: CaseStudy = {
       value: { desktop: "Benchmarking, interviews, journey mapping, usability testing, AI features", mobile: "Research, testing, AI features" }
     }
   ],
+  // 778px wide, as in the reference, without stretching the image.
+  heroMaxHeight: 630,
   hero: {
     src: foodpandaHero,
     alt: "Foodpanda Partner menu management on a laptop and a phone"
