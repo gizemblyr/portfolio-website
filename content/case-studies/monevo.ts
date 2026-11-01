@@ -140,7 +140,7 @@ export const monevo: CaseStudy = {
     {
       id: "approach",
       label: "Approach",
-      title: "Research, Design, Validate",
+      title: "Design Approach",
       blocks: [
         {
           type: "steps",
@@ -283,7 +283,7 @@ export const monevo: CaseStudy = {
     {
       id: "testing",
       label: "Design & Testing",
-      title: "Validated Through Usability Testing",
+      title: " Wireframe & Usability Testing",
       blocks: [
         {
           type: "solution",
