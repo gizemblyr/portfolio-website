@@ -58,7 +58,7 @@ export const yemekcom: CaseStudy = {
     {
       id: "problem",
       label: "Problem",
-      title: "Hard to Find, Hard to Keep, Hard to Use on a Phone",
+      title: "Understanding the Problem",
       blocks: [
         {
           type: "paragraph",
